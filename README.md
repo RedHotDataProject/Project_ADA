@@ -11,9 +11,8 @@ Everything we do has a carbon footprint, and our food is no exception. From grow
 
 
 2. Good nutrition impact:
-   Next, consider the case of France/UK, for which a nutritional index is available (nutrition_grade_fr/nutrition_grade_uk). Has there been a surge in high graded products in the last years? Where do these product come from and where are they manufactured? What is the composition? Do they contain many additives?  Where are these products sold?  
-
-Common sense would suggest most nutritionally-high graded products are organic (plant, fruit, vegetables, …) and are therefore not manufactured, thus having a small footprint. Can we establish a meaningful correlation between these product and the carbon footprint  or an estimated price (using another dataset or creating our own with web scraping)? Are expansive and polluting products performing more poorly in the nutrition mark? Is there a general correlation between high carbon footprint and price? 
+   Next, consider the case of France/UK, for which a nutritional index is available (nutrition_grade_fr/nutrition_grade_uk). Has there been a surge in high graded products in the last years? Where do these product come from and where are they manufactured? What is the composition? Do they contain many additives?  Where are these products sold? 
+   - Common sense would suggest most nutritionally-high graded products are organic (plant, fruit, vegetables, …) and are therefore not manufactured, thus having a small footprint. Can we establish a meaningful correlation between these product and the carbon footprint  or an estimated price (using another dataset or creating our own with web scraping)? Are expansive and polluting products performing more poorly in the nutrition mark? Is there a general correlation between high carbon footprint and price? 
 
 # Dataset
 
