@@ -7,10 +7,10 @@ In a century were agri-food industry is questionned on several aspects, we want 
 A 150 word description of the project idea, goals, dataset used. What story you would like to tell and why? What's the motivation behind your project?
 
 # Research questions
-Are most commonly used ingredients changing aver time? What are the environmental impact of those trends? How new diets/movements (veganism etc) are apearing in each country? Have sustainability policies  an impact on the way to produce?
+Are most commonly used ingredients changing aver time? What are the environmental impact of those trends? How new diets/movements (vegetarianism, veganism, etc) are apearing in each country? Have sustainability policies an impact on the way to produce? Are state recommended diets the best options for the environment ? 
 
 # Dataset
-The free food product database will give us the food production information (from the locations of production to the most commun ingredients and its nutrition indices to the carbon footprint). To illustrate the impact of the production in our society, we want to cross this dataset with indices of health such as obesity, diabetes etc. Also, a dataset with the sustainability policies taken in terms of food production is complementary to add an environmental aspect. 
+The free food product database will give us the food production information (from the locations of production to the most common ingredients and its nutrition indices to the carbon footprint). To illustrate the impact of the production in our society, we want to cross this dataset with indices of health such as obesity, diabetes etc. Also, a dataset with the sustainability policies taken in terms of food production is complementary to add an environmental aspect. 
 
 List the dataset(s) you want to use, and some ideas on how do you expect to get, manage, process and enrich it/them. Show us you've read the docs and some examples, and you've a clear idea on what to expect. Discuss data size and format if relevant.
 
