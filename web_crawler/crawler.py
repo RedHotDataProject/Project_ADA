@@ -3,16 +3,35 @@ from bs4 import BeautifulSoup
 import numpy as np
 import pandas as pd
 
+from web_crawler.scraper import *
+
+step_size = 10
+
+#with open('/libs/data.json') as f:
+#    json_data = json.load(f)
+
 products = pd.read_pickle("./data/products_pd.pickle")
 
 products['price_dollar'] = np.nan
 
+i=0
+while i < products.shape[0]-step_size-1:
+    AsinList = []
 
-url_to_scrape = "https://www.amazon.com/s/ref=nb_sb_ss_i_1_18?url=search-alias%3Damazonfresh&field-keywords=flat+leaf+parsley"
-r = requests.get(url_to_scrape)
+    for n, column in enumerate(products.loc[i:i+step_size].iterrows()):
+        query = products.loc[i+n].product_name.replace(' ', '+')
+        AsinList.append(query)
 
-soup = BeautifulSoup(r.text)
 
-print(soup.get('a-offscreen'))
+    extracted_data = ReadAsin(AsinList)
+    # json_data.update(extracted_data)
+
+    i = i+step_size
+
+    # Append to json file
+    f = open('data.json', 'w')
+    json.dump(extracted_data, f, indent=4)
+
+
 
 

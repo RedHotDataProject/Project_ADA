@@ -1,5 +1,2 @@
-# exclude everything
-data/*
-
-# exception to the rule
-!data/.gitkeep 
+data/products_pd.pickle
+data/en.openfoodfacts.org.products.csv
