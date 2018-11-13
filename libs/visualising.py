@@ -31,7 +31,7 @@ def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy
     
     # define the colormap
     cmap = plt.cm.jet
-    # extract all colors from the .jet map
+    # extract all colors from cmap
     cmaplist = [cmap(i) for i in range(cmap.N)]
     # create the new map
     cmap = cmap.from_list('Custom cmap', cmaplist, cmap.N)
