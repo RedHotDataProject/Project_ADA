@@ -1,24 +1,24 @@
-code
-created_t
-product_name
-quantity
-packaging
-brands
-brands_tags
-categories
-categories_tags
-origins
-origins_tags
-manufacturing_places
-manufacturing_places_tags
-labels
-labels_tags
-purchase_places
-stores
-countries_en
-main_category
-main_category_fr
-energy_100g
-carbon-footprint_100g
-nutrition-score-fr_100g
-nutrition-score-uk_100g
+{
+"code" : "str",
+"created_t" : "str",
+"product_name" : "str",
+"quantity" : "str",
+"packaging" : "str",
+"brands" : "str",
+"brands_tags" : "str",
+"categories" : "str",
+"categories_tags" : "str",
+"origins" : "str",
+"origins_tags" : "str",
+"manufacturing_places" : "str",
+"manufacturing_places_tags" : "str",
+"labels" : "str",
+"purchase_places" : "str",
+"stores" : "str",
+"countries_en" : "str",
+"main_category" : "str",
+"energy_100g" : "float",
+"carbon-footprint_100g" : "float",
+"nutrition-score-fr_100g" : "str",
+"nutrition-score-uk_100g" : "str"
+}

@@ -23,7 +23,7 @@ def hist_all_features(df, column_keys):
 def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy_100g"], cluster="labels"):    
     plt.figure(figsize=(8, 8), dpi=80)
     
-    first_tags = [tag[0] for tag in df[cluster].str.split(',')]
+    first_tags = [tag[0] for tag in df[cluster]]
     
     le = preprocessing.LabelEncoder()
     le.fit(list(set(first_tags)))

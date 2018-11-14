@@ -14,5 +14,5 @@ __all__ = [
     'plot_cluster_by_tags',
     'plot_world_map',
     # Cleansing
-    'correct_countries_tags',
+    'to_lookup',
 ]

@@ -1,26 +1,18 @@
 import json
 
 
-def correct_countries_tags(df):
+class SmartLookup(dict):
+    def __missing__(self, key):
+        return key
 
-    countries_column = df['countries_en']
 
-    # Load dictionary that maps to correct countries tags
-    with open('country_replacement.json', 'r') as json_data:
-        country_replacement = json.load(json_data)
+def to_lookup(dict):
 
-    # Replace country tags for actual country name
-    for index, countries in df['countries_en'].str.split(',').items():
-        if isinstance(countries, float): continue
-        country_name = []
-        found = False
-        for s in countries:
-            if s in country_replacement.keys():
-                found = True
-                country_name.append(country_replacement[s])
-            else:
-                country_name.append(s)
-        if found:
-            df.loc[index, 'countries_en'] = ','.join(country_name)
+    lookup  = SmartLookup()
 
-    return df
+    for key, values in dict.items():
+        for value in values:
+            lookup[value] = key
+
+
+    return lookup
