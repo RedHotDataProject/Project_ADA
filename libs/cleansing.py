@@ -3,6 +3,8 @@ import json
 
 class SmartLookup(dict):
     def __missing__(self, key):
+        if isinstance(key, str):
+            return key.title()
         return key
 
 

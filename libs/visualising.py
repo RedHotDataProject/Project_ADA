@@ -18,6 +18,28 @@ def hist_all_features(df, column_keys):
         sns.distplot(df["transformed_" + feature],
                      ax=ax[n,2])
         n+=1
+        
+def plot_occurences_of_distinct_values(df, column_key):
+    # Find all distinct countries
+    values_set = set()
+    for index, row in df.iterrows():
+        for value in row[column_key]:
+            values_set.add(value)
+
+    # Count the number of time each value appears in the column
+    values_count = {}
+    for value in list(values_set):
+        values_count[value] = df[column_key].apply({value}.issubset).sum()
+
+    # Convert to pandas df for plotting functionalities
+    values_count_pdf = pd.DataFrame(list(values_count.items()), columns=['Value', 'Count'])
+
+    # Plot stores counts
+    values_count_pdf.set_index('Value').sort_values(by='Count', ascending=False)[:100].plot(kind='barh', figsize=(10, 20))
+    plt.title("{0}: Count of distincive values".format(column_key.title()))
+    plt.show()
+    
+    return values_set, values_count
 
 
 def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy_100g"], cluster="labels"):    
@@ -46,9 +68,9 @@ def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy
 
     limit = 10000
 
-    ax = plt.scatter(x=df[plot2D_features[0]].values[0:limit],
-                     y=df[plot2D_features[1]].values[0:limit],
-                     c=codes,
+    ax = plt.scatter(x=df[plot2D_features[0]].iloc[:limit].values,
+                     y=df[plot2D_features[1]].iloc[:limit].values,
+                     c=codes[:limit],
                      marker='o',
                      cmap=cmap
             )

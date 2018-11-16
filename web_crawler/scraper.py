@@ -4,19 +4,24 @@ import requests
 from time import sleep
 
 
-def AmzonParser(item):
+import amazon_client
 
-    url = "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=" + item
+_MAX_PRODUCT_NB = 10
+
+
+def WalmartParser(item):
+    url = "www.walmart.com / search /?query =" + item
 
     headers = {
         'User-Agent': 'Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/42.0.2311.90 Safari/537.36'}
     page = requests.get(url, headers=headers)
+
     while True:
         sleep(3)
         try:
             doc = html.fromstring(page.content)
             XPATH_NAME = '//h1[@id="title"]//text()'
-            XPATH_SALE_PRICE = '//span[contains(@id,"ourprice") or contains(@id,"saleprice")]/text()'
+            XPATH_SALE_PRICE = '//span[contains(@id,"price") or contains(@id,"saleprice")]/text()'
             XPATH_ORIGINAL_PRICE = '//td[contains(text(),"List Price") or contains(text(),"M.R.P") or contains(text(),"Price")]/following-sibling::td/text()'
             XPATH_CATEGORY = '//a[@class="a-link-normal a-color-tertiary"]//text()'
 
@@ -43,9 +48,38 @@ def AmzonParser(item):
                 'URL': url,
             }
 
+            print(data)
+
             return data
         except Exception as e:
             print(e)
+
+
+
+
+def get_amazon_products_with_keywords():
+
+    products = amazon_client.search(
+                                keywords="Python",
+                                max_product_nb=_MAX_PRODUCT_NB)
+
+    assert len(products) == _MAX_PRODUCT_NB
+
+
+def get_amazon_products_with_url():
+    url = "https://www.amazon.com/s/ref=nb_sb_noss?url=search-alias%3Daps&field-keywords=python"
+    products = amazon_client.search(
+                                search_url=url,
+                                max_product_nb=_MAX_PRODUCT_NB)
+
+    assert isinstance(products, amazon_client.Products)
+    assert len(products) == _MAX_PRODUCT_NB
+    product = products[0]
+    assert isinstance(product, amazon_client.Product)
+    assert product.title != ""
+    assert product.review_nb != ""
+    assert product.rating != ""
+    assert product.url != ""
 
 
 def ReadAsin(AsinList):
@@ -54,7 +88,7 @@ def ReadAsin(AsinList):
     extracted_data = []
     for item in AsinList:
         print("Processing: " + item)
-        data = AmzonParser(item)
+        data = get_amazon_products_with_keywords(item)
         data['CODE'] = item
         extracted_data.append(data)
         sleep(5)

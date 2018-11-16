@@ -1,0 +1,10 @@
+{      
+"LIDL" : ["LIDL", "Lidl", "lidl"],
+"Carrefour" : ["Carrefour", "Carrefour Market", "Carrefour City", "Carrefour market" ],
+"ALDI" : ["ALDI", "Aldi Nord", "Aldi" ],
+"Kaufland" : ["Kaufland" ],
+"Edeka" : ["EDEKA", "Edeka"],
+"Coop" : ["Coop", "Coop Konsum", "Biocoop" ],
+"Walmart" : ["Walmart", "walmart", "WALMART"],
+"Rewe" : ["Rewe", "REWE" ]
+}
