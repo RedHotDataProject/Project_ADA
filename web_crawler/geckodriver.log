@@ -1,0 +1,243 @@
+1542402602351	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Qb3H5tttyeHS"
+1542402606050	Marionette	INFO	Listening on port 44971
+1542402606106	Marionette	WARN	TLS certificate errors will be ignored for this session
+[Parent 6006, Gecko_IOThread] WARNING: pipe error (77): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 6006, Gecko_IOThread] WARNING: pipe error (104): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542402641194	Marionette	INFO	Stopped listening on port 44971
+1542402698022	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.5xY9uaPa5YOC"
+1542402701133	Marionette	INFO	Listening on port 45829
+1542402701238	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542402722124	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.jfK048siswaT"
+1542402725043	Marionette	INFO	Listening on port 36305
+1542402725134	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 6671, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 6611, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542402749099	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.aupdBBvlkRYy"
+1542402752370	Marionette	INFO	Listening on port 37283
+1542402752423	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+1542402775938	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.2AWzz8r2dDdY"
+1542402778779	Marionette	INFO	Listening on port 40231
+1542402778854	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 7043, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542402949847	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.Dnxvw7i2qn2N"
+1542402952773	Marionette	INFO	Listening on port 44715
+1542402952870	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542402982473	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HafA1hEXI8MH"
+1542402985712	Marionette	INFO	Listening on port 40311
+1542402985810	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://search.migros.ch/de/q:Classic%20Yellow, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:Classic%20Yellow, line 3541: ReferenceError: rp is not defined
+1542403067474	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.MPlbHEN6QbQe"
+1542403071004	Marionette	INFO	Listening on port 38957
+1542403071184	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 2709: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIAutoCompleteController.getStyleAt]
+1542403997401	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.YKmvjyDrQWgU"
+1542404001263	Marionette	INFO	Listening on port 44867
+1542404001340	Marionette	WARN	TLS certificate errors will be ignored for this session
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 8230, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 7590, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Child 7517, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 7779, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542404270127	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.gSTcLEQpTNSh"
+1542404273477	Marionette	INFO	Listening on port 37747
+1542404273549	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542404428165	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.KAXRtt2RdRZj"
+1542404431170	Marionette	INFO	Listening on port 39023
+1542404431192	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://analytics.3wregie.eu/tag/1/tag.min.js, line 2: TypeError: this.triggerCallsIfPossible is not a function
+1542404694809	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.kbZ9TD9dPV9E"
+1542404697699	Marionette	INFO	Listening on port 38007
+1542404697736	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-999670525, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-999670525, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-999670525, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-999670525, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-999670525, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-999670525, line 147: unreachable code after return statement
+JavaScript error: https://analytics.3wregie.eu/tag/1/tag.min.js, line 2: TypeError: this.triggerCallsIfPossible is not a function
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 2709: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIAutoCompleteController.getStyleAt]
+console.error: (new Error("Connection closed, pending request to server1.conn0.child1/inspectorActor3, type supportsHighlighters failed\n\nRequest stack:\nrequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/protocol.js:1351:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/base-loader.js -> resource://devtools/shared/protocol.js:1505:14\nsupportsEyeDropper@resource://devtools/client/inspector/inspector.js:1093:38\n", "resource://devtools/shared/base-loader.js -> resource://devtools/shared/protocol.js", 1294))
+console.error: (new Error("Connection closed, pending request to server1.conn0.child1/pagestyle31, type getComputed failed\n\nRequest stack:\nrequest@resource://devtools/shared/base-loader.js -> resource://devtools/shared/protocol.js:1351:14\ngenerateRequestMethods/</frontProto[name]@resource://devtools/shared/base-loader.js -> resource://devtools/shared/protocol.js:1505:14\nrefreshPanel@resource://devtools/shared/base-loader.js -> resource://devtools/client/inspector/computed/computed.js:482:7\nselectElement@resource://devtools/shared/base-loader.js -> resource://devtools/client/inspector/computed/computed.js:308:12\nonSelected@resource://devtools/shared/base-loader.js -> resource://devtools/client/inspector/computed/computed.js:1489:7\nemit@resource://devtools/shared/base-loader.js -> resource://devtools/shared/event-emitter.js:178:15\nemit@resource://devtools/shared/base-loader.js -> resource://devtools/shared/event-emitter.js:255:5\nsetNodeFront@resource://devtools/shared/base-loader.js -> resource://devtools/client/framework/selection.js:145:5\nonNodeSelected@resource://devtools/client/inspector/inspector.js:1171:7\nprocess@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:928:23\nwalkerLoop@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:812:29\nscheduleWalkerLoop/<@resource://gre/modules/Promise.jsm -> resource://gre/modules/Promise-backend.js:748:11\n", "resource://devtools/shared/base-loader.js -> resource://devtools/shared/protocol.js", 1294))
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-999670525, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-999670525, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-999670525, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-999670525, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-999670525, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-999670525, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-999670525, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-999670525, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-999670525, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-999670525, line 147: unreachable code after return statement
+console.error: "Tried to send a 'tabDetached' event on an already destroyed actor 'frameTarget'"
+1542405573225	Marionette	INFO	Stopped listening on port 38007
+1542405775487	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.D1edQXGiMumT"
+1542405778551	Marionette	INFO	Listening on port 36329
+1542405778639	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://www.coop.ch/etc/designs/vstinfowidgetv2/clientlibs-vstinfo/bodylibs.min.js, line 2640: ReferenceError: DEFAULT_ZOOM_LEVEL is not defined
+JavaScript error: https://libs.coop.ch/coop_search/prod/6/script/coop-search.min.js, line 1209: TypeError: search.hfcexcursion_kanton is undefined
+JavaScript error: https://libs.coop.ch/coop_search/prod/6/script/coop-search.min.js, line 1209: TypeError: search.hfcexcursion_kanton is undefined
+1542405850031	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.fPEmtO72cRqm"
+1542405852793	Marionette	INFO	Listening on port 45491
+1542405852844	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://libs.coop.ch/coop_search/prod/6/script/coop-search.min.js, line 1209: TypeError: search.hfcexcursion_kanton is undefined
+[Parent 10201, Gecko_IOThread] WARNING: pipe error (77): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 10201, Gecko_IOThread] WARNING: pipe error (98): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 10201, Gecko_IOThread] WARNING: pipe error (107): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542406040886	Marionette	INFO	Stopped listening on port 45491
+1542406053331	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.1ShoxwSnOpO3"
+1542406056310	Marionette	INFO	Listening on port 41347
+1542406056357	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://libs.coop.ch/coop_search/prod/6/script/coop-search.min.js, line 1209: TypeError: search.hfcexcursion_kanton is undefined
+JavaScript error: https://libs.coop.ch/coop_search/prod/6/script/coop-search.min.js, line 1209: TypeError: search.hfcexcursion_kanton is undefined
+[Parent 10585, Gecko_IOThread] WARNING: pipe error (77): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[Parent 10585, Gecko_IOThread] WARNING: pipe error (91): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542406126213	Marionette	INFO	Stopped listening on port 41347
+1542406134022	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.EfdChw6gnvwk"
+1542406136867	Marionette	INFO	Listening on port 46605
+1542406136945	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://libs.coop.ch/coop_search/prod/6/script/coop-search.min.js, line 1209: TypeError: search.hfcexcursion_kanton is undefined
+JavaScript error: https://libs.coop.ch/coop_search/prod/6/script/coop-search.min.js, line 1209: TypeError: search.hfcexcursion_kanton is undefined
+JavaScript error: https://libs.coop.ch/coop_search/prod/6/script/coop-search.min.js, line 1209: TypeError: search.hfcexcursion_kanton is undefined
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-1011425332, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-1011425332, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-1011425332, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-1011425332, line 147: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-1011425332, line 87: unreachable code after return statement
+JavaScript warning: https://www.googletagmanager.com/gtag/js?id=AW-1011425332, line 147: unreachable code after return statement
+1542406867102	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.jzByLJV3q7G8"
+1542406870252	Marionette	INFO	Listening on port 35053
+1542406870357	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542406870575	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.g35e7oP2jThW"
+1542406873898	Marionette	INFO	Listening on port 41685
+1542406874058	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 11645, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 11581, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 11361, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542407021086	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.qvpLQGURhXuH"
+1542407024064	Marionette	INFO	Listening on port 44095
+1542407024105	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542407024255	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.HAsf9VTUHfJe"
+1542407027232	Marionette	INFO	Listening on port 33605
+1542407027271	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 12122, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 11829, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542407099281	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.QHfGFa2ul5JW"
+1542407102450	Marionette	INFO	Listening on port 44947
+1542407102504	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://search.migros.ch/de/q:Chocolate%20Chip%20Shortbread, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:Chocolate%20Chip%20Shortbread, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:Chocolate%20Chip%20Shortbread, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:Chocolate%20Chip%20Shortbread, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:Chocolate%20Chip%20Shortbread, line 3541: ReferenceError: rp is not defined
+1542407289805	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.W2Zso9s8uVSd"
+1542407292895	Marionette	INFO	Listening on port 34779
+1542407292938	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542407293112	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.XJ7o3Sam3o9s"
+1542407296159	Marionette	INFO	Listening on port 33593
+1542407296258	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 12871, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 12740, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 12664, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+1542407972832	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.DABN4gP6phIg"
+1542407975922	Marionette	INFO	Listening on port 36913
+1542407975962	Marionette	WARN	TLS certificate errors will be ignored for this session
+1542407976111	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.dEczbG47r7zv"
+1542407979322	Marionette	INFO	Listening on port 34247
+1542407979471	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20%20randonn%C3%A9e, line 3541: ReferenceError: rp is not defined
+console.error: BroadcastService: 
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  receivedBroadcastMessage: handler for
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 13540, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 13521, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 13412, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 13342, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[Child 13319, Chrome_ChildThread] WARNING: pipe error (3): Connection reset by peer: file /build/firefox-4VfQCB/firefox-63.0+build2/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 356

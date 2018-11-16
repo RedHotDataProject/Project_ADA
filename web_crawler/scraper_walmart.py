@@ -1,219 +1,124 @@
 import requests
-from urllib.parse import urljoin
-from bs4 import BeautifulSoup
-import time
+import json
+from html.parser import HTMLParser
 
-_BASE_URL = "https://www.walmart.com"
-_DEFAULT_BEAUTIFULSOUP_PARSER = "html.parser"
-_DEFAULT_USER_AGENT = 'Mozilla/5.0 (Linux; Android 7.0; \
-                        SM-A520F Build/NRD90M; wv) AppleWebKit/537.36 \
-                        (KHTML, like Gecko) Version/4.0 \
-                        Chrome/65.0.3325.109 Mobile Safari/537.36'
-_CHROME_DESKTOP_USER_AGENT = 'Mozilla/5.0 (Macintosh; \
-                        Intel Mac OS X 10_13_5) AppleWebKit/537.36 \
-                        (KHTML, like Gecko) \
-                        Chrome/67.0.3396.79 Safari/537.36'
-
-_USER_AGENT_LIST = [
-                    _DEFAULT_USER_AGENT,
-                    _CHROME_DESKTOP_USER_AGENT,
-                   ]
-
-_CSS_SELECTORS_DESKTOP = {
-    "product": ".search-result-listview-items > div:nth-child(1) > div:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(3)",
-    "title": "div:nth-child(1) > div:nth-child(1) > span:nth-child(2) > a:nth-child(1) > span:nth-child(1)",
-    "price_currency": "div:nth-child(2) > span:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span:nth-child(1) > span:nth-child(1) > span:nth-child(1)",
-    "price_whole" : "div:nth-child(2) > span:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span:nth-child(1) > span:nth-child(1) > span:nth-child(2)",
-    "price_fraction" : "div:nth-child(2) > span:nth-child(1) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > span:nth-child(1) > span:nth-child(1) > span:nth-child(4)",
-    "quantity": "",
-    "url": "div:nth-child(1) > div:nth-child(1) > span:nth-child(2) > a:nth-child(1)",
-}
-
-_CSS_SELECTORS_DESKTOP_2 = {
-    "product": "div.s-result-list.sg-row > div.s-result-item",
-    "title": "div div.sg-row  h5 > span",
-    "rating": "div div.sg-row .a-spacing-top-mini i span",
-    "review_nb": "div div.sg-row .a-spacing-top-mini span.a-size-small",
-    "url": "div div.sg-col-8-of-12 a.a-link-normal",
-    "next_page_url": "li.a-last",
-}
-
-_CSS_SELECTOR_LIST = [
-                        _CSS_SELECTORS_DESKTOP,
-                     ]
-
-# Maximum number of requests to do if Amazon returns a bad page (anti-scraping)
-_MAX_TRIAL_REQUESTS = 5
-_WAIT_TIME_BETWEEN_REQUESTS = 3
-
-class Product(object):
-    """Class of a product"""
-    def __init__(self, product_dict={}):
-        self.product = product_dict
-
-    def __getattr__(self, attr):
-        """ Method to access a dictionnary key as an attribute
-        (ex : product.title) """
-        return self.product.get(attr, "")
-
-def search(keywords="", search_url="", max_product_nb=10):
-    """Function to get the list of products from amazon"""
-    amz = Client()
-    product_dict_list = amz._get_products(
-        keywords=keywords,
-        search_url=search_url,
-        max_product_nb=max_product_nb)
-
-    return product_dict_list
+h = HTMLParser()
+API_BASE_URL='http://api.walmartlabs.com/v1/'
+API_KEY = 0 # I don't want to publish my API key on github, if you need it just request it from me.
 
 
-class Client(object):
-    """Do the requests with the Amazon servers"""
-
-    def __init__(self):
-        """ Init of the client """
-
-        self.session = requests.session()
-        self.current_user_agent_index = 0
-        self.headers = {
-                    'Host': 'https://www.walmart.com',
-                    'User-Agent': _USER_AGENT_LIST[0],
-                    'Accept': 'text/html,application/xhtml+xml,\
-                        application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8',
-                    }
-        self.product_dict_list = []
+class WalmartException(Exception):
+    """Base Class for Walmart Api Exceptions.
+    """
 
 
-    def _change_user_agent(self):
-        """ Change the User agent of the requests
-        (useful if anti-scraping)
-        """
-        index = (self.current_user_agent_index + 1) % len(_USER_AGENT_LIST)
-        self.headers['User-Agent'] = _USER_AGENT_LIST[index]
-        self.current_user_agent_index = index
+class NoLinkShareIDException(WalmartException):
+    """Exception thrown if no LinkShare ID was specified when creating the Walmart API instance
+    """
+    pass
 
-    def _get(self, url):
-        """ GET request with the proper headers """
-        ret = self.session.get(url, headers=self.headers)
-        if ret.status_code != 200:
-            raise ConnectionError(
-                'Status code {status} for url {url}\n{content}'.format(
-                    status=ret.status_code, url=url, content=ret.text))
-        return ret
 
-    def _update_headers(self, search_url):
-        """ Update the 'Host' field in the header with the proper Amazon domain
-        >>> c = Client()
-        >>> print(c.headers['Host'])
-        www.amazon.com
-        >>> c._update_headers("https://www.amazon.fr/s/lkdjsdlkjlk")
-        >>> print(c.headers['Host'])
-        www.amazon.fr
-        """
-        self.base_url = "https://" + \
-            search_url.split("://")[1].split("/")[0] + "/"
-        self.headers['Host'] = self.base_url.split("://")[1].split("/")[0]
+class InvalidParameterException(WalmartException):
+    """Exception thrown if an invalid parameter is passed to a function
+    """
+    pass
 
-    def _get_search_url(self, keywords):
-        """ Get the Amazon search URL, based on the keywords passed
-        >>> c = Client()
-        >>> print(c._get_search_url(keywords="python"))
-        https://www.amazon.com/s/field-keywords=python
-        """
-        search_url = urljoin(_BASE_URL, ("/search/?query=%s" % (keywords)))
-        return search_url
 
-    def _check_page(self, html_content):
-        """ Check if the page is a valid result page
-        (even if there is no result) """
-        if "Sign in for the best experience" in html_content:
-            valid_page = False
-        elif "The request could not be satisfied." in html_content:
-            valid_page = False
+class InvalidRequestException(WalmartException):
+    """Exception thrown if an invalid request response is return by Walmart
+    """
+
+    def __init__(self, status_code, **kwargs):
+        error_message = 'Error'
+        if status_code == 400:
+            error_message = 'Bad Request'
+            if 'detail' in kwargs:
+                error_message = error_message + ' - ' + kwargs['detail']
+        elif status_code == 403:
+            error_message = 'Forbidden'
+        elif status_code == 404:
+            error_message = 'Wrong endpoint'
+        elif status_code == 414:
+            error_message = 'Request URI too long'
+        elif status_code == 500:
+            error_message = 'Internal Server Error'
+        elif status_code == 502:
+            error_message = 'Bad Gateway'
+        elif status_code == 503:
+            error_message = 'Service Unavailable/ API maintenance'
+        elif status_code == 504:
+            error_message = 'Gateway Timeout'
+        message = '[Request failed] Walmart server answered with the following error: {0:s}. Status code: {1:d}'.format(error_message, status_code)
+        super(self.__class__, self).__init__(message)
+    pass
+
+
+def search(query, **kwargs):
+    """Search allows text search on the Walmart.com catalogue and returns matching items available for sale online.
+
+    This implementation doesn't take into account the start parameter from the actual Walmart specification.
+    Instead, we've abstracted the same concept to a paginated approach.
+    You can specify which 'page' of results you get, according to the numItems you expect from every page.
+
+    :param query:
+        Search text - whitespace separated sequence of keywords to search for
+
+    - Named params passed in kwargs:
+        :param numItems [Optional]
+            Number of matching items to be returned, max value 25. Default is 10.
+
+        :param categoryId [Optional]
+            Category id of the category for search within a category. This should match the id field from Taxonomy API
+
+    :return:
+        A list of :class:`~.WalmartProduct`.
+    """
+
+    url = API_BASE_URL + 'search'
+    kwargs['query'] = query
+
+    kwargs['start'] = 10+ 1
+
+    kwargs.pop('page', None)
+    data = _send_request(url, **kwargs).json()
+    products = []
+
+    if 'items' in data:
+        for item in data["items"]:
+            products.append(item)
+
+    return products
+
+
+def _send_request(url, **kwargs):
+    """Sends a request to the Walmart API and return the HTTP response.
+
+    Important remarks:
+        - If the response's status code is differente than 200 or 201, raise an InvalidRequestException with the appripiate code
+        - Format is json by default and cannot be changed through kwargs
+        - Send richAttributes='true' by default. Can be set to 'false' through kwargs
+
+    :param url:
+        The endpoint url to make the request
+
+    - Named params passed in kwargs can be any of the optional GET arguments specified in the Walmart specification
+    """
+    #Avoid format to be changed, always go for json
+    kwargs.pop('format', None)
+    request_params = {'apiKey':API_KEY,'format':'json'}
+    for key, value in kwargs.items():
+        request_params[key] = value
+
+
+    #Even if not specified in arguments, send request with richAttributes='true' by default
+    request_params['richAttributes']='true'
+
+    r = requests.get(url, params=request_params)
+    if r.status_code == 200 or r.status_code == 201:
+        return r
+    else:
+        if r.status_code == 400:
+            #Send exception detail when it is a 400 error
+            raise InvalidRequestException(r.status_code, detail=r.json()['errors'][0]['message'])
         else:
-            valid_page = True
-        return valid_page
-
-    def _get_products(self, keywords="", search_url="", max_product_nb=10):
-        if search_url == "":
-            search_url = self._get_search_url(keywords)
-        self._update_headers(search_url)
-
-        trials = 0
-        while trials < _MAX_TRIAL_REQUESTS:
-            trials += 1
-            try:
-                res = self._get(search_url)
-                valid_page = self._check_page(res.text)
-            except requests.exceptions.SSLError:
-                # To counter the "SSLError bad handshake" exception
-                valid_page = False
-                pass
-            except ConnectionError:
-                valid_page = False
-                pass
-            if valid_page:
-                    break
-            else:
-                self._change_user_agent()
-                time.sleep(_WAIT_TIME_BETWEEN_REQUESTS)
-
-        self.last_html_page = res.text
-        soup = BeautifulSoup(res.text, _DEFAULT_BEAUTIFULSOUP_PARSER)
-
-        selector = 0
-        for css_selector_dict in _CSS_SELECTOR_LIST:
-            selector += 1
-            css_selector = css_selector_dict.get("product", "")
-            products = soup.select(css_selector)
-            if len(products) >= 1:
-                break
-
-        # For each product of the result page
-        for product in products:
-            if len(self.product_dict_list) >= max_product_nb:
-                # Check if the maximum number to search has been reached
-                break
-            else:
-                title = _css_select(product,
-                                    css_selector_dict.get("title", ""))
-                price = _css_select(product,
-                                    css_selector_dict.get("price", ""))
-                quant = _css_select(product,
-                                    css_selector_dict.get("quantity", ""))
-                if price != "":
-                    # format price label
-                    True
-
-                # store in dict
-                product_dict = {'title' : title,
-                                'price' : price,
-                                'quantity' : quantity
-                                }
-
-                css_selector = css_selector_dict.get("url", "")
-                url_product_soup = product.select(css_selector)
-                if url_product_soup:
-                    url = urljoin(
-                        self.base_url,
-                        url_product_soup[0].get('href'))
-                    proper_url = url.split("/ref=")[0]
-                    product_dict['url'] = proper_url
-                    if "slredirect" not in proper_url:  # slredirect = bad url
-                        self.product_dict_list.append(product_dict)
-
-        return self.product_dict_list
-
-
-def _css_select(soup, css_selector):
-        """ Returns the content of the element pointed by the CSS selector,
-        or an empty string if not found """
-        selection = soup.select(css_selector)
-        if len(selection) > 0:
-            if hasattr(selection[0], 'text'):
-                retour = selection[0].text.strip()
-            else:
-                retour = ""
-        else:
-            retour = ""
-        return retour
+            raise InvalidRequestException(r.status_code)
