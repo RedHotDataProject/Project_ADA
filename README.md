@@ -23,7 +23,7 @@ In order to enrich the dataset, we are going to crawl the online food shops for 
 ## A list of internal milestones up until project milestone 2
 
 Project roadmap until project milestone 2, November 25th:
-- [ ] Set up environment - Access the clusters and datasets, describe the statistics and properties of the data; 
+- [x] Set up environment - Access the clusters and datasets, describe the statistics and properties of the data; 
 - [ ] Data cleansing - brush up the data, complete missing carbon footprints, extract suitable categories;
 - [ ] Enrich dataset with missing price information - implement and launch a web crawler for online food shops;
 - [ ] Present the data - visualise geographical patterns of production and sales of processed foods. 
