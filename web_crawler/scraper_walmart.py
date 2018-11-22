@@ -4,7 +4,7 @@ from html.parser import HTMLParser
 
 h = HTMLParser()
 API_BASE_URL='http://api.walmartlabs.com/v1/'
-API_KEY = 0 # I don't want to publish my API key on github, if you need it just request it from me.
+API_KEY = '73qpnr7h9jbzgv48bjnpgy6v' # I don't want to publish my API key on github, if you need it just request it from me.
 
 
 class WalmartException(Exception):
