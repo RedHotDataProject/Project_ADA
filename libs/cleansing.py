@@ -26,7 +26,8 @@ def country_name_filter_apply(name, countries):
    
    countries has the following structure : ['name', 'cca2', 'alias', 'Forced']
    """
-
+    if(name.lower() == "unknown"):
+        return "Unknown"
     country_set_name = countries[countries.name.apply(lambda x: x.lower()  == name.lower())]
     if(not country_set_name.empty):
         if(country_set_name.shape[0]==1):
