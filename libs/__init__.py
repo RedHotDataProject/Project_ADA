@@ -8,6 +8,7 @@ __all__ = [
     'count_incomplete_columns',
     'extract_words',
     'count_words',
+    'count_tag_occurences',
     # Visualizing
     'hist_all_features',
     'plot_cluster_by_tags',

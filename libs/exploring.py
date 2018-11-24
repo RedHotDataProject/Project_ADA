@@ -33,3 +33,20 @@ def count_incomplete_columns(df, columns_list):
     print("Percentage of incomplete entries: " + str(percentage))
 
     return complete
+
+
+def count_tag_occurences(df, column_name):
+    count_keyword = dict()
+    for index, col in df[column_name].iteritems():
+        if isinstance(col, float): continue
+        for s in col:
+            if s in count_keyword.keys():
+                count_keyword[s] += 1
+            else:
+                count_keyword[s] = 1
+
+    return count_keyword
+    
+
+
+    
