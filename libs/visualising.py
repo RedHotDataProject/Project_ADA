@@ -22,6 +22,7 @@ def hist_all_features(df, column_keys):
 def plot_occurences_of_distinct_values(df, column_key):
     # Find all distinct countries
     values_set = set()
+    
     for index, row in df.iterrows():
         for value in row[column_key]:
             values_set.add(value)
@@ -35,11 +36,13 @@ def plot_occurences_of_distinct_values(df, column_key):
     values_count_pdf = pd.DataFrame(list(values_count.items()), columns=['Value', 'Count'])
 
     # Plot stores counts
-    values_count_pdf.set_index('Value').sort_values(by='Count', ascending=False)[:50].plot(kind='barh', figsize=(10, 20))
-    plt.title("{0}: Count of distincive values".format(column_key.title()))
+    values_count_pdf.set_index('Value').sort_values(by='Count', ascending=True)[-40:].plot(kind='barh', figsize=(10, 15))
+    plt.title("{0}: Top 40 distincive values".format(column_key.title()))
+    plt.gca().xaxis.grid(True)
+    plt.gca().set_facecolor('#d8dcd6')
     plt.show()
     
-    # return values_set, values_count
+    return values_set, values_count
 
 
 def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy_100g"], cluster="labels"):    
