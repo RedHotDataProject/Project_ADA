@@ -100,3 +100,6 @@ def plot_world_map(country_count):
                    fill_color='YlGnBu', fill_opacity=0.7, line_opacity=0.2,
                    )
 
+def plot_column_composition(df, columns):
+    
+    plot = df.plot.pie(y=columns, subplots=True)
