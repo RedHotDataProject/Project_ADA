@@ -68,4 +68,13 @@ def country_name_filter(name, countries):
     if(empty):
         res = ["Unknown"]
     return res
+
+def remove_language_indicators(df, column_name):
+    """
+
+    :param df:
+    :param column_name:
+    :return:
+    """
+    df[column_name] = df[column_name].map(lambda x: x.split(':', max_split=1))
         

@@ -1,0 +1,17 @@
+{
+	"France": ["France", "en:FR", "France,Europe", "Belgique,France"],
+	"Spain": ["España", "en:ES", "Espagne", "Spain"],
+	"Germany": ["Deutschland", "Germany", "Allemagne", "en:DE"],
+	"United Kingdom": ["en:UK", "United Kingdom", "en:GB", "uk", "UK"],
+	"Belgium": ["Belgique", "en:BE", "Belgique,France", "Belgium", "Belgique,France"],
+	"Italia": ["Italia", "en:IT", "Italie"],
+	"Switzerland": ["Suisse", "Switzerland"],
+	"Netherlands": ["Netherlands", "Holland"],
+	"Denmark": ["Denmark", "Dänemark"],
+	"Portugal": ["Portugal", "en:portugal"],
+	"Greece": ["Greece", "en:GR", "Grèce", "en:greece"],
+	"Sweden": ["Sweden", "en:SE", "en:sweden"],
+	"Norway": ["Norway", "en:NO", "en:norway"],
+	"Croatia": ["Croatia", "en:HR", "en:croatia"],
+	"Albania": ["Albania", "en:AL", "en:albania"]
+}

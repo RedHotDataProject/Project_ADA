@@ -1,21 +1,6 @@
 import numpy as np
 import pandas as pd
 
-import findspark
-
-findspark.init()
-
-import pyspark.sql.functions as func
-
-
-def count_not_null(c, nan_as_null=False):
-    """Use conversion between boolean and integer
-    - False -> 0
-    - True ->  1
-    """
-    pred = func.col(c).isNotNull() & (~func.isnan(c) if nan_as_null else func.lit(True))
-    return func.sum(pred.cast("integer")).alias(c)
-
 
 def extract_words(df, colonne = 'categories_en'):
     """
