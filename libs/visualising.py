@@ -40,7 +40,7 @@ def plot_occurences_of_distinct_values_from_strings(df, column_key):
     values_count_pdf = pd.DataFrame(list(values_count.items()), columns=['Value', 'Count'])
 
     # Plot stores counts
-    values_count_pdf.set_index('Value').sort_values(by='Count', ascending=True)[-20:].plot(kind='barh', figsize=(10, 15))
+    values_count_pdf.set_index('Value').sort_values(by='Count', ascending=True)[-20:].plot(kind='barh', figsize=(10, 10))
     plt.title("{0}: Counts of top 20 distincive values".format(column_key.title()))
     plt.gca().xaxis.grid(True)
     plt.show()
@@ -63,7 +63,7 @@ def plot_occurences_of_distinct_values(df, column_key):
     values_count_pdf = pd.DataFrame(list(values_count.items()), columns=['Value', 'Count'])
 
     # Plot stores counts
-    values_count_pdf.set_index('Value').sort_values(by='Count', ascending=True)[-20:].plot(kind='barh', figsize=(10, 15))
+    values_count_pdf.set_index('Value').sort_values(by='Count', ascending=True)[-20:].plot(kind='barh', figsize=(10, 10))
     plt.title("{0}: Count of top 20 distincive values".format(column_key.title()))
     plt.show()
     
@@ -135,7 +135,7 @@ def plot_world_map(country_count):
 
 def plot_column_composition(df, columns):
     
-    fig = plt.figure(figsize=(8, 8))
+    fig = plt.figure(figsize=(8, 4))
     
     for i, column_str in enumerate(columns):
         if isinstance(df[column_str].iloc[0], str):
