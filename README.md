@@ -28,6 +28,9 @@ Project roadmap until project milestone 2, November 25th:
 - [ ] Enrich dataset with missing price information - implement and launch a web crawler for online food shops;
 - [ ] Present the data - visualise geographical patterns of production and sales of processed foods. 
 
+## Additional libraries used
+conda install webdriver fuzzyset py-translate 
+
 
 ## Questions for TAs
 - Is there a known database given consumption level of each product for a given country ? 

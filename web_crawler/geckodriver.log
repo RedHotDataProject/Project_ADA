@@ -96,3 +96,52 @@ JavaScript error: https://search.migros.ch/de/q:M%C3%A9lange%20de%20champignons%
 
 A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
 1543082429819	Marionette	INFO	Stopped listening on port 33689
+1543135070292	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.UM1Yutkoe3Jt"
+1543135073905	Marionette	INFO	Listening on port 44651
+1543135074030	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://search.migros.ch/de/q:Canga, line 3638: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:Canga, line 3638: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:Canga, line 3638: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:Canga, line 3638: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:Canga, line 3638: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:Canga, line 3638: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:Canga, line 3638: ReferenceError: rp is not defined
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1543135472886	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.jpDxl1eMaEFJ"
+1543135475899	Marionette	INFO	Listening on port 45055
+1543135476003	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://search.migros.ch/de/q:Migros,%20M%20Classic, line 3638: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:Migros,%20M%20Classic, line 3638: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:Migros,%20M%20Classic, line 3638: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:Migros,%20M%20Classic, line 3638: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:Migros,%20M%20Classic, line 3638: ReferenceError: rp is not defined
+JavaScript error: https://search.migros.ch/de/q:Migros,%20M%20Classic, line 3638: ReferenceError: rp is not defined
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1543136252052	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile.CcrEMRHjM0al"
+1543136255227	Marionette	INFO	Listening on port 39967
+1543136255278	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: NetworkError when attempting to fetch resource..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:721:13
+
+1543138616464	Marionette	INFO	Stopped listening on port 39967
+JavaScript error: chrome://browser/content/urlbarBindings.xml, line 2709: NS_ERROR_FAILURE: Component returned failure code: 0x80004005 (NS_ERROR_FAILURE) [nsIAutoCompleteController.getStyleAt]
+1543138622542	Marionette	INFO	Stopped listening on port 45055

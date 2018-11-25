@@ -49,21 +49,31 @@ def plot_occurences_of_distinct_values(df, column_key):
     return values_set, values_count
 
 
-def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy_100g"], cluster="labels"):    
-    plt.figure(figsize=(6, 6), dpi=100)
+def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy_100g"], cluster="labels"): 
     
-    first_tags = [tag[0] for tag in df[cluster].str.split(',')]
     
+    plt.rc('font', size=10)          # controls default text sizes
+    plt.rc('axes', titlesize=10)     # fontsize of the axes title
+    plt.rc('axes', labelsize=10)    # fontsize of the x and y labels
+    plt.rc('xtick', labelsize=8)    # fontsize of the tick labels
+    plt.rc('ytick', labelsize=8)    # fontsize of the tick labels
+    plt.rc('legend', fontsize=8)    # legend fontsize
+    plt.rc('figure', titlesize=12)  # fontsize of the figure title
+    
+    plt.figure(figsize=(12, 6), dpi=100)
+
+    first_tags = [tag[0][:60] for tag in df[cluster].str.split(',')]
+
     le = preprocessing.LabelEncoder()
     le.fit(list(set(first_tags)))
     codes = le.transform(first_tags) 
-    
+
     # define the colormap
-    cmap = plt.cm.jet
+    cmap = plt.cm.tab20b
     # extract all colors from cmap
-    cmaplist = [cmap(i) for i in range(cmap.N)]
-    # create the new map
-    cmap = cmap.from_list('Custom cmap', cmaplist, cmap.N)
+    
+    
+
 
     label = le.inverse_transform(codes)
 
@@ -85,6 +95,8 @@ def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy
     # create the colorbar
     cb = plt.colorbar(ax, spacing='proportional', ticks=bounds)
     cb.set_ticklabels(list(set(label)))
+    plt.xlabel(plot2D_features[0]+ ' [g]')
+    plt.ylabel(plot2D_features[1]+ ' [€]')
     plt.show()
 
 
@@ -131,7 +143,7 @@ def plot_column_composition(df, columns):
         #combining top 5 with others
         df2 = pd.concat([counts_df[:5].copy(), new_row])
 
-        df2.plot.pie(y='value', labels=df2['keys'], autopct='%1.1f%%', startangle=45, ax=ax)
+        df2.plot.pie(y='value', labels=df2['keys'], autopct='%1.1f%%', startangle=45, ax=ax, cmap=plt.cm.tab20)
 
         #draw circle
         centre_circle = plt.Circle((0,0),0.75,fc='white')

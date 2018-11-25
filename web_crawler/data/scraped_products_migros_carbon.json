@@ -1,0 +1,193 @@
+[{
+	"store_name": "Miogarden Classic Bindedraht 60m",
+	"store_price": "4.95",
+	"store_currency": "CHF",
+	"store_quantity": "",
+	"store_categories": ["Startseite", "Sortiment", "Do", "it", "+", "Garden", "Garten", "Pflanzenanzucht", "+", "Winterschutz", "Hilfsmittel", "zur", "Anzucht", "Draht", "Miogarden", "Classic", "Bindedraht", "60m"],
+	"code": "5582",
+	"product_name": "Migros, M Classic"
+}, {
+	"store_name": "M-Classic Joghurt Mandarine",
+	"store_price": "0.55",
+	"store_currency": "CHF",
+	"store_quantity": "180g",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "Milchprodukte", "&", "Eier", "Joghurt", "&", "Joghurtdrinks", "M-Classic", "Joghurt", "Mandarine"],
+	"code": "5583",
+	"product_name": "Yogurt Mandarine"
+}, {
+	"store_name": "Larry's Strawberry-Rhubarb Pastilles",
+	"store_price": "3.30",
+	"store_currency": "CHF",
+	"store_quantity": "2 x 23g",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "S\u00fcssigkeiten", "Bonbons", "&", "Kaugummi", "Larry's", "Strawberry-Rhubarb", "Pastilles"],
+	"code": "5585",
+	"product_name": "Yogourt Rhubarbe/Vanille"
+}, {
+	"store_name": "Ice Coffee",
+	"store_price": "1.95",
+	"store_currency": "CHF",
+	"store_quantity": "165ml",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "Tiefk\u00fchlprodukte", "Glac\u00e9", "&", "S\u00fcssspeisen", "Ice", "Coffee"],
+	"code": "5663",
+	"product_name": "Ice Coffee"
+}, {
+	"store_name": "M-Classic Risotto S.Andrea",
+	"store_price": "2.55",
+	"store_currency": "CHF",
+	"store_quantity": "1kg",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "Pasta,", "Zutaten", "&", "Konserven", "Reis", "M-Classic", "Risotto", "S.Andrea"],
+	"code": "43662",
+	"product_name": "Risotto S. Andrea M-Classic"
+}, {
+	"store_name": "M-Classic Carolina Trockenreis",
+	"store_price": "2.25",
+	"store_currency": "CHF",
+	"store_quantity": "1kg",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "Pasta,", "Zutaten", "&", "Konserven", "Reis", "M-Classic", "Carolina", "Trockenreis"],
+	"code": "43663",
+	"product_name": "Riz Carolina Parboiled M-Classic"
+}, {
+	"store_name": "Subito Riz Casimir",
+	"store_price": "2.90",
+	"store_currency": "CHF",
+	"store_quantity": "170g",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "Fertiggerichte,", "Men\u00fcs", "&", "Snacks", "Diverse", "Fertiggerichte", "Subito", "Riz", "Casimir"],
+	"code": "43674",
+	"product_name": "Riz BASMATI"
+}, {
+	"store_name": "M-Classic Tortelloni ricotta e spinaci",
+	"store_price": "3.70",
+	"store_currency": "CHF",
+	"store_quantity": "250g",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "Fertiggerichte,", "Men\u00fcs", "&", "Snacks", "Fertige", "Pizzen,", "Men\u00fcs", "&", "Snacks", "Pasta", "M-Classic", "Tortelloni", "ricotta", "e", "spinaci"],
+	"code": "43679",
+	"product_name": "Tortelloni ricotta e spinaci"
+}, {
+	"store_name": "Bio Joghurt Brombeere-Vanille",
+	"store_price": "0.90",
+	"store_currency": "CHF",
+	"store_quantity": "150g",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "Milchprodukte", "&", "Eier", "Joghurt", "&", "Joghurtdrinks", "Bio", "Joghurt", "Brombeere-Vanille"],
+	"code": "43703",
+	"product_name": "Yogourt fraise BIO"
+}, {
+	"store_name": "M-Classic Joghurt Kokos/Schokolade",
+	"store_price": "0.55",
+	"store_currency": "CHF",
+	"store_quantity": "180g",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "Milchprodukte", "&", "Eier", "Joghurt", "&", "Joghurtdrinks", "M-Classic", "Joghurt", "Kokos/Schokolade"],
+	"code": "43710",
+	"product_name": "Yogourt Chocolat ferme M-Classic"
+}, {
+	"store_name": "M-Classic Joghurt Heidelbeer",
+	"store_price": "0.55",
+	"store_currency": "CHF",
+	"store_quantity": "180g",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "Milchprodukte", "&", "Eier", "Joghurt", "&", "Joghurtdrinks", "M-Classic", "Joghurt", "Heidelbeer"],
+	"code": "43711",
+	"product_name": "Yogourt Mocca ferme M-Classic "
+}, {
+	"store_name": "Anna's Best Sugo Pomodoro",
+	"store_price": "3.90",
+	"store_currency": "CHF",
+	"store_quantity": "400ml",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "Fertiggerichte,", "Men\u00fcs", "&", "Snacks", "Fertige", "Pizzen,", "Men\u00fcs", "&", "Snacks", "Saucen", "Anna's", "Best", "Sugo", "Pomodoro"],
+	"code": "44383",
+	"product_name": "Sugo Pomodoro Anna\u2019s Best, Bio"
+}, {
+	"store_name": "S\u00e9lection B\u00e2tonnets aux noisettes",
+	"store_price": "6.80",
+	"store_currency": "CHF",
+	"store_quantity": "200g",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "S\u00fcssigkeiten", "Spezialit\u00e4ten", "S\u00e9lection", "B\u00e2tonnets", "aux", "noisettes"],
+	"code": "44388",
+	"product_name": "Chocolat au lait aux \u00e9clats de noisettes"
+}, {
+	"store_name": "Anna's Best Pesto Basilico",
+	"store_price": "2.90",
+	"store_currency": "CHF",
+	"store_quantity": "150ml",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "Fertiggerichte,", "Men\u00fcs", "&", "Snacks", "Fertige", "Pizzen,", "Men\u00fcs", "&", "Snacks", "Saucen", "Anna's", "Best", "Pesto", "Basilico"],
+	"code": "44406",
+	"product_name": "Pesto basilico"
+}, {
+	"store_name": "Tourist Cr\u00e9mant",
+	"store_price": "5.40",
+	"store_currency": "CHF",
+	"store_quantity": "100g, ab 3 St\u00fcck, Angebot gilt nur vom 20.11. bis 26.11.2018, solange Vorrat.",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "S\u00fcssigkeiten", "Schokolade", "Schokoladentafeln", "Tourist", "Cr\u00e9mant"],
+	"code": "44590",
+	"product_name": "Chocolat Tourist Cr\u00e9mant"
+}, {
+	"store_name": "Tourist",
+	"store_price": "5.40",
+	"store_currency": "CHF",
+	"store_quantity": "100g, ab 3 St\u00fcck, Angebot gilt nur vom 20.11. bis 26.11.2018, solange Vorrat.",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "S\u00fcssigkeiten", "Schokolade", "Schokoladentafeln", "Tourist"],
+	"code": "44591",
+	"product_name": "Chocolat Tourist"
+}, {
+	"store_name": "Les Adorables Cremetta",
+	"store_price": "5.30",
+	"store_currency": "CHF",
+	"store_quantity": "100g, ab 3 St\u00fcck, Angebot gilt nur vom 20.11. bis 26.11.2018, solange Vorrat.",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "S\u00fcssigkeiten", "Schokolade", "Schokoladentafeln", "Les", "Adorables", "Cremetta"],
+	"code": "44593",
+	"product_name": "Les Adorables Cremetta"
+}, {
+	"store_name": "Cr\u00e8me d'or Chocolat",
+	"store_price": "3.50",
+	"store_currency": "CHF",
+	"store_quantity": "200ml",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "Tiefk\u00fchlprodukte", "Glac\u00e9", "&", "S\u00fcssspeisen", "Cr\u00e8me", "d'or", "Chocolat"],
+	"code": "44595",
+	"product_name": "Chocolat noir fourr\u00e9 \u00e0 la cr\u00e8me d'amandes"
+}, {
+	"store_name": "Supr\u00eame Lait Trois Noix",
+	"store_price": "4.70",
+	"store_currency": "CHF",
+	"store_quantity": "200g",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "S\u00fcssigkeiten", "Schokolade", "Schokoladentafeln", "Supr\u00eame", "Lait", "Trois", "Noix"],
+	"code": "44607",
+	"product_name": "Supr\u00eame Lait Noisettes"
+}, {
+	"store_name": "Supr\u00eame Noir Authentique",
+	"store_price": "2.70",
+	"store_currency": "CHF",
+	"store_quantity": "100g",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "S\u00fcssigkeiten", "Schokolade", "Schokoladentafeln", "Supr\u00eame", "Noir", "Authentique"],
+	"code": "44616",
+	"product_name": "Supr\u00eame Noir Authentique"
+}, {
+	"store_name": "M-Classic Joghurt Classic Nature",
+	"store_price": "0.40",
+	"store_currency": "CHF",
+	"store_quantity": "180g",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "Milchprodukte", "&", "Eier", "Joghurt", "&", "Joghurtdrinks", "M-Classic", "Joghurt", "Classic", "Nature"],
+	"code": "44626",
+	"product_name": "Yogourt Nature"
+}, {
+	"store_name": "Flutes au beurre",
+	"store_price": "3.90",
+	"store_currency": "CHF",
+	"store_quantity": "150g",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "Chips,", "Erdn\u00fcsse", "&", "Ap\u00e9ritif", "Ap\u00e9rogeb\u00e4ck", "Flutes", "au", "beurre"],
+	"code": "44644",
+	"product_name": "Tresse au beurre"
+}, {
+	"store_name": "Croissant pur Beurre",
+	"store_price": "1.20",
+	"store_currency": "CHF",
+	"store_quantity": "70g",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "B\u00e4ckerei,", "Confiserie", "&", "Backen", "Kleinbrote", "Croissant", "pur", "Beurre"],
+	"code": "44674",
+	"product_name": "Croissants Pr\u00e9cuits au Beurre"
+}, {
+	"store_name": "M-Budget Tortellini Ricotta-Spinat",
+	"store_price": "2.30",
+	"store_currency": "CHF",
+	"store_quantity": "500g",
+	"store_categories": ["Startseite", "Sortiment", "Supermarkt", "Lebensmittel", "Fertiggerichte,", "Men\u00fcs", "&", "Snacks", "Fertige", "Pizzen,", "Men\u00fcs", "&", "Snacks", "Pasta", "M-Budget", "Tortellini", "Ricotta-Spinat"],
+	"code": "44783",
+	"product_name": "Tortellini aux \u00e9pinard et \u00e0 la ricotta"
+}]
