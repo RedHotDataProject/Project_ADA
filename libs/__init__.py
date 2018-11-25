@@ -13,6 +13,7 @@ __all__ = [
     'hist_all_features',
     'plot_cluster_by_tags',
     'plot_occurences_of_distinct_values',
+    'plot_occurences_of_distinct_values_from_strings',
     'plot_world_map',
     # Cleansing
     'to_lookup',

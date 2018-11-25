@@ -21,7 +21,7 @@ def hist_all_features(df, column_keys):
                      ax=ax[n,2])
         n+=1
         
-def plot_occurences_of_distinct_values(df, column_key):
+def plot_occurences_of_distinct_values_in_strings(df, column_key):
     # Find all distinct values
     values_set = set()
 
@@ -44,6 +44,28 @@ def plot_occurences_of_distinct_values(df, column_key):
     plt.title("{0}: Top 40 distincive values".format(column_key.title()))
     plt.gca().xaxis.grid(True)
     plt.gca().set_facecolor('#d8dcd6')
+    plt.show()
+    
+    return values_set, values_count
+
+def plot_occurences_of_distinct_values(df, column_key):
+    # Find all distinct countries
+    values_set = set()
+    for index, row in df.iterrows():
+        for value in row[column_key]:
+            values_set.add(value)
+
+    # Count the number of time each value appears in the column
+    values_count = {}
+    for value in list(values_set):
+        values_count[value] = df[column_key].apply({value}.issubset).sum()
+
+    # Convert to pandas df for plotting functionalities
+    values_count_pdf = pd.DataFrame(list(values_count.items()), columns=['Value', 'Count'])
+
+    # Plot stores counts
+    values_count_pdf.set_index('Value').sort_values(by='Count', ascending=False)[:100].plot(kind='barh', figsize=(10, 20))
+    plt.title("{0}: Count of distincive values".format(column_key.title()))
     plt.show()
     
     return values_set, values_count
