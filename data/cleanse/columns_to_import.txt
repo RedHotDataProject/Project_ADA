@@ -7,6 +7,7 @@
 "packaging" : "str",
 "brands" : "str",
 "categories_en" : "str",
+"ingredients_text" : "str",
 "origins" : "str",
 "origins_tags" : "str",
 "manufacturing_places" : "str",
