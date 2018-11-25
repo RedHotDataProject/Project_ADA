@@ -18,7 +18,7 @@ Part 2 - Good nutrition impact:
 
 For our data project, we are going to leverage on the [Open Food Facts](https://world.openfoodfacts.org/) data set, a rich database on food items and their manufacturer, composition, carbon footprint, and points of sale. Each data point is indexed by the product name and barcode, categorised into food type categories and various data entries additionally are assigned a carbon footprint and a Nutri Score (a grade from A to E reflecting their nutritional value).
 We compare the food items based on their manufacturing and sales location and set the carbon footprints into relation. Furthermore, we are going to make the assumption that the timestamp, when the food item was added and modified, is a relevant indicator on the diet trend of people at that time. 
-In order to enrich the dataset, we are going to crawl the online food shops for the actual price of products in the dataset, and approximate missing carbon footprints with the food items CO<sub>2</sub>-database provided by [Eaternity](http://www.eaternity.org/foodprint/database?fbclid=IwAR2OF0hWBCky6sBc79pzHo2QXKPUMJpDk-it2etXbGH-HbD1cje0Qd-EYPI).
+In order to enrich the dataset, we are going to crawl the online food shops for the actual price of products in the dataset, and approximate missing carbon footprints with the food items CO<sub>2</sub>-database provided by [Eaternity](http://www.eaternity.org/foodprint/database?fbclid=IwAR2OF0hWBCky6sBc79pzHo2QXKPUMJpDk-it2etXbGH-HbD1cje0Qd-EYPI). To harmonise the country names that appear in the purchase, manufacturing and originating places, we use the database provided by https://mledoze.github.io/countries/ . 
 
 ## List of internal milestones up until project milestone 2
 
@@ -30,6 +30,8 @@ Project roadmap until project milestone 2, November 25th:
 
 ## List of internal milestones up until project milestone 3
 - [ ] Aggregate carbon-footprints and product prices in categories.
+- [ ] Perform part of the analysis requiring the footprint.
+- [ ] Perform precise study on the high-nutritional index food products (may require to derive a personal index based on the content)
 - [ ] Make plots more appealing - Standardize colormaps, make maps and clusters plots interactive.
 - [ ] Write report
 
