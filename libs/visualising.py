@@ -5,6 +5,8 @@ import matplotlib as mpl
 import seaborn as sns
 import folium
 
+from libs import exploring as explore
+
 from sklearn import preprocessing
 
 def hist_all_features(df, column_keys):
@@ -20,17 +22,19 @@ def hist_all_features(df, column_keys):
         n+=1
         
 def plot_occurences_of_distinct_values(df, column_key):
-    # Find all distinct countries
+    # Find all distinct values
     values_set = set()
-    
+
     for index, row in df.iterrows():
-        for value in row[column_key]:
+        for value in row[column_key].split(','):
             values_set.add(value)
 
     # Count the number of time each value appears in the column
     values_count = {}
     for value in list(values_set):
-        values_count[value] = df[column_key].apply({value}.issubset).sum()
+        values_count[value] = df[column_key].str.replace('(', '\(')\
+                                            .str.replace(')', '\)')\
+                                            .str.contains(value).sum()
 
     # Convert to pandas df for plotting functionalities
     values_count_pdf = pd.DataFrame(list(values_count.items()), columns=['Value', 'Count'])
@@ -46,9 +50,9 @@ def plot_occurences_of_distinct_values(df, column_key):
 
 
 def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy_100g"], cluster="labels"):    
-    plt.figure(figsize=(8, 8), dpi=80)
+    plt.figure(figsize=(6, 6), dpi=100)
     
-    first_tags = [tag[0] for tag in df[cluster]]
+    first_tags = [tag[0] for tag in df[cluster].str.split(',')]
     
     le = preprocessing.LabelEncoder()
     le.fit(list(set(first_tags)))
@@ -102,4 +106,42 @@ def plot_world_map(country_count):
 
 def plot_column_composition(df, columns):
     
-    plot = df.plot.pie(y=columns, subplots=True)
+    fig = plt.figure(figsize=(8, 8))
+    
+    for i, column_str in enumerate(columns):
+        occurence = explore.count_tag_occurences(df, column_str)
+
+        #the full dataframe
+        counts_df = pd.DataFrame( data = {'keys': list(occurence.keys()), 
+                                          'value' : list(occurence.values())
+                                         },
+                                ).sort_values('value', ascending = False)
+
+        n_cols = 2
+        n_rows = int(np.ceil(len(columns)/n_cols))
+        
+        ax = fig.add_subplot(n_rows, n_cols, i+1)
+        
+        #others
+        new_row = pd.DataFrame(data = {
+            'keys' : ['Others'],
+            'value' : [counts_df['value'][5:].sum()]
+        })
+
+        #combining top 5 with others
+        df2 = pd.concat([counts_df[:5].copy(), new_row])
+
+        df2.plot.pie(y='value', labels=df2['keys'], autopct='%1.1f%%', startangle=45, ax=ax)
+
+        #draw circle
+        centre_circle = plt.Circle((0,0),0.75,fc='white')
+        fig = plt.gcf()
+        fig.gca().add_artist(centre_circle)
+
+        # Equal aspect ratio ensures that pie is drawn as a circle
+        ax.axis('equal')  
+        plt.tight_layout()
+        plt.title(column_str)
+        ax.legend().set_visible(False)
+        ax.set_ylabel(None).set_visible(False)
+    plt.show()

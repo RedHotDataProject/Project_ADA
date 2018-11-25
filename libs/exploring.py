@@ -39,7 +39,7 @@ def count_tag_occurences(df, column_name):
     count_keyword = dict()
     for index, col in df[column_name].iteritems():
         if isinstance(col, float): continue
-        for s in col:
+        for s in col.split(','):
             if s in count_keyword.keys():
                 count_keyword[s] += 1
             else:
