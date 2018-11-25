@@ -21,7 +21,7 @@ def hist_all_features(df, column_keys):
                      ax=ax[n,2])
         n+=1
         
-def plot_occurences_of_distinct_values_in_strings(df, column_key):
+def plot_occurences_of_distinct_values_from_strings(df, column_key):
     # Find all distinct values
     values_set = set()
 
