@@ -179,3 +179,10 @@ def plot_column_composition(df, columns):
         ax.legend().set_visible(False)
         ax.set_ylabel(None).set_visible(False)
     plt.show()
+
+def search_cca3(name, countries):
+    country_set_name = countries[countries.name.apply(lambda x: x.lower()  == name.lower())]
+    if(not country_set_name.empty):
+        return country_set_name.iloc[0,1]
+    return " "
+    
