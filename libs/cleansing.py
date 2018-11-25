@@ -1,5 +1,6 @@
 import json
 import warnings
+import re
 warnings.filterwarnings("ignore", 'This pattern has match groups')
 
 class SmartLookup(dict):
@@ -37,7 +38,8 @@ def country_name_filter_apply(name, countries):
     if(not country_set_cca2.empty):
         if(country_set_cca2.shape[0]==1):
             return country_set_cca2.iloc[0,0]
-     
+    
+    #print(name)
     country_set = countries[countries['alias'].str.contains(name, case=False)]
     if(not country_set.empty):
         if(country_set.shape[0]==1):
@@ -61,12 +63,39 @@ def country_name_filter(name, countries):
     empty = True
     name_list = name.split(',')
     for name_part in name_list:
-        name_found = country_name_filter_apply(name_part, countries)
-        if ((name_found != "Unknown") & (name_found != "Unspecified")):
-            res.append(name_found)
-            empty = False
+        if(name_part != ''):
+            if(name_part[0]== " "):
+                name_part = name_part[1:]
+            if(name_part[-1]== " "):
+                name_part = name_part[:-1]
+            name_part = name_part.replace("(", "")
+            name_part = name_part.replace("[", "")
+            name_part = name_part.replace("{", "")
+            name_part = name_part.replace("]", "")
+            name_part = name_part.replace("}", "")
+            name_part = name_part.replace(")", "")
+            name_part = name_part.replace("?", "")
+            if(name_part != ''):
+                name_found = country_name_filter_apply(name_part, countries)
+                if ((name_found != "Unknown") & (name_found != "Unspecified")):
+                    res.append(name_found)
+                    empty = False
     if(empty):
-        res = ["Unknown"]
+        """
+        #This attempt only reduced the percentage of no association form 18% to 7% with many errors so this will not be considered
+        if(not ',' in name):
+            name_list2 = name.split(' ')
+            for name_part in name_list2:
+                if(name_part != ''):
+                    name_part = name_part.replace("(", "")
+                    name_part = name_part.replace(")", "")
+                    name_found = country_name_filter_apply(name_part, countries)
+                    if ((name_found != "Unknown") & (name_found != "Unspecified")):
+                        res.append(name_found)
+                        empty = False
+        """
+        if(empty):
+            res = ["Unknown"]
     return res
 
 def remove_language_indicators(df, column_name):
