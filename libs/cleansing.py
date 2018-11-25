@@ -100,6 +100,7 @@ def country_name_filter(name, countries):
 
 def read(name):
     res = []
+    name = str(name)
     name = name.replace("'", "")
     list_name = name.strip("[]").split(", ")
     for name_part in list_name:
