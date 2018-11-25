@@ -40,8 +40,8 @@ def plot_occurences_of_distinct_values_from_strings(df, column_key):
     values_count_pdf = pd.DataFrame(list(values_count.items()), columns=['Value', 'Count'])
 
     # Plot stores counts
-    values_count_pdf.set_index('Value').sort_values(by='Count', ascending=True)[-40:].plot(kind='barh', figsize=(10, 15))
-    plt.title("{0}: Top 40 distincive values".format(column_key.title()))
+    values_count_pdf.set_index('Value').sort_values(by='Count', ascending=True)[-20:].plot(kind='barh', figsize=(10, 15))
+    plt.title("{0}: Counts of top 20 distincive values".format(column_key.title()))
     plt.gca().xaxis.grid(True)
     plt.show()
     
@@ -63,8 +63,8 @@ def plot_occurences_of_distinct_values(df, column_key):
     values_count_pdf = pd.DataFrame(list(values_count.items()), columns=['Value', 'Count'])
 
     # Plot stores counts
-    values_count_pdf.set_index('Value').sort_values(by='Count', ascending=True)[-40:].plot(kind='barh', figsize=(10, 15))
-    plt.title("{0}: Count of distincive values".format(column_key.title()))
+    values_count_pdf.set_index('Value').sort_values(by='Count', ascending=True)[-20:].plot(kind='barh', figsize=(10, 15))
+    plt.title("{0}: Count of top 20 distincive values".format(column_key.title()))
     plt.show()
     
     return values_set, values_count
@@ -91,11 +91,7 @@ def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy
 
     # define the colormap
     cmap = plt.cm.tab20b
-    # extract all colors from cmap
-    
-    
-
-
+        
     label = le.inverse_transform(codes)
 
     N = len(list(set(label)))  # Number of labels
@@ -142,7 +138,10 @@ def plot_column_composition(df, columns):
     fig = plt.figure(figsize=(8, 8))
     
     for i, column_str in enumerate(columns):
-        occurence = explore.count_tag_occurences(df, column_str)
+        if isinstance(df[column_str].iloc[0], str):
+            occurence = explore.count_tag_occurences(df, column_str)
+        else:
+            occurence = explore.count_tag_occurences_list(df, column_str)
 
         #the full dataframe
         counts_df = pd.DataFrame( data = {'keys': list(occurence.keys()), 
@@ -155,7 +154,7 @@ def plot_column_composition(df, columns):
         
         ax = fig.add_subplot(n_rows, n_cols, i+1)
         
-        #others
+        # others
         new_row = pd.DataFrame(data = {
             'keys' : ['Others'],
             'value' : [counts_df['value'][5:].sum()]
