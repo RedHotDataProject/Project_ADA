@@ -20,21 +20,22 @@ For our data project, we are going to leverage on the [Open Food Facts](https://
 We compare the food items based on their manufacturing and sales location and set the carbon footprints into relation. Furthermore, we are going to make the assumption that the timestamp, when the food item was added and modified, is a relevant indicator on the diet trend of people at that time. 
 In order to enrich the dataset, we are going to crawl the online food shops for the actual price of products in the dataset, and approximate missing carbon footprints with the food items CO<sub>2</sub>-database provided by [Eaternity](http://www.eaternity.org/foodprint/database?fbclid=IwAR2OF0hWBCky6sBc79pzHo2QXKPUMJpDk-it2etXbGH-HbD1cje0Qd-EYPI).
 
-## A list of internal milestones up until project milestone 2
+## List of internal milestones up until project milestone 2
 
 Project roadmap until project milestone 2, November 25th:
 - [x] Set up environment - Access the clusters and datasets, describe the statistics and properties of the data; 
 - [ ] Data cleansing - brush up the data, complete missing carbon footprints, extract suitable categories;
-- [ ] Enrich dataset with missing price information - implement and launch a web crawler for online food shops;
-- [ ] Present the data - visualise geographical patterns of production and sales of processed foods. 
+- [x] Enrich dataset with missing price information - implement and launch a web crawler for online food shops;
+- [x] Present the data - visualise geographical patterns of production and sales of processed foods. 
+
+## List of internal milestones up until project milestone 3
+- [ ] Aggregate carbon-footprints and product prices in categories.
+- [ ] Make plots more appealing - Standardize colormaps, make maps and clusters plots interactive.
+- [ ] Write report
+
 
 ## Additional libraries used
 conda install webdriver fuzzyset py-translate 
 
 
 ## Questions for TAs
-- Is there a known database given consumption level of each product for a given country ? 
-- Is there a more efficient way to get prices of products than doing web scraping? 
-
-
-
