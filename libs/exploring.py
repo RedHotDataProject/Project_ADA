@@ -59,4 +59,13 @@ def count_tag_occurences_list(df, column_name):
 
     return count_keyword
 
+def filter_france(name):
+    res = []
+    name = str(name)
+    name = name.replace("'", "")
+    list_name = name.strip("[]").split(", ")
+    for name_part in list_name:
+        if name_part == 'France':
+            return 'France'
+    return ''
     
