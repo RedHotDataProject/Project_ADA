@@ -22,8 +22,7 @@ class CodecheckScrapper:
         # Hand the page source to Beautiful Soup
 
         soup = BeautifulSoup(page_body, 'html.parser')
-        #soup = BeautifulSoup(self.driver.page_source, 'lxml')
-        #product_item = soup.select('div.cat')[0]
+    
         product_item = soup.select('div.product-info-item')
         if(len(product_item)==0):
             product_item = soup.select('div.cat')
@@ -32,8 +31,6 @@ class CodecheckScrapper:
         category = str(product_item.find_all('a'))
         category = category[category.find(">")+1:-5]
 
-        # Extract requested data
-        #product = {}
-        #product['categorie'] = categorie
+
           
         return category
