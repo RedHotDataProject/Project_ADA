@@ -1,6 +1,8 @@
 import json
 import warnings
 import re
+from translate import Translator
+
 warnings.filterwarnings("ignore", 'This pattern has match groups')
 
 class SmartLookup(dict):
@@ -115,4 +117,15 @@ def remove_language_indicators(df, column_name):
     :return:
     """
     df[column_name] = df[column_name].map(lambda x: x.split(':', max_split=1))
+    
+def translate_columns(column):
+    translated_column = []
+    translator = Translator(from_lang="german",to_lang="english")
+    for i in range(len(column)):
+        element = column.iloc[i]
+        element_translated = translator.translate(element)
+        translated_column.append(element_translated)
+        
+    return translated_column
+    
         
