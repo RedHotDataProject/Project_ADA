@@ -9,6 +9,9 @@ from libs import exploring as explore
 
 from sklearn import preprocessing
 
+from bokeh.layouts import gridplot
+from bokeh.plotting import figure, show, output_file
+
 def hist_all_features(df, column_keys):
     fig, ax = plt.subplots(9,3,figsize=(25,40))
     n = 0
@@ -183,4 +186,21 @@ def search_cca3(name, countries):
     if(not country_set_name.empty):
         return country_set_name.iloc[0,1]
     return " "
-    
+
+def make_plot(title, hist, edges):
+    p = figure(title=title, tools='', background_fill_color="#fafafa")
+    p.quad(top=hist, bottom=0, left=edges[:-1], right=edges[1:],
+           fill_color="navy", line_color="white", alpha=0.5)
+    p.y_range.start = 0
+    p.legend.location = "center_right"
+    p.legend.background_fill_color = "#fefefe"
+    p.xaxis.axis_label = 't (year)'
+    p.yaxis.axis_label = '% of palm oil products '
+    p.grid.grid_line_color="white"
+    return p
+
+def hist(column):
+    bins = column.max() - column.min()
+    hist, edges = np.histogram(column, density=True, bins=bins)
+    p1 = make_plot("Distribution of palm oil products", hist, edges)
+    show(p1)
