@@ -12,6 +12,10 @@ from sklearn import preprocessing
 from bokeh.layouts import gridplot
 from bokeh.plotting import figure, show, output_file
 
+from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
+import plotly.graph_objs as go
+init_notebook_mode(connected=True)
+
 def hist_all_features(df, column_keys):
     fig, ax = plt.subplots(9,3,figsize=(25,40))
     n = 0
@@ -75,49 +79,23 @@ def plot_occurences_of_distinct_values(df, column_key):
 
 def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy_100g"], cluster="labels"): 
     
-    
-    plt.rc('font', size=10)          # controls default text sizes
-    plt.rc('axes', titlesize=10)     # fontsize of the axes title
-    plt.rc('axes', labelsize=10)    # fontsize of the x and y labels
-    plt.rc('xtick', labelsize=8)    # fontsize of the tick labels
-    plt.rc('ytick', labelsize=8)    # fontsize of the tick labels
-    plt.rc('legend', fontsize=8)    # legend fontsize
-    plt.rc('figure', titlesize=12)  # fontsize of the figure title
-    
-    plt.figure(figsize=(12, 6), dpi=100)
+    fig = {
+        'data': [
+            {
+                'x': df[df['main_category']==category]['carbon-footprint_100g'],
+                'y': df[df['main_category']==category]['price_per_100g'],
+                'text': df[df['main_category']==category]['product_name'],
+                'name': category,
+                'mode': 'markers',
+            } for category in df['main_category'].value_counts().index.tolist()
+        ],
+        'layout': {
+            'xaxis': {'title': 'Carbon footprint per 100g [g]'},
+            'yaxis': {'title': "Price per 100g [g]"}
+        }
+    }
 
-    first_tags = [tag[0][:60] for tag in df[cluster].str.split(',')]
-
-    le = preprocessing.LabelEncoder()
-    le.fit(list(set(first_tags)))
-    codes = le.transform(first_tags) 
-
-    # define the colormap
-    cmap = plt.cm.tab20b
-        
-    label = le.inverse_transform(codes)
-
-    N = len(list(set(label)))  # Number of labels
-
-    # define the bins and normalize
-    bounds = np.linspace(0, N, N + 1)
-    norm = mpl.colors.BoundaryNorm(bounds, cmap.N)
-
-    limit = 10000
-
-    ax = plt.scatter(x=df[plot2D_features[0]].iloc[:limit].values,
-                     y=df[plot2D_features[1]].iloc[:limit].values,
-                     c=codes[:limit],
-                     marker='o',
-                     cmap=cmap
-            )
-
-    # create the colorbar
-    cb = plt.colorbar(ax, spacing='proportional', ticks=bounds)
-    cb.set_ticklabels(list(set(label)))
-    plt.xlabel(plot2D_features[0]+ ' [g]')
-    plt.ylabel(plot2D_features[1]+ ' [€]')
-    plt.show()
+    iplot(fig, filename='Carbon footprints clusters')
 
 
 def plot_world_map(country_count):
@@ -136,7 +114,7 @@ def plot_world_map(country_count):
                    fill_color='YlGnBu', fill_opacity=0.7, line_opacity=0.2,
                    )
 
-def plot_column_composition(df, columns):
+def plot_column_composition_circle(df, columns):
     
     fig = plt.figure(figsize=(8, 4))
     
@@ -181,6 +159,66 @@ def plot_column_composition(df, columns):
         ax.set_ylabel(None).set_visible(False)
     plt.show()
 
+    
+def plot_column_composition(df, column_str):
+    if isinstance(df[column_str].iloc[0], str):
+        occurence = explore.count_tag_occurences(df, column_str)
+    else:
+        occurence = explore.count_tag_occurences_list(df, column_str)
+
+    #the full dataframe
+    counts_df = pd.DataFrame( data = {'key': list(occurence.keys()), 
+                                      'value' : list(occurence.values())
+                                     },
+                            ).sort_values('value', ascending = False)
+
+    # accumulate small values into others
+    new_row = pd.DataFrame(data = {
+        'key' : ['Others'],
+        'value' : [counts_df['value'][5:].sum()]
+    })
+
+    # combining top 5 with others
+    df2 = pd.concat([counts_df[:5].copy(), new_row])
+
+
+    frames = []
+
+    # Load bar data
+    traces = []
+    for n, row in df2.iterrows():
+        trace = go.Bar(y = [0], 
+                       x = [row.values[1]],
+                       name=row.values[0],
+                       orientation = 'h')
+        traces.append(trace);
+
+    # Bar plot animation not supported yet
+    # frames.append({'traces':traces})
+
+    # Format layout
+    layout = go.Layout(
+                  title=column_str, 
+                  showlegend=True, 
+                  barmode="stack",
+                  xaxis=dict(
+                    showgrid=False,
+                    showticklabels=True,
+                ),
+                yaxis=dict(
+                    showgrid=False,
+                    showline=False,
+                    showticklabels=False,
+                    zeroline=False,
+                ),
+                width=800,
+                height=300,
+            )
+
+    figure = go.Figure(data=traces, layout=layout, frames=frames)
+
+    iplot(figure)
+    
 def search_cca3(name, countries):
     country_set_name = countries[countries.name.apply(lambda x: x.lower()  == name.lower())]
     if(not country_set_name.empty):
