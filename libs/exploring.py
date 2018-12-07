@@ -70,22 +70,17 @@ def filter_france(name):
     return ''
 
 def assign_score(entry):
-    value = int(entry)
+    value = int(entry[0])
 
-    if(0): 
-        """ 
-        #need to be adapted
-        if(value <= -1):
-            return 'A'
-        if(value >= 0  and value <=2):
+    if(entry[1] == "Beverages"): 
+        if(value <= 1):
             return 'B'
-        if(value >= 3  and value <=10):
+        if(value >= 2  and value <=5):
             return 'C'
-        if(value >= 11 and value <=18):
+        if(value >= 6 and value <= 9):
             return 'D'
-        if(value >= 19):
+        if(value >= 10):
             return 'E'
-        """
     else:
         if(value <= -1):
             return 'A'
@@ -97,4 +92,15 @@ def assign_score(entry):
             return 'D'
         if(value >= 19):
             return 'E'     
-    
+        
+def nutrition_grade(nutrition_over_time):
+    nutrition_over_time['Count'] = 1
+    nutrition_over_time["year"] = nutrition_over_time["created_datetime"].dt.year
+    nutrition_over_time_reduced = nutrition_over_time[['year', 'nutrition_grade', 'Count']]
+    nutrition_over_time_reduced = nutrition_over_time_reduced.groupby(['year', 'nutrition_grade']).count().reset_index()
+    nutrition_over_time_reduced2 = nutrition_over_time_reduced[['year','nutrition_grade']]
+    nutrition_over_time_reduced2['TotalPerYear'] = nutrition_over_time_reduced.Count
+    nutrition_over_time_reduced2 = nutrition_over_time_reduced2.groupby('year').sum().reset_index()
+    nutrition_over_time_reduced = pd.merge(nutrition_over_time_reduced, nutrition_over_time_reduced2, on=['year'])
+    nutrition_over_time_reduced['Percentage'] = nutrition_over_time_reduced.Count / nutrition_over_time_reduced.TotalPerYear *100
+    return nutrition_over_time_reduced.drop(columns = ['TotalPerYear'])

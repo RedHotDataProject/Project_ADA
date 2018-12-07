@@ -1,9 +1,11 @@
 import json
 import warnings
 import re
-from translate import Translator
 
-warnings.filterwarnings("ignore", 'This pattern has match groups')
+from collections import Counter
+
+warnings.filterwarnings("ignore", 'This pattern has match groups') #TODO is there no other way around this warning?
+# from translate import Translator
 
 class SmartLookup(dict):
     def __missing__(self, key):
@@ -118,6 +120,16 @@ def remove_language_indicators(df, column_name):
     """
     df[column_name] = df[column_name].map(lambda x: x.split(':', max_split=1))
     
+
+def group_categories(categories_str, categories_lookup):
+    
+    # Assign categories to group
+    categories_grouped = [categories_lookup[z] for z in categories_str.split(',')]
+    
+    # Return most common category group (or first in case of tie) as the representive category
+    return Counter(categories_grouped).most_common(1)[0][0]
+
+
 def translate_columns(column):
     translated_column = []
     translator = Translator(from_lang="german",to_lang="english")
@@ -127,5 +139,4 @@ def translate_columns(column):
         translated_column.append(element_translated)
         
     return translated_column
-    
         
