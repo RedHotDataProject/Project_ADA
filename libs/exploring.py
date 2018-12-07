@@ -69,4 +69,32 @@ def filter_france(name):
             return 'France'
     return ''
 
+def assign_score(entry):
+    value = int(entry)
+
+    if(0): 
+        """ 
+        #need to be adapted
+        if(value <= -1):
+            return 'A'
+        if(value >= 0  and value <=2):
+            return 'B'
+        if(value >= 3  and value <=10):
+            return 'C'
+        if(value >= 11 and value <=18):
+            return 'D'
+        if(value >= 19):
+            return 'E'
+        """
+    else:
+        if(value <= -1):
+            return 'A'
+        if(value >= 0  and value <=2):
+            return 'B'
+        if(value >= 3  and value <=10):
+            return 'C'
+        if(value >= 11 and value <=18):
+            return 'D'
+        if(value >= 19):
+            return 'E'     
     

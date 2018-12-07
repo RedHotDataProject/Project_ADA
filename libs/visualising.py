@@ -204,3 +204,21 @@ def hist(column):
     hist, edges = np.histogram(column, density=True, bins=bins)
     p1 = make_plot("Distribution of palm oil products", hist, edges)
     show(p1)
+    
+def make_grade_stacked_bar(attempt, label_column, x_column, y_column):
+    fig, ax = plt.subplots(figsize=(10,7))  
+
+    nutrition_grades = attempt[label_column].drop_duplicates()
+    margin_bottom = np.zeros(len(attempt[x_column].drop_duplicates()))
+    colors = ["#008010", "#9ACD32","#FFD700", "#FF8C00", "#DB4832"]
+
+    for num, grade in enumerate(nutrition_grades):
+        values = list(attempt[attempt[label_column] == grade].loc[:, y_column])
+
+        attempt[attempt[label_column] == grade].plot.bar(x=x_column,y=y_column, ax=ax, stacked=True, 
+                                        bottom = margin_bottom, color=colors[num], label=grade)
+        margin_bottom += values
+    ax.set_title("Products added in the dataset with a nutrition grade")
+    ax.set_xlabel('Year')
+    ax.set_ylabel('Count')
+    plt.show()
