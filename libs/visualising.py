@@ -115,53 +115,47 @@ def plot_world_map(country_count):
                    fill_color='YlGnBu', fill_opacity=0.7, line_opacity=0.2,
                    )
 
-def plot_column_composition_circle(df, columns):
+def plot_column_composition_circle(df, column_str):
     
     fig = plt.figure(figsize=(8, 4))
     
-    for i, column_str in enumerate(columns):
-        if isinstance(df[column_str].iloc[0], str):
-            occurence = explore.count_tag_occurences(df, column_str)
-        else:
-            occurence = explore.count_tag_occurences_list(df, column_str)
+    if isinstance(df[column_str].iloc[0], str):
+        occurence = explore.count_tag_occurences(df, column_str)
+    else:
+        occurence = explore.count_tag_occurences_list(df, column_str)
 
-        #the full dataframe
-        counts_df = pd.DataFrame( data = {'keys': list(occurence.keys()), 
-                                          'value' : list(occurence.values())
-                                         },
-                                ).sort_values('value', ascending = False)
+    #the full dataframe
+    counts_df = pd.DataFrame( data = {'keys': list(occurence.keys()), 
+                                      'value' : list(occurence.values())
+                                     },
+                            ).sort_values('value', ascending = False)
 
-        n_cols = 2
-        n_rows = int(np.ceil(len(columns)/n_cols))
-        
-        ax = fig.add_subplot(n_rows, n_cols, i+1)
-        
-        # others
-        new_row = pd.DataFrame(data = {
-            'keys' : ['Others'],
-            'value' : [counts_df['value'][5:].sum()]
-        })
+    # others
+    new_row = pd.DataFrame(data = {
+        'keys' : ['Others'],
+        'value' : [counts_df['value'][5:].sum()]
+    })
 
-        #combining top 5 with others
-        df2 = pd.concat([counts_df[:5].copy(), new_row])
+    #combining top 5 with others
+    df2 = pd.concat([counts_df[:5].copy(), new_row])
 
-        df2.plot.pie(y='value', labels=df2['keys'], autopct='%1.1f%%', startangle=45, ax=ax, cmap=plt.cm.tab20)
+    ax = df2.plot.pie(y='value', labels=df2['keys'], autopct='%1.1f%%', startangle=45, cmap=plt.cm.tab20)
 
-        #draw circle
-        centre_circle = plt.Circle((0,0),0.75,fc='white')
-        fig = plt.gcf()
-        fig.gca().add_artist(centre_circle)
+    #draw circle
+    centre_circle = plt.Circle((0,0),0.75,fc='white')
+    ax.add_artist(centre_circle)
 
-        # Equal aspect ratio ensures that pie is drawn as a circle
-        ax.axis('equal')  
-        plt.tight_layout()
-        plt.title(column_str)
-        ax.legend().set_visible(False)
-        ax.set_ylabel(None).set_visible(False)
+    # Equal aspect ratio ensures that pie is drawn as a circle
+    ax.axis('equal')  
+    plt.tight_layout()
+    plt.title(column_str)
+    ax.legend().set_visible(False)
+    ax.set_ylabel(None).set_visible(False)
     plt.show()
 
     
 def plot_column_composition(df, column_str):
+    
     if isinstance(df[column_str].iloc[0], str):
         occurence = explore.count_tag_occurences(df, column_str)
     else:
