@@ -157,6 +157,21 @@ def plot_column_composition_circle(df, column_str):
     ax.set_ylabel(None).set_visible(False)
     plt.show()
 
+        df2.plot.pie(y='value', labels=df2['keys'], autopct='%1.1f%%', startangle=45, ax=ax, cmap=plt.cm.tab20)
+
+        #draw circle
+        centre_circle = plt.Circle((0,0),0.75,fc='white')
+        fig = plt.gcf()
+        fig.gca().add_artist(centre_circle)
+
+        # Equal aspect ratio ensures that pie is drawn as a circle
+        ax.axis('equal')  
+        plt.tight_layout()
+        plt.title(column_str)
+        ax.legend().set_visible(False)
+        ax.set_ylabel(None).set_visible(False)
+    plt.show()
+
     
 def plot_column_composition(df, column_str):
     
