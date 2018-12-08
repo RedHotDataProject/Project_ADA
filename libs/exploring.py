@@ -59,6 +59,21 @@ def count_tag_occurences_list(df, column_name):
 
     return count_keyword
 
+def count_values(df, column_key):
+    # Find all distinct countries
+    values_set = set()
+    for index, row in df.iterrows():
+        for value in row[column_key]:
+            values_set.add(value)
+
+    # Count the number of time each value appears in the column
+    values_count = {}
+    for value in list(values_set):
+        values_count[value] = df[column_key].apply({value}.issubset).sum()
+        
+    return values_count
+
+
 def filter_france(name):
     res = []
     name = str(name)

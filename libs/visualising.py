@@ -30,19 +30,8 @@ def hist_all_features(df, column_keys):
         n+=1
         
 def plot_occurences_of_distinct_values_from_strings(df, column_key):
-    # Find all distinct values
-    values_set = set()
-
-    for index, row in df.iterrows():
-        for value in row[column_key].split(','):
-            values_set.add(value)
-
-    # Count the number of time each value appears in the column
-    values_count = {}
-    for value in list(values_set):
-        values_count[value] = df[column_key].str.replace('(', '\(')\
-                                            .str.replace(')', '\)')\
-                                            .str.contains(value).sum()
+    
+    values_count = count_values(df, column_key)
 
     # Convert to pandas df for plotting functionalities
     values_count_pdf = pd.DataFrame(list(values_count.items()), columns=['Value', 'Count'])
@@ -54,6 +43,7 @@ def plot_occurences_of_distinct_values_from_strings(df, column_key):
     plt.show()
     
     return values_set, values_count
+
 
 def plot_occurences_of_distinct_values(df, column_key):
     # Find all distinct countries
@@ -77,6 +67,86 @@ def plot_occurences_of_distinct_values(df, column_key):
     
     return values_set, values_count
 
+def plot_occurences_on_map(df, column_key, lines=False, title=''):
+    
+    countries_label = pd.read_csv("./data/country_lookup.csv")[['name', 'cca3']]     
+    
+    # Load the first sheet of the JSON file into a data frame
+    countries = pd.read_json('./data/countries_latlon.json')
+    
+    values_count_pd = pd.DataFrame.from_dict(explore.count_values(df, column_key),
+                                             orient='index',
+                                             columns=['Count']).reset_index().\
+                                            rename(index=str, columns={"index": "Country", "Count": "Count"})
+    
+    # Drop values that cannot be assigned to a geographic location
+    values_count_pd = values_count_pd[values_count_pd.Country != "Unknown"]
+
+    # Map country to cca3 code
+    values_count_pd['cca3'] = values_count_pd.Country.apply(lambda l: search_cca3(l, countries_label))
+
+    # Colour all countries based on their count
+    worldmap = [ dict(
+            type = 'choropleth',
+            locations = values_count_pd['cca3'],
+            z = np.log(values_count_pd['Count']),
+            name = values_count_pd['Country'],
+            autocolorscale = False,
+            reversescale = True,
+            colorbar = dict(
+                autotick = True,
+                title = 'Counts'),
+          ) ]
+
+    lines = []
+    
+    if lines:
+        france_latlng = countries.loc[countries['cca3'] == 'FRA']['latlng'].iloc[0]
+        for i, row in values_count_pd.iterrows():
+            try:
+                country_latlng = countries.loc[countries['cca3'] == row['cca3']]['latlng'].values[0]
+                lines.append(
+                    dict(
+                        type = 'scattergeo',
+                        lon = [ country_latlng[1], france_latlng[1] ],
+                        lat = [ country_latlng[0], france_latlng[0] ],
+                        mode = 'lines+marker',
+                        name = row['Country'],
+                        line = dict(
+                            width = np.log(row['Count'])*0.5,
+                            color = 'red',
+                        ),
+                    )
+                )
+            except IndexError:
+                continue
+                
+                
+    if title == '':
+        tile = column_key
+                
+    # Format map
+    layout = dict(
+        title = title,
+        geo = dict(
+            projection = dict(
+                type = 'Mercator'
+            ),
+            showframe = False,
+            showcoastlines = True,
+            showland = True,
+            landcolor = "rgb(229, 229, 229)",
+            countrycolor = "rgb(255, 255, 255)" ,
+            coastlinecolor = "rgb(255, 255, 255)",
+        ),
+        showlegend=False,
+        xaxis = dict(fixedrange = True),
+        yaxis = dict(fixedrange = True)
+
+    )
+
+    fig = dict( data=worldmap + lines, layout=layout )
+    iplot( fig, validate=False, filename='map'+column_key )
 
 def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy_100g"], cluster="labels"): 
     
@@ -157,19 +227,19 @@ def plot_column_composition_circle(df, column_str):
     ax.set_ylabel(None).set_visible(False)
     plt.show()
 
-        df2.plot.pie(y='value', labels=df2['keys'], autopct='%1.1f%%', startangle=45, ax=ax, cmap=plt.cm.tab20)
+    df2.plot.pie(y='value', labels=df2['keys'], autopct='%1.1f%%', startangle=45, ax=ax, cmap=plt.cm.tab20)
 
-        #draw circle
-        centre_circle = plt.Circle((0,0),0.75,fc='white')
-        fig = plt.gcf()
-        fig.gca().add_artist(centre_circle)
+    #draw circle
+    centre_circle = plt.Circle((0,0),0.75,fc='white')
+    fig = plt.gcf()
+    fig.gca().add_artist(centre_circle)
 
-        # Equal aspect ratio ensures that pie is drawn as a circle
-        ax.axis('equal')  
-        plt.tight_layout()
-        plt.title(column_str)
-        ax.legend().set_visible(False)
-        ax.set_ylabel(None).set_visible(False)
+    # Equal aspect ratio ensures that pie is drawn as a circle
+    ax.axis('equal')  
+    plt.tight_layout()
+    plt.title(column_str)
+    ax.legend().set_visible(False)
+    ax.set_ylabel(None).set_visible(False)
     plt.show()
 
     
