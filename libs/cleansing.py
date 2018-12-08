@@ -98,9 +98,9 @@ def country_name_filter(name, countries):
                         res.append(name_found)
                         empty = False
         """
-        if(empty):
-            res = ["Unknown"]
-    return res
+        res = ["Unknown"]
+    
+    return ",".join(res)
 
 def read(name):
     res = []
@@ -109,7 +109,7 @@ def read(name):
     list_name = name.strip("[]").split(", ")
     for name_part in list_name:
         res.append(name_part)
-    return res
+    return ",".join(res)
 
 def remove_language_indicators(df, column_name):
     """

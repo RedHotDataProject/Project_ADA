@@ -67,7 +67,7 @@ def plot_occurences_of_distinct_values(df, column_key):
     
     return values_set, values_count
 
-def plot_occurences_on_map(df, column_key, lines=False, title=''):
+def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
     
     countries_label = pd.read_csv("./data/country_lookup.csv")[['name', 'cca3']]     
     
@@ -100,7 +100,7 @@ def plot_occurences_on_map(df, column_key, lines=False, title=''):
 
     lines = []
     
-    if lines:
+    if show_distances:
         france_latlng = countries.loc[countries['cca3'] == 'FRA']['latlng'].iloc[0]
         for i, row in values_count_pd.iterrows():
             try:

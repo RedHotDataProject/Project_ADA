@@ -250,8 +250,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.Cralwer" />
-      <item itemvalue="Python.Taxonomies" />
       <item itemvalue="Python.Scraper" />
+      <item itemvalue="Python.Taxonomies" />
     </list>
   </component>
   <component name="SvnConfiguration">

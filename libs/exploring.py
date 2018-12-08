@@ -63,13 +63,13 @@ def count_values(df, column_key):
     # Find all distinct countries
     values_set = set()
     for index, row in df.iterrows():
-        for value in row[column_key]:
+        for value in row[column_key].split(","):
             values_set.add(value)
 
     # Count the number of time each value appears in the column
     values_count = {}
     for value in list(values_set):
-        values_count[value] = df[column_key].apply({value}.issubset).sum()
+        values_count[value] = df[column_key].str.contains(value).sum()
         
     return values_count
 
