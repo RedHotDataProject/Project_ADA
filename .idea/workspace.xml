@@ -2,17 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="3b276ba6-7e9d-4929-851a-7fd4e56a81ca" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Open Food Facts - Explore data.ipynb" beforeDir="false" afterPath="$PROJECT_DIR$/Open Food Facts - Explore data.ipynb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/columns_to_import.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/country_lookup.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/crawler.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/__init__.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/__init__.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/cleansing.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/cleansing.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/libs/exploring.py" beforeDir="false" afterPath="$PROJECT_DIR$/libs/exploring.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/stores_lookup.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/taxonomies.json" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -55,7 +45,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web_crawler/scraper_cora.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="464">
+            <state relative-caret-position="555">
               <caret line="40" selection-start-line="40" selection-end-line="40" />
               <folding>
                 <element signature="e#0#30#0" expanded="true" />
@@ -67,8 +57,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/libs/cleansing.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="78" column="76" selection-start-line="78" selection-start-column="76" selection-end-line="78" selection-end-column="76" />
+            <state relative-caret-position="511">
+              <caret line="82" column="76" selection-start-line="82" selection-start-column="76" selection-end-line="82" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -250,8 +240,8 @@
     </configuration>
     <list>
       <item itemvalue="Python.Cralwer" />
-      <item itemvalue="Python.Scraper" />
       <item itemvalue="Python.Taxonomies" />
+      <item itemvalue="Python.Scraper" />
     </list>
   </component>
   <component name="SvnConfiguration">
@@ -265,6 +255,7 @@
       <option name="presentableId" value="Default" />
       <updated>1541955120244</updated>
       <workItem from="1543043540815" duration="1154000" />
+      <workItem from="1544295156842" duration="590000" />
     </task>
     <task id="LOCAL-00001" summary="Upload world-countries.json">
       <created>1542048504673</created>
@@ -284,13 +275,13 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="1154000" />
+    <option name="totallyTimeSpent" value="1744000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="49" y="27" width="1317" height="741" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2895358" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.29425648" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -501,16 +492,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Programs/anaconda3/lib/python3.6/urllib/parse.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="7275">
-          <caret line="487" selection-start-line="487" selection-end-line="487" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web_crawler/scraper_cora.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="464">
+        <state relative-caret-position="555">
           <caret line="40" selection-start-line="40" selection-end-line="40" />
           <folding>
             <element signature="e#0#30#0" expanded="true" />
@@ -518,10 +502,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Programs/anaconda3/lib/python3.6/urllib/parse.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7275">
+          <caret line="487" selection-start-line="487" selection-end-line="487" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/libs/cleansing.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="78" column="76" selection-start-line="78" selection-start-column="76" selection-end-line="78" selection-end-column="76" />
+        <state relative-caret-position="511">
+          <caret line="82" column="76" selection-start-line="82" selection-start-column="76" selection-end-line="82" selection-end-column="76" />
         </state>
       </provider>
     </entry>

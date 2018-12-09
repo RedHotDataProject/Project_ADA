@@ -207,7 +207,7 @@ def find_composition(df, column_str):
     df2 = pd.concat([counts_df[:5].copy(), new_row])
     return df2
 
-def plot_column_composition_circle(df, column_str):
+def plot_column_composition_pie(df, column_str):
     
     fig = plt.figure(figsize=(8, 4))
     
