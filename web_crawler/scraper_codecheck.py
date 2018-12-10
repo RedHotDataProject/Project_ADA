@@ -22,7 +22,7 @@ class CodecheckScrapper:
         # Hand the page source to Beautiful Soup
 
         soup = BeautifulSoup(page_body, 'html.parser')
-    
+        
         product_item = soup.select('div.product-info-item')
         if(len(product_item)==0):
             product_item = soup.select('div.cat')
@@ -30,7 +30,15 @@ class CodecheckScrapper:
         product_item = product_item[0]
         category = str(product_item.find_all('a'))
         category = category[category.find(">")+1:-5]
-
+        
+        url = str(soup.findAll('meta',property="og:url"))
+        url_splitted = url.split('/')
+        print(url)
+        #parent_category = url_splitted[4]
+        if(len(url)>20):
+            parent_category = url_splitted[4]
+        else:
+            parent_category = None
 
           
-        return category
+        return category, parent_category
