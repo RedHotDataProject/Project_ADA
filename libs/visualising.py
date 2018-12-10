@@ -419,22 +419,47 @@ def make_grade_stacked_bar(attempt, label_column, x_column, y_column):
         ax.set_title("Percentage of products added in the dataset with a certain nutrition grade")
     plt.show()
     
+def find_composition_list(df, column_str, cat_lis):
+    if isinstance(df[column_str].iloc[0], str):
+        occurence = explore.count_tag_occurences(df, column_str)
+    else:
+        occurence = explore.count_tag_occurences_list(df, column_str)
+
+    #the full dataframe
+    counts_df = pd.DataFrame( data = {'keys': list(occurence.keys()), 
+                                      'value' : list(occurence.values())
+                                     },
+                            ).sort_values('value', ascending = False)
+    
+    counts_df_save = counts_df[counts_df['keys'].isin(cat_lis)]
+    counts_df_dropped = counts_df[~counts_df['keys'].isin(cat_lis)]
+    # others
+    new_row = pd.DataFrame(data = {
+        'keys' : ['Others'],
+        'value' : [counts_df_dropped['value'][:].sum()]
+    })
+
+    #combining top 5 with others
+    df2 = pd.concat([counts_df_save[:].copy(), new_row])
+    return df2
+
     
     
 def plot_grade_content(nutrition_over_time):
     index_list = ['B', 'C', 'D', 'E']
-    categories = {"keys": ['Plant-based', 'Carbs', 'Meats', 'Dairies', 'Frozen foods', 'Meals', 'Beverages', 'Sugary snacks','Others']}
+    cat_list = ['Plant-based', 'Carbs', 'Meats', 'Dairies', 'Seafood', 'Canned foods', 'Beverages', 'Sugary snacks','Others']
+    categories = {"keys": cat_list}
     check = pd.DataFrame.from_dict(categories)
     
     nutrional_products = nutrition_over_time[nutrition_over_time["nutrition_grade"] == 'A']              
-    table_content = find_composition(df=nutrional_products, column_str='main_category')
+    table_content = find_composition_list(df=nutrional_products, column_str='main_category', cat_lis= cat_list)
     table_content['Percentage'] = table_content.value/table_content.value.sum()*100
     table_content = check.merge(table_content, how='outer', on= "keys").fillna(0)
     table_content['grade'] = 'A'
     
     for elem in index_list:
         nutrional_products = nutrition_over_time[nutrition_over_time["nutrition_grade"] == elem]
-        add_content = find_composition(df=nutrional_products, column_str='main_category')
+        add_content = find_composition_list(df=nutrional_products, column_str='main_category', cat_lis= cat_list)
         add_content['Percentage'] = add_content.value/add_content.value.sum()*100
         add_content = check.merge(add_content, how='outer', on= "keys").fillna(0)
         add_content['grade'] = elem
@@ -446,7 +471,7 @@ def make_content_stacked_bar(table, label_column, x_column, y_column):
 
     keys = table[label_column].drop_duplicates()
     margin_bottom = np.zeros(len(table[x_column].drop_duplicates()))
-    colors = ['#008010', '#ffe119', '#492424', '#f58231', '#911eb4', '#46f0f0', '#f032e6', '#285FB0', '#fabebe']
+    colors = ['#008010', '#ffe119', '#492424','#911eb4', '#46f0f0', '#f58231', '#f032e6', '#285FB0', '#fabebe']
     
     for num, grade in enumerate(keys):
         values = list(table[table[label_column] == grade].loc[:, y_column])
