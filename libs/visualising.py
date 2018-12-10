@@ -95,21 +95,22 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
             reversescale = True,
             colorbar = dict(
                 autotick = True,
-                title = 'Counts'),
+                title = 'Counts [log10]'),
           ) ]
 
     lines = []
     
     if show_distances:
-        france_latlng = countries.loc[countries['cca3'] == 'FRA']['latlng'].iloc[0]
+        origin_latlng = countries.loc[countries['cca3'] == 'FRA']['latlng'].iloc[0]
         for i, row in values_count_pd.iterrows():
             try:
+                origin_latlng = countries.loc[countries['cca3'] == 'FRA']['latlng'].iloc[0]
                 country_latlng = countries.loc[countries['cca3'] == row['cca3']]['latlng'].values[0]
                 lines.append(
                     dict(
                         type = 'scattergeo',
-                        lon = [ country_latlng[1], france_latlng[1] ],
-                        lat = [ country_latlng[0], france_latlng[0] ],
+                        lon = [ country_latlng[1], origin_latlng[1] ],
+                        lat = [ country_latlng[0], origin_latlng[0] ],
                         mode = 'lines+marker',
                         name = row['Country'],
                         line = dict(
@@ -243,7 +244,7 @@ def plot_column_composition_pie(df, column_str):
     plt.show()
 
     
-def plot_column_composition(df, column_str):
+def plot_column_composition(df, column_str, num_values=5):
     
     if isinstance(df[column_str].iloc[0], str):
         occurence = explore.count_tag_occurences(df, column_str)
@@ -254,19 +255,33 @@ def plot_column_composition(df, column_str):
     counts_df = pd.DataFrame( data = {'key': list(occurence.keys()), 
                                       'value' : list(occurence.values())
                                      },
-                            ).sort_values('value', ascending = False)
+                            ).sort_values('value', ascending=False)
 
+    # Move 'Unknown' and 'Others' column to end of df
+    for values_str in ['Unknown', 'Others']:
+        index = list(np.where(counts_df.key == values_str)[0])
+        if index:
+            target_row = counts_df.iloc[index[0]]
+            counts_df = counts_df.shift(-1)
+            counts_df.iloc[-1] = target_row.squeeze()
+    display(counts_df)
+
+    
     # accumulate small values into others
     new_row = pd.DataFrame(data = {
         'key' : ['Others'],
-        'value' : [counts_df['value'][5:].sum()]
+        'value' : [counts_df['value'][num_values:].sum()]
     })
+    
+
 
     # combining top 5 with others
-    df2 = pd.concat([counts_df[:5].copy(), new_row])
+    df2 = pd.concat([counts_df[:num_values].copy(), new_row])
 
 
     frames = []
+    
+    overall_count = 0
 
     # Load bar data
     traces = []
@@ -275,28 +290,39 @@ def plot_column_composition(df, column_str):
                        x = [row.values[1]],
                        name=row.values[0],
                        orientation = 'h')
+        overall_count += row.values[1]
         traces.append(trace);
 
     # Bar plot animation not supported yet
     # frames.append({'traces':traces})
+    
+    # set x-axis labels and their corresponding data values    
+    frac = overall_count
+    i = 0;
+    while frac > 10:
+        i = i+1;
+        frac = frac/10
+    tickvals = list(range(0,int(overall_count), 5*int(10**(i-1))))
+    tickvals.append(overall_count)
+
 
     # Format layout
     layout = go.Layout(
-                  title=column_str, 
-                  showlegend=True, 
-                  barmode="stack",
-                  xaxis=dict(
-                    showgrid=False,
-                    showticklabels=True,
-                ),
-                yaxis=dict(
-                    showgrid=False,
-                    showline=False,
-                    showticklabels=False,
-                    zeroline=False,
-                ),
-                width=800,
-                height=300)
+                    title=column_str, 
+                    showlegend=True, 
+                    barmode="stack",
+                    xaxis=dict(
+                        tickvals=tickvals
+                    ),
+                    yaxis=dict(
+                        showgrid=False,
+                        showline=False,
+                        showticklabels=False,
+                        zeroline=False,
+                    ),
+                    width=800,
+                    height=300,
+    )
             
 
     figure = go.Figure(data=traces, layout=layout, frames=frames)
