@@ -1,6 +1,6 @@
 ---
-layout = default
-title = try
+layout: default
+title: try
 ---
 
 blabla
