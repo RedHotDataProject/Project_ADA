@@ -1,39 +1,29 @@
-{
- "cells": [
-  {
-   "cell_type": "markdown",
-   "metadata": {},
-   "source": [
-    "Salut ! bienvenue"
-   ]
-  },
-  {
-   "cell_type": "code",
-   "execution_count": null,
-   "metadata": {},
-   "outputs": [],
-   "source": []
-  }
- ],
- "metadata": {
-  "kernelspec": {
-   "display_name": "Ada",
-   "language": "python",
-   "name": "ada"
-  },
-  "language_info": {
-   "codemirror_mode": {
-    "name": "ipython",
-    "version": 3
-   },
-   "file_extension": ".py",
-   "mimetype": "text/x-python",
-   "name": "python",
-   "nbconvert_exporter": "python",
-   "pygments_lexer": "ipython3",
-   "version": "3.6.7"
-  }
- },
- "nbformat": 4,
- "nbformat_minor": 2
-}
+
+---
+title: RedHotDataProject
+---
+This page host our project for the course <i> Applied Data Analysis </i>.
+
+## Abstract
+Everything we do has a carbon footprint, and our diet is no exception. From growing, farming, processing and packaging our food, energy and organic resources are consumed and released, which reflects in the emission of greenhouse gases, like CO2. In our project, we analyse the processed foods industry - its manufacturing, product composition, and sales - for the main sources of carbon emissions, using the Open Food Facts dataset. We explain the carbon footprint repartition, starting on an understanding of the products, followed by the breakdown of production countries as well as point of sales and evaluating trends in diet composition, with a special focus on nutritionally high marked products in France and the UK. With this study, we want to provide a better understanding of the agri-food industry, and eventually help reducing carbon emissions.
+
+### Production / manufacture impact
+
+Put the maps.
+jkbjbj
+
+
+
+In conclusion, we note that we mainly have data for "western" countries, with a <b> huge bias toward France</b>. We mostly lack information for country in Africa and the centre of Asia. Our dataset is thus clearly not a truthful representation of the world. We shall therefore restrict our analysis to the case of France, meaning purchases countries will be limited to the case of France. [This category was selected since it is the most furnished one.] 
+
+This is carried out in the next cell. Note that <i> purchases_places </i> is only requested to contain 'France' as one of the entries in its list. There could thus be other countries still contained in the <i> purchases_places </i> column. 
+
+
+```python
+
+```
+
+
+```python
+
+```
