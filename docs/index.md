@@ -1,17 +1,13 @@
 ---
 feature_text: | 
     # <span style="color:black;background-color:#eabb53">The Evolution of Language in Films</span> 
-feature_image: "./assets/film_reel.jpg"
+feature_image: "./Images/foot2.png"
 background-color: #eabb53
 ---
 
 # RedHotDataProject
 
 This page host our project for the course <i> Applied Data Analysis </i>.
-
-<img src ="./Images/foot1.png"
-    alt = ""
-    style = "float:left; margin-right: 10px;"/>
 
 <img src ="./Images/foot2.png"
     alt = ""
