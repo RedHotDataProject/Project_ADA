@@ -3,8 +3,14 @@
 
 This page host our project for the course <i> Applied Data Analysis </i>.
 
-![Foot 1](./Images/foot1.png)
-![Foot 2](./Images/foot2.png)
+<img src ="./Images/foot1.png"
+    alt = ""
+    style = "float:left; margin-right: 10px;"/>
+
+<img src ="./Images/foot2.png"
+    alt = ""
+    style = "float:left; margin-right: 10px;"/>
+
 
 ## Abstract
 Everything we do has a carbon footprint, and our diet is no exception. From growing, farming, processing and packaging our food, energy and organic resources are consumed and released, which reflects in the emission of greenhouse gases, like CO2. In our project, we analyse the processed foods industry - its manufacturing, product composition, and sales - for the main sources of carbon emissions, using the Open Food Facts dataset. We explain the carbon footprint repartition, starting on an understanding of the products, followed by the breakdown of production countries as well as point of sales and evaluating trends in diet composition, with a special focus on nutritionally high marked products in France and the UK. With this study, we want to provide a better understanding of the agri-food industry, and eventually help reducing carbon emissions.
