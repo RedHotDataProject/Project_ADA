@@ -13,20 +13,30 @@ Everything we do possess a certain carbon footprint, and our diet is of course n
 
 ## Production / manufacture impact
 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/3.embed" height="525" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/7.embed" height="525" width="100%"></iframe>
 
-https://plot.ly/~maxencedraguet/1/
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/9.embed" height="525" width="100%"></iframe>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/11.embed" height="525" width="100%"></iframe>
 
 In conclusion, we note that we mainly have data for "western" countries, with a <b> huge bias toward France</b>. We mostly lack information for country in Africa and the centre of Asia. Our dataset is thus clearly not a truthful representation of the world. We shall therefore restrict our analysis to the case of France, meaning purchases countries will be limited to the case of France. [This category was selected since it is the most furnished one.] 
 
 This is carried out in the next cell. Note that <i> purchases_places </i> is only requested to contain 'France' as one of the entries in its list. There could thus be other countries still contained in the <i> purchases_places </i> column. 
 
+## The Palm Oil Connection
 
-```python
+iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/13.embed" height="525" width="100%"></iframe>
 
-```
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/15.embed" height="525" width="100%"></iframe>
 
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/17.embed" height="525" width="100%"></iframe>
 
-```python
+## The Carbon Foodprint
 
-```
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/19.embed" height="525" width="100%"></iframe>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/21.embed" height="525" width="100%"></iframe>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/23.embed" height="525" width="100%"></iframe>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/25.embed" height="525" width="100%"></iframe>
