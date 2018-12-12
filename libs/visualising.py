@@ -289,7 +289,6 @@ def plot_column_composition(df, column_str, num_values=5):
     traces = []
     i=0
     for n, row in df2.iterrows():
-        print(i)
         trace = go.Bar(y = [0], 
                        x = [row.values[1]],
                        name=row.values[0],
