@@ -282,14 +282,21 @@ def plot_column_composition(df, column_str, num_values=5):
     frames = []
     
     overall_count = 0
-
+    colors = ['#F4B5A6', '#F4EBA6',
+          '#B2F4A6', '#A6E3F4',
+          '#C4A6F4','#E0DBDD']
     # Load bar data
     traces = []
+    i=0
     for n, row in df2.iterrows():
+        print(i)
         trace = go.Bar(y = [0], 
                        x = [row.values[1]],
                        name=row.values[0],
-                       orientation = 'h')
+                       orientation = 'h',
+                       marker=dict(color=colors[i],line=dict(color='rgb(248, 248,249)',width=1))
+                      )
+        i+=1
         overall_count += row.values[1]
         traces.append(trace);
 
@@ -403,7 +410,8 @@ def make_grade_stacked_bar(attempt, label_column, x_column, y_column):
 
     nutrition_grades = attempt[label_column].drop_duplicates()
     margin_bottom = np.zeros(len(attempt[x_column].drop_duplicates()))
-    colors = ["#008010", "#9ACD32","#FFD700", "#FF8C00", "#DB4832"]
+    #colors = ["#008010", "#9ACD32","#FFD700", "#FF8C00", "#DB4832"]
+    colors = ["#517C53", "#99EB9D","#E9F287", "#F2CE75", "#F68774"]
 
     for num, grade in enumerate(nutrition_grades):
         values = list(attempt[attempt[label_column] == grade].loc[:, y_column])
@@ -471,13 +479,12 @@ def make_content_stacked_bar(table, label_column, x_column, y_column):
 
     keys = table[label_column].drop_duplicates()
     margin_bottom = np.zeros(len(table[x_column].drop_duplicates()))
-    colors = ['#008010', '#ffe119', '#492424','#911eb4', '#46f0f0', '#f58231', '#f032e6', '#285FB0', '#fabebe']
+    colors = ['#90CB70', '#F0F472', '#B69C63','#D6D0C3', '#8CB5ED', '#F3AC6D', '#EC9BE2', '#7979CD', '#FCE2E4']
     
     for num, grade in enumerate(keys):
         values = list(table[table[label_column] == grade].loc[:, y_column])
 
-        table[table[label_column] == grade].plot.bar(x=x_column,y=y_column, ax=ax, stacked=True, 
-                                        bottom = margin_bottom, color=colors[num],label=grade)
+        table[table[label_column] == grade].plot.bar(x=x_column,y=y_column, ax=ax, stacked=True, bottom = margin_bottom, color=colors[num],label=grade)
         margin_bottom += values
     ax.set_title("Count of each categories per nutrition grade")
     ax.set_xlabel('Grade')
