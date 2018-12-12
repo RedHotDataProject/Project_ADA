@@ -1,7 +1,7 @@
 ---
 feature_text: | 
-    # <span style="color:black;background-color:#eabb53">The Evolution of Language in Films</span> 
-feature_image: "./Images/foot2.png"
+    # <span style="color:black;background-color:#eabb53"> Open Food Facts: the carbon “food-print” we do not eat </span> 
+feature_image: "./assets/foot1.png"
 background-color: #eabb53
 ---
 
