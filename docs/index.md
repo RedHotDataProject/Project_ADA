@@ -14,7 +14,7 @@ Everything we do possess a certain carbon footprint, and our diet is of course n
 ## Production / manufacture impact
 
 <iframe width="10" height="55" frameborder="0" seamless="seamless" scrolling="no" \
-src=https://plot.ly/~maxencedraguet/1/ ></iframe>
+src="https://plot.ly/~maxencedraguet/1/.embed?width=800&height=550" ></iframe>
 
 https://plot.ly/~maxencedraguet/1/
 
