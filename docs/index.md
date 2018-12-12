@@ -1,6 +1,6 @@
 ---
 feature_text: | 
-    # <span style="color:black;background-color:#eabb53"> Open Food Facts: the carbon “food-print” we do not eat </span> 
+    # <span style="color:black;background-color:#eabb53"> Open Food Facts the carbon food-print we do not eat </span> 
 feature_image: "./assets/foot1.png"
 background-color: #eabb53
 ---
