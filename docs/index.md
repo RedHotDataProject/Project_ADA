@@ -1,10 +1,10 @@
-# RedHotDataProject
-
-This page host our project for the course <i> Applied Data Analysis </i>.
-
 <img src ="./Images/foot2.png"
     alt = ""
     style = "float:left; margin-right: 10px;"/>
+
+# RedHotDataProject
+
+This page host our project for the course <i> Applied Data Analysis </i>.
 
 
 ## Abstract
