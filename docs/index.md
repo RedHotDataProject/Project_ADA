@@ -1,3 +1,7 @@
+---
+image:
+background: filename.png
+---
 
 # RedHotDataProject
 
