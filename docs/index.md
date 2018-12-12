@@ -1,10 +1,3 @@
----
-feature_text: | 
-    # <span style="color:black;background-color:#eabb53"> Open Food Facts the carbon food-print we do not eat </span> 
-feature_image: "./assets/foot1.png"
-background-color: #eabb53
----
-
 # RedHotDataProject
 
 This page host our project for the course <i> Applied Data Analysis </i>.
