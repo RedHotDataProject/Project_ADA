@@ -16,7 +16,9 @@ __all__ = [
     'plot_occurences_of_distinct_values',
     'plot_occurences_of_distinct_values_from_strings',
     'plot_world_map',
-    'plot_occurences_on_map'
+    'plot_occurences_on_map',
+    'plot_grouped_counts'
     # Cleansing
     'to_lookup',
+    'filter_others',
 ]

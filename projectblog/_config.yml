@@ -1,0 +1,18 @@
+# Setup
+title:        The carbon “food-print” we do not eat
+tagline:      A data story about the ecological effects of processed food in your supermarket.
+baseurl:      ""
+paginate:     1
+locale:       "en"
+
+# About/contact
+author:
+  name:       RedHotDataPreppers
+  url:        http://yourhomepage.com 
+
+# Gems
+gems:
+  - jekyll-paginate
+
+#Others
+markdown: kramdown

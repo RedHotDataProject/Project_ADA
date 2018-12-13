@@ -25,6 +25,15 @@ def to_lookup(dict):
 
     return lookup
 
+
+def filter_others(key, values_list):
+    if key in values_list:
+        return key
+    else:
+        return 'Other'
+
+        
+
 def country_name_filter_apply(name, countries):
     """
     Now assign the country name in different steps : first check if the name to analysed called "name" matches one of the country name (in english) then just return that value. If not, Check that it does not match one of the country label (format cca2 by choice and since it's also in the json for the map so should use this one to compare with the map). Then, if no match yet, check if the "name" is CONTAINED in the alias (set of all country names in different languages and official/non-official). Problem: many returns possible. Check if one of these return has a value of 1 in his forced column, then assign that one. If none is forced or more then one is, don't assign and return the original country name. It would be good in the future to find these instances where none is forced so that we can add them to the list.

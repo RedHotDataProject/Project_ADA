@@ -1,12 +1,10 @@
 {
-	"Plant-based": ["Plant-based foods and beverages", "Plant-based foods", "Fruits and vegetables based foods", "Vegetables based foods", "Plant-based beverages", "Fruits based foods", "Plant-based spreads", "Legumes and their products", "Fresh plant-based foods", "Fresh plant-based foods", "Fruit preserves", "Plant-based meals", "Farming products", "pickles", "whole olives", "green olives"],
+	"Plant-based": ["Plant-based foods and beverages", "Plant-based foods", "Fruits and vegetables based foods", "Vegetables based foods", "Plant-based beverages", "Fruits based foods", "Plant-based spreads", "Legumes and their products", "Fresh plant-based foods", "Fresh plant-based foods", "Fruit preserves", "Plant-based meals", "Farming products", "pickles", "whole olives", "green olives", "Canned plant-based foods", "Canned vegetables", "Frozen plant-based foods"],
 	"Dairies": ["Dairies", "Cheeses", "Spreads", "Cow cheeses", "Yogurts", "Pasteurized cheeses", "French cheeses", "Dairy desserts", "Milks", "Fruit yogurts"],
-	"Sugary snacks": ["Sugary snacks", "desserts", "Biscuits and cakes", "Biscuits", "Chocolates", "Confectioneries", "Sugared beverages", "Sweet spreads", "Cakes", "Dark chocolates", "Jams", "Chocolate biscuits", "Ice creams and sorbets"],
-    "Salty snacks" : ["salty snacks", "Salty snacks", "Salted spreads", "Chips and fries", "Crisps"],
-	"Meats": ["Meats", "Prepared meats", "Meat-based products", "Meals with meat", "Hams", "Poultries", "Poultry meals", "Poultry meals", "Pork", "Sausages", "White hams", "Beef"],
+	"Sugary snacks": ["Sugary snacks", "desserts", "Biscuits and cakes", "Biscuits", "Chocolates", "Confectioneries", "Sugared beverages", "Sweet spreads", "Cakes", "Dark chocolates", "Jams", "Chocolate biscuits", "Ice creams and sorbets", "Desserts", "Pies", "Marzipan", "Chocolats", "Frozen desserts"],
+	"Salty snacks": ["salty snacks", "Salty snacks", "Salted spreads", "Chips and fries", "Crisps"],
+	"Meats": ["Meats", "Prepared meats", "Meat-based products", "Meals with meat", "Hams", "Poultries", "Poultry meals", "Poultry meals", "Pork", "Sausages", "White hams", "Beef", "Meals with meat", "Meat-based products", "Fish And Meat And Eggs"],
 	"Beverages": ["Beverages", "fruit juices", "Non-Alcoholic beverages", "Alcoholic beverages", "Fruit-based beverages", "Non-sugared beverages", "Juices and nectars", "Fruit juices and nectars", "Hot beverages", "Beers", "Fruit juices", "Carbonated drinks", "Wines"],
-	"Frozen foods": ["Frozen foods", "Frozen ready-made meals", "Refrigerated foods", "Frozen desserts", "Refrigerated meals", "Frozen plant-based foods"],
 	"Seafood": ["seafood", "Seafood", "Fishes", "Meals with fish"],
-	"Canned foods": ["Canned foods", "Canned plant-based foods", "Canned vegetables", "Canned meals"],
-	"Carbs": ["Cereals and potatoes", "Cereals and their products", "Pastas", "Breads", "Dry pasta", "Pasta dishes", "sandwiches"]
+	"Carbs": ["Cereals and potatoes", "Cereals and their products", "Pastas", "Breads", "Dry pasta", "Pasta dishes", "sandwiches", "Pizzas pies and quiches", "Sandwiches", "Tortellini-Aux-Epinard-Et-A-La-Ricotta", "Lasagne-Au-Thon"]
 }
