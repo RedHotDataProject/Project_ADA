@@ -1,3 +1,6 @@
+.page__content {
+  text-align: justify;
+}
 
 <img src ="./Images/foot2.png"
     alt = ""
