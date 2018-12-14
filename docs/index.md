@@ -83,7 +83,7 @@ Meaning of the nutrition score index can be found on the following <a href="http
 - If the product is solid, it is assigned a nutrition score accordingly to that displayed on the next table. This score itself is computed in two parts. The first one considers the energy, saturated fat, sugars and sodium. A high level in that category is considered unhealthy. The second part reflects the proportion of fruits, vegetables and nuts, fibers and proteins for which high levels are considered beneficial to the health. The difference of these two parts in the order presented here gives a <b><i>nutritional scores</i></b> that is <b>better for low values</b>. 
 
 
-<TABLE  BORDER="1px solid black" border-collapse= "collapse" width="70%>
+<TABLE  BORDER="5" width="70%">
    <TR ALIGN="CENTER">
       <TH COLSPAN="4">
          <H3><BR><font color="#008010">Nut</font><font color="#9ACD32">rit</font><font color="#FFD700">ion</font> <font color="#FF8C00">Ma</font><font color="#DB4832">rk</font></H3>
