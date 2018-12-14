@@ -1,1 +1,5273 @@
-{"store_name": "Junger Gem\u00fcsemais 425ml", "store_price": "0.49 ", "store_currency": "EURO", "store_quantity": "1 KG = 1,72 \u20ac", "store_categories": ["Konserven", "&", "Feinkost"], "code": "4300175162708", "product_name": "K Classic - Junger Gem\u00fcsemais"}{"store_name": "Junger Gem\u00fcsemais 425ml", "store_price": "0.49 ", "store_currency": "EURO", "store_quantity": "1 KG = 1,72 \u20ac", "store_categories": ["Konserven", "&", "Feinkost"], "code": "4388840231829", "product_name": "ja! Gem\u00fcsemais"}{"store_name": "Cornflakes 375g", "store_price": "2.49 ", "store_currency": "EURO", "store_quantity": "1 KG = 6,64 \u20ac", "store_categories": ["Fr\u00fchst\u00fcck"], "code": "4003994111000", "product_name": "Kelloggs Cornflakes Die Originalen 375 g"}
+[{
+	"store_name": "Junger Gem\u00fcsemais 425ml",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,72 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4300175162708",
+	"product_name": "K Classic - Junger Gem\u00fcsemais"
+},{
+	"store_name": "Gem\u00fcsemais 370ml",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,57 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4388840231829",
+	"product_name": "ja! Gem\u00fcsemais"
+},{
+	"store_name": "Cornflakes 375g",
+	"store_price": "2.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 6,64 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4003994111000",
+	"product_name": "Kelloggs Cornflakes Die Originalen 375 g"
+},{
+	"store_name": "Tortilla Chips Tex Barbecue 300g",
+	"store_price": "0.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,97 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4005009100542",
+	"product_name": "Tortilla Chips Meersalz"
+},{
+	"store_name": "Sonnenblumenkerne 500g",
+	"store_price": "1.38 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,76 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4009790005628",
+	"product_name": "Meienburg Sonnenblumenkerne"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "7610169013310",
+	"product_name": "Migros Engagement Bio Pumpernickel"
+},{
+	"store_name": "Kirsch-Pumpernickel-Schnitte 360g",
+	"store_price": "2.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 6,92 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4305399028052",
+	"product_name": "Naturkind - Pumpernickel"
+},{
+	"store_name": "Ajvar mild 200g",
+	"store_price": "2.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,15 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "8690777653008",
+	"product_name": "Sera Ajvar"
+},{
+	"store_name": "Beeren Urkorn M\u00fcsli 325g",
+	"store_price": "4.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 15,24 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4009249020240",
+	"product_name": "Lieken Urkorn \u2013 Kleines Kerni mit Sonnenblumenkernen"
+},{
+	"store_name": "Bio Volles Korn Brot 500g",
+	"store_price": "1.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,18 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4071800000824",
+	"product_name": "Harry - Das volle Korn"
+},{
+	"store_name": "Senf mittelscharf 200ml",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,25 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4012860003110",
+	"product_name": "Bautz'ner - Senf mittelscharf"
+},{
+	"store_name": "Milch-Kakao-Creme 400g",
+	"store_price": "2.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 7,38 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4260397980088",
+	"product_name": "Berioo Bio Kakao-Nibs"
+},{
+	"store_name": "Kartoffeln",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  KG = 1,33 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "7610632971826",
+	"product_name": "Bio Kartoffeln festkochend"
+},{
+	"store_name": "Asia Kokos-\u00d6l 120g",
+	"store_price": "3.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 3,16 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4023900540946",
+	"product_name": "Bamboo Garden Asia Kokosmilch fettreduziert"
+},{
+	"store_name": "Salzige Heringe 200g",
+	"store_price": "0.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,45 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "8697420843922",
+	"product_name": "\u00c7ekirdeko Salzige Sonnenblumenkerne"
+},{
+	"store_name": "Bio-Linguine Dinkel Max 500g",
+	"store_price": "2.65 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,30 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4305615183169",
+	"product_name": "enerBio Dinkel-Vollkornbrot"
+},{
+	"store_name": "Zucker Raffinade fein 1kg",
+	"store_price": "0.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "29005017",
+	"product_name": "Diadem - Raffinade Zucker"
+},{
+	"store_name": "Bio Getreide-Zucker 250g",
+	"store_price": "2.85 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 1,14 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "7610200340689",
+	"product_name": "Bio Zucker Feinkristall"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4388844029293",
+	"product_name": "Rewe Bio Pumpernickel"
+},{
+	"store_name": "Wildkirsche Hustenbonbons 75g",
+	"store_price": "1.15 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,54 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4009077020122",
+	"product_name": "Em-Eukal Wildkirsch Kinder Hustenbonbons 75 g"
+},{
+	"store_name": "Kartoffel-Cremesuppe 200g",
+	"store_price": "1.05 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,53 \u20ac",
+	"store_categories": ["Baby", "&", "Kind"],
+	"code": "4316268432429",
+	"product_name": "Botato Kartoffel Wedges"
+},{
+	"store_name": "Blaumohn 250g",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,48 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4008407016415",
+	"product_name": "M\u00e4rsch Blaumohn"
+},{
+	"store_name": "Zucker 500g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,58 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4006544416006",
+	"product_name": "S\u00fcdzucker \u2013 Gelierzucker 2+1"
+},{
+	"store_name": "Bio Kartoffel P\u00fcree 160g",
+	"store_price": "1.65 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,04 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4032600122055",
+	"product_name": "Pfanni Kartoffel P\u00fcree besonders locker 3 x 80 g"
+},{
+	"store_name": "Voll-Nuss Laktosefrei 100g",
+	"store_price": "1.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4000417020000",
+	"product_name": "Ritter Sport Halbbitter-Schokolade"
+},{
+	"store_name": "Bio-Linguine Dinkel Max 500g",
+	"store_price": "2.65 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,30 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4071800039237",
+	"product_name": "Harry Dinkel Vollkorn"
+},{
+	"store_name": "Bio-Pfeffer schwarz, ganz 80g",
+	"store_price": "4.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 5,24 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4388844014473",
+	"product_name": "Rewe Bio \u2013 Pfeffer, schwarz, ganz"
+},{
+	"store_name": "Junior Zahnb\u00fcrste Weich",
+	"store_price": "2.15 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Drogerie"],
+	"code": "4000462817044",
+	"product_name": "GOLD PUDER - Weich-Weizen Grie\u00df"
+},{
+	"store_name": "Buchweizen 500g",
+	"store_price": "1.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,90 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4018722341154",
+	"product_name": "ALB-GOLD Fit 'n' Free Bio Buchweizen Pasta glutenfrei,"
+},{
+	"store_name": "Leinsamen geschrotet 400g",
+	"store_price": "1.65 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,13 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4005009106780",
+	"product_name": "Leinsamen"
+},{
+	"store_name": "Delikatess Senf mittelscharf 250ml",
+	"store_price": "0.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,12 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4005500087762",
+	"product_name": "Thomy - Delikatess-Senf mittelscharf"
+},{
+	"store_name": "Weizenmehl Type 405 1kg",
+	"store_price": "0.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4012367012608",
+	"product_name": "Kathi Weizenmehl - Type 405"
+},{
+	"store_name": "Dornfelder und Sp\u00e4tburgunder 0,75l",
+	"store_price": "7.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 10,66 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4008400395029",
+	"product_name": "tic tac Fresh Mint 100er Box 49 g"
+},{
+	"store_name": "M\u00fchlenschinken gegrillter Schinken 100g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4316268413428",
+	"product_name": "Korn M\u00fchle - Roggenkraftbrot"
+},{
+	"store_name": "Vollkorn-Sauerteig 100g",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "9000452031141",
+	"product_name": "Vollkorn Zahlennudeln"
+},{
+	"store_name": "Bio-Linguine Dinkel Max 500g",
+	"store_price": "2.65 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,30 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4104420094963",
+	"product_name": "ALNATURA Dinkel Drink Natur"
+},{
+	"store_name": "Haarmaske Kokosmilch 300ml",
+	"store_price": "2.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 9,84 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "4005009101310",
+	"product_name": "Kokosmilch"
+},{
+	"store_name": "Chia-Samen 250g",
+	"store_price": "3.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,60 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4008258510001",
+	"product_name": "Chia-Samen"
+},{
+	"store_name": "Farfalle 500g",
+	"store_price": "0.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 0,78 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "8076808060654",
+	"product_name": "Barilla Nudeln Farfalle 500 g"
+},{
+	"store_name": "Schoko Osterhasen 96g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 3,12 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "29039210",
+	"product_name": "Mauritius - Schoko & Gelee"
+},{
+	"store_name": "Bio-Ahornsirup 250ml",
+	"store_price": "4.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,98 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4104420021037",
+	"product_name": "Alnatura Ahornsirup Grad C"
+},{
+	"store_name": "Schoko-Gelee-Bananen 250g",
+	"store_price": "0.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,32 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4311501306475",
+	"product_name": "EDEKA Gelee-Bananen"
+},{
+	"store_name": "Kuchenglasur Kakao 200g",
+	"store_price": "0.68 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,34 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "7622300002848",
+	"product_name": "SUCHARD Kakao Express"
+},{
+	"store_name": "Kartoffelp\u00fcree 339g",
+	"store_price": "0.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4005009101204",
+	"product_name": "Kartoffelp\u00fcree"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4032582002260",
+	"product_name": "Classic Ayurveda - Bio Kreuzk\u00fcmmel ganz"
+},{
+	"store_name": "Br\u00f6tchen Classic",
+	"store_price": "0.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,30 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4388840101955",
+	"product_name": "ja! - 6 Baguette-Br\u00f6tchen"
+},{
+	"store_name": "Milder Orangensaft Mildes Fr\u00fchst\u00fcck 6x1l",
+	"store_price": "5.94 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 1,00 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4071800000879",
+	"product_name": "Harry 1688 Unser Mildes"
+},{
+	"store_name": "Snack-Hits 320g",
+	"store_price": "2.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 7,47 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4017100706004",
+	"product_name": "Lorenz Saltletts Sticks"
+},{
+	"store_name": "Knusper Frites 750g",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,39 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4003880685257",
+	"product_name": "Agrarfrost Germany Knusper Frites"
+},{
+	"store_name": "Maisgrie\u00df Polenta 500g",
+	"store_price": "1.15 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,30 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4006040120827",
+	"product_name": "Rapunzel - Polenta-Maisgrie\u00df"
+},{
+	"store_name": "Apfel\u2013Erdbeere 6x0,5l",
+	"store_price": "5.94 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 1,99 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "5908221103461",
+	"product_name": "Billy Tiger Maissnacks"
+},{
+	"store_name": "6x1,25l",
+	"store_price": "4.62 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,62 \u20ac zzgl. 1.50  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4000400112156",
+	"product_name": "Mondamin Pfannkuchen Teig-Mix  198 g"
+},{
+	"store_name": "Toast-Br\u00f6tchen Weizenmisch 260g, 4 St\u00fcck",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,81 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4009249022800",
+	"product_name": "GOLDEN TOAST Meister Br\u00f6tchen, 400 g"
+},{
+	"store_name": "Beeren Urkorn M\u00fcsli 325g",
+	"store_price": "4.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 15,24 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4009249038658",
+	"product_name": "LIEKEN URKORN Bauernmild Brot, 500 g"
+},{
+	"store_name": "M\u00fchlenschinken gegrillter Schinken 100g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4316268388948",
+	"product_name": "Korn M\u00fchle Weizenmischbrot"
+},{
+	"store_name": "Baguette Salami 100g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4311501461150",
+	"product_name": "Gut & G\u00fcnstig Milde Bauern Schnitte"
+},{
+	"store_name": "Bio Soja Reis Drink 1l",
+	"store_price": "0.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4010355132871",
+	"product_name": "dm bio Soja Reis Drink Natur"
+},{
+	"store_name": "Spaghetti Vollkorn 500g",
+	"store_price": "0.75 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,50 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4311501312018",
+	"product_name": "Edeka Bio \u2013 Spaghetti Vollkorn"
+},{
+	"store_name": "R\u00f6sti 750g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,72 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4311596464074",
+	"product_name": "Backofen R\u00f6sti Ecken - aus Qualit\u00e4tskartoffeln"
+},{
+	"store_name": "Bistro Style Pommes Frites 500g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,98 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "7616800818320",
+	"product_name": "M-Budget Pommes Frites 3kg"
+},{
+	"store_name": "Tagliatelle Eiernudeln 250g",
+	"store_price": "2.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,92 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "9120012040151",
+	"product_name": "Shan\u00b4 shi - Mie Eiernudeln"
+},{
+	"store_name": "Milch-Kakao-Creme 400g",
+	"store_price": "2.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 7,38 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4316268385275",
+	"product_name": "BioBio - Roggenbr\u00f6tchen"
+},{
+	"store_name": "Kunter Bunt 200g",
+	"store_price": "0.53 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,27 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4003840008188",
+	"product_name": "Hitschler Bunte Schn\u00fcre"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "7610200298218",
+	"product_name": "Migros Bio Bauernmehl"
+},{
+	"store_name": "Mini Butter Spekulatius 150g",
+	"store_price": "1.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,13 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4008577006025",
+	"product_name": "Coppenrath & Wiese Mehrkornbr\u00f6tchen"
+},{
+	"store_name": "Br\u00f6tchen Classic",
+	"store_price": "0.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,30 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "20364045",
+	"product_name": "Grafschalter Megaburger Br\u00f6tchen Classic"
+},{
+	"store_name": "Baguette Salami 100g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4311501479896",
+	"product_name": "Gut & G\u00fcnstig - Hamburger Buns mit Sesam"
+},{
+	"store_name": "Box Duschgel Aprikosen-\u00d6l 385ml",
+	"store_price": "2.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 7,67 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "4019736000235",
+	"product_name": "Zwergenwiese Streich Natur"
+},{
+	"store_name": "Baguette Salami 100g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4311596476107",
+	"product_name": "Gut & G\u00fcnstig Hamburger Buns"
+},{
+	"store_name": "Baguette Salami 100g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4311596466641",
+	"product_name": "Gut & G\u00fcnstig - Laugenbrezeln zum Aufbacken"
+},{
+	"store_name": "Paprika",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,98 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4104420136809",
+	"product_name": "Paprika-Chili Pastete"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4300175452205",
+	"product_name": "K Bio - Hafermalzbr\u00f6tchen"
+},{
+	"store_name": "CousCous 500g",
+	"store_price": "2.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,98 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4005009105554",
+	"product_name": "Couscous"
+},{
+	"store_name": "Tortellini Pesto-Basilico & Pinoli 250g",
+	"store_price": "3.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,32 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "80608349",
+	"product_name": "Giovanni Rana Kartoffel-Gnocchi"
+},{
+	"store_name": "Wheat Pillows white 600g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,32 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4311596475087",
+	"product_name": "Honey  Wheat - Weizenkost Mit Honig"
+},{
+	"store_name": "Bio-Popcorn s\u00fc\u00df & salzig 90g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,66 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4001242004197",
+	"product_name": "Chio Mikrowellen Popcorn salzig"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "7616800816333",
+	"product_name": "Migros Bio Chips Nature"
+},{
+	"store_name": "Rosmarin geschnitten 50g",
+	"store_price": "3.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 6,38 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4005009103352",
+	"product_name": "S\u00fcsskartoffelchips mit Rosmarin"
+},{
+	"store_name": "Oregano gerebelt 15g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 19,94 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4260348150775",
+	"product_name": "Bananeira Bio Oregano Gerebelt"
+},{
+	"store_name": "Schoko Muffins 460g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 6,50 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4000521890001",
+	"product_name": "Dr.Oetker Muffins 370 g"
+},{
+	"store_name": "Bio Natives Oliven\u00f6l Extra 500ml",
+	"store_price": "5.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 11,98 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4008314177506",
+	"product_name": "La Comtesse Marshmallow Fluff - Vanilla"
+},{
+	"store_name": "Laugenstangen 818g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,58 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4388844140523",
+	"product_name": "REWE Laugenstangen zum Selbstbacke"
+},{
+	"store_name": "Bio Kn\u00e4ckebrot Delikatess 250g",
+	"store_price": "1.45 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,58 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4016249010508",
+	"product_name": "Amaranth Burger"
+},{
+	"store_name": "Bio Mandel Drink 1l",
+	"store_price": "1.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "5411188114581",
+	"product_name": "Provamel Bio Mandel Drink Natural, 1 lt"
+},{
+	"store_name": "Creamy Snacks mit Huhn 4x12g",
+	"store_price": "1.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 4,07 \u20ac",
+	"store_categories": ["Tierbedarf"],
+	"code": "5202390013867",
+	"product_name": "Violife Creamy Cucumber & Dill"
+},{
+	"store_name": "Kernige Haferflocken 500g",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 0,98 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4000540000306",
+	"product_name": "K\u00f6lln Echte Kernige Haferflocken 500 g"
+},{
+	"store_name": "Waffeln Original Neapolitaner 2x75g",
+	"store_price": "1.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,93 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "9000331606101",
+	"product_name": "Manner Knusper M\u00fcsli"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4388844007390",
+	"product_name": "REWE - Bio Weizenvollkorn-Toastbrot"
+},{
+	"store_name": "Kruspers Sour Cream 120g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,25 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4003586000354",
+	"product_name": "funny-frisch Chipsfrisch ungarisch 250 g"
+},{
+	"store_name": "Toaster,  silber",
+	"store_price": "24.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Haushalt"],
+	"code": "4009249022145",
+	"product_name": "GOLDEN TOAST Roggenbr\u00f6tchen"
+},{
+	"store_name": "Kartoffelkn\u00f6del halb & halb 6 St\u00fcck 200g",
+	"store_price": "0.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,40 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "23289956",
+	"product_name": "Penny - Kartoffelkn\u00f6del halb & halb"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "7613269528838",
+	"product_name": "Bio Kartoffelgnocchi"
+},{
+	"store_name": "Energy Drink Blue Raspberry 0,5l",
+	"store_price": "1.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 3,38 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4071800000510",
+	"product_name": "Sammy's - Super Sandwich Vollkorn"
+},{
+	"store_name": "CousCous 500g",
+	"store_price": "2.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,98 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "42257646",
+	"product_name": "Rewe Couscous Salat"
+},{
+	"store_name": "Hausmacher mit K\u00fcmmel 200g",
+	"store_price": "2.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,10 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4002674043259",
+	"product_name": "Ostmann K\u00fcmmel ganz 35 g"
+},{
+	"store_name": "Mon Cheri Stern 147g",
+	"store_price": "3.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,72 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4008400102528",
+	"product_name": "Ferrero - Mon Ch\u00e9ri"
+},{
+	"store_name": "Basis-M\u00fcsli 750g",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,39 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "22147141",
+	"product_name": "Bio Basis M\u00fcsli Cerealmix"
+},{
+	"store_name": "Erdn\u00fcsse Pikant 150g",
+	"store_price": "0.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,40 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "8714573014044",
+	"product_name": "Sate pikante Erdnuss- W\u00fcrzmischung"
+},{
+	"store_name": "Dornfelder und Sp\u00e4tburgunder 0,75l",
+	"store_price": "7.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 10,66 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4030387044294",
+	"product_name": "Sarotti No.1 Ecuador Edelbitter-Schokolade 100 g"
+},{
+	"store_name": "Snack-Hits 320g",
+	"store_price": "2.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 7,47 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4018077711619",
+	"product_name": "Lorenz Naturals mit Rosmarin"
+},{
+	"store_name": "Dornfelder und Sp\u00e4tburgunder 0,75l",
+	"store_price": "7.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 10,66 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "9001466207911",
+	"product_name": "Rapso - 100 Reines Raps\u00f6l"
+},{
+	"store_name": "Erdnusskerne ger\u00f6stet & gesalzen 200g",
+	"store_price": "2.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,10 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4311501342367",
+	"product_name": "EDEKA Erdnusskerne ger\u00f6stet & gesalzen 200 g"
+},{
+	"store_name": "Knusper Frites 750g",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,39 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4003880134212",
+	"product_name": "Agrarfrost Mini Kroketten"
+},{
+	"store_name": "Sticks 175g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,74 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4060800182760",
+	"product_name": "Lay's Sticks Bacon"
+},{
+	"store_name": "Snack-Hits 320g",
+	"store_price": "2.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 7,47 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4017100740800",
+	"product_name": "Lorenz Erdnu\u00dflocken Classic"
+},{
+	"store_name": "Schupfnudeln Pfannenfertig 500g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,98 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4009268004689",
+	"product_name": "Burgis Schupfnudeln"
+},{
+	"store_name": "Paprika",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,98 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4019736002222",
+	"product_name": "Zwergenwiese Paprika-Peperoni Streich"
+},{
+	"store_name": "Mandeldrink Original 1l",
+	"store_price": "2.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4010355199997",
+	"product_name": "DM-Bio Mandeldrink"
+},{
+	"store_name": "Bio Zwieback 225g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,67 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4104420134089",
+	"product_name": "Alnatura Marokkanischer Burger 200g"
+},{
+	"store_name": "Bio-Curry Gew\u00fcrzzubereitung 80g",
+	"store_price": "3.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 4,37 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4030917004408",
+	"product_name": "Sanchon Currypaste ''Madras''"
+},{
+	"store_name": "Bio-Frischmilch fettarme Milch 1,5% Fett 1,0l",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "zzgl. 0.15  Pfand",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4104420052321",
+	"product_name": "Alnatura Demeter Vollkorn-Salzbrezeln"
+},{
+	"store_name": "Sauce f\u00fcr Kartoffelsalat leicht",
+	"store_price": "1.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,68 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4014812060028",
+	"product_name": "Kartoffelsalat"
+},{
+	"store_name": "Bio Soja Drink 1l",
+	"store_price": "0.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4388844014923",
+	"product_name": "REWE Bio Soja-Drink + Calcium"
+},{
+	"store_name": "Soya Dr.Natur m.Cal. laktosefrei, vegan 1L",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "8594004496249",
+	"product_name": "Lagris Sojabohnen"
+},{
+	"store_name": "Erdbeer Minz Eis 500ml",
+	"store_price": "6.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 13,98 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "10066126",
+	"product_name": "Alpro Soy Vanilla Ice Cream"
+},{
+	"store_name": "CHIA Smoothie mit Apfel, Guava und Himbeer 250ml",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,80 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4306205472120",
+	"product_name": "Vegan Leben - Vegane Scheiben W\u00fcrzig"
+},{
+	"store_name": "Puten Schnitzel natur ca. 400g",
+	"store_price": "22.90 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 kg = 22.90 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4032277005255",
+	"product_name": "Veganbratst\u00fcck DAS Schnitzel -bio-"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4388844009233",
+	"product_name": "Rewe Bio Kartoffelpuffer"
+},{
+	"store_name": "Gebrannte Mandeln 100g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "20363031",
+	"product_name": "Gebrannte Mandeln"
+},{
+	"store_name": "Vegetarische M\u00fchlen Bratwurst 180g",
+	"store_price": "2.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,55 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4388844058019",
+	"product_name": "ja! Delikatess Mayonnaise mit 80% Raps\u00f6l"
+},{
+	"store_name": "Knusper Kroketten 750g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,72 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4388844168008",
+	"product_name": "Ja! Kroketten"
+},{
+	"store_name": "Salzbrezeln",
+	"store_price": "0.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,48 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4009418109554",
+	"product_name": "Tip Salzbrezeln"
+},{
+	"store_name": "Orangeat gew\u00fcrfelt 100g",
+	"store_price": "0.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,39 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "22117946",
+	"product_name": "Orangeat"
+},{
+	"store_name": "Jersey-Spannbetttuch grau 180-200 x 200 cm",
+	"store_price": "15.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Haushalt"],
+	"code": "4001686301265",
+	"product_name": "GOLDBAEREN             200 G"
+},{
+	"store_name": "Dinkel Poffies mit Honig ges\u00fc\u00dft 200g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,00 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4005009103246",
+	"product_name": "Dinkelpoffies"
+},{
+	"store_name": "Lyoner am St\u00fcck 500g",
+	"store_price": "2.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,78 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4260296930351",
+	"product_name": "Wilmersbuger St\u00fcck Classic"
+},{
+	"store_name": "Adult 400g",
+	"store_price": "3.25 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 8,13 \u20ac",
+	"store_categories": ["Tierbedarf"],
+	"code": "5017764900410",
+	"product_name": "Kettle Veg Chips Sea Salt"
+},{
+	"store_name": "Sp\u00e4tburgunder QbA halbtrocken 1,0L",
+	"store_price": "3.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "zzgl. 0.03  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "9002708032674",
+	"product_name": "Wolf Eigold Muscherl"
+},{
+	"store_name": "Knusper-Brot Vital 75g",
+	"store_price": "0.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,92 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4015427303104",
+	"product_name": "Filinchen Pixels Kr\u00e4uter Mix"
+},{
+	"store_name": "No. 5 Spicy Chicken & Wing Sauce 200ml",
+	"store_price": "3.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 2,00 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4311501367322",
+	"product_name": "Tortilla Chips - Hot Chili"
+},{
+	"store_name": "Hokkaido K\u00fcrbis",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 kg = 1.29 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4008002547581",
+	"product_name": "Barteroder Land Art K\u00fcrbis-Birnen Chutney mit kandiertem Ingwer"
+},{
+	"store_name": "Fritteusen Pommes 1kg",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "8712100345692",
+	"product_name": "Knorr Pommes Sauce"
+},{
+	"store_name": "Stapelchips Paprika 175g",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,68 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4388840102839",
+	"product_name": "ja! - Stapelchips Paprika"
+},{
+	"store_name": "M\u00fcsli Odenwald-Mischung 500g",
+	"store_price": "4.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 8,58 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4008391042100",
+	"product_name": "Seitenbacher Vollkorn-Fr\u00fcchtem\u00fcsli"
+},{
+	"store_name": "Tomato Ketchup 400ml",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 4,48 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "8715700422053",
+	"product_name": "Heinz salatcreme"
+},{
+	"store_name": "Tartufo al Cioccolato 170g",
+	"store_price": "2.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,53 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4305720050783",
+	"product_name": "Grissini al rosmarino"
+},{
+	"store_name": "Adult 400g",
+	"store_price": "3.25 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 8,13 \u20ac",
+	"store_categories": ["Tierbedarf"],
+	"code": "5060042646258",
+	"product_name": "Tyrrell's - Veg Crisps, Hand cooked English Crisps"
+},{
+	"store_name": "Ajoli Sauce 250ml",
+	"store_price": "2.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 1,00 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4058700707589",
+	"product_name": "Bulgur von Kattus"
+},{
+	"store_name": "Bio Genie\u00dfer-Kn\u00e4ckebrot Quinoa & Amaranth 200g",
+	"store_price": "2.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,30 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4016424364228",
+	"product_name": "Knack & Back  Sonntags-Br\u00f6tchen"
+},{
+	"store_name": "Marzipan Rohmasse fein 200g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,75 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4311501408506",
+	"product_name": "Feine Marzipan Rohmasse"
+},{
+	"store_name": "R\u00f6sti 750g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,72 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4334011055633",
+	"product_name": "real,- R\u00f6sti k\u00fcchenfertig"
+},{
+	"store_name": "Reismehl 500g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,98 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4000286233426",
+	"product_name": "Reismehl"
+},{
+	"store_name": "Bio Parboiled Reis Langkornreis 500g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,98 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4032914410725",
+	"product_name": "Basic Langkornreis wei\u00df"
+},{
+	"store_name": "Bio-Rohkostriegel Peanut, vegan 50g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 3,98 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "29052486",
+	"product_name": "Crunchy Granola Bites Haselnuss"
+},{
+	"store_name": "Basmati & Spitzen-Langkorn-Reis 500 gr",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,98 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "5010034517004",
+	"product_name": "Uncle Ben's Express Basmati Reis"
+},{
+	"store_name": "Kinder Lakritz 200g",
+	"store_price": "0.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,45 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4037400002033",
+	"product_name": "Katjes Katzenpf\u00f6tchen 200 g"
+},{
+	"store_name": "CHIA Smoothie mit Apfel, Guava und Himbeer 250ml",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,80 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4260055822996",
+	"product_name": "Vegafit - Vegane Nuggets"
+},{
+	"store_name": "Ziegenk\u00e4se 250g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,20 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4012281311603",
+	"product_name": "Komet Gr\u00fcne Gr\u00fctze mit Grie\u00df - Apfel-Geschmack"
+},{
+	"store_name": "Mini Kuchen Vanille 240g, 4 St\u00fcck",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,75 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4001518722930",
+	"product_name": "Griesson Soft Cake Orange"
+},{
+	"store_name": "Aufstrich Paprika-Cashew 125g",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,96 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4013200257408",
+	"product_name": "Brotaufstrich Paprika-Cashew"
+},{
+	"store_name": "Weissella Oblaten-Lebkuchen 200g",
+	"store_price": "1.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,85 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "40352916",
+	"product_name": "Ruf Blattgelantine Weiss  20 g"
+},{
+	"store_name": "Goodmorning Flakes Pur 750g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,66 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4335896527512",
+	"product_name": "K Classic flakes&dark Chocolate"
+},{
+	"store_name": "Vegetarische M\u00fchlen Bratwurst 180g",
+	"store_price": "2.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,55 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4000540003529",
+	"product_name": "K\u00f6lln M\u00fcsli Knusper Kokos '30% weniger Fett'"
+},{
+	"store_name": "feinw\u00fcrzig cremig 300g",
+	"store_price": "2.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 9,64 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4260176790099",
+	"product_name": "Maisw\u00fcrmer K\u00e4se"
+},{
+	"store_name": "Ravioli Bolognese 800g",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,49 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4334011005010",
+	"product_name": "Real,- quality Ravioli mit Spinatf\u00fcllung"
+},{
+	"store_name": "Bio Kn\u00e4ckebrot Delikatess 250g",
+	"store_price": "1.45 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,58 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4026584131806",
+	"product_name": "Soto Burger S\u00fc\u00dfkartoffel"
+},{
+	"store_name": "Rote Linsen 500g",
+	"store_price": "1.75 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,50 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4005009105547",
+	"product_name": "Linsen rot"
+},{
+	"store_name": "Tofu Wienerle 160g",
+	"store_price": "2.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,44 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4012359130006",
+	"product_name": "Taifun Tofu-Grillknacker"
+},{
+	"store_name": "Grie\u00dfbrei Klassische Art 89g",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,56 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4000521771003",
+	"product_name": "Dr. Oetker - Grie\u00dfbrei nach klassischer Art"
+},{
+	"store_name": "Bio-Gutsleberwurst Pom.fein laktosefrei 125g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,60 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4000522006890",
+	"product_name": "Pom-B\u00e4r Original"
+},{
+	"store_name": "Sonntagsbr\u00f6tchen 400g",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,98 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4334011090924",
+	"product_name": "TiP 6 Sonntagsbr\u00f6tchen zum Fertigbacken"
+},{
+	"store_name": "Tofu Wienerle 160g",
+	"store_price": "2.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,44 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "29039418",
+	"product_name": "GutBio schnittfester Tofu Pflanzlich"
+},{
+	"store_name": "Marzipan Dominosteine 125g",
+	"store_price": "3.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,80 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4104420134782",
+	"product_name": "Alnatura L\u00fcbecker Marzipan Rohmasse"
+},{
+	"store_name": "Schupfnudeln Pfannenfertig 500g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,98 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "836069006697",
+	"product_name": "Bofrost Schupfnudeln"
+},{
+	"store_name": "Eier Biohaltung HKL A, Gew.Klasse s.Packung 6er",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "7610491921840",
+	"product_name": "Issro Bananenchips Honig ges\u00fcsst, 150 g"
+},{
+	"store_name": "Kids K\u00e4sef\u00fc\u00dfchen Knabbergeb\u00e4ck ab 3 Jahre 28g",
+	"store_price": "1.25 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 4,47 \u20ac",
+	"store_categories": ["Baby", "&", "Kind"],
+	"code": "4018077620003",
+	"product_name": "Lorenz Knabbergeb\u00e4ck Party Clubs 200 g"
+},{
+	"store_name": "Knusper-Snack Pfeffer 75g",
+	"store_price": "0.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,79 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4001518108796",
+	"product_name": "Uncle Cracker NatSnacks Mit Pfeffer und Oliven\u00f6l"
+},{
+	"store_name": "Aufstrich Aubergine 180g",
+	"store_price": "1.65 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,92 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4311501373682",
+	"product_name": "Aubergine Streichcreme mit feinen Auberginen-St\u00fccken"
+},{
+	"store_name": "Eier Biohaltung HKL A, Gew.Klasse s.Packung 6er",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "2200046087692",
+	"product_name": "Gepuffter Reis mit Honig"
+},{
+	"store_name": "Cro\u00fbtons Paprika Pinienkerne 25g",
+	"store_price": "0.45 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,80 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4316268207225",
+	"product_name": "Carat Croutons Pinienkerne"
+},{
+	"store_name": "Ricciarelli Mandeln 120g",
+	"store_price": "2.22 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,86 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4008407012011",
+	"product_name": "m\u00e4rschimport - Mandeln ganz"
+},{
+	"store_name": "Fidelis Weiche N\u00fcrnberg Oblaten-Lebkuchen Mischung 200g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,50 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4104420180680",
+	"product_name": "Mandelmus wei\u00df (650 g )"
+},{
+	"store_name": "Dijonnaise 250ml",
+	"store_price": "2.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 1,08 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "8722700046790",
+	"product_name": "Maille Dijonnaise"
+},{
+	"store_name": "Mild mittelscharf 250ml",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,60 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "42094739",
+	"product_name": "L\u00f6wensenf s\u00fc\u00df"
+},{
+	"store_name": "Knusper Pur weniger s\u00fc\u00df 1500g",
+	"store_price": "6.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,66 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4000521661007",
+	"product_name": "Dr. Oetker Vitalis Fr\u00fcchtem\u00fcsli"
+},{
+	"store_name": "Maisk\u00f6lbchen 370ml",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,68 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "20042936",
+	"product_name": "Mei Tai Maisk\u00f6lbchen"
+},{
+	"store_name": "Bio-Milchreis 500g",
+	"store_price": "2.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,58 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4035731817043",
+	"product_name": "Bio Vita Milchreis Bourbon-Vanille"
+},{
+	"store_name": "Marzipan-Kartoffeln 125g",
+	"store_price": "0.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,64 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4021851867921",
+	"product_name": "Marzipan Kartoffeln"
+},{
+	"store_name": "Tahin Sesammus 250g",
+	"store_price": "3.45 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,38 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4006040004011",
+	"product_name": "Rapunzel Tahin (Sesammus) ohne Salz 250 g"
+},{
+	"store_name": "Sesam ungesch\u00e4lt 250g",
+	"store_price": "1.15 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,46 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4010355199850",
+	"product_name": "Dm Bio Sesam Ungesch\u00e4lt"
+},{
+	"store_name": "Sesam ungesch\u00e4lt 250g",
+	"store_price": "1.15 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,46 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "7617027734820",
+	"product_name": "Sesame Oil"
+},{
+	"store_name": "Bio-Lein\u00f6l Kaltgepresst Nativ 250ml",
+	"store_price": "1.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,78 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "7640110510674",
+	"product_name": "Naturkraftwerke Lein\u00f6l 250 ml"
+},{
+	"store_name": "Kartoffelpuffer 600g",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,99 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4003880007080",
+	"product_name": "Kartoffelpuffer"
+},{
+	"store_name": "Knoblauchgurken 720ml",
+	"store_price": "1.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,42 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4024698485020",
+	"product_name": "Gol\u00dfener - Spreew\u00e4lder Fr\u00fchlingskartoffelsalat"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "7610807015843",
+	"product_name": "Coop Naturaplan Bio Pinienkerne"
+},{
+	"store_name": "Spice'n Drink 8 Botanicals 8=51g",
+	"store_price": "14.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 29,32 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "40526614",
+	"product_name": "Hartkorn - Kardamom"
+},{
+	"store_name": "Quinoa Tricolore Fairtrade 450g",
+	"store_price": "3.55 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 7,89 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "7613312018323",
+	"product_name": "Migros Bio Fairtrade Kurkuma Gemahlen"
+},{
+	"store_name": "Sojasauce 500ml",
+	"store_price": "5.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 11,98 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "8715035240308",
+	"product_name": "Kikkoman Sushi & Sashimi"
+},{
+	"store_name": "S\u00fc\u00dfer Bio-Senf 200ml",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,90 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4104720000015",
+	"product_name": "H\u00e4ndlmaier's Hausmachersenf - s\u00fc\u00df"
+},{
+	"store_name": "Cro\u00fbtons mit R\u00f6stzwiebeln 25g",
+	"store_price": "0.45 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,80 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4250426210842",
+	"product_name": "K\u00fcstengold R\u00f6stzwiebeln"
+},{
+	"store_name": "Pecorino Romano 175g",
+	"store_price": "3.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,28 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "5060314480016",
+	"product_name": "Mano Masa"
+},{
+	"store_name": "Bio-M\u00fcsli Berry-White-Choc 575g",
+	"store_price": "7.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 13,73 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4311501481547",
+	"product_name": "EDEKA Knusper M\u00fcsli Triple Choc"
+},{
+	"store_name": "Keks mit Buttergeschmack 200g",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,90 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4000400002785",
+	"product_name": "Biskin Spezial - Pflanzen\u00f6l mit Buttergeschmack 750 ml"
+},{
+	"store_name": "R\u00f6sti 750g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,72 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "7613312076149",
+	"product_name": "Gem\u00fcse R\u00f6sti 500g"
+},{
+	"store_name": "Vegetarische M\u00fchlen Bratwurst 180g",
+	"store_price": "2.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,55 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4046800118954",
+	"product_name": "Mazola 100 % reines Keim\u00f6l"
+},{
+	"store_name": "Bio-Fr\u00fcchtetee Scharfe Orange 150g",
+	"store_price": "9.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 6,66 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4046800110743",
+	"product_name": "Mondamin Lieblings-Milchreis Klassische Art"
+},{
+	"store_name": "Marzipan Dominosteine 125g",
+	"store_price": "3.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,80 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4000161810193",
+	"product_name": "Niederegger L\u00fcbeck Marzipan Schwarzbrot"
+},{
+	"store_name": "Hafer Crunchy M\u00fcsli 375g",
+	"store_price": "4.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 13,20 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "9004617063183",
+	"product_name": "Verival Bio Honig Crunchy"
+},{
+	"store_name": "Reibekuchenteig \"Rheinische Art\" 1000g",
+	"store_price": "2.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4001163131408",
+	"product_name": "Henglein Seidenkn\u00f6del"
+},{
+	"store_name": "Bio Genie\u00dfer-Kn\u00e4ckebrot Quinoa & Amaranth 200g",
+	"store_price": "2.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,30 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4016424510168",
+	"product_name": "Knack & Back 6 Sonntagsbr\u00f6tchen \u2026ofenfrisch"
+},{
+	"store_name": "vegetarischer Grillmix 300g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 9,97 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4005047178237",
+	"product_name": "Eden - vegetarische Salami"
+},{
+	"store_name": "Toaster,  silber",
+	"store_price": "24.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Haushalt"],
+	"code": "4900249001058",
+	"product_name": "\u201cGolden Toast Rosinenschnitten\u201c"
+},{
+	"store_name": "Country Potatos Classic 600g",
+	"store_price": "2.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,82 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "8410076491428",
+	"product_name": "Old El Paso Mexican Potatoes 30 g"
+},{
+	"store_name": "Pflaumenmus 450g",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,65 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4011800185213",
+	"product_name": "Schwartau Spezialit\u00e4ten Pflaumenmus 350 g"
+},{
+	"store_name": "Lachsfilets roh 250g",
+	"store_price": "5.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,40 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4005009134004",
+	"product_name": "Roh-Rohrzucker"
+},{
+	"store_name": "Fidelis Weiche N\u00fcrnberg Oblaten-Lebkuchen Mischung 200g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,50 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4006544493403",
+	"product_name": "S\u00fcdzucker Weisser Rohrzucker"
+},{
+	"store_name": "Weizen 1kg",
+	"store_price": "1.25 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4104420021785",
+	"product_name": "Alnatura Bio Rohrohr Zucker 1 kg"
+},{
+	"store_name": "Zuckerrohr Melasse 300g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 9,97 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "7610200010117",
+	"product_name": "Rohzucker aus Zuckerrohr"
+},{
+	"store_name": "Pikanter Tomatensaft 0,5l",
+	"store_price": "0.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 1,78 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "42094722",
+	"product_name": "L\u00f6wensenf Senf extra scharf im Glas 250 ml"
+},{
+	"store_name": "Repair+Care Pflegesp\u00fclung 150ml",
+	"store_price": "2.75 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 1,84 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "4000339057726",
+	"product_name": "Miracle Whip"
+},{
+	"store_name": "Reines Pflanzen\u00f6l aus Raps 1l",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4000400002730",
+	"product_name": "Livio Klassik-Pflanzen\u00f6l 1000 ml"
+},{
+	"store_name": "Signature Chocolate Dark 90g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,22 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4311501365090",
+	"product_name": "EDEKA Cookie dark chocolate & hazelnut 200 g"
+},{
+	"store_name": "Reibekuchenteig \"Rheinische Art\" 1000g",
+	"store_price": "2.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4001163131507",
+	"product_name": "Henglein Mini Kn\u00f6del"
+},{
+	"store_name": "Bratheringfilets in w\u00fcrziger Marinade 325g",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4012576102602",
+	"product_name": "OTH\u00dcNA - Marina"
+},{
+	"store_name": "Bio-Buttergem\u00fcse mit S\u00fc\u00dfkartoffeln 190g",
+	"store_price": "0.85 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,45 \u20ac",
+	"store_categories": ["Baby", "&", "Kind"],
+	"code": "4311527760145",
+	"product_name": "Edeka S\u00fc\u00dfkartoffeln"
+},{
+	"store_name": "All Round Bacon 80g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,24 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4007801107194",
+	"product_name": "Knorr - Primerba All' Italiana"
+},{
+	"store_name": "Kichererbsen 370ml",
+	"store_price": "1.15 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,54 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4104420035744",
+	"product_name": "ALNATURA Brotaufstrich Kichererbse mit Ingwer"
+},{
+	"store_name": "Eis 480ml",
+	"store_price": "3.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 8,32 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "7622210232557",
+	"product_name": "Oreo original"
+},{
+	"store_name": "Schoko Toffees 180g",
+	"store_price": "1.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,89 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "5410041001204",
+	"product_name": "Lu - Tuc Original"
+},{
+	"store_name": "Bananen-Nektar 6x1l",
+	"store_price": "10.74 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 1,79 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4002160262003",
+	"product_name": "Granini Trinkgenuss Banane 1 ltr PET"
+},{
+	"store_name": "Bio Kn\u00e4ckebrot Delikatess 250g",
+	"store_price": "1.45 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,58 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4250241206112",
+	"product_name": "Iglo K\u00e4pt`ns Burger Gem\u00fcseburger"
+},{
+	"store_name": "Kartoffelkn\u00f6del halb & halb 6 St\u00fcck 200g",
+	"store_price": "0.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,40 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4388844119611",
+	"product_name": "ja Kartoffel-Kn\u00f6del halb und halb"
+},{
+	"store_name": "Kartoffelp\u00fcree 339g",
+	"store_price": "0.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4305615183398",
+	"product_name": "enerBio - Kartoffelp\u00fcree"
+},{
+	"store_name": "Fruit Bar 5x25g",
+	"store_price": "2.45 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,97 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "8008698007501",
+	"product_name": "Dr. Sch\u00e4r M\u00fcsli Fruit glutenfrei 375 g"
+},{
+	"store_name": "Kokoswasser 0,33l",
+	"store_price": "1.45 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 4,40 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4251347400824",
+	"product_name": "Veganz Hello Coco Erdbeere 125g"
+},{
+	"store_name": "Letscho 720ml",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 2,20 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4012712004821",
+	"product_name": "Letscho Premium"
+},{
+	"store_name": "Weihnachtsedition 150g",
+	"store_price": "1.65 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,10 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4014400924008",
+	"product_name": "Storck Riesen Dunkle Schokolade-Kr\u00e4ftiges Karamell"
+},{
+	"store_name": "Frohes Fest Adventskalender 115g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,60 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4000539381102",
+	"product_name": "Lindt Edel-Marzipan"
+},{
+	"store_name": "Bio Ingwer",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,75 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4035532491886",
+	"product_name": "Ingwer-St\u00e4bchen Hussel"
+},{
+	"store_name": "Haselnuss R\u00f6llchen 400g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,98 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4388840215966",
+	"product_name": "Haseln\u00fcsse gemahlen"
+},{
+	"store_name": "Haferkleie 400g",
+	"store_price": "1.55 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,88 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4015637883106",
+	"product_name": "BAUCKHOF 6-Korn Flocken"
+},{
+	"store_name": "Lindenhonig 500g",
+	"store_price": "5.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 11,98 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "9001432030963",
+	"product_name": "d'arbo - Pfirsich Maracuja Sirup - 500 ml"
+},{
+	"store_name": "Obstkuchen Teig Doppelpack 500g",
+	"store_price": "2.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,58 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4000400130815",
+	"product_name": "Pfanni Kartoffel Kn\u00f6del-Teig der Klassiker halb & halb f\u00fcr 12 Kn\u00f6del 1 Stk"
+},{
+	"store_name": "Baguette Salami 100g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4311596475551",
+	"product_name": "Gut & G\u00fcnstig - Milchbr\u00f6tchen"
+},{
+	"store_name": "6x1,25l",
+	"store_price": "4.62 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,62 \u20ac zzgl. 1.50  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "20186746",
+	"product_name": "Linessa Light Salat-Creme"
+},{
+	"store_name": "Bio-Linguine Dinkel Max 500g",
+	"store_price": "2.65 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,30 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4104420054769",
+	"product_name": "Alnatura Dinkel-Doppelkeks Zartbitter"
+},{
+	"store_name": "Mama Saft Eisen + 450ml",
+	"store_price": "5.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 13,23 \u20ac",
+	"store_categories": ["Baby", "&", "Kind"],
+	"code": "8850987128004",
+	"product_name": "Mama Brand Moo Nam Tok"
+},{
+	"store_name": "Br\u00f6tchen Classic",
+	"store_price": "0.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,30 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "20013622",
+	"product_name": "Vita D\u00f3r Classic"
+},{
+	"store_name": "Bio-Linguine Dinkel Max 500g",
+	"store_price": "2.65 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,30 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4045851032516",
+	"product_name": "Natsu Salat Dinkel-Quinoa Mit Edamame"
+},{
+	"store_name": "Riffelchips Sauerrahm & K\u00e4se 200g",
+	"store_price": "1.09 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,55 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "20978525",
+	"product_name": "Crusti Croc Mini Brotchips Mit Sauerrahm- und Zwiebel-Geschmack"
+},{
+	"store_name": "Cashewkerne ger\u00f6stet, gesalzen 150g",
+	"store_price": "3.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,66 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4008258038000",
+	"product_name": "Seeberger Cashewkerne ger\u00f6stet, gesalzen"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4021269041210",
+	"product_name": "Bio Gaumenschmaus - F\u00fcr Bratkartoffeln & Gratins (100 g) von Herbaria"
+},{
+	"store_name": "Bulgur grob 250g",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,72 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4010355322159",
+	"product_name": "dmBio Bulgur"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "7613269372158",
+	"product_name": "Migros Bio Linsensalat"
+},{
+	"store_name": "Brotaufstrich B\u00e4rlauch 125g",
+	"store_price": "1.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,52 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4011437042453",
+	"product_name": "VITAM Kichererbsen Brotaufstrich, 125g"
+},{
+	"store_name": "Scheiben Cheddar 150g",
+	"store_price": "2.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,60 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4009239277999",
+	"product_name": "City Farming Bulgur-Salat"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "7610491070388",
+	"product_name": "Morga Hefeflocken Bio"
+},{
+	"store_name": "Bio-Heidefr\u00fchst\u00fcck 160g",
+	"store_price": "2.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,50 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4013222143000",
+	"product_name": "Friweika - Bratkartoffeln"
+},{
+	"store_name": "Delikatess Lyoner 150g",
+	"store_price": "0.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,53 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4059300614130",
+	"product_name": "Delikatess-Krautsalad"
+},{
+	"store_name": "Aufstrich Hummus 125g",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,96 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "24069724",
+	"product_name": "Hummus"
+},{
+	"store_name": "CousCous 500g",
+	"store_price": "2.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,98 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4008366008667",
+	"product_name": "Frosta Couscous Oriental"
+},{
+	"store_name": "Thunfisch pikant 185g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,70 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4028119881552",
+	"product_name": "Matiss Bulgursalat Pikant"
+},{
+	"store_name": "Box Duschgel Aprikosen-\u00d6l 385ml",
+	"store_price": "2.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 7,67 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "22153241",
+	"product_name": "Hummus natur"
+},{
+	"store_name": "Kichererbsen 370ml",
+	"store_price": "1.15 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,54 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "7610200042804",
+	"product_name": "Migros Kichererbsen"
+},{
+	"store_name": "Bio-Speisequark Magerstufe 500g",
+	"store_price": "1.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,18 \u20ac zzgl. 0.15  Pfand",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4045178003954",
+	"product_name": "Demeter Campo Verde Brotaufstrich Basilikum-Tomate 110 g"
+},{
+	"store_name": "Schwarzwurzeln 580ml",
+	"store_price": "1.09 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,41 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "7610200095749",
+	"product_name": "M-Classic Schwarzwurzeln"
+},{
+	"store_name": "Apfelmus 720ml",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 0,70 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4008122000645",
+	"product_name": "Odenwald Apfelmus mit Vanille 720 g"
+},{
+	"store_name": "Apfel-Birnenmark 360g",
+	"store_price": "1.25 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,48 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4104420137042",
+	"product_name": "Alnatura Bio Sauerkirschen entsteint 360 g"
+},{
+	"store_name": "Perle Kalb & Gem\u00fcse 85g",
+	"store_price": "0.40 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,48 \u20ac",
+	"store_categories": ["Tierbedarf"],
+	"code": "4051767596080",
+	"product_name": "Gourmet Compagnie Semmelkn\u00f6del"
+},{
+	"store_name": "Sommer-Gem\u00fcse 750g",
+	"store_price": "1.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,52 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4006986005103",
+	"product_name": "Settele - Gem\u00fcse-Maultauschen"
+},{
+	"store_name": "Orange Limone 0,75l",
+	"store_price": "1.09 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 1,46 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4327475100186",
+	"product_name": "Jeden Tag - Orangen Navel Late (2 kg)"
+},{
+	"store_name": "Junge Erbsen 425ml",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 6,40 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "3083680002752",
+	"product_name": "Bonduelle - Linsen"
+},{
+	"store_name": "Limonade 0,25l",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,52 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4316268494038",
+	"product_name": "Hofmaier Edles Gem\u00fcse in Aspik"
+},{
+	"store_name": "BellaVitano Espresso USA Hartk\u00e4se 45% Fett i.Tr.",
+	"store_price": "34.90 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 kg = 34.90 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "42300755",
+	"product_name": "Satori - Mungobohnenkeimlinge"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4311527827985",
+	"product_name": "EDEKA BIO TAFELTRAUBWN"
+},{
+	"store_name": "Trauben-Nuss M\u00fcsli 1kg",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "8025544317157",
+	"product_name": "Lavinia Trauben Rote Kernlos"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "8032140146081",
+	"product_name": "Ja! Bio Trauben"
+},{
+	"store_name": "Schaumseife Jungle Love 300ml",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 4,97 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "4019738010713",
+	"product_name": "Viana Jungle Energizer"
+},{
+	"store_name": "Nougat Pockets 750g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,66 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "20101268",
+	"product_name": "Crownfield - Nougat Kissen / Nougat Bits - 750 g"
+},{
+	"store_name": "Penne Gorgonzola 750g",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,39 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4000400117830",
+	"product_name": "Knorr Penne mit Broccoli"
+},{
+	"store_name": "Blaumohn 250g",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,48 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "8712941102171",
+	"product_name": "Cr\u00eaapan Leckere Pfannkuchen Classic"
+},{
+	"store_name": "Junge Erbsen 425ml",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 6,40 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4104420112100",
+	"product_name": "ALNATURA - Junge Erbsen"
+},{
+	"store_name": "Mineralwasser Medium 12/1l",
+	"store_price": "3.96 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,33 \u20ac zzgl. 3.30  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4316268338103",
+	"product_name": "Viva Vital - Feine gr\u00fcne Erbsen"
+},{
+	"store_name": "Bio-Lassi Mango 250g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,60 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4104060027024",
+	"product_name": "Andechser Natur Trink-Molke Mango-Apfel"
+},{
+	"store_name": "Suppen-Paste Tom Yum 110g",
+	"store_price": "2.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,63 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "8852018201052",
+	"product_name": "Yum Yum Cup Nudelsuppe mit Vegetable / Gem\u00fcsegeschmack"
+},{
+	"store_name": "Thai Curry tiefgefroren 400g",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,48 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4100650419026",
+	"product_name": "Wan Kwai Thai Curry Paste Gr\u00fcn"
+},{
+	"store_name": "Apfel Bourbon Vanille Torte 1400g",
+	"store_price": "10.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 7,50 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4001518008454",
+	"product_name": "LU Glico Mikado Sticks mit feiner Milchschokolade"
+},{
+	"store_name": "Weizenbr\u00f6tchen 540g, 9 St\u00fcck",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,84 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4316268487054",
+	"product_name": "Kornm\u00fchle 8 Weizenbr\u00f6tchen zum Fertigbacken"
+},{
+	"store_name": "Deo-Spray pink fresh 150ml",
+	"store_price": "1.15 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,77 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "4005500027898",
+	"product_name": "Maggi W\u00fcrzmischung 4 - Knackige Salate 60 g"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4388844240209",
+	"product_name": "Rewe Bio \u2013 Wurzelpetersilie"
+},{
+	"store_name": "Johannisbeer-Essig 250ml",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,80 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "8011185001784",
+	"product_name": "Feldsalat"
+},{
+	"store_name": "Gem\u00fcse-Paste 40g",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,98 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "717860000117",
+	"product_name": "PASCO Tikka Paste"
+},{
+	"store_name": "Puszta-Salat 370ml",
+	"store_price": "0.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,37 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "7610829517424",
+	"product_name": "Coop Betty Bossi Taboul\u00e9-Salat Oriental"
+},{
+	"store_name": "Jack Daniels Bar 100g",
+	"store_price": "4.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "20573782",
+	"product_name": "Crownfield Banana Choco Puffs"
+},{
+	"store_name": "Gem\u00fcsebr\u00fche 140g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,71 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4311501314333",
+	"product_name": "EDEKA Bio Klare Gem\u00fcsebr\u00fche-W\u00fcrfel 6x 11 g"
+},{
+	"store_name": "Bl\u00fctensirup Holunderbl\u00fcte 0,7l",
+	"store_price": "2.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 3,99 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "9001400004835",
+	"product_name": "YO Holunderbl\u00fcte Bl\u00fctensirup 0,7 ltr"
+},{
+	"store_name": "Bio-Linguine Dinkel Max 500g",
+	"store_price": "2.65 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,30 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4018722304821",
+	"product_name": "Alb-Natur Bio-Dinkel-Maultaschen mit Linsen"
+},{
+	"store_name": "Paprika",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,98 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4005047202307",
+	"product_name": "Eden Nuss-Paprika"
+},{
+	"store_name": "Natives Oliven\u00f6l 750ml",
+	"store_price": "4.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 6,66 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4388844008014",
+	"product_name": "Rewe Bio - Natives Oliven\u00f6l Extra"
+},{
+	"store_name": "Eau de Toilette So Pure 30ml",
+	"store_price": "8.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 29,84 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "4006040116462",
+	"product_name": "Rapunzel Oliven Kalamata mit Stein in Lake"
+},{
+	"store_name": "Delikatess Fleischsalat 400g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,48 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4021900100160",
+	"product_name": "Nadler Delikatess Fleischsalat mit Salatcreme"
+},{
+	"store_name": "Honig-Waffeln 175g",
+	"store_price": "1.45 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,83 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "5202423200110",
+	"product_name": "\u039c\u0391\u039d\u0399 Kalamata Oliven, al naturale, entkernt, bio NL Fair 175g Glas"
+},{
+	"store_name": "Bruschetta W\u00fcrzmischung 40g",
+	"store_price": "4.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 12,48 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4041974032631",
+	"product_name": "Ubena Bruschetta Gew\u00fcrzzubereitung"
+},{
+	"store_name": "Caf\u00e9 Allegro Natur Mild 500h",
+	"store_price": "3.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 6,98 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "6930537600166",
+	"product_name": "Monolith Nord GmbH Glasnudeln"
+},{
+	"store_name": "Oliven\u00f6l extra nativ 500ml",
+	"store_price": "4.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 9,98 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "80053835",
+	"product_name": "Monini - Classico Oliven\u00f6l Extra Vierge"
+},{
+	"store_name": "Extra Hot 500ml",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 3,58 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "8000010005141",
+	"product_name": "Bertolli \u2013 Extra Vergine"
+},{
+	"store_name": "Dornfelder und Sp\u00e4tburgunder 0,75l",
+	"store_price": "7.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 10,66 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "8032853290644",
+	"product_name": "Fattorie Lucchesi - Gew\u00fcrz\u00f6l Basilikum - Condimento Basilico (100ml Flasche)"
+},{
+	"store_name": "Kichererbsen gegart 400g",
+	"store_price": "1.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,23 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4104420034167",
+	"product_name": "Alnatura Kichererbsen 350 g"
+},{
+	"store_name": "Olivenpaste Gr\u00fcn 108g",
+	"store_price": "1.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,57 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "5202423281836",
+	"product_name": "\u039c\u0391\u039d\u0399 Kalamata Olivenpaste, bio NL Fair, 180g Glas"
+},{
+	"store_name": "Minis 15 St\u00fcck",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 9,87 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "5000159461122",
+	"product_name": "Snickers"
+},{
+	"store_name": "Grie\u00dfpudding Zimt 175g",
+	"store_price": "0.35 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,20 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "3387390333008",
+	"product_name": "Nestle Cini Minis Zimt 375 g"
+},{
+	"store_name": "Rote Linsen 500g",
+	"store_price": "1.75 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,50 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4104420022720",
+	"product_name": "Alnatura Beluga Linsen 500g"
+},{
+	"store_name": "Keratin Heat Spray 200ml",
+	"store_price": "3.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 1,98 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "24325936",
+	"product_name": "PFANNKUCHEN (penny heat & eat)"
+},{
+	"store_name": "Pfannengem\u00fcse Mexicanische Art 750g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,72 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4311596463336",
+	"product_name": "Pfannengem\u00fcse - Franz\u00f6sische Art"
+},{
+	"store_name": "Baguette Salami 100g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4311596459360",
+	"product_name": "Gut & G\u00fcnstig - Kay in Sonnenblumen\u00f6l"
+},{
+	"store_name": "Eau de Toilette So Pure 30ml",
+	"store_price": "8.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 29,84 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "4006040276180",
+	"product_name": "Rapunzel Oliven-W\u00fcrzpaste"
+},{
+	"store_name": "Kunter Bunt 200g",
+	"store_price": "0.53 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,27 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4051009010770",
+	"product_name": "K\u00fchlmann - Bunter Bohnensalat mit Quinoa"
+},{
+	"store_name": "Pfefferminztee & Brombeere 6x1l",
+	"store_price": "8.94 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 1,49 \u20ac zzgl. 1.50  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4334011108933",
+	"product_name": "TiP Fleischsalat mit Gurken"
+},{
+	"store_name": "Quinoa Wei\u00df 450g",
+	"store_price": "3.55 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 7,89 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4010155060770",
+	"product_name": "Quinoa bio"
+},{
+	"store_name": "Fidelis Weiche N\u00fcrnberg Oblaten-Lebkuchen Mischung 200g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,50 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4006040176619",
+	"product_name": "Rapunzel Weisse Bohnen"
+},{
+	"store_name": "Ajoli Sauce 250ml",
+	"store_price": "2.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 1,00 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4058700801010",
+	"product_name": "Kattus Knoblauch Paste"
+},{
+	"store_name": "Dip! Mild Salsa 200ml",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 1,00 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "24610414",
+	"product_name": "Crostini-Dip"
+},{
+	"store_name": "Bio-Zimt gemahlen 70g",
+	"store_price": "3.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 4,85 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "7613312017241",
+	"product_name": "Zimt Gemahlen"
+},{
+	"store_name": "Fondant Eier 150g",
+	"store_price": "0.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,40 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4008900245909",
+	"product_name": "Eier Salat"
+},{
+	"store_name": "Maisgrie\u00df Polenta 500g",
+	"store_price": "1.15 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,30 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4019339309100",
+	"product_name": "Maisgrie\u00df Polenta, 500 g Davert"
+},{
+	"store_name": "H\u00e4hnchen-Fleischwurst 350g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,69 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4003171002831",
+	"product_name": "Gutfried - Herzhafte Puten Salami"
+},{
+	"store_name": "Salzige Heringe 200g",
+	"store_price": "0.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,45 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "42306115",
+	"product_name": "F\u00fcrsten Krone Herings Happen"
+},{
+	"store_name": "Eau de Toilette So Pure 30ml",
+	"store_price": "8.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 29,84 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "7613312015940",
+	"product_name": "Migros Bio Griechische Oliven Amphisis"
+},{
+	"store_name": "Mix Weihnachts-Minis 156g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,92 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4008400401829",
+	"product_name": "Ferrero - Nutella"
+},{
+	"store_name": "Feine Speisest\u00e4rke 400g",
+	"store_price": "0.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,48 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4104420021945",
+	"product_name": "Alnatura Speisest\u00e4rke -reine Maisst\u00e4rke-"
+},{
+	"store_name": "Delikatess Fleischsalat 400g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,48 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4388840103133",
+	"product_name": "Ja! - Delikatess Fleischsalat"
+},{
+	"store_name": "Weihnachtsmann Tafel 85g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,17 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "29220687",
+	"product_name": "Delikato Tafel Meerrettich"
+},{
+	"store_name": "Sandwich Salami-K\u00e4se 185g",
+	"store_price": "1.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,86 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "22793386",
+	"product_name": "Mike Mitchell's Sandwich Salami-K\u00e4se"
+},{
+	"store_name": "Schnittlauch 50g",
+	"store_price": "0.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,38 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4008366009053",
+	"product_name": "Schnittlauch"
+},{
+	"store_name": "Schnittlauch 50g",
+	"store_price": "0.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,38 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4305720053753",
+	"product_name": "tegut...Schnittlauch"
+},{
+	"store_name": "Sauerkraut 720ml",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,84 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "7617027633567",
+	"product_name": "Sauerkraut"
+},{
+	"store_name": "Reiswaffeln mit Meersalz 130g",
+	"store_price": "0.72 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,56 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "5060283760003",
+	"product_name": "Popcorn Leicht Meersalz Gesalzen20g"
+},{
+	"store_name": "Saison-K\u00fcche Rote Beete & Bio-Rind ab dem 8. Monat 220g",
+	"store_price": "1.15 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,53 \u20ac",
+	"store_categories": ["Baby", "&", "Kind"],
+	"code": "4012200043264",
+	"product_name": "Schlemmert\u00f6pfchen - Rote Beete Kugeln"
+},{
+	"store_name": "Eau de Toilette So Pure 30ml",
+	"store_price": "8.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 29,84 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "4021984061159",
+	"product_name": "Sapros Nocellara Oliven In Kr\u00e4utern"
+},{
+	"store_name": "Hommous Harissa 180g",
+	"store_price": "2.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,50 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "23254312",
+	"product_name": "Sch\u00e4tze des Orients Harissa"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "7630018613669",
+	"product_name": "Coop Naturaplan Bio Quinoa-Reisgetr\u00e4nk"
+},{
+	"store_name": "Mandelstollen-Konfekt 350g",
+	"store_price": "2.02 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,78 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "8722700127765",
+	"product_name": "Eskimo - Konfekt Vanille mit Schoko\u00fcberzug"
+},{
+	"store_name": "Br\u00f6tchen Classic",
+	"store_price": "0.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,30 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "7616700192698",
+	"product_name": "M-Classic Butterzopf gross Frischback"
+},{
+	"store_name": "Mandarinen",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,66 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4388844118904",
+	"product_name": "REWE Beste Wahl \u2013 Mandarinen Nadorcott Kaliber 1/2 (58-74mm)"
+},{
+	"store_name": "Gem\u00fcse-Paste 40g",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,98 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4032108117942",
+	"product_name": "Tamarinden Paste"
+},{
+	"store_name": "Griechische Bio Kalamata Oliven 290g",
+	"store_price": "1.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,09 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4388844016118",
+	"product_name": "REWE Feine Welt Kalamata Oliven"
+},{
+	"store_name": "Oliven gr\u00fcn, ohne Stein 300g",
+	"store_price": "2.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,44 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4002239814003",
+	"product_name": "Feinkost Dittmann - Oliven, gr\u00fcn ohne Stein"
+},{
+	"store_name": "Yoghurt-Gums 200g",
+	"store_price": "0.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,45 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4037400125039",
+	"product_name": "Katjes - Yoghurt-Gums"
+},{
+	"store_name": "Kichererbsen vegan 500g",
+	"store_price": "1.75 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,50 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4019339440100",
+	"product_name": "Kichererbsen, 500 g Davert"
+},{
+	"store_name": "Hollandaise Laktosefrei 250ml",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,52 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "7613269260417",
+	"product_name": "A.Best Pesto-Sauce"
+},{
+	"store_name": "Bio-Brotaufstrich Tomate 125g",
+	"store_price": "1.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,52 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "20130206",
+	"product_name": "Bio Sonne Bio-Brotaufstrich Tomate-Basilikum"
+},{
+	"store_name": "Alter Tiroler 150g",
+	"store_price": "2.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,66 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "9005015012216",
+	"product_name": "Tiroler Butterzopf"
+},{
+	"store_name": "Dornfelder und Sp\u00e4tburgunder 0,75l",
+	"store_price": "7.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 10,66 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4012200032947",
+	"product_name": "K\u00fchne R\u00f6stzwiebeln  100 g"
+},{
+	"store_name": "H\u00fchnerfrikassee 450g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,32 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4008366008582",
+	"product_name": "H\u00fchnerfrikassee"
+},{
+	"store_name": "Backmischung Knusperkekse glutenfrei 475g",
+	"store_price": "2.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,83 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4002809001888",
+	"product_name": "Ruf So\u00dfenfix"
+},{
+	"store_name": "Frische Hefe 42g",
+	"store_price": "0.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,70 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4000521711825",
+	"product_name": "Dr. Oetker Gelfix Extra Gelierpulver"
+},{
+	"store_name": "Oliven Manzanilla gr\u00fcn mit Paprika 370ml",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,65 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4013200555542",
+	"product_name": "Ibero Spanische gr\u00fcne Manzanilla Oliven gef\u00fcllt mit Jalape\u00f1ocreme"
+},{
+	"store_name": "Aroma Snacks Bio-Kesselchips Chili 110g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,81 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "9002859035494",
+	"product_name": "Aroma Mix"
+},{
+	"store_name": "Br\u00f6tchen Classic",
+	"store_price": "0.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,30 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "7616500634589",
+	"product_name": "M-Classic Gianova"
+},{
+	"store_name": "Gem\u00fcsepfanne Kichererbsen & Cranberries 375g",
+	"store_price": "1.88 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,02 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4008366008469",
+	"product_name": "Frosta Erdbeeren ungezuckert"
+},{
+	"store_name": "Baguette Salami 100g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4311527569786",
+	"product_name": "Gut&G\u00fcnstig M\u00f6hren"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4388844220270",
+	"product_name": "Rewe Bio M\u00f6hren"
+},{
+	"store_name": "Eier Biohaltung HKL A Gew.Klasse s.Packung 10+2 St\u00fcck",
+	"store_price": "2.75 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "9120030310052",
+	"product_name": "Marchfelder - Fr\u00fchkarotten, Klasse 1"
+},{
+	"store_name": "Zahnb\u00fcrste Multi Expert mittel",
+	"store_price": "2.75 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Drogerie"],
+	"code": "7616800810508",
+	"product_name": "Farmer's Best Hackspinat CH"
+},{
+	"store_name": "Minis 20 Riegel",
+	"store_price": "3.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 9,23 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "5000159407236",
+	"product_name": "Mars - Schokoriegel"
+},{
+	"store_name": "Oliven schwarz mit Stein 350g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 6,87 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4012625440372",
+	"product_name": "Marmara Schwarze Oliven Mit Stein Devasa"
+},{
+	"store_name": "Apflesaft naturtr\u00fcb 1l",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4103850004726",
+	"product_name": "Rapp's Rharbarber Naturtr\u00fcb 2017"
+},{
+	"store_name": "Ziegenk\u00e4se 250g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,20 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "16229906191",
+	"product_name": "Aroy-D - Gr\u00fcne Curry Paste"
+},{
+	"store_name": "Kaisergem\u00fcse 750g",
+	"store_price": "1.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,52 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4334011173030",
+	"product_name": "Real,- Bio kaisergem\u00fcse Blumenkohl, Karotten Und Broccoli"
+},{
+	"store_name": "Oliven gr\u00fcn, ohne Stein 300g",
+	"store_price": "2.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,44 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4002239438001",
+	"product_name": "Feinkost Dittmann Spanische gr\u00fcne Oliven gef\u00fcllt mit Paprikapaste"
+},{
+	"store_name": "Mini Twister Eis 400ml, 8 St\u00fcck",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 7,48 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4023300492135",
+	"product_name": "Langnese Landhonig goldcremig 500 g"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4388844099791",
+	"product_name": "Bio Akazienbl\u00fctenhonig"
+},{
+	"store_name": "Box Duschgel Aprikosen-\u00d6l 385ml",
+	"store_price": "2.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 7,67 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "9101169077160",
+	"product_name": "Spar Natur pur Bio Broccoli"
+},{
+	"store_name": "Schnelle Mahlzeit Kartoffelbrei mit Fleischkl\u00f6\u00dfchen 47g",
+	"store_price": "0.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,26 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4300175147910",
+	"product_name": "K-Classic Kartoffelbrei"
+},{
+	"store_name": "Zarte H\u00e4ppchen mit Rind & Lamm",
+	"store_price": "0.20 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Tierbedarf"],
+	"code": "4311527576524",
+	"product_name": "Edeka Zarte Lotte"
+},{
+	"store_name": "Kidney-Bohnen dunkelrot 425ml",
+	"store_price": "0.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,53 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "39400017301",
+	"product_name": "Bushs Best Kidney Beans"
+},{
+	"store_name": "Dornfelder und Sp\u00e4tburgunder 0,75l",
+	"store_price": "7.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 10,66 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4005500013495",
+	"product_name": "Maggi Kartoffel P\u00fcree komplett mit feinem Buttergeschmack 2x 100 g"
+},{
+	"store_name": "Energy Drink Acai 0,25l",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,40 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4006040411611",
+	"product_name": "Rapunzel Schwarze Bohnen Black Beans"
+},{
+	"store_name": "Spitzpaprika rot",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,11 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "7610632992197",
+	"product_name": "MIGROS - rote Zwiebeln"
+},{
+	"store_name": "Sardinen Chili 125g",
+	"store_price": "0.75 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,60 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4020500977820",
+	"product_name": "Appel Zarte Sardinen Madeleine Rot 105 g"
+},{
+	"store_name": "mit Jod",
+	"store_price": "0.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,90 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4104420031661",
+	"product_name": "ALNATURA - Meersalz mit Jod"
+},{
+	"store_name": "Eau de Toilette So Pure 30ml",
+	"store_price": "8.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 29,84 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "42208723",
+	"product_name": "Alnatura 24/7 Bio Gr\u00fcne Oliven mit Mandeln"
+},{
+	"store_name": "K-Bio Griechischer Feta v 200g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,00 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "29061259",
+	"product_name": "Trader Joe's Frische Salate nach Griechischer Art"
+},{
+	"store_name": "Rote Bete Kugeln 330g",
+	"store_price": "0.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,36 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4008100171534",
+	"product_name": "Hengstenberg Rote Bete-Salat 330 g"
+},{
+	"store_name": "Sauerkraut 720ml",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,84 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4028286401164",
+	"product_name": "Hainich Sauerkraut"
+},{
+	"store_name": "Bio Kapern 105g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 4,99 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4006040277514",
+	"product_name": "Rapunzel Kapern in Oliven\u00f6l"
+},{
+	"store_name": "Bio Joghurt mild Mango Mousse 400g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,73 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4008471507970",
+	"product_name": "S\u00f6bbeke Pauls Biomolkerei Bio Erdbeere Joghurt Mild"
+},{
+	"store_name": "Delikatess Mortadella mit Pistazien 200g",
+	"store_price": "0.85 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,43 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "20005719",
+	"product_name": "Alesto - Pistazien"
+},{
+	"store_name": "CHIA Smoothie mit Apfel, Guava und Himbeer 250ml",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,80 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4046006047409",
+	"product_name": "granoVita Vegane Leberwurst"
+},{
+	"store_name": "Steinpilze 314ml",
+	"store_price": "3.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 13,76 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4311501469576",
+	"product_name": "EDEKA Steinpilze"
+},{
+	"store_name": "Citrus-Pomelo 6x0,75l",
+	"store_price": "5.94 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 1,32 \u20ac zzgl. 1.50  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4260122391059",
+	"product_name": "True Fruits - Green Smoothie"
+},{
+	"store_name": "Kinder Bio Pasta Muschelnudeln 1-3  250g",
+	"store_price": "1.45 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,58 \u20ac",
+	"store_categories": ["Baby", "&", "Kind"],
+	"code": "7640133342030",
+	"product_name": "Quinoa Pasta -M\u00fcscheli"
+},{
+	"store_name": "Suppengr\u00fcn 75g",
+	"store_price": "0.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,92 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4316268361545",
+	"product_name": "Suppengr\u00fcn"
+},{
+	"store_name": "No. 5 Spicy Chicken & Wing Sauce 200ml",
+	"store_price": "3.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 2,00 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "87666052789",
+	"product_name": "Sriracha Hot Chilli Sauce"
+},{
+	"store_name": "Cr\u00e8me au Lait Chocolat 2x100g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,50 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "7616500020368",
+	"product_name": "Frey Truffes Lait"
+},{
+	"store_name": "So\u00dfenbinder hell 250g",
+	"store_price": "0.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,28 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4046800110903",
+	"product_name": "Mondamin So\u00dfenbinder hell 250 g"
+},{
+	"store_name": "Waffeletten Vollmilch",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4000607055102",
+	"product_name": "Aero Vollmilch"
+},{
+	"store_name": "Cafeteria Minis Berliner mit Schwartau Samt Erdbeer 175g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,14 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4011800181017",
+	"product_name": "Schwartau extra Konfit\u00fcre Samt Erdbeere 270 g"
+},{
+	"store_name": "Tafelschokolade Classic 90g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,22 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "8000920500224",
+	"product_name": "Magnum Almond"
+},{
+	"store_name": "Apfel-Rotkohl 750g",
+	"store_price": "1.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,52 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "40081960",
+	"product_name": "Hengstenberg Rotessa Rotkohl traditionell 550 g"
+},{
+	"store_name": "Buttergem\u00fcse 300g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,30 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4334011187013",
+	"product_name": "Real Bio Buttergem\u00fcse"
+},{
+	"store_name": "Bio Pizza Gartengem\u00fcse 350g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 8,55 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4009233012589",
+	"product_name": "Original Wagner - Big Pizza Schinken Diavolo"
+},{
+	"store_name": "Keks'N Cream Choco 228g",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,90 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4017100290008",
+	"product_name": "Leibniz Choco Vollmilch Kekse 125 g"
+},{
+	"store_name": "Frische Hefe 42g",
+	"store_price": "0.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,70 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4001724010401",
+	"product_name": "Dr. Oetker - Pizzaburger Salami"
+},{
+	"store_name": "Vegetarischer Schinken Spicker Mortadella 80g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,62 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4000405004548",
+	"product_name": "R\u00fcgenwalder M\u00fchle - Vegetarischer Schinken Spicker Mortadella"
+},{
+	"store_name": "Bonbons Confetti 86g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,32 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "7622210211293",
+	"product_name": "Milka Choco Bonbon Caramel"
+},{
+	"store_name": "Apfel-Kirsch-Banane 6x0,5l",
+	"store_price": "5.94 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 1,99 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4002971396201",
+	"product_name": "Ehrmann Fr\u00fcchteTraum Kirsche 115 g"
+},{
+	"store_name": "Ferrero Happy Moments Halloween 260g",
+	"store_price": "3.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 15,35 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4008400321622",
+	"product_name": "Ferrero Kinder Bueno"
+},{
+	"store_name": "Thunfischfilets in Sonnenblumen\u00f6l 3x80g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,19 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4388844256064",
+	"product_name": "Rewe Ja! Thunfischfilets In Sonnenblumen\u00f6l"
+},{
+	"store_name": "Fischst\u00e4bchen glutenfrei 360g, 12 St\u00fcck",
+	"store_price": "3.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 10,53 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4250241205849",
+	"product_name": "Iglo Ger\u00fchrt & Verf\u00fchrt Tortelloni Ricotta e Spinaci al Formaggio"
+},{
+	"store_name": "Buttergem\u00fcse 300g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,30 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4250241204064",
+	"product_name": "Iglo Buttergem\u00fcse fein & knackig, 300 g"
+},{
+	"store_name": "Chef Frites 750g",
+	"store_price": "2.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,92 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "7613312028537",
+	"product_name": "LeChef Fleisch"
+},{
+	"store_name": "W\u00fcrfel in \u00d6l 300g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 9,97 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4002671057563",
+	"product_name": "Patros in \u00d6l"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "7610632948897",
+	"product_name": "Coop Naturaplan Bio Zucchetti"
+},{
+	"store_name": "Alpenmilch Kugeln 100g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "3045140105502",
+	"product_name": "Milka Alpenmilch"
+},{
+	"store_name": "Langkorn & Wildreis Mischung 500g",
+	"store_price": "1.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,78 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4305720052442",
+	"product_name": "tegut... Wildreis"
+},{
+	"store_name": "Naturally mit Seekabeljau 85g",
+	"store_price": "0.65 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,77 \u20ac",
+	"store_categories": ["Tierbedarf"],
+	"code": "7610200010919",
+	"product_name": "Vollreis Natura"
+},{
+	"store_name": "Chili Bohnen 425ml",
+	"store_price": "0.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,23 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4311501354094",
+	"product_name": "EDEKA Chili-Bohnen 425 g"
+},{
+	"store_name": "Bio Kartoffel P\u00fcree 160g",
+	"store_price": "1.65 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,04 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4000400130693",
+	"product_name": "Pfanni Kartoffel P\u00fcree mit entrahmter Milch komplett 3x 94,5 g"
+},{
+	"store_name": "Sorbeteis Mango 550ml",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 5,44 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "7616600590105",
+	"product_name": "Valflora Cr\u00e8me Fra\u00eeche"
+},{
+	"store_name": "Frische Eier M/L 6 St\u00fcck",
+	"store_price": "1.67 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4260185440251",
+	"product_name": "Luisenhof - frische Eier aus Freilandhaltung, 6 St\u00fcck"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "7610200313737",
+	"product_name": "Migros Bio 6 Bio-Eier"
+},{
+	"store_name": "Saure Sahne 200g",
+	"store_price": "0.55 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,28 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4316268523912",
+	"product_name": "BioBio - Saure Sahne"
+},{
+	"store_name": "Schmand",
+	"store_price": "0.55 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,28 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4334011001524",
+	"product_name": "real Schmand aus Sauerrahm"
+},{
+	"store_name": "Cocktail Sauce 250ml",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,48 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4030800017188",
+	"product_name": "Nordsee Flu\u00dfkrebs Cocktail Apfel & Curry"
+},{
+	"store_name": "Cappuccino Weniger S\u00fc\u00df 200g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,75 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4009700035684",
+	"product_name": "Danone Fruchtzwerge weniger s\u00fc\u00df 6x50g"
+},{
+	"store_name": "Bio-Majoran gerebelt 15g",
+	"store_price": "2.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 17,94 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "9100000748511",
+	"product_name": "Spar Majoran Gerebelt"
+},{
+	"store_name": "Mango-Maracuja-Nektar 1l",
+	"store_price": "1.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "9019100740700",
+	"product_name": "N\u00f6m - Fasten Molkedrink Mango-Maracuja mit Stevia"
+},{
+	"store_name": "Scheibenwischer 14 410 mm",
+	"store_price": "3.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Haushalt"],
+	"code": "7613034229069",
+	"product_name": "Libby\u00b4s Pfirsiche naturs\u00fc\u00df, 410 g"
+},{
+	"store_name": "Baguette Salami 100g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4311596457410",
+	"product_name": "Gut&G\u00fcnstig - Steinofen Pizza Margherita"
+},{
+	"store_name": "Petersilie 50g",
+	"store_price": "0.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,38 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4388844006553",
+	"product_name": "Rewe Bio Petersilie tiefgefroren"
+},{
+	"store_name": "Petersilie 50g",
+	"store_price": "0.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,38 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4388844114289",
+	"product_name": "Petersilie"
+},{
+	"store_name": "Dill 50g",
+	"store_price": "0.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,38 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4104420175587",
+	"product_name": "Bio Dill Alnatura GmbH"
+},{
+	"store_name": "Deo-Spray pink fresh 150ml",
+	"store_price": "1.15 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,77 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "4006237090131",
+	"product_name": "Reis-Fit Basmati und Wildreis im Kochbeutel 4x 125 g"
+},{
+	"store_name": "Bio-Milchreis 500g",
+	"store_price": "2.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,58 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4006237640404",
+	"product_name": "Oryza Basmati & Wildreis lose 500 g"
+},{
+	"store_name": "Tomaten getrocknet 125g",
+	"store_price": "2.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,16 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4002674314014",
+	"product_name": "Ostmann - Austernpilze getrocknet"
+},{
+	"store_name": "Champignons 1. Wahl ganz 425ml",
+	"store_price": "0.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,42 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4388844133754",
+	"product_name": "REWE Beste Wahl Austernpilze Aromatisch"
+},{
+	"store_name": "k\u00f6rniger Frischk\u00e4se 200g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,50 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4306188349167",
+	"product_name": "Frischgold K\u00f6rniger Frischk\u00e4se, 200 g"
+},{
+	"store_name": "Mandarinen",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,66 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4388844093171",
+	"product_name": "ja! - Mandarin-Orangen"
+},{
+	"store_name": "Natur-Reis 500 gr",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,98 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "20017262",
+	"product_name": "Jasmin Reis"
+},{
+	"store_name": "Deo-Spray pink fresh 150ml",
+	"store_price": "1.15 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,77 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "4311501349342",
+	"product_name": "EDEKA Basmati-Reis im Kochbeutel 4x 125 g"
+},{
+	"store_name": "Milchreis Zimt 200g",
+	"store_price": "0.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,15 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4388844159976",
+	"product_name": "ja! Milchreis"
+},{
+	"store_name": "Risotto Tartufo 210g",
+	"store_price": "2.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,05 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "7613063000431",
+	"product_name": "la riseria Riso Ticinese 1kg"
+},{
+	"store_name": "Langkorn-Naturreis 500g",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,38 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "9100000044606",
+	"product_name": "Landkorn Naturreis"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4388858205669",
+	"product_name": "Bio Zwiebeln"
+},{
+	"store_name": "Hokkaido K\u00fcrbis",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 kg = 1.29 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4250262708138",
+	"product_name": "Spreewald Feldmann K\u00fcrbis W\u00fcrfel, 720 ml"
+},{
+	"store_name": "Fischst\u00e4bchen glutenfrei 360g, 12 St\u00fcck",
+	"store_price": "3.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 10,53 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4250241201605",
+	"product_name": "Iglo - Basilikum"
+},{
+	"store_name": "Russisch Brot 125g",
+	"store_price": "0.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,64 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "7613269197485",
+	"product_name": "M Classic Russischer Salat"
+},{
+	"store_name": "Der Gelbe Zitrone-Physalis 2l",
+	"store_price": "1.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,85 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4008366007011",
+	"product_name": "Frosta Gem\u00fcse Pfanne Sommergarten"
+},{
+	"store_name": "Kidney-Bohnen dunkelrot 425ml",
+	"store_price": "0.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,53 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4000286217082",
+	"product_name": "M\u00fcller\u00b4s M\u00fchle Red Kidney Bohnen"
+},{
+	"store_name": "Schnittlauch 50g",
+	"store_price": "0.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,38 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "7613312018132",
+	"product_name": "Schnittlauch"
+},{
+	"store_name": "S\u00fc\u00df-sauer Sauce ohne Zuckerzusatz 400g",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,48 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "3487400000927",
+	"product_name": "Uncle Ben\u00b4s Risotto Tomaten und italienische Kr\u00e4uter 250 g"
+},{
+	"store_name": "Frische Bio Weidemilch 1,5% 1l",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "5760466904780",
+	"product_name": "Arla K\u00e6rg\u00e5rden\u00ae ungesalzen"
+},{
+	"store_name": "Bunte Gem\u00fcse-Tagliatelle 3 Portionen",
+	"store_price": "0.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,12 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4008366011568",
+	"product_name": "Rahm Gem\u00fcse bunte Karotten & Erbsen"
+},{
+	"store_name": "Ravioli Bolognese 800g",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,49 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4005500339403",
+	"product_name": "Maggi Ravioli in Tomatensosse 800 g"
+},{
+	"store_name": "Frischmilch l\u00e4nger haltbar 1,5%F. lactosefrei 1l",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4388844148659",
+	"product_name": "Ja! \u2013 Frische Vollmilch, l\u00e4nger haltbar"
+},{
+	"store_name": "Gem\u00fcsepfanne Rustikale Art 750g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,72 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "20320454",
+	"product_name": "Alpenfest Rustikale Kartoffelpfanne"
+},{
+	"store_name": "Blattspinat 750g",
+	"store_price": "1.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,52 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "5411361017852",
+	"product_name": "ardo - Blattspinat"
+},{
+	"store_name": "Blattspinat 750g",
+	"store_price": "1.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,52 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "7616800810492",
+	"product_name": "BLATTSPINAT"
+},{
+	"store_name": "Rosmarin geschnitten 50g",
+	"store_price": "3.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 6,38 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "7610632995921",
+	"product_name": "M Kr\u00e4utergarten Rosmarin"
+},{
+	"store_name": "Rosmarin geschnitten 50g",
+	"store_price": "3.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 6,38 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "9100000741321",
+	"product_name": "Spar Rosmarin geschnitten"
+},{
+	"store_name": "Apfel Bourbon Vanille Torte 1400g",
+	"store_price": "10.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 7,50 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "3073786863111",
+	"product_name": "Kiri - mit Sahne"
+},{
+	"store_name": "Geschirrt\u00fccher 5er blau",
+	"store_price": "6.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Haushalt"],
+	"code": "7610200370921",
+	"product_name": "Milch-Schnitte 5er Pack"
+},{
+	"store_name": "Curry-Ketchup scharf 500ml",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 3,98 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4019736006121",
+	"product_name": "ZWERGENWIESE Curry Ketchup, 500 ml"
+},{
+	"store_name": "Rahm-Spinat laktosefrei 550g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,62 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4250241201247",
+	"product_name": "Iglo Rahm-Gem\u00fcse - Rosenkohl"
+},{
+	"store_name": "Plombir Eis 6x130ml",
+	"store_price": "2.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 3,58 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4032549002425",
+	"product_name": "Dovgan Taschki Pelmeni mit Schweinefleisch"
+},{
+	"store_name": "Fischst\u00e4bchen glutenfrei 360g, 12 St\u00fcck",
+	"store_price": "3.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 10,53 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4250241203524",
+	"product_name": "iglo 15 K\u00e4pt'ns Fischst\u00e4bchen"
+},{
+	"store_name": "Chocolate Brownie 900ml",
+	"store_price": "3.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 3,66 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4335896694733",
+	"product_name": "K-Classic Chocolate Brownie Ice Cream"
+},{
+	"store_name": "Back-Camembert 350g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,69 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4305720037753",
+	"product_name": "tegut... Back-Camembert"
+},{
+	"store_name": "Adventskalender Big Ben 185g",
+	"store_price": "6.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 3,78 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "8000920704998",
+	"product_name": "Ben & Jerry's - Cookie Dough Ice Cream"
+},{
+	"store_name": "Buttergem\u00fcse 300g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,30 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4008366011766",
+	"product_name": "ButterGem\u00fcse    Frosta"
+},{
+	"store_name": "Aceto Balsamico di Modena Invecchiato 250ml",
+	"store_price": "9.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 4,00 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4104420129887",
+	"product_name": "Alnatura Crema con Aceto Balsamico 250 g"
+},{
+	"store_name": "Bio-Dattelsirup 250ml",
+	"store_price": "4.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 1,98 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4104420182844",
+	"product_name": "Alnatura Dattelsirup"
+},{
+	"store_name": "Spice'n Drink 8 Botanicals 8=51g",
+	"store_price": "14.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 29,32 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4052600004809",
+	"product_name": "Hartkorn - Gew\u00fcrzdose Salbei gerebelt"
+},{
+	"store_name": "Kruspers Sour Cream 120g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,25 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "9002235018417",
+	"product_name": "Spar Frischer Thymian"
+},{
+	"store_name": "Thymian 30g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 9,97 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "9004145003187",
+	"product_name": "SONNENTOR Thymian 25 g"
+},{
+	"store_name": "Bio-Lassi Mango 250g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,60 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4104060027635",
+	"product_name": "Andechser Natur - Bio Lassi Chai"
+},{
+	"store_name": "Bio Eis Schoko Coconut 500ml",
+	"store_price": "5.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 11,98 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "29035564",
+	"product_name": "Ursi \u201eEis-Schoko\u201d"
+},{
+	"store_name": "Bio Ente Pur 85g",
+	"store_price": "1.35 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,59 \u20ac",
+	"store_categories": ["Tierbedarf"],
+	"code": "4101530001355",
+	"product_name": "Berchtesgadener Land Frische Vanille Milch"
+},{
+	"store_name": "Protein Big Block Cocos 100g",
+	"store_price": "2.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Drogerie"],
+	"code": "4019738011154",
+	"product_name": "Viana Bahia Beach Power"
+},{
+	"store_name": "Tomato Ketchup 400ml",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 4,48 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "8715700012506",
+	"product_name": "Heinz \u2013 Tomato Ketchup"
+},{
+	"store_name": "Gurken",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4388844167407",
+	"product_name": "Naturgut Bio Gurke"
+},{
+	"store_name": "Milchreis Zimt 200g",
+	"store_price": "0.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,15 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "40255675",
+	"product_name": "m\u00fcller - Milchreis Zimt"
+},{
+	"store_name": "Speisezwiebeln",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,99 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4005080016114",
+	"product_name": "Speisezwiebeln Klasse 1 Unsere Heimat"
+},{
+	"store_name": "Gem\u00fcselasagne tiefgefroren 400g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,23 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "8586008305511",
+	"product_name": "Beerenmix tiefgefroren"
+},{
+	"store_name": "Nordsee Krabbensalat 125g",
+	"store_price": "4.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 4,00 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4311501477489",
+	"product_name": "Nordsee Krabbensalad"
+},{
+	"store_name": "Leinsamen geschrotet 400g",
+	"store_price": "1.65 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,13 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "8005110550614",
+	"product_name": "Mutti Datterini Datteltomaten 400 g"
+},{
+	"store_name": "Bayrischer Weink\u00e4se 2x62,5g",
+	"store_price": "1.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,36 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4026367003207",
+	"product_name": "Bio Bauern Handk\u00e4se"
+},{
+	"store_name": "Wei\u00dfe Thunfischfilets in Oliven\u00f6l 190g",
+	"store_price": "3.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,00 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "3165950215472",
+	"product_name": "Thunfischfilets in Oliven\u00f6l"
+},{
+	"store_name": "Schlemmer Filet Bordelaise 400g",
+	"store_price": "1.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,98 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "9008695939224",
+	"product_name": "Iglo - Schlemmerfilet \u00e0 la Bordelaise Classic"
+},{
+	"store_name": "Stangenspargel 370ml",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,49 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4311501344972",
+	"product_name": "EDEKA Stangenspargel 530 g"
+},{
+	"store_name": "Orange-Mango-Ananassaft Mildes Fr\u00fchst\u00fcck 6x1l",
+	"store_price": "5.94 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 1,00 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4001497287208",
+	"product_name": "hohes C Milde Orange"
+},{
+	"store_name": "Orangen",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "7613269260615",
+	"product_name": "Orange Aranica"
+},{
+	"store_name": "Pikanter Tomatensaft 0,5l",
+	"store_price": "0.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 1,78 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "7613269260639",
+	"product_name": "Saft - Blutorangen"
+},{
+	"store_name": "Gesch\u00e4lte Tomaten 425ml",
+	"store_price": "0.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,25 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4311501347652",
+	"product_name": "EDEKA Italia Gesch\u00e4lte Tomaten 800 g"
+},{
+	"store_name": "Gutsschinken 100g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4311501602898",
+	"product_name": "Edeka Gut & G\u00fcnstig Delikatess Fleischsalat Mit Eingelegten Gurken"
+},{
+	"store_name": "K\u00fcstenk\u00e4se Scheiben 48% Fett i.Tr. 125g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,60 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4036300109972",
+	"product_name": "Milram Buttermilchdrink Ipanema"
+},{
+	"store_name": "Gesch\u00e4lte Tomaten 425ml",
+	"store_price": "0.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,25 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4104420025882",
+	"product_name": "Alnatura Bio ganze Tomaten, gesch\u00e4lt 400 g"
+},{
+	"store_name": "Indian Chicken 750g",
+	"store_price": "1.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,26 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4300175519892",
+	"product_name": "Indian Chicken"
+},{
+	"store_name": "Bio Pizza Gartengem\u00fcse 350g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 8,55 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4009233003587",
+	"product_name": "Wagner \u2013 Original Wagner Steinofen \u201ePIZZA Speciale\u201c"
+},{
+	"store_name": "Vanille-Eiscreme 500ml",
+	"store_price": "4.44 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 8,88 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4104420112469",
+	"product_name": "Alnatura Schoko Eiscreme"
+},{
+	"store_name": "Schokomousse auf Schokokuchen mit Amarenaglasur 100g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "20165437",
+	"product_name": "'Milbona, Dessert mit Sahne'"
+},{
+	"store_name": "Rahm-Spinat laktosefrei 550g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,62 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "22961938",
+	"product_name": "Penny Rahm-Spinat Erntefrisch Tiefgefroren"
+},{
+	"store_name": "Premium Cornichons 370ml",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,53 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4388844138049",
+	"product_name": "Rewe Beste Wahl Cornichons mit Kr\u00e4utern"
+},{
+	"store_name": "Baguette Salami 100g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4311501484418",
+	"product_name": "Gut & G\u00fcnstig H\u00fchnerfrikassee"
+},{
+	"store_name": "H\u00fchnerfrikassee 450g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,32 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4316268503082",
+	"product_name": "Mein Men\u00fc H\u00fchnerfrikassee mit Gem\u00fcseeinlage"
+},{
+	"store_name": "Amaranth gepufft 125g",
+	"store_price": "1.45 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,16 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "24713290",
+	"product_name": "Bio Amaranth"
+},{
+	"store_name": "Mozzarella Sticks mit Chili Dip 250g",
+	"store_price": "1.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,76 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "7611654700333",
+	"product_name": "Mozzarella Sticks"
+},{
+	"store_name": "K\u00e4se Geb\u00e4ckstangen 100g",
+	"store_price": "2.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4005009101884",
+	"product_name": "K\u00e4se-Geb\u00e4ckstangen"
+},{
+	"store_name": "Joyfills Milka 90g",
+	"store_price": "1.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,77 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4025500154714",
+	"product_name": "milka schhikolade"
+},{
+	"store_name": "Roquefort 100g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "3023260001362",
+	"product_name": "Roquefort Soci\u00e9t\u00e9"
+},{
+	"store_name": "Birdie - Gefl\u00fcgel W\u00fcrzmischung 45g",
+	"store_price": "4.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 11,09 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4388844267176",
+	"product_name": "Rewe Ja! Tomaten Ketchup"
+},{
+	"store_name": "Lieblingskroketten 300g",
+	"store_price": "1.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,64 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4006181006875",
+	"product_name": "Schwarmstedter Kartoffeltaschen"
+},{
+	"store_name": "Gem\u00fcsepfanne Kichererbsen & Cranberries 375g",
+	"store_price": "1.88 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,02 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4008366010868",
+	"product_name": "Frosta Schlemmerfilet Bordelaise"
+},{
+	"store_name": "Gesch\u00e4lte Tomaten 425ml",
+	"store_price": "0.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,25 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4400139006069",
+	"product_name": "Werder Bio Tomaten Ketchup"
+},{
+	"store_name": "Pizza-Tomaten 425ml",
+	"store_price": "0.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,48 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4337185016929",
+	"product_name": "K Classic Pizza-Tomaten St\u00fcckig"
+},{
+	"store_name": "Vanille-Pudding 375g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,31 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4040600026259",
+	"product_name": "Landliebe Grie\u00df Pudding Vanille"
+},{
+	"store_name": "Spanische Artischocken-Herzen 390g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,25 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4002239680509",
+	"product_name": "Feinkost Dittmann Artischockenherzen je la Toscana"
+},{
+	"store_name": "Gem\u00fcsepfanne Kichererbsen & Cranberries 375g",
+	"store_price": "1.88 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 5,02 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4008366010387",
+	"product_name": "Frosta Fischst\u00e4bchen"
+},{
+	"store_name": "Ice Tea Mango-Maracuja 2l",
+	"store_price": "1.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,85 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4005979003577",
+	"product_name": "Ja! Nat\u00fcrlich - Mediterrane Pfanne"
+},{
+	"store_name": "Energy Drink Blue Raspberry 0,5l",
+	"store_price": "1.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 3,38 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "5038862230087",
+	"product_name": "Innocent Super Smoothie Activate"
+},{
+	"store_name": "Mineralwasser Medium 12/1l",
+	"store_price": "3.96 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,33 \u20ac zzgl. 3.30  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "9100000017907",
+	"product_name": "Spar vital - Bio-Cocktailtomaten"
+},{
+	"store_name": "Antipasto italiano 120g",
+	"store_price": "4.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 4,16 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "7640106262594",
+	"product_name": "Via Emilia Antipasto di verdura"
+},{
+	"store_name": "Johannisbeer-Essig 250ml",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,80 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "40081588",
+	"product_name": "Hengstenberg Honiggurken 330 g"
+},{
+	"store_name": "Decor on Ice Waffelbecher 16 St\u00fcck",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 3,32 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4001518107584",
+	"product_name": "DeBeukelaer CheeOps Gouda & Romano"
+},{
+	"store_name": "Prosciutto Italiano 100g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "7613030252085",
+	"product_name": "Buitoni - La Fina Prosciutto e Pesto"
+},{
+	"store_name": "Thunfisch-Salat Texana 160g",
+	"store_price": "2.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,69 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "3165950577785",
+	"product_name": "Saupiquet Thunfisch in Tomatensauce"
+},{
+	"store_name": "Fruchtbuttermilch Pfirsich-Maracuja 500G",
+	"store_price": "0.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,38 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4104420076761",
+	"product_name": "Alnatura - Fruchtbuttermilch Orange-Maracuja"
+},{
+	"store_name": "Butter-Spekulatius",
+	"store_price": "0.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,40 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "22121875",
+	"product_name": "Sun Snacks - K\u00e4se St\u00e4ngli mit Butter und Schnittlauch Zwiebel St\u00e4ngli mit Butter / Salz St\u00e4ngli"
+},{
+	"store_name": "Eis Bourbon-Vanille 500ml",
+	"store_price": "2.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 5,18 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4011800046002",
+	"product_name": "Schwartau Bourbon-Vanille Sauce"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "8436547720088",
+	"product_name": "Bio Spargel"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4388844114333",
+	"product_name": "Rewe Bio Passata"
+},{
+	"store_name": "Fusilli I.G.P. 500g",
+	"store_price": "2.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,98 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "8001250009852",
+	"product_name": "De Cecco - Passata di Pomodoro"
+},{
+	"store_name": "Gurken",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4033689030101",
+	"product_name": "Spreewaldrabe \u2013 Salz-Dill-Gurken"
+},{
+	"store_name": "Balance Frischk\u00e4se-Zubereit. 26% Fett i.Tr. 200g",
+	"store_price": "1.35 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,68 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4019300004652",
+	"product_name": "Exquisa \u2013 Quark Genuss"
+},{
+	"store_name": "Frikadellen 800g",
+	"store_price": "1.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,99 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4388840222711",
+	"product_name": "Ja! Frikadellen"
+},{
+	"store_name": "Birdie - Gefl\u00fcgel W\u00fcrzmischung 45g",
+	"store_price": "4.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 11,09 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4008258450017",
+	"product_name": "Seeberger Tomaten getrocknet"
+},{
+	"store_name": "Mini-Kabanossi mit Emmentaler 250g",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,72 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "2138057000006",
+	"product_name": "Bio Emmentaler mittelreif 250g"
+},{
+	"store_name": "Ungarische Gulaschsuppe 770ml",
+	"store_price": "3.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 4,28 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "29014415",
+	"product_name": "iska \u201eUngarische Salami\u201c"
+},{
+	"store_name": "Backmischung Schoko-Muffins 350g",
+	"store_price": "2.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 6,55 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4040600080107",
+	"product_name": "Landliebe Landmilch Schoko, 350 g"
+},{
+	"store_name": "Erfrischungsgetr\u00e4nk Holunder-Cranberry 0,5l",
+	"store_price": "0.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,98 \u20ac zzgl. 0.25  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "20240059",
+	"product_name": "Bio Oraganic Strauchtomaten"
+},{
+	"store_name": "Tomatenmark 2-fach konzentriert 200g",
+	"store_price": "0.85 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,43 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4311501446232",
+	"product_name": "EDEKA Bio Tomatenmark 2-fach konzentriert 200 g"
+},{
+	"store_name": "Bio Apfel-Birnen-Direktsaft 0,75l",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 2,66 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4311501339190",
+	"product_name": "Edeka Premium Apfel Direktsaft"
+},{
+	"store_name": "Porrige Beeren 475g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 6,30 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "20144968",
+	"product_name": "Bio Organic S\u00fc\u00dfrahmbutter"
+},{
+	"store_name": "Baguette Salami 100g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4311596460151",
+	"product_name": "Gut & G\u00fcnstig Deutsche Markenbutter mildges\u00e4uert"
+},{
+	"store_name": "Tomaten Ketchup 430ml",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 3,47 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4000339001125",
+	"product_name": "Kraft Tomaten Ketchup gro\u00df 750 ml"
+},{
+	"store_name": "Mini Romana",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4012414085555",
+	"product_name": "Mini-Romatomaten"
+},{
+	"store_name": "Eis Erdbeer 1000ml",
+	"store_price": "1.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "9010158001959",
+	"product_name": "Nieder\u00f6sterreichische Erdbeeren"
+},{
+	"store_name": "B\u00fcndner Fleisch 50g",
+	"store_price": "2.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 5,38 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "2150573000001",
+	"product_name": "Bio B\u00fcndner Bergk\u00e4se ca. 250g"
+},{
+	"store_name": "Schlagsahne 33%  200g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,50 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4388844082335",
+	"product_name": "ja! H-Schlagsahne"
+},{
+	"store_name": "Vegetarische M\u00fchlen Bratwurst 180g",
+	"store_price": "2.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,55 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4388840024384",
+	"product_name": "ja! Kaffeesahne 12% Fett"
+},{
+	"store_name": "Butterk\u00e4se Schnittk\u00e4se 5% Fett i.Tr. 150g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,33 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4101530003106",
+	"product_name": "Berchtesgadener Land \u2013 Haltbare Bergbauern Milch"
+},{
+	"store_name": "Frucht auf Joghurt Mango 150g",
+	"store_price": "0.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,22 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "7616600711364",
+	"product_name": "Bifidus - Joghurt Mango"
+},{
+	"store_name": "Bio-Bourbon-Vanille-Schote 2,8g",
+	"store_price": "4.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "9004145003996",
+	"product_name": "SONNENTOR Chili Schoten ganz feuerscharf"
+},{
+	"store_name": "Bio Frozen Joghurt natur 500ml",
+	"store_price": "3.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 7,98 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4250840730070",
+	"product_name": "Kissyo Bio Frozen Yoghurt Natur"
+},{
+	"store_name": "Fleischk\u00e4se fein 125g",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,44 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "2159673004650",
+	"product_name": "Migros Fleischk\u00e4se"
+},{
+	"store_name": "Bio-Koriander ganz 50g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 3,98 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "9002235000009",
+	"product_name": "Chef Men\u00fc Koriander K\u00fcchenfrisch"
+},{
+	"store_name": "Maisk\u00f6lbchen fein-w\u00fcrzig 180g",
+	"store_price": "2.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,45 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "40737126",
+	"product_name": "K\u00fchne - Balsamissimo Feine Balsamico-Creme"
+},{
+	"store_name": "Br\u00f6tchen Classic",
+	"store_price": "0.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,30 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "22135926",
+	"product_name": "Yogos Classic"
+},{
+	"store_name": "Erdbeere 8 x 100g",
+	"store_price": "2.52 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,15 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4009700076854",
+	"product_name": "Danone -  Actimel Erdbeer-Banane"
+},{
+	"store_name": "Vegetarische M\u00fchlen Bratwurst 180g",
+	"store_price": "2.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,55 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4104060031526",
+	"product_name": "Ziegenmilch Bio haltbar mindestens 3,0 % Fett Andechser Natur"
+},{
+	"store_name": "Paprika",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,98 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "9000144076603",
+	"product_name": "Brunch - Paprika-Peperoni"
+},{
+	"store_name": "Schlagsahne 30% 200g",
+	"store_price": "0.65 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,33 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4300175127882",
+	"product_name": "K-Classic Schlagsahne"
+},{
+	"store_name": "Apfel-Rotkohl 370ml",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,96 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "40122991",
+	"product_name": "K\u00fchne Rotkohl Original  350 g"
+},{
+	"store_name": "K\u00f6nigsberger Klopse 405g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,32 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4388840219575",
+	"product_name": "Ja! K\u00f6nigsberger Klopse"
+},{
+	"store_name": "Lasagne Bolognese 400g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,23 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "29066711",
+	"product_name": "Mama Mancini - Lasagne Bolognese"
+},{
+	"store_name": "Waldfrucht Konfit\u00fcre Extra 450g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,20 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4009900447249",
+	"product_name": "Wrigleys Extra Professional Mints Waldfrucht 77 g"
+},{
+	"store_name": "Paprika",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,98 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4002468186599",
+	"product_name": "Gervais Paprika -Quark-"
+},{
+	"store_name": "Laktosefrei 150g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,00 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4000339035229",
+	"product_name": "Kraft Philadelphia"
+},{
+	"store_name": "Phila. CottageCheese H\u00fcttenk\u00e4se 175g",
+	"store_price": "0.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,55 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "7616600708111",
+	"product_name": "M-Budget Cottage Cheese"
+},{
+	"store_name": "Zitronen",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,98 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4260217270269",
+	"product_name": "Bio Garden Bio Zitronen"
+},{
+	"store_name": "Puszta-Salat 370ml",
+	"store_price": "0.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,37 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "20649784",
+	"product_name": "Saladinettes Salat Mexicana"
+},{
+	"store_name": "Kr\u00e4uterquark leicht 200g",
+	"store_price": "0.55 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,28 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4104420136069",
+	"product_name": "Alnatura Kr\u00e4uterquark"
+},{
+	"store_name": "Aroma Snacks Bio-Kesselchips Chili 110g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,81 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "22126184",
+	"product_name": "Primana Snacks Chili-Cheese-Nuggets"
+},{
+	"store_name": "6x1,25l",
+	"store_price": "4.62 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 0,62 \u20ac zzgl. 1.50  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4311527651658",
+	"product_name": "Edeka Blattsalat-Mix"
+},{
+	"store_name": "Apfelsaft 1l",
+	"store_price": "0.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "7616800202051",
+	"product_name": "M-Classic Apfelsaft"
+},{
+	"store_name": "Bio Ente Pur 85g",
+	"store_price": "1.35 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,59 \u20ac",
+	"store_categories": ["Tierbedarf"],
+	"code": "4101530001188",
+	"product_name": "Berchtesgadener Land Bio-Topfen"
+},{
+	"store_name": "Milch-Creme 100g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "7611100399630",
+	"product_name": "Stocki mit Milch"
+},{
+	"store_name": "Gurken",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4250262708251",
+	"product_name": "Orginal Spreewald-Gew\u00fcrz-Gurken"
+},{
+	"store_name": "Bio-Joghurt griechische Art natur 0,2% 400g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,73 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4003490323600",
+	"product_name": "Elinas - Joghurt nach griechischer Art Natur"
+},{
+	"store_name": "Speisequark Magerstufe 250g",
+	"store_price": "0.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,28 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4008534060206",
+	"product_name": "Schw\u00e4lbchen - Speisequark Magerstufe"
+},{
+	"store_name": "Leberwurst fein 175g",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,57 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4809418230650",
+	"product_name": "TIP - Leberwurst fein"
+},{
+	"store_name": "Bio Karottensalat 370ml",
+	"store_price": "0.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,47 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4016435000863",
+	"product_name": "Th\u00fcringer Landgarten Bio Cornichons"
+},{
+	"store_name": "Bio-Lassi Mango 250g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,60 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "42260868",
+	"product_name": "BioBio - Lassi Mango"
+},{
+	"store_name": "Bio-Trinkjoghurt Mango-Vanille 500g",
+	"store_price": "1.65 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 3,30 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4104060025679",
+	"product_name": "Andechser Natur Bio Mango-Vanille"
+},{
+	"store_name": "Mini Romana",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4388844102644",
+	"product_name": "REWE Beste Wahl Romana Salatherzen"
+},{
+	"store_name": "Cornichons 720ml",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,68 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "20004361",
+	"product_name": "Freshona Cornichons"
+},{
+	"store_name": "Tomatenmark 2-fach konzentriert 200g",
+	"store_price": "0.85 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,43 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4008100169159",
+	"product_name": "ORO di Parma Tomatenmark 2-fach konzentriert, 70 g"
+},{
+	"store_name": "Fruchtsirup Himbeere 0,7l",
+	"store_price": "2.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 3,99 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "7617400050042",
+	"product_name": "Frozen Yo Nature 450ml"
+},{
+	"store_name": "Mango-Apfel-Orangensaft 1l",
+	"store_price": "1.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4015533027246",
+	"product_name": "Bio Apfel Saft"
+},{
+	"store_name": "Milder Orangensaft Mildes Fr\u00fchst\u00fcck 6x1l",
+	"store_price": "5.94 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 1,00 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4014049001443",
+	"product_name": "MARK BRANDENBURG - Joghurt mild \u201eMandarine\u201d"
+},{
+	"store_name": "Kondensmilch 4% 340g",
+	"store_price": "0.50 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,48 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4335896497501",
+	"product_name": "K Classic Kondensmilch W\u00e4rmebehandelt"
+},{
+	"store_name": "Ofenk\u00e4se Chili 320g",
+	"store_price": "4.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 13,41 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4000504176719",
+	"product_name": "ROUGETTE Ofenk\u00e4se"
+},{
+	"store_name": "Der W\u00fcrzige 175g",
+	"store_price": "2.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,37 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4006402020413",
+	"product_name": "Bavaria blu - Der W\u00fcrzige"
+},{
+	"store_name": "Vegetarische M\u00fchlen Bratwurst 180g",
+	"store_price": "2.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,55 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4305720058406",
+	"product_name": "tegut... frische Vollmilch 3,7% Fett"
+},{
+	"store_name": "Schweizer Bauernk\u00e4se 200g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,50 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "7610200363992",
+	"product_name": "Brie Schweizer Weichk\u00e4se, vollfett, pasteurisiert Bio"
+},{
+	"store_name": "Bio Leberwurst 160g",
+	"store_price": "2.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,50 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4316268531368",
+	"product_name": "Fein Wurst Hofmaier Frikadellen-B\u00e4llchen"
+},{
+	"store_name": "Aceto Balsamico di Modena I. G. P. 250ml",
+	"store_price": "1.23 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,50 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4316268503549",
+	"product_name": "Mondo Italiano Aceto Balsamico Di Modena I.G.P"
+},{
+	"store_name": "Buttermilch 500g",
+	"store_price": "0.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,38 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4101530001041",
+	"product_name": "Berchtesgadener Buttermilch - Buttermilch"
+},{
+	"store_name": "Gesch\u00e4lte Tomaten 425ml",
+	"store_price": "0.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,25 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "8619053089195",
+	"product_name": "Coop Naturaplan Bio Tomaten Schweiz Freiland"
+},{
+	"store_name": "Kalbsfilet aus Deutschland",
+	"store_price": "34.90 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 kg = 34.90 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4300175330756",
+	"product_name": "Marktfrisch aus Deutschland \u2013 Chicor\u00e9e"
+},{
+	"store_name": "Schweizer Bauernk\u00e4se 200g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,50 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "2110241000009",
+	"product_name": "Appenzeller Schweizer Halbhartk\u00e4se, vollfett, aus Rohmilch"
+},{
+	"store_name": "Leber- und Blutw\u00fcrste 180g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,11 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "9009504000784",
+	"product_name": "Hofst\u00e4dter - Leber-Streichwurst"
+},{
+	"store_name": "American Mustard Honey 220ml",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,68 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "9300657036270",
+	"product_name": "Heinz American Mustard New York Style Mild"
+},{
+	"store_name": "Lachsschinken gep\u00f6kelt, ger\u00e4uchert 100g",
+	"store_price": "0.60 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4316268469661",
+	"product_name": "Hofmaier Lachsschinken"
+},{
+	"store_name": "Bio-Gr\u00fcntee Forever Mango 100g",
+	"store_price": "9.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "3057640450808",
+	"product_name": "Volvic Tee | Gr\u00fcntee & Minze"
+},{
+	"store_name": "Back-Camembert mit Wildpreiselbeeren 2 St\u00fcck 200g",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,50 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4003751002008",
+	"product_name": "Alpenhain - Back-Camembert mit Wildpreiselbeeren"
+},{
+	"store_name": "Pommersche Gutsleberwurst grob 125g",
+	"store_price": "1.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,52 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4000405002087",
+	"product_name": "Pommersche Gutsleberwurst grob"
+},{
+	"store_name": "Rinder-Zwiebel-Mettwurst 150g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,33 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "9012100021060",
+	"product_name": "Reiter - Mettwurst fein"
+},{
+	"store_name": "Pflegedusche Bio-Matcha/Limette",
+	"store_price": "2.75 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 1,38 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "4003387001017",
+	"product_name": "Surig Essig-Essenz"
+},{
+	"store_name": "Prosciutto di Parma DOP 100g",
+	"store_price": "3.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4008100168039",
+	"product_name": "Oro di Parma Tomaten st\u00fcckig"
+},{
+	"store_name": "Rahm-Camembert",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,20 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4388840101238",
+	"product_name": "ja! Champignons, 3. Wahl, geschnitten"
+},{
+	"store_name": "Kichererbsen gegart 400g",
+	"store_price": "1.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 4,23 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4006784629754",
+	"product_name": "Wilhelm Brandenburg - Rosmarinschinken, gegart"
+},{
+	"store_name": "Bayrischer Blockmalz 100g",
+	"store_price": "1.45 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4316268463249",
+	"product_name": "Hofmaier Original bayrischer Leberk\u00e4se"
+},{
+	"store_name": "Champignons 1. Wahl ganz 425ml",
+	"store_price": "0.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,42 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4388844044111",
+	"product_name": "REWE Beste Wahl \u2013 Peperoni nach griechischer Art"
+},{
+	"store_name": "Bio Leberwurst 160g",
+	"store_price": "2.39 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,50 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4316268466783",
+	"product_name": "Feine Wurst Hofmaier Bockw\u00fcrstchen"
+},{
+	"store_name": "Delikatess Bockwurst 300g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 6,64 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4004015212539",
+	"product_name": "Bockwurst"
+},{
+	"store_name": "Brechbohnen 750g",
+	"store_price": "1.89 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 2,52 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4104420112124",
+	"product_name": "ALNATURA - Brechbohnen"
+},{
+	"store_name": "Ganze Bohne Kaffee 500g",
+	"store_price": "4.75 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 9,50 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "7610809082331",
+	"product_name": "COOP Bio Bohnen fein"
+},{
+	"store_name": "Apfel Bourbon Vanille Torte 1400g",
+	"store_price": "10.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 7,50 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "24658928",
+	"product_name": "Penny Sahne Schmelzk\u00e4sezubereitung"
+},{
+	"store_name": "Champignons 1. Wahl ganz 425ml",
+	"store_price": "0.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,42 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4388844089068",
+	"product_name": "REWE Beste Wahl Pfannengyros"
+},{
+	"store_name": "Zarte H\u00e4ppchen mit Rind & Lamm",
+	"store_price": "0.20 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Tierbedarf"],
+	"code": "4388840218851",
+	"product_name": "ja! Bockw\u00fcrstchen in zarter Eigenhaut"
+},{
+	"store_name": "Prosciutto Italiano 100g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4316268520362",
+	"product_name": "Mondo Italiano Prosciutto Cotto"
+},{
+	"store_name": "Schwarzw\u00e4lder Schinken 100g",
+	"store_price": "2.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4104420187214",
+	"product_name": "Alnatura Bio Lachs Schinken"
+},{
+	"store_name": "Weihnachts-Tradition Pralin\u00e9s 137g",
+	"store_price": "6.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 5,11 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "4006784002571",
+	"product_name": "Timmendorfer Traditions Ostsee-Kernschinken"
+},{
+	"store_name": "Bierwurst hauchfein 150g",
+	"store_price": "0.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,53 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4000400145604",
+	"product_name": "Du darfst - Die Hauchfeine Baguette Salami"
+},{
+	"store_name": "Wiener W\u00fcrstchen",
+	"store_price": "11.90 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 kg = 11.90 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4045518462236",
+	"product_name": "Meister's Wiener W\u00fcrstchen"
+},{
+	"store_name": "Thunfisch pikant 185g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,70 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4004787051923",
+	"product_name": "HEIDEMETZGER Fr\u00fchst\u00fccksmett - pikant"
+},{
+	"store_name": "No. 5 Spicy Chicken & Wing Sauce 200ml",
+	"store_price": "3.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 2,00 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4000503122403",
+	"product_name": "Meica Trueman\u00b4s Hot Dog W\u00fcrstchen"
+},{
+	"store_name": "Gr\u00fcne Pfeffer Sauce 250ml",
+	"store_price": "1.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,48 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4000400001399",
+	"product_name": "Du darfst - Rinderroulade"
+},{
+	"store_name": "Schwarzw\u00e4lder Schinken",
+	"store_price": "17.90 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 kg = 17.90 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4019777434075",
+	"product_name": "Delikat Frische Schinken Zwiebelmettwurst"
+},{
+	"store_name": "Prosciutto Cotto 150g",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,00 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "20500863",
+	"product_name": "Dulano Selection Prosciutto Cotto"
+},{
+	"store_name": "Franz\u00f6sische Ringsalami 400g",
+	"store_price": "3.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 9,98 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "3449860000374",
+	"product_name": "Aoste Ringsalami luftgetrocknet 250 g"
+},{
+	"store_name": "Fischst\u00e4bchen glutenfrei 360g, 12 St\u00fcck",
+	"store_price": "3.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 10,53 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4250241205740",
+	"product_name": "Iglo Ger\u00fchrt & Verf\u00fchrt Thai H\u00fchnchen mit Basmati Reis"
+},{
+	"store_name": "Hollandaise Laktosefrei 250ml",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,52 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "40205687",
+	"product_name": "Appel Worcester Sauce"
+},{
+	"store_name": "Toaster,  silber",
+	"store_price": "24.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Haushalt"],
+	"code": "4388840101757",
+	"product_name": "Ja! - Toast-Schmelzk\u00e4se,"
+},{
+	"store_name": "Box Duschgel Aprikosen-\u00d6l 385ml",
+	"store_price": "2.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 7,67 \u20ac",
+	"store_categories": ["Drogerie"],
+	"code": "7753513000281",
+	"product_name": "Heidelbeeren Nature's Pride"
+},{
+	"store_name": "Aroma Snacks Bio-Kesselchips Chili 110g",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,81 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "8713128164678",
+	"product_name": "Greenyard Snack Gurken"
+},{
+	"store_name": "Chili con Carne 800g",
+	"store_price": "1.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,99 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "7610800997078",
+	"product_name": "Chili con Carne"
+},{
+	"store_name": "Caff\u00e9 Crema Ganze Bohnen 1000g",
+	"store_price": "7.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 7,49 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4006581020150",
+	"product_name": "Eilles Gourmet Caff\u00e8 Crema ganze Bohnen, 1kg"
+},{
+	"store_name": "Caff\u00e9 Crema Ganze Bohnen 1000g",
+	"store_price": "7.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 7,49 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4388840222810",
+	"product_name": "Ja! \u2013Caff\u00e8 Crema, ganze Bohnen"
+},{
+	"store_name": "H\u00e4hnchenbrust in Aspik 200g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,65 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4337185057946",
+	"product_name": "K Classic H\u00e4hnchenbrust In Aspik"
+},{
+	"store_name": "Prosecco Vino Frizzante 0,75l",
+	"store_price": "2.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 3,59 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "8017494057030",
+	"product_name": "Villa Sandi Prosecco Frizzante DOC"
+},{
+	"store_name": "Benedetto DOC 0,75l",
+	"store_price": "8.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 11,99 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "8004305000064",
+	"product_name": "Mezzacorona Merlot DOC Rotwein  2013 0,75 ltr"
+},{
+	"store_name": "Spitzpaprika rot",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,11 \u20ac",
+	"store_categories": ["Obst", "&", "Gem\u00fcse"],
+	"code": "4104420139848",
+	"product_name": "Bio Spitzpaprika Rot Alnatura"
+},{
+	"store_name": "Sekt trocken 0,75l",
+	"store_price": "4.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 L = 6,66 \u20ac",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4400066903417",
+	"product_name": "Rotk\u00e4ppchen Sekt trocken 0,75 ltr"
+},{
+	"store_name": "Baguette Salami 100g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4311527560011",
+	"product_name": "Gut&G\u00fcnstig Kultur Champignons"
+},{
+	"store_name": "Rahm-Camembert",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 1,20 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4104420008847",
+	"product_name": "Bioland Champignon"
+},{
+	"store_name": "Chili con Carne 800g",
+	"store_price": "1.59 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 1,99 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4013189484550",
+	"product_name": "Dornseifer Chili con carne"
+},{
+	"store_name": "Fischst\u00e4bchen glutenfrei 360g, 12 St\u00fcck",
+	"store_price": "3.79 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 10,53 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "9000143077359",
+	"product_name": "Iglo Gastronomie - Rindsgulasch im 1-Portionen-Kochbeutel"
+},{
+	"store_name": "Sprudelbad Lebenslust 70g",
+	"store_price": "0.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Drogerie"],
+	"code": "4001513000613",
+	"product_name": "Gerolsteiner Sprudel"
+},{
+	"store_name": "S\u00fcsskartoffel Pfanne tiefgefroren 500g",
+	"store_price": "3.19 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 6,38 \u20ac",
+	"store_categories": ["Tiefk\u00fchlkost"],
+	"code": "4008366006939",
+	"product_name": "FRoSTa Gem\u00fcse Pfanne Thai"
+},{
+	"store_name": "Citrus-Pomelo 6x0,75l",
+	"store_price": "5.94 ",
+	"store_currency": "EURO",
+	"store_quantity": "1  L = 1,32 \u20ac zzgl. 1.50  Pfand",
+	"store_categories": ["Getr\u00e4nke"],
+	"code": "4260122390892",
+	"product_name": "True Fruits \u2013 Green Smoothie Nr. 1"
+},{
+	"store_name": "Johannisbeer-Essig 250ml",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 0,80 \u20ac",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4008100126152",
+	"product_name": "Hengstenberg Altmeister Kr\u00e4uterw\u00fcrzessig 0,75 ltr"
+},{
+	"store_name": "Habanero 60ml",
+	"store_price": "2.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 ML = 4,99 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "11210115262",
+	"product_name": "McIlhenny TABASCO Brand Pepper Sauce Original 57 ml"
+},{
+	"store_name": "Champignons 1. Wahl ganz 425ml",
+	"store_price": "0.95 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 0,42 \u20ac",
+	"store_categories": ["Konserven", "&", "Feinkost"],
+	"code": "4388844020610",
+	"product_name": "Rewe Beste Wahl Schwarze Bohnen in Chilisauce"
+},{
+	"store_name": "Baguette Salami 100g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4311596468386",
+	"product_name": "Gut & G\u00fcstig - Paella"
+},{
+	"store_name": "Italienischer Rotweinessig 1L",
+	"store_price": "1.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4024297015024",
+	"product_name": "Naturata Rotweinessig"
+},{
+	"store_name": "Schwarzw\u00e4lder Schinken",
+	"store_price": "17.90 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 kg = 17.90 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4003419025790",
+	"product_name": "Schwarzw\u00e4lder Schinken"
+},{
+	"store_name": "500g",
+	"store_price": "6.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 13,98 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "4260167511047",
+	"product_name": "Deutsches Essig-Brauhaus Deutscher Weisswein Essig 500 ml"
+},{
+	"store_name": "Baguette Salami 100g",
+	"store_price": "1.29 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4311596423828",
+	"product_name": "Gut & G\u00fcnstig - Tafelessig"
+},{
+	"store_name": "Klassisch Zuckerfrei 75g",
+	"store_price": "1.75 ",
+	"store_currency": "EURO",
+	"store_quantity": "100 g = 2,34 \u20ac",
+	"store_categories": ["S\u00fc\u00dfes", "&", "Salziges"],
+	"code": "2721448001760",
+	"product_name": "Ja! Nat\u00fcrlich Klassischer Leberk\u00e4se"
+},{
+	"store_name": "Bio Rindergulasch 300g",
+	"store_price": "3.44 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4006276084368",
+	"product_name": "Dreistern Rindergulasch - in pikanter Sauce"
+},{
+	"store_name": "Classico Ganze Bohne 1000g",
+	"store_price": "6.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 6,99 \u20ac",
+	"store_categories": ["Fr\u00fchst\u00fcck"],
+	"code": "7610200048066",
+	"product_name": "M-Classic Borlotti-Bohnen"
+},{
+	"store_name": "Bio Rindergulasch 300g",
+	"store_price": "3.44 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4013189482419",
+	"product_name": "Dornseifer Rindergulasch"
+},{
+	"store_name": "Rinderhackfleisch 300g",
+	"store_price": "2.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 8,97 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "20525255",
+	"product_name": "Landjunker Rinderhackfleisch"
+},{
+	"store_name": "Rinderhackfleisch 300g",
+	"store_price": "2.69 ",
+	"store_currency": "EURO",
+	"store_quantity": "1 KG = 8,97 \u20ac",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4015051017262",
+	"product_name": "Bio Bio Rinderhackfleisch"
+},{
+	"store_name": "Apfelessig 1l",
+	"store_price": "0.99 ",
+	"store_currency": "EURO",
+	"store_quantity": "",
+	"store_categories": ["Kochen", "&", "Backen"],
+	"code": "4013200255589",
+	"product_name": "Rinatura Bio-Apfelessig naturtr\u00fcb"
+},{
+	"store_name": "Bio-Frischmilch fettarme Milch 1,5% Fett 1,0l",
+	"store_price": "1.49 ",
+	"store_currency": "EURO",
+	"store_quantity": "zzgl. 0.15  Pfand",
+	"store_categories": ["K\u00fchlprodukte"],
+	"code": "4104420044906",
+	"product_name": "Alnatura demeter  Rinder Salami, ger\u00e4uchert"
+}]
