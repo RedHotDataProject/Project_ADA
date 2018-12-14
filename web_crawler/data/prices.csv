@@ -1,4 +1,4 @@
-code,product_name,store_currency,price_per_100,match_scores
+code,product_name,store_currency,price_per_100g,match_scores
 5583,Yogurt Mandarine,CHF,0.3055555555555556,0.8571428571428572
 5585,Yogourt Rhubarbe/Vanille,CHF,7.173913043478261,0.125
 5663,Ice Coffee,CHF,1.1818181818181819,1.0

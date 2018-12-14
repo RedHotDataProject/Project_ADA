@@ -17,6 +17,8 @@ from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 import plotly.graph_objs as go
 init_notebook_mode(connected=True)
 
+plots_folder = "./plots/"
+save_plots_offline = False
 
 def hist_all_features(df, column_keys):
     fig, ax = plt.subplots(9,3,figsize=(25,40))
@@ -162,12 +164,19 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
 
     )
 
-    fig = dict( data=worldmap + lines, layout=layout )
-    iplot( fig, validate=False, filename='map'+column_key )
+    figure = dict( data=worldmap + lines, layout=layout )
+    
+    # Plot interactive figure
+    iplot(figure)
+    
+    # also save offline
+    if save_plots_offline:
+        plot(figure, filename= plots_folder + "map_" + column_key + ".html", auto_open=False)
+    
 
 def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy_100g"], cluster="labels"): 
     
-    fig = {
+    figure = {
         'data': [
             {
                 'x': df[df['main_category']==category]['carbon-footprint_100g'],
@@ -179,11 +188,16 @@ def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy
         ],
         'layout': {
             'xaxis': {'title': 'Carbon footprint per 100g [g]'},
-            'yaxis': {'title': "Price per 100g [g]"},
+            'yaxis': {'title': "Price per 100g [€]"},
         }
     }
-
-    iplot(fig, filename='Carbon footprints clusters')
+    
+    # Plot interactive figure
+    iplot(figure)
+    
+    # also save offline
+    if save_plots_offline:
+        plot(figure, filename= plots_folder + "cluster_" + "_".join(plot2D_features) + ".html", auto_open=False)    
 
 
 def plot_world_map(country_count):
@@ -286,8 +300,6 @@ def plot_column_composition(df, column_str, num_values=5):
         'key' : ['Others'],
         'value' : [counts_df['value'][num_values:].sum()]
     })
-    
-
 
     # combining top 5 with others
     df2 = pd.concat([counts_df[:num_values].copy(), new_row])
@@ -296,9 +308,11 @@ def plot_column_composition(df, column_str, num_values=5):
     frames = []
     
     overall_count = 0
-    colors = ['#F4B5A6', '#F4EBA6',
-          '#B2F4A6', '#A6E3F4',
-          '#C4A6F4','#E0DBDD']
+    # colors = ['#F4B5A6', '#F4EBA6',
+    #      '#B2F4A6', '#A6E3F4',
+    #      '#C4A6F4','#E0DBDD']
+    colors = ['#90CB70', '#F0F472', '#B69C63','#D6D0C3', '#8CB5ED', '#F3AC6D', '#EC9BE2', '#7979CD', '#FCE2E4']
+
     # Load bar data
     traces = []
     i=0
@@ -347,8 +361,12 @@ def plot_column_composition(df, column_str, num_values=5):
 
     figure = go.Figure(data=traces, layout=layout, frames=frames)
 
+    # Plot interactive figure
     iplot(figure)
     
+    # also save offline
+    if save_plots_offline:
+        plot(figure, filename= plots_folder + "column_composition_" + column_str + ".html", auto_open=False)    
     
 def search_cca3(name, countries):
     country_set_name = countries[countries.name.apply(lambda x: x.lower()  == name.lower())]
@@ -414,7 +432,12 @@ def make_grade_stacked_bar(attempt, label_column, x_column, y_column):
     
     figure = go.Figure(data=traces, layout=layout)
 
+    # Plot interactive figure
     iplot(figure)
+    
+    # also save offline
+    if save_plots_offline:
+        plot(figure, filename= plots_folder + "grade_stacked_bar_" + label_column + ".html", auto_open=False) 
     
 def find_composition_list(df, column_str, cat_lis):
     if isinstance(df[column_str].iloc[0], str):
@@ -512,6 +535,11 @@ def palm_oil_overtime(df,df_absolute):
                 color='#7f7f7f'))
     )
 
-    fig = go.Figure(data=data, layout=layout)
+    figure = go.Figure(data=data, layout=layout)
 
-    iplot(fig, filename='jupyter-basic_bar')
+    # Plot interactive figure
+    iplot(figure)
+    
+    # also save offline
+    if save_plots_offline:
+        plot(figure, filename= plots_folder + "palm_oil_overtime"  + ".html", auto_open=False) 
