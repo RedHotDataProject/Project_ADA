@@ -4,6 +4,7 @@ import matplotlib.pyplot as plt
 import matplotlib as mpl
 import seaborn as sns
 import folium
+import pylab
 
 from libs import exploring as explore
 
@@ -424,6 +425,9 @@ def make_grade_stacked_bar(attempt, label_column, x_column, y_column):
     if(y_column == 'Percentage'):
         ax.set_ylabel('Percentage (%)')
         ax.set_title("Percentage of products added in the dataset with a certain nutrition grade")
+        pylab.savefig('./docs/Images/nutrition_perc.png')
+    else:
+        pylab.savefig('./docs/Images/nutrition_count.png')
     plt.show()
     
 def find_composition_list(df, column_str, cat_lis):
@@ -492,4 +496,5 @@ def make_content_stacked_bar(table, label_column, x_column, y_column):
         ax.set_ylabel('Percentage (%)')
         ax.set_title("Percentage of the five most important categories per nutrition grade [+others]")
     ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
+    pylab.savefig('./docs/Images/nutrition_content.png')
     plt.show()
