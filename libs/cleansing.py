@@ -1,6 +1,7 @@
 import json
 import warnings
 import re
+import pandas as pd
 
 from collections import Counter
 
@@ -139,4 +140,30 @@ def translate_columns(column):
         translated_column.append(element_translated)
         
     return translated_column
+
+def carbon_mean_eaternity(df):
+    #computing carbon footprint mean for each parent category of Eaternity database
+    df_mean_carbon_eaternity = pd.DataFrame()
+    list_parent_cat = list(df.category_en.value_counts().keys())
+    for cat in list_parent_cat:
+        carbon = df[df.category_en == cat]
+        df_mean_carbon_eaternity[cat]=[carbon['CO2-Value [gram CO2/serving]'].mean()]
+    return df_mean_carbon_eaternity
+
+def carbon_mean_openff(dict_categories,df_mean_carbon_eaternity):
+    #computing the carbon footprint mean of each category of OpenFoodFacts based on the dict established
+    mean=0
+    sum_=0
+    df_mean_carbon_openff=pd.DataFrame()
+    for cat in dict_categories:
+        if(isinstance(dict_categories[cat], (list,))):
+            for i in range(len(dict_categories[cat])):
+                #sum_ += occ[dict_categories[cat][i]]*df_mean_carbon[dict_categories[cat][i]]
+                sum_ += df_mean_carbon_eaternity[dict_categories[cat][i]]
+            mean =sum_/len(dict_categories[cat])
+            df_mean_carbon_openff[cat]= mean
+        else:
+            df_mean_carbon_openff[cat] = df_mean_carbon_eaternity[dict_categories[cat]][0]
+    return df_mean_carbon_openff
+
         

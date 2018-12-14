@@ -97,6 +97,7 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
             colorbar = dict(
                 autotick = True,
                 title = 'Counts [log10]'),
+            colorscale='Viridis'
           ) ]
 
     lines = []
@@ -498,3 +499,34 @@ def make_content_stacked_bar(table, label_column, x_column, y_column):
     ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
     pylab.savefig('./docs/Images/nutrition_content.png')
     plt.show()
+    
+
+def palm_oil_overtime(df,df_absolute):   
+    data = [go.Bar(x=df.index,
+               y=df.values,
+                  #text=palm_oil_over_time,
+                   text = df_absolute,
+            marker=dict(color='#097B4E'))]
+
+
+    layout = go.Layout(
+        title='Usage of palm oil over time',
+        xaxis=dict(
+            title='time (years)',
+            titlefont=dict(
+                family='Courier New, monospace',
+                size=18,
+                color='#7f7f7f'
+            )
+        ),
+        yaxis=dict(
+            title='Percentage of products with palm oil',
+            titlefont=dict(
+                family='Courier New, monospace',
+                size=18,
+                color='#7f7f7f'))
+    )
+
+    fig = go.Figure(data=data, layout=layout)
+
+    iplot(fig, filename='jupyter-basic_bar')
