@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import seaborn as sns
-#import folium
+import folium
 import pylab
 
 from libs import exploring as explore
@@ -17,8 +17,6 @@ from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 import plotly.graph_objs as go
 init_notebook_mode(connected=True)
 
-plots_folder = "./plots/"
-save_plots_offline = False
 
 def hist_all_features(df, column_keys):
     fig, ax = plt.subplots(9,3,figsize=(25,40))
@@ -106,30 +104,20 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
     worldmap = [ dict(
             type = 'choropleth',
             locations = values_count_pd['cca3'],
-            z = np.log10(values_count_pd['Count']),
+            z = np.log(values_count_pd['Count']),
             name = values_count_pd['Country'],
             autocolorscale = False,
             reversescale = True,
             colorbar = dict(
-                #lenmode='fraction', 
-                len=0.7,
-                #autotick = True,
-                tick0= 1,
-                tickmode= 'array',
-                tickvals= [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4],
-                ticktext = ['1','10<sup>1/2</sup>','10<sup>1</sup>', '10<sup>3/2</sup>', '10<sup>2</sup>', '10<sup>5/2</sup>', '10<sup>3</sup>','10<sup>3/2</sup>', '10<sup>4</sup>'],
-                #ticks = 'outside',
-                title = 'Counts'),
-            colorscale='Viridis', 
-            text = values_count_pd['Country'] + ' '+ values_count_pd['Count'].astype(str),
-            hoverinfo= 'text'
+                autotick = True,
+                title = 'Counts [log10]'),
+            colorscale='Viridis'
           ) ]
 
     lines = []
     
     if show_distances:
         origin_latlng = countries.loc[countries['cca3'] == 'FRA']['latlng'].iloc[0]
-        maximum = float(np.log10(values_count_pd['Count']).max())   
         for i, row in values_count_pd.iterrows():
             try:
                 origin_latlng = countries.loc[countries['cca3'] == 'FRA']['latlng'].iloc[0]
@@ -139,15 +127,12 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
                         type = 'scattergeo',
                         lon = [ country_latlng[1], origin_latlng[1] ],
                         lat = [ country_latlng[0], origin_latlng[0] ],
-                        mode = 'lines+markers',
-                        name= '', 
-                        text = row['Country'] + ' '+ str(row['Count']),
-                        hoverinfo='text',
+                        mode = 'lines+marker',
+                        name = row['Country'],
                         line = dict(
-                            width = (np.log10(row['Count'])+0.1)*1.2,
-                            color = 'red'
+                            width = np.log(row['Count'])*0.5,
+                            color = 'red',
                         ),
-                        opacity = float(np.log10(row['Count']))/maximum*1.2+0.1,
                     )
                 )
             except IndexError:
@@ -157,8 +142,9 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
     if title == '':
         tile = column_key
                 
-    # Format map 
+    # Format map
     layout = dict(
+        title = title,
         geo = dict(
             projection = dict(
                 type = 'Mercator'
@@ -172,29 +158,16 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
         ),
         showlegend=False,
         xaxis = dict(fixedrange = True),
-        yaxis = dict(fixedrange = True),
-        margin=go.layout.Margin(
-            l=50,
-            r=100,
-            b=0,
-            t=0,
-            pad=4
-        )
+        yaxis = dict(fixedrange = True)
+
     )
 
-    figure = dict( data=worldmap + lines, layout=layout )
-    
-    # Plot interactive figure
-    iplot(figure)
-    
-    # also save offline
-    if save_plots_offline:
-        plot(figure, filename= plots_folder + "map_" + column_key + ".html", auto_open=False)
-    
+    fig = dict( data=worldmap + lines, layout=layout )
+    iplot( fig, validate=False, filename='map'+column_key )
 
 def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy_100g"], cluster="labels"): 
     
-    figure = {
+    fig = {
         'data': [
             {
                 'x': df[df['main_category']==category]['carbon-footprint_100g'],
@@ -206,16 +179,11 @@ def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy
         ],
         'layout': {
             'xaxis': {'title': 'Carbon footprint per 100g [g]'},
-            'yaxis': {'title': "Price per 100g [€]"},
+            'yaxis': {'title': "Price per 100g [g]"},
         }
     }
-    
-    # Plot interactive figure
-    iplot(figure)
-    
-    # also save offline
-    if save_plots_offline:
-        plot(figure, filename= plots_folder + "cluster_" + "_".join(plot2D_features) + ".html", auto_open=False)    
+
+    iplot(fig, filename='Carbon footprints clusters')
 
 
 def plot_world_map(country_count):
@@ -318,6 +286,8 @@ def plot_column_composition(df, column_str, num_values=5):
         'key' : ['Others'],
         'value' : [counts_df['value'][num_values:].sum()]
     })
+    
+
 
     # combining top 5 with others
     df2 = pd.concat([counts_df[:num_values].copy(), new_row])
@@ -326,11 +296,9 @@ def plot_column_composition(df, column_str, num_values=5):
     frames = []
     
     overall_count = 0
-    # colors = ['#F4B5A6', '#F4EBA6',
-    #      '#B2F4A6', '#A6E3F4',
-    #      '#C4A6F4','#E0DBDD']
-    colors = ['#90CB70', '#F0F472', '#B69C63','#D6D0C3', '#8CB5ED', '#F3AC6D', '#EC9BE2', '#7979CD', '#FCE2E4']
-
+    colors = ['#F4B5A6', '#F4EBA6',
+          '#B2F4A6', '#A6E3F4',
+          '#C4A6F4','#E0DBDD']
     # Load bar data
     traces = []
     i=0
@@ -360,6 +328,7 @@ def plot_column_composition(df, column_str, num_values=5):
 
     # Format layout
     layout = go.Layout(
+                    title=column_str, 
                     showlegend=True, 
                     barmode="stack",
                     xaxis=dict(
@@ -372,25 +341,14 @@ def plot_column_composition(df, column_str, num_values=5):
                         zeroline=False,
                     ),
                     width=800,
-                    height=200,
-                    margin=go.layout.Margin(
-                        l=40,
-                        r=40,
-                        b=50,
-                        t=15,
-                        pad=4
-                    )
+                    height=300,
     )
             
 
     figure = go.Figure(data=traces, layout=layout, frames=frames)
 
-    # Plot interactive figure
     iplot(figure)
     
-    # also save offline
-    if save_plots_offline:
-        plot(figure, filename= plots_folder + "column_composition_" + column_str + ".html", auto_open=False)    
     
 def search_cca3(name, countries):
     country_set_name = countries[countries.name.apply(lambda x: x.lower()  == name.lower())]
@@ -449,25 +407,14 @@ def make_grade_stacked_bar(attempt, label_column, x_column, y_column):
 
      # Format layout
     layout = go.Layout(
+                    title=label_column, 
                     showlegend=True, 
                     barmode="stack",
-                    margin=go.layout.Margin(
-                        l=50,
-                        r=50,
-                        b=50,
-                        t=15,
-                        pad=4
-                    )
     )
     
     figure = go.Figure(data=traces, layout=layout)
 
-    # Plot interactive figure
     iplot(figure)
-    
-    # also save offline
-    if save_plots_offline:
-        plot(figure, filename= plots_folder + "grade_stacked_bar_" + label_column + ".html", auto_open=False) 
     
 def find_composition_list(df, column_str, cat_lis):
     if isinstance(df[column_str].iloc[0], str):
@@ -497,7 +444,7 @@ def find_composition_list(df, column_str, cat_lis):
     
 def plot_grade_content(nutrition_over_time):
     index_list = ['B', 'C', 'D', 'E']
-    cat_list = ['Plant-based', 'Carbs', 'Meats', 'Dairies', 'Seafood', 'Beverages', 'Sugary snacks','Others']
+    cat_list = ['Plant-based', 'Carbs', 'Meats', 'Dairies', 'Seafood', 'Canned foods', 'Beverages', 'Sugary snacks','Others']
     categories = {"keys": cat_list}
     check = pd.DataFrame.from_dict(categories)
     
@@ -517,55 +464,54 @@ def plot_grade_content(nutrition_over_time):
     return table_content
 
 def make_content_stacked_bar(table, label_column, x_column, y_column):
-    fig, ax = plt.subplots(figsize=(10,7))  
 
     keys = table[label_column].drop_duplicates()
-    margin_bottom = np.zeros(len(table[x_column].drop_duplicates()))
-    colors = ['#90CB70', '#F0F472', '#B69C63','#D6D0C3', '#8CB5ED', '#EC9BE2', '#7979CD', '#FCE2E4']
-    
+    data_stacked = []
+    colors = ['#90CB70', '#F0F472', '#B69C63','#D6D0C3', '#8CB5ED', '#F3AC6D', '#EC9BE2', '#7979CD', '#FCE2E4']
     for num, grade in enumerate(keys):
         values = list(table[table[label_column] == grade].loc[:, y_column])
+        liste = ['A','B','C','D','E']
+        trace = go.Bar(
+                x=liste,
+                y=values,
+                name=grade,
+                marker=dict(color=colors[num]))
 
-        table[table[label_column] == grade].plot.bar(x=x_column,y=y_column, ax=ax, stacked=True, bottom = margin_bottom, color=colors[num],label=grade)
-        margin_bottom += values
-    ax.set_title("Count of each categories per nutrition grade")
-    ax.set_xlabel('Grade')
-    ax.set_ylabel('Count')
-    if(y_column == 'Percentage'):
-        ax.set_ylabel('Percentage (%)')
-        ax.set_title("Percentage of the five most important categories per nutrition grade [+others]")
-    ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
-    pylab.savefig('./docs/Images/nutrition_content.png')
-    plt.show()
+        layout = go.Layout(
+            barmode='stack'
+        )
+        data_stacked.append(trace)
+
+    fig = go.Figure(data=data_stacked,layout=layout)
+    iplot(fig, filename='stacked-bar')
     
 
 def palm_oil_overtime(df,df_absolute):   
     data = [go.Bar(x=df.index,
                y=df.values,
-               #text=palm_oil_over_time,
-               text = round(df, 2).astype(str) + '% <br>'+ df_absolute.astype(str),
-               hoverinfo = 'text',
-               marker=dict(color='#097B4E'))]
+                  #text=palm_oil_over_time,
+                   text = df_absolute,
+            marker=dict(color='#097B4E'))]
 
 
     layout = go.Layout(
-        yaxis=dict(
-            title='Percentage of products with palm oil [%]'
-            ),
-        margin=go.layout.Margin(
-            l=50,
-            r=50,
-            b=50,
-            t=15,
-            pad=4
+        title='Usage of palm oil over time',
+        xaxis=dict(
+            title='time (years)',
+            titlefont=dict(
+                family='Courier New, monospace',
+                size=18,
+                color='#7f7f7f'
             )
-        )
+        ),
+        yaxis=dict(
+            title='Percentage of products with palm oil',
+            titlefont=dict(
+                family='Courier New, monospace',
+                size=18,
+                color='#7f7f7f'))
+    )
 
-    figure = go.Figure(data=data, layout=layout)
+    fig = go.Figure(data=data, layout=layout)
 
-    # Plot interactive figure
-    iplot(figure)
-    
-    # also save offline
-    if save_plots_offline:
-        plot(figure, filename= plots_folder + "palm_oil_overtime"  + ".html", auto_open=False) 
+    iplot(fig, filename='jupyter-basic_bar')
