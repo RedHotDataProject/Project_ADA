@@ -60,7 +60,7 @@ The data in the Open Food Facts started being gathered in 2012 which explains th
 
 One could thus expect that products available in France and added during this year would have been more likely to have their palm oil content tagged ! "One has to <i>observe</i> something in order to <i>see</i> it". The decrease following could have several explanation: 
 - The optimist would conclude in a reduction in the use of palm oil.
-- The pessimist (and sadly <a href="https://www.statista.com/statistics/263937/vegetable-oils-global-consumption/">realist</a>) would however conclude in  a decrease in the attention focused on palm oil, the subject growing "out of fashion" but the palm trees still growing on freshly cleared exotic forest lands. 
+- The pessimist (and sadly <a href="https://www.statista.com/statistics/263937/vegetable-oils-global-consumption/">realist</a>) would however conclude in  a decrease in the attention focused on palm oil, the subject going "out of fashion" but the palm trees still growing on freshly cleared exotic forest lands. 
 
 But what can we say about the manufacturing countries behind these palm-oil-containing products ? Let us exclude the case of France, since most product sold in France are manufactured in ... France. 
 
@@ -75,30 +75,74 @@ But what can we say about the manufacturing countries behind these palm-oil-cont
 Meaning of the nutrition score index can be found on the following <a href="https://world.openfoodfacts.org/nutriscore">page</a>, thanks to <a href="https://solidarites-sante.gouv.fr/IMG/pdf/rapport_Hercberg_15_11_2013.pdf">the work of Pr. Serge Hercberg</a>. The main facts are the following : 
 - Products are marked according to the amount of nutrients they contain [per 100 g] and given a <b>grade between A and E </b>(A being obviously the best mark).
 
-<img src ="./Images/nutriscore.png"
+<center><img src ="./Images/nutriscore.png"
     alt = ""
     style = "width:400px;height:200px;"
-    class="center"/>
+    class="center"/></center>
 
 - If the product is solid, it is assigned a nutrition score accordingly to that displayed on the next table. This score itself is computed in two parts. The first one considers the energy, saturated fat, sugars and sodium. A high level in that category is considered unhealthy. The second part reflects the proportion of fruits, vegetables and nuts, fibers and proteins for which high levels are considered beneficial to the health. The difference of these two parts in the order presented here gives a <b><i>nutritional scores</i></b> that is <b>better for low values</b>. 
 
 
-<img src ="./Images/nutriscore_table.png"
+<TABLE  BORDER="5"    WIDTH="50%"   CELLPADDING="4" CELLSPACING="10">
+   <TR ALIGN="CENTER">
+      <TH COLSPAN="4">
+         <H3><BR><font color="#008010">Nut</font><font color="#9ACD32">rit</font><font color="#FFD700">ion</font> <font color="#FF8C00">Ma</font><font color="#DB4832">rk</font></BR></H3>
+      </TH>
+   </TR>
+   <TR ALIGN="CENTER">
+       <TH COLSPAN="2">
+          Solid Food</TH>
+       <TH COLSPAN="2">
+          Beverages</TH>
+   </TR>
+   <TR>
+      <TD><font color="#008010">A</font></TD>
+      <TD>Up to -1</TD>
+      <TD><font color="#008010">A</font></TD>
+      <TD>Mineral or Spring Water</TD>
+   </TR>
+   <TR>
+      <TD><font color="#9ACD32">B</font></TD>
+      <TD>[0, 2]</TD>
+      <TD><font color="#9ACD32">B</font></TD>
+      <TD>Up to 1</TD>
+   </TR>
+   <TR>
+      <TD><font color="#FFD700">C</font></TD>
+      <TD>[3, 10]</TD>
+      <TD><font color="#FFD700">C</font></TD>
+      <TD>[2, 5]</TD>
+   </TR>
+   <TR>
+      <TD><font color="#FF8C00">D</font></TD>
+      <TD>[11, 18]</TD>
+      <TD><font color="#FF8C00">D</font></TD>
+      <TD>[6, 9]</TD>
+   </TR>   
+   <TR>
+      <TD><font color="#DB4832">E</font></TD>
+      <TD>Above 19</TD>
+      <TD><font color="#DB4832">E</font></TD>
+      <TD>Above 10</TD>
+   </TR>
+</TABLE>
+
+<center><img src ="./Images/nutriscore_table.png"
     alt = ""
-    style = "float:centre;"/>
+    style = "float:centre;"/></center>
  
 
 After running a small routine transforming the nutrition score into a nutrition mark, we first query the following histogram, displaying the number of products added per year by mark.
 
-<img src ="./Images/nutrition_count.png"
+<center><img src ="./Images/nutrition_count.png"
     alt = ""
-    style = "float:centre;"/>
+    style = "float:centre;"/></center>
 
 The trend seems to mimick that of the overall number of products added with a nutrition grade. Can we say something about the evolution of the relative weight of each mark through the years ? 
 
-<img src ="./Images/nutrition_perc.png"
+<center><img src ="./Images/nutrition_perc.png"
     alt = ""
-    style = "float:centre;"/>
+    style = "float:centre;"/></center>
 
 Yes ! Interestingly the levels are overall quite stable. Note however how the two best nutrition mark, '<b><i>A</i></b>' and '<b><i>B</i></b>', slightly peaked during 2013. In 2018, this trend has reversed and their sum is now even smaller at 30% than in the beginning of the database history, 40% in 2012. This decrease has been matched by a similar increase in the less nutritionally favourable products, '<b><i>D</i></b>' and '<b><i>E</i></b>' gaining this 10% difference. 
 
@@ -106,9 +150,9 @@ One would therefore be tempted to state there has been a trend towards nutrition
 
 Now that this trend has been observed, what can we say about the categories of products per mark? How do vegetables, meat, fishery, ... fare in the eyes of Pr. Serge Hercberg's team ? 
 
-<img src ="./Images/nutrition_content.png"
+<center><img src ="./Images/nutrition_content.png"
     alt = ""
-    style = "float:centre;"/>
+    style = "float:centre;"/></center>
 
 Naturally, <i>plant-based</i> products are overwhelmingly the most nutritionaly favouralbe, occupaying more than half of the mark '<b><i>A</i></b>'. They, as well as <i>carbs</i> and <i>canned-food</i>, are less and less prevalent the worse the nutrition mark considered. On the opposite, <i>sugary snacks</i> are vastly more common in the bad sector of nutrition and become marginal when considering healthier standards. 
 
