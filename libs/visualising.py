@@ -486,11 +486,17 @@ def make_content_stacked_bar(table, label_column, x_column, y_column):
     iplot(fig, filename='stacked-bar')
     
 
-def palm_oil_overtime(df,df_absolute):   
+def palm_oil_overtime(df,df_absolute):
+
+    items = []
+    for item in list(df_absolute):
+        item = 'number of products: ' + str(item)
+        items.append(item)
+        
     data = [go.Bar(x=df.index,
                y=df.values,
                   #text=palm_oil_over_time,
-                   text = df_absolute,
+                   text = items,
             marker=dict(color='#097B4E'))]
 
 
