@@ -3,7 +3,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import seaborn as sns
-import folium
+#import folium
 import pylab
 
 from libs import exploring as explore
@@ -104,20 +104,30 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
     worldmap = [ dict(
             type = 'choropleth',
             locations = values_count_pd['cca3'],
-            z = np.log(values_count_pd['Count']),
+            z = np.log10(values_count_pd['Count']),
             name = values_count_pd['Country'],
             autocolorscale = False,
             reversescale = True,
             colorbar = dict(
-                autotick = True,
-                title = 'Counts [log10]'),
-            colorscale='Viridis'
+                #lenmode='fraction', 
+                len=0.7,
+                #autotick = True,
+                tick0= 1,
+                tickmode= 'array',
+                tickvals= [0, 0.5, 1, 1.5, 2, 2.5, 3, 3.5, 4],
+                ticktext = ['1','10<sup>1/2</sup>','10<sup>1</sup>', '10<sup>3/2</sup>', '10<sup>2</sup>', '10<sup>5/2</sup>', '10<sup>3</sup>','10<sup>3/2</sup>', '10<sup>4</sup>'],
+                #ticks = 'outside',
+                title = 'Counts'),
+            colorscale='Viridis', 
+            text = values_count_pd['Country'] + ' '+ values_count_pd['Count'].astype(str),
+            hoverinfo= 'text'
           ) ]
 
     lines = []
     
     if show_distances:
         origin_latlng = countries.loc[countries['cca3'] == 'FRA']['latlng'].iloc[0]
+        maximum = float(np.log10(values_count_pd['Count']).max())   
         for i, row in values_count_pd.iterrows():
             try:
                 origin_latlng = countries.loc[countries['cca3'] == 'FRA']['latlng'].iloc[0]
@@ -127,12 +137,15 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
                         type = 'scattergeo',
                         lon = [ country_latlng[1], origin_latlng[1] ],
                         lat = [ country_latlng[0], origin_latlng[0] ],
-                        mode = 'lines+marker',
-                        name = row['Country'],
+                        mode = 'lines+markers',
+                        name= '', 
+                        text = row['Country'] + ' '+ str(row['Count']),
+                        hoverinfo='text',
                         line = dict(
-                            width = np.log(row['Count'])*0.5,
-                            color = 'red',
+                            width = (np.log10(row['Count'])+0.1)*1.2,
+                            color = 'red'
                         ),
+                        opacity = float(np.log10(row['Count']))/maximum*1.2+0.1,
                     )
                 )
             except IndexError:
@@ -142,9 +155,8 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
     if title == '':
         tile = column_key
                 
-    # Format map
+    # Format map 
     layout = dict(
-        title = title,
         geo = dict(
             projection = dict(
                 type = 'Mercator'
@@ -158,8 +170,14 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
         ),
         showlegend=False,
         xaxis = dict(fixedrange = True),
-        yaxis = dict(fixedrange = True)
-
+        yaxis = dict(fixedrange = True),
+        margin=go.layout.Margin(
+            l=50,
+            r=100,
+            b=0,
+            t=0,
+            pad=4
+        )
     )
 
     fig = dict( data=worldmap + lines, layout=layout )
@@ -179,7 +197,7 @@ def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy
         ],
         'layout': {
             'xaxis': {'title': 'Carbon footprint per 100g [g]'},
-            'yaxis': {'title': "Price per 100g [g]"},
+            'yaxis': {'title': "Price per 100g [€]"},
         }
     }
 
@@ -328,7 +346,6 @@ def plot_column_composition(df, column_str, num_values=5):
 
     # Format layout
     layout = go.Layout(
-                    title=column_str, 
                     showlegend=True, 
                     barmode="stack",
                     xaxis=dict(
@@ -341,7 +358,14 @@ def plot_column_composition(df, column_str, num_values=5):
                         zeroline=False,
                     ),
                     width=800,
-                    height=300,
+                    height=200,
+                    margin=go.layout.Margin(
+                        l=40,
+                        r=40,
+                        b=50,
+                        t=15,
+                        pad=4
+                    )
     )
             
 
@@ -407,9 +431,15 @@ def make_grade_stacked_bar(attempt, label_column, x_column, y_column):
 
      # Format layout
     layout = go.Layout(
-                    title=label_column, 
                     showlegend=True, 
                     barmode="stack",
+                    margin=go.layout.Margin(
+                        l=50,
+                        r=50,
+                        b=50,
+                        t=15,
+                        pad=4
+                    )
     )
     
     figure = go.Figure(data=traces, layout=layout)
@@ -444,7 +474,7 @@ def find_composition_list(df, column_str, cat_lis):
     
 def plot_grade_content(nutrition_over_time):
     index_list = ['B', 'C', 'D', 'E']
-    cat_list = ['Plant-based', 'Carbs', 'Meats', 'Dairies', 'Seafood', 'Canned foods', 'Beverages', 'Sugary snacks','Others']
+    cat_list = ['Plant-based', 'Carbs', 'Meats', 'Dairies', 'Seafood', 'Beverages', 'Sugary snacks','Others']
     categories = {"keys": cat_list}
     check = pd.DataFrame.from_dict(categories)
     
@@ -468,7 +498,7 @@ def make_content_stacked_bar(table, label_column, x_column, y_column):
 
     keys = table[label_column].drop_duplicates()
     margin_bottom = np.zeros(len(table[x_column].drop_duplicates()))
-    colors = ['#90CB70', '#F0F472', '#B69C63','#D6D0C3', '#8CB5ED', '#F3AC6D', '#EC9BE2', '#7979CD', '#FCE2E4']
+    colors = ['#90CB70', '#F0F472', '#B69C63','#D6D0C3', '#8CB5ED', '#EC9BE2', '#7979CD', '#FCE2E4']
     
     for num, grade in enumerate(keys):
         values = list(table[table[label_column] == grade].loc[:, y_column])
@@ -489,28 +519,24 @@ def make_content_stacked_bar(table, label_column, x_column, y_column):
 def palm_oil_overtime(df,df_absolute):   
     data = [go.Bar(x=df.index,
                y=df.values,
-                  #text=palm_oil_over_time,
-                   text = df_absolute,
-            marker=dict(color='#097B4E'))]
+               #text=palm_oil_over_time,
+               text = round(df, 2).astype(str) + '% <br>'+ df_absolute.astype(str),
+               hoverinfo = 'text',
+               marker=dict(color='#097B4E'))]
 
 
     layout = go.Layout(
-        title='Usage of palm oil over time',
-        xaxis=dict(
-            title='time (years)',
-            titlefont=dict(
-                family='Courier New, monospace',
-                size=18,
-                color='#7f7f7f'
-            )
-        ),
         yaxis=dict(
-            title='Percentage of products with palm oil',
-            titlefont=dict(
-                family='Courier New, monospace',
-                size=18,
-                color='#7f7f7f'))
-    )
+            title='Percentage of products with palm oil [%]'
+            ),
+        margin=go.layout.Margin(
+            l=50,
+            r=50,
+            b=50,
+            t=15,
+            pad=4
+            )
+        )
 
     fig = go.Figure(data=data, layout=layout)
 
