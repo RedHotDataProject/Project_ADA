@@ -10,6 +10,7 @@ __all__ = [
     'count_words',
     'count_tag_occurences',
     'count_values',
+    'find_composition_list'
     # Visualizing
     'hist_all_features',
     'plot_cluster_by_tags',

@@ -1,12 +1,5 @@
-import json
-import warnings
-import re
-import pandas as pd
-
 from collections import Counter
-
-warnings.filterwarnings("ignore", 'This pattern has match groups') #TODO is there no other way around this warning?
-# from translate import Translator
+#from translate import Translator
 
 class SmartLookup(dict):
     def __missing__(self, key):
@@ -15,65 +8,81 @@ class SmartLookup(dict):
         return key
 
 
-def to_lookup(dict):
-
+def to_lookup(dictionary):
+    """
+    Generates dictionary with keys and values exchanged.
+    :param dictionary:
+    :return: dictionary
+    """
     lookup  = SmartLookup()
 
-    for key, values in dict.items():
+    for key, values in dictionary.items():
         for value in values:
             lookup[value] = key
-
 
     return lookup
 
 
 def filter_others(key, values_list):
-
+    """
+    Returns key if key is in values list, else returns 'Other'.
+    :param key:
+    :param values_list:
+    :return: values_list
+    """
     if key in values_list:
         return key
     else:
         return 'Other'
 
-        
 
 def country_name_filter_apply(name, countries):
     """
-    Now assign the country name in different steps : first check if the name to analysed called "name" matches one of the country name (in english) then just return that value. If not, Check that it does not match one of the country label (format cca2 by choice and since it's also in the json for the map so should use this one to compare with the map). Then, if no match yet, check if the "name" is CONTAINED in the alias (set of all country names in different languages and official/non-official). Problem: many returns possible. Check if one of these return has a value of 1 in his forced column, then assign that one. If none is forced or more then one is, don't assign and return the original country name. It would be good in the future to find these instances where none is forced so that we can add them to the list.
-   
-   countries has the following structure : ['name', 'cca2', 'alias', 'Forced']
-   """
-    if(name.lower() == "unknown"):
+    Harmonise country names.
+    :param name:
+    :param countries:
+    :return: harmonised name
+    """
+
+    # No country name specified
+    if name.lower() == "unknown":
         return "Unknown"
+
+    # Try match from country name
     country_set_name = countries[countries.name.apply(lambda x: x.lower()  == name.lower())]
-    if(not country_set_name.empty):
-        if(country_set_name.shape[0]==1):
-            return country_set_name.iloc[0,0]
-      
+    if not country_set_name.empty and country_set_name.shape[0]==1:
+        return country_set_name.iloc[0,0]
+
+    # Try match from country code
     country_set_cca2 = countries[countries.cca2.apply(lambda x: str(x).lower()== name.lower())]
-    if(not country_set_cca2.empty):
-        if(country_set_cca2.shape[0]==1):
-            return country_set_cca2.iloc[0,0]
-    
-    #print(name)
+    if not country_set_cca2.empty and country_set_cca2.shape[0]==1:
+        return country_set_cca2.iloc[0,0]
+
+    # Try match from country alias
     country_set = countries[countries['alias'].str.contains(name, case=False)]
-    if(not country_set.empty):
-        if(country_set.shape[0]==1):
+    if not country_set.empty:
+        if country_set.shape[0]==1:
             return country_set.iloc[0,0]
         
         else: # trouble: we have more than one match : check if any is forced !
             sub_country_set = country_set[country_set.Forced ==1]
-            if(not sub_country_set.empty):
-                if(sub_country_set.shape[0]==1):
+            if not sub_country_set.empty:
+                if sub_country_set.shape[0]==1:
                     return sub_country_set.iloc[0,0]
             else: 
                 return "Unspecified"
 
-            
-    #If we reach here, nothing strictly matched (1-1) (either more than one non-forced thing or more 
-    #      than one forced thing did).           
+    # No match could be found
     return "Unknown"
 
+
 def country_name_filter(name, countries):
+    """
+    Clean country name str from special characters.
+    :param name:
+    :param countries:
+    :return: name cleaned
+    """
     res = []
     empty = True
     name_list = name.split(',')
@@ -95,45 +104,42 @@ def country_name_filter(name, countries):
                 if ((name_found != "Unknown") & (name_found != "Unspecified")):
                     res.append(name_found)
                     empty = False
-    if(empty):
-        """
-        #This attempt only reduced the percentage of no association form 18% to 7% with many errors so this will not be considered
-        if(not ',' in name):
-            name_list2 = name.split(' ')
-            for name_part in name_list2:
-                if(name_part != ''):
-                    name_part = name_part.replace("(", "")
-                    name_part = name_part.replace(")", "")
-                    name_found = country_name_filter_apply(name_part, countries)
-                    if ((name_found != "Unknown") & (name_found != "Unspecified")):
-                        res.append(name_found)
-                        empty = False
-        """
-        res = ["Unknown"]
     
     return ",".join(res)
 
-def read(name):
+
+def read_list_from_str(string):
+    """
+    Read a comma separated list from string.
+    :param string as list
+    :return: string as comma-separated list
+    """
     res = []
-    name = str(name)
+    name = str(string)
     name = name.replace("'", "")
     list_name = name.strip("[]").split(", ")
     for name_part in list_name:
         res.append(name_part)
     return ",".join(res)
 
+
 def remove_language_indicators(df, column_name):
     """
-
+    Remove 'en_', 'fr_', etc. tags from column entries
     :param df:
     :param column_name:
-    :return:
+    :return: df
     """
     df[column_name] = df[column_name].map(lambda x: x.split(':', max_split=1))
     
 
 def group_categories(categories_str, categories_lookup):
-    
+    """
+    Find most common category group.
+    :param categories_str:
+    :param categories_lookup:
+    :return: most common category
+    """
     # Assign categories to group
     categories_grouped = [categories_lookup[z] for z in categories_str.split(',')]
     
@@ -142,6 +148,11 @@ def group_categories(categories_str, categories_lookup):
 
 
 def translate_columns(column):
+    """
+    Translate a column from german to english.
+    :param column german:
+    :return: column english
+    """
     translated_column = []
     translator = Translator(from_lang="german",to_lang="english")
     for i in range(len(column)):
@@ -150,30 +161,3 @@ def translate_columns(column):
         translated_column.append(element_translated)
         
     return translated_column
-
-def carbon_mean_eaternity(df):
-    #computing carbon footprint mean for each parent category of Eaternity database
-    df_mean_carbon_eaternity = pd.DataFrame()
-    list_parent_cat = list(df.main_category.value_counts().keys())
-    for cat in list_parent_cat:
-        carbon = df[df.main_category == cat]
-        df_mean_carbon_eaternity[cat]=[carbon['carbon-footprint_100g'].mean()]
-    return df_mean_carbon_eaternity
-
-def carbon_mean_openff(dict_categories,df_mean_carbon_eaternity):
-    #computing the carbon footprint mean of each category of OpenFoodFacts based on the dict established
-    mean=0
-    sum_=0
-    df_mean_carbon_openff=pd.DataFrame()
-    for cat in dict_categories:
-        if(isinstance(dict_categories[cat], (list,))):
-            for i in range(len(dict_categories[cat])):
-                #sum_ += occ[dict_categories[cat][i]]*df_mean_carbon[dict_categories[cat][i]]
-                sum_ += df_mean_carbon_eaternity[dict_categories[cat][i]]
-            mean =sum_/len(dict_categories[cat])
-            df_mean_carbon_openff[cat]= mean
-        else:
-            df_mean_carbon_openff[cat] = df_mean_carbon_eaternity[dict_categories[cat]][0]
-    return df_mean_carbon_openff
-
-        
