@@ -19,19 +19,22 @@ Everything we do possess a certain carbon footprint, and our diet is of course n
 <div style="text-align: justify">
 Our journey starts at the Open Food Facts dataset. This very rich source of information is unfortunately not a panacea: many entries are missing and overall each column lacks standardisation. The first step, after loading the interesting entries, was to harmonise these.
 </div>
-
+</br>
+</br>
 
 
 <div style="text-align: justify">
 For example, the country names in the origin, manufacturing and purchasing address did not match a single language (<i>United-Kingdom, Royaume-Uni, ...</i>) nor a single format (<i>United-Kingdom, United Kingdom, UK, ...</i>). We clarified this problem thanks to a dedicated <a href="https://mledoze.github.io/countries/">database</a> that we manually enriched to encapsulate most of the entries we observed. 
 </div>
-
+</br>
+</br>
 
 
 <div style="text-align: justify">
 This linguistic challenge was also met when we confronted the food categories both in the Open Food Facts and the Eaternity datasets. A sample of the last one was given to us by <b>Manuel Klarmann</b>, founder & CEO of the project. We deeply thank him for his help. Adding this source was a necessary step because the original dataset only contained a very limited number of carbon-footprint entries and these were biased towards certain categories of product (such as <i>dairy</i>). 
 </div>
-
+</br>
+</br>
 
 
 <div style="text-align: justify">
@@ -145,11 +148,12 @@ The meaning of the nutrition score index we shall be using can be found on the f
 
 
 
-
-<TABLE style="margin:1em auto;">
+<div align="center">
+<TABLE align="center">
    <TR ALIGN="CENTER">
       <TH COLSPAN="4">
-         <H3><BR><font color="#008010">Nut</font><font color="#9ACD32">rit</font><font color="#FFD700">ion</font> <font color="#FF8C00">Ma</font><font color="#DB4832">rk</font></H3>
+         <H3><BR><font color="#008010">Nut</font><font color="#9ACD32">rit</font><font                           color="#FFD700">ion</font> <font color="#FF8C00">Ma</font><font                                 color="#DB4832">rk</font>
+         </H3>
       </TH>
    </TR>
    <TR ALIGN="CENTER">
@@ -188,7 +192,8 @@ The meaning of the nutrition score index we shall be using can be found on the f
       <TD><font color="#DB4832">E</font></TD>
       <TD>Above 10</TD>
    </TR>
-</TABLE>
+</TABLE> 
+</div>
 
 
 
@@ -274,7 +279,8 @@ The two variables seem to be loosely correlated. Note however how clustered the 
 <div style="text-align: justify">
 We therefore reach an interesting conclusion: plant-based and carbs-full products are not only better in a nutritional sense, they are also superior in term of ecological and economical impact! 
 </div>
-
+</br>
+</br>
 
 And on this bombshell it is time to end this discussion ...
 
