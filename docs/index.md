@@ -3,6 +3,7 @@
     alt = ""
     style = "float:left; margin-right: 10px;"/>
 
+
 # RedHotDataProject
 
 This page hosts our final project for the <i><a href="https://dlab.epfl.ch/teaching/fall2018/cs401/">Applied Data Analysis</a></i> course of the <a href="https://www.epfl.ch/en/home/">EPFL</a>.
@@ -89,6 +90,7 @@ The meaning of the nutrition score index we shall be using can be found on the f
 - Whether the product is solid or a beverage, it is assigned a nutrition score accordingly to that displayed on the next table. This score itself is computed in two parts. The first one considers the energy, saturated fat, sugars and sodium. A high level in that category is considered unhealthy. The second part reflects the proportion of fruits, vegetables and nuts, fibers and proteins for which high levels are considered beneficial to the health. The difference of these two parts in the order presented here gives a <b><i>nutritional scores</i></b> that is <b>better for low values</b>. 
 
 
+<center>
 <TABLE>
    <TR ALIGN="CENTER">
       <TH COLSPAN="4">
@@ -132,6 +134,7 @@ The meaning of the nutrition score index we shall be using can be found on the f
       <TD>Above 10</TD>
    </TR>
 </TABLE>
+</center>
 
 After running a small routine transforming the nutrition score into a nutrition mark, we first query the following histogram, displaying the number of products added per year by mark.
 
@@ -143,9 +146,9 @@ Clearly, a peak in the number of products added with a nutrition grade happened 
 
 Yes ! Interestingly the levels are overall quite stable. Note however how the two best nutrition mark, <b><i>A</i></b> and <b><i>B</i></b>, slightly peaked during 2013. In 2018, this trend has reversed and their sum is now even smaller at 29% than in the beginning of the database history, when it was closed to 37%. This decrease has been matched by a similar increase in the less nutritionally favourable products, <b><i>D</i></b> and <b><i>E</i></b> gaining this 8% difference. 
 
-One would therefore be tempted to state there has been a trend towards nutritionally poor products, with the average mark stable. However, it is important at this stage to remember that the dataset does not indicate anything about the popularity of a given product. It merely offers insights into information related to the product itself. Even though more products are added with a poor nutrition mark, it could be that the good and lesser in diveristy products are in fact more demanded in shops around France. The only <b>conclusion to be drawn? More products are added with a bad nutrition mark</b> then a good one. In this respect, the major food seller are the one who could easily overturn the trend. But who are they? 
+One would therefore be tempted to state there has been a trend towards nutritionally poor products, with the average mark stable. However, it is important at this stage to remember that the dataset does not indicate anything about the popularity of a given product. It merely offers insights into information related to the product itself. Even though more products are added with a poor nutrition mark, it could be that the good and lesser in diveristy products are in fact more demanded in shops around France. The only <b>conclusion to be drawn? More products are added with a bad nutrition mark</b> than a good one. In this respect, the major food seller are the one who could easily overturn the trend. But who are they? 
 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/59.embed" height="525" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/61.embed" height="525" width="100%"></iframe>
 
 
 And unsurprisingly we find the <a href="https://www.statista.com/statistics/535415/grocery-market-share-france/">leaders in the french food retailer market</a>. Now that this trend has been observed, what can we say about the categories of products per mark? How do vegetables, meat, fishery and all fare in the eyes of Pr. Serge Hercberg's team?  
