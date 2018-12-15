@@ -18,6 +18,8 @@ Everything we do possess a certain carbon footprint, and our diet is of course n
 
 <div style="text-align: justify">
 Our journey starts at the Open Food Facts dataset. This very rich source of information is unfortunately not a panacea: many entries are missing and overall each column lacks standardisation. The first step, after loading the interesting entries, was to harmonise these.
+
+For example, the country names in the origin, manufacturing and purchasing address did not match a single language (<i>United-Kingdom, Royaume-Uni, ...</i>) nor a single format (<i>United-Kingdom, United Kingdom, UK, ...</i>). We clarified this problem thanks to a dedicated <a href="https://mledoze.github.io/countries/">database</a> that we manually enriched to encapsulate most of the entries we observed.
 </div>
 <br>
 
