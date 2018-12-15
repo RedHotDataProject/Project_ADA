@@ -84,7 +84,7 @@ def plot_grouped_counts(df, groupby_column='created_yyyy', count_columns=['nutri
     ax.set_ylabel('counts')
     plt.show()
 
-def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
+def plot_occurences_on_map(df, column_key, save, save_title, show_distances=False, title=''):
     
     countries_label = pd.read_csv("./data/country_lookup.csv")[['name', 'cca3']]     
     
@@ -188,11 +188,11 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
     iplot(figure)
     
     # also save offline
-    if save_plots_offline:
-        plot(figure, filename= plots_folder + "map_" + column_key + ".html", auto_open=False)
+    if save:
+        plot(figure, filename= plots_folder + "map_" + save_title + ".html", auto_open=False)
     
 
-def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy_100g"], cluster="labels"): 
+def plot_cluster_by_tags(df, save, save_title, plot2D_features = ["carbon-footprint_100g", "energy_100g"], cluster="labels"): 
     
     figure = {
         'data': [
@@ -214,8 +214,8 @@ def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy
     iplot(figure)
     
     # also save offline
-    if save_plots_offline:
-        plot(figure, filename= plots_folder + "cluster_" + "_".join(plot2D_features) + ".html", auto_open=False)    
+    if save:
+        plot(figure, filename= plots_folder + save_title + ".html", auto_open=False)    
 
 
 def plot_world_map(country_count):
@@ -292,7 +292,7 @@ def plot_column_composition_pie(df, column_str):
     plt.show()
 
     
-def plot_column_composition(df, column_str, num_values=5):
+def plot_column_composition(df, column_str, save, save_title, num_values=5):
     
     if isinstance(df[column_str].iloc[0], str):
         occurence = explore.count_tag_occurences(df, column_str)
@@ -389,8 +389,8 @@ def plot_column_composition(df, column_str, num_values=5):
     iplot(figure)
     
     # also save offline
-    if save_plots_offline:
-        plot(figure, filename= plots_folder + "column_composition_" + column_str + ".html", auto_open=False)    
+    if save:
+        plot(figure, filename= plots_folder + save_title + ".html", auto_open=False)    
     
 def search_cca3(name, countries):
     country_set_name = countries[countries.name.apply(lambda x: x.lower()  == name.lower())]
@@ -417,7 +417,7 @@ def hist(column):
     show(p1)
 
     
-def make_grade_stacked_bar(attempt, label_column, x_column, y_column):
+def make_grade_stacked_bar(attempt, label_column, x_column, y_column, save, save_title):
 
     #colors = ["#008010", "#9ACD32","#FFD700", "#FF8C00", "#DB4832"]
     colors = ["#517C53", "#99EB9D","#E9F287", "#F2CE75", "#F68774"]
@@ -466,8 +466,8 @@ def make_grade_stacked_bar(attempt, label_column, x_column, y_column):
     iplot(figure)
     
     # also save offline
-    if save_plots_offline:
-        plot(figure, filename= plots_folder + "grade_stacked_bar_" + label_column + ".html", auto_open=False) 
+    if save:
+        plot(figure, filename= plots_folder + save_title + ".html", auto_open=False) 
     
 def find_composition_list(df, column_str, cat_lis):
     if isinstance(df[column_str].iloc[0], str):
@@ -516,7 +516,7 @@ def plot_grade_content(nutrition_over_time):
         table_content = table_content.append(add_content, ignore_index=True)
     return table_content
 
-def make_content_stacked_bar(table, label_column, x_column, y_column):
+def make_content_stacked_bar(table, label_column, x_column, y_column, save, save_title):
 
     keys = table[label_column].drop_duplicates()
     data_stacked = []
@@ -539,8 +539,12 @@ def make_content_stacked_bar(table, label_column, x_column, y_column):
 
     fig = go.Figure(data=data_stacked,layout=layout)
     iplot(fig, filename='stacked-bar')
+    
+    # also save offline
+    if save:
+        plot(fig, filename= plots_folder + save_title  + ".html", auto_open=False) 
 
-def palm_oil_overtime(df,df_absolute):   
+def palm_oil_overtime(df,df_absolute, save, save_title):   
     data = [go.Bar(x=df.index,
                y=df.values,
                #text=palm_oil_over_time,
@@ -568,5 +572,5 @@ def palm_oil_overtime(df,df_absolute):
     iplot(figure)
     
     # also save offline
-    if save_plots_offline:
-        plot(figure, filename= plots_folder + "palm_oil_overtime"  + ".html", auto_open=False) 
+    if save:
+        plot(figure, filename= plots_folder + save_title  + ".html", auto_open=False) 
