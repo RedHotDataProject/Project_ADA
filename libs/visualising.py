@@ -517,27 +517,28 @@ def plot_grade_content(nutrition_over_time):
     return table_content
 
 def make_content_stacked_bar(table, label_column, x_column, y_column):
-    fig, ax = plt.subplots(figsize=(10,7))  
 
     keys = table[label_column].drop_duplicates()
-    margin_bottom = np.zeros(len(table[x_column].drop_duplicates()))
-    colors = ['#90CB70', '#F0F472', '#B69C63','#D6D0C3', '#8CB5ED', '#EC9BE2', '#7979CD', '#FCE2E4']
-    
+    data_stacked = []
+    colors = ['#90CB70', '#F0F472', '#B69C63','#D6D0C3', '#8CB5ED', '#F3AC6D', '#EC9BE2', '#7979CD', '#FCE2E4']
+    liste = ['A','B','C','D','E']
     for num, grade in enumerate(keys):
         values = list(table[table[label_column] == grade].loc[:, y_column])
+        
+        trace = go.Bar(
+                x=liste,
+                y=values,
+                name=grade,
+                #marker=dict(color=colors[num])
+                marker = dict(color = colors[num]))
 
-        table[table[label_column] == grade].plot.bar(x=x_column,y=y_column, ax=ax, stacked=True, bottom = margin_bottom, color=colors[num],label=grade)
-        margin_bottom += values
-    ax.set_title("Count of each categories per nutrition grade")
-    ax.set_xlabel('Grade')
-    ax.set_ylabel('Count')
-    if(y_column == 'Percentage'):
-        ax.set_ylabel('Percentage (%)')
-        ax.set_title("Percentage of the five most important categories per nutrition grade [+others]")
-    ax.legend(loc='center left', bbox_to_anchor=(1, 0.5))
-    pylab.savefig('./docs/Images/nutrition_content.png')
-    plt.show()
-    
+        layout = go.Layout(
+            barmode='stack'
+        )
+        data_stacked.append(trace)
+
+    fig = go.Figure(data=data_stacked,layout=layout)
+    iplot(fig, filename='stacked-bar')
 
 def palm_oil_overtime(df,df_absolute):   
     data = [go.Bar(x=df.index,
