@@ -223,8 +223,7 @@ def plot_cluster_by_tags(df,
     
     # also save offline
     if save:
-        plot(figure, filename= plots_folder + save_title + ".html", auto_open=False)    
-
+        second_plot_url = plot(figure, filename= plots_folder + save_title + ".html", auto_open=False)    
 
 def plot_world_map(country_count):
 
@@ -458,9 +457,17 @@ def make_grade_stacked_bar(attempt, label_column, x_column, y_column, save, save
             traces.append(trace);
 
      # Format layout
+    if y_column == 'Count':
+        axis_y = 'Count'
+    
+    if y_column == 'Percentage':
+        axis_y = 'Percentage of products [%]'
     layout = go.Layout(
                     showlegend=True, 
                     barmode="stack",
+                    yaxis=dict(
+                        title=axis_y
+                        ),
                     margin=go.layout.Margin(
                         l=50,
                         r=50,
@@ -543,7 +550,14 @@ def make_content_stacked_bar(table, label_column, x_column, y_column, save, save
                 marker = dict(color = colors[num]))
 
         layout = go.Layout(
-            barmode='stack'
+            barmode='stack',
+            margin=go.layout.Margin(
+                l=50,
+                r=50,
+                b=40,
+                t=15,
+                pad=4
+            )
         )
         data_stacked.append(trace)
 
