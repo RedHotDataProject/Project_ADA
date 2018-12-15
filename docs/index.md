@@ -3,6 +3,11 @@
     alt = ""
     style = "float:left; margin-right: 10px;"/>
 
+hello 2
+<head>
+  <link rel="import" href="./Images/plots/map_manufacturing_all.html">
+</head>
+
 
 # RedHotDataProject
 
@@ -127,7 +132,7 @@ Meaning of the nutrition score index can be found on the following <a href="http
    </TR>
 </TABLE>
 
-1
+2
 
 After running a small routine transforming the nutrition score into a nutrition mark, we first query the following histogram, displaying the number of products added per year by mark.
 
@@ -141,7 +146,7 @@ The trend seems to mimick that of the overall number of products added with a nu
     alt = ""
     style = "float:centre;"/></center>
 
-Yes ! Interestingly the levels are overall quite stable. Note however how the two best nutrition mark, '<b><i>A</i></b>' and '<b><i>B</i></b>', slightly peaked during 2013. In 2018, this trend has reversed and their sum is now even smaller at 30% than in the beginning of the database history, 40% in 2012. This decrease has been matched by a similar increase in the less nutritionally favourable products, '<b><i>D</i></b>' and '<b><i>E</i></b>' gaining this 10% difference. 
+Yes ! Interestingly the levels are overall quite stable. Note however how the two best nutrition mark, <b><i>A</i></b> and <b><i>B</i></b>, slightly peaked during 2013. In 2018, this trend has reversed and their sum is now even smaller at 30% than in the beginning of the database history, 40% in 2012. This decrease has been matched by a similar increase in the less nutritionally favourable products, <b><i>D</i></b> and <b><i>E</i></b> gaining this 10% difference. 
 
 One would therefore be tempted to state there has been a trend towards nutritionally poor products. However, it is important at this stage to remember that the dataset does not indicate anything about the popularity of a given product. It merely offers insights into information related to the product itself. Even though more products are added with a poor nutrition mark, it could be that the good and lesser in number products are in fact more demanded in shops around France. The only <b>conclusion to be drawn? More products are added with a bad nutrition mark</b>. 
 
@@ -151,7 +156,7 @@ Now that this trend has been observed, what can we say about the categories of p
     alt = ""
     style = "float:centre;"/></center>
 
-Naturally, <i>plant-based</i> products are overwhelmingly the most nutritionaly favouralbe, occupaying more than half of the mark '<b><i>A</i></b>'. They, as well as <i>carbs</i> and <i>canned-food</i>, are less and less prevalent the worse the nutrition mark considered. On the opposite, <i>sugary snacks</i> are vastly more common in the bad sector of nutrition and become marginal when considering healthier standards. 
+Naturally, <i>plant-based</i> products are overwhelmingly the most nutritionaly favouralbe, occupaying more than half of the mark <b><i>A</i></b>. They, as well as <i>carbs</i> and <i>canned-food</i>, are less and less prevalent the worse the nutrition mark considered. On the opposite, <i>sugary snacks</i> are vastly more common in the bad sector of nutrition and become marginal when considering healthier standards. 
 
 In the middle ground, <i>dairy</i>, <i>meat</i> and <i>sea-food</i>. Surprisingly, what are commonly considered in Europe as the main parts of a meal are not the most nutritionaly favourable. <i>Meat</i> is indeed well distributed among the different marks but does tend to peak at the lowest values of the nutrition index. <i>Dairy</i> performs slightly better, peaking in the lower part of the middle marks and finally, <i>sea-food</i> in the middle part. 
 
