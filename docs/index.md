@@ -3,6 +3,7 @@
     alt = ""
     style = "float:left; margin-right: 10px;"/>
 
+hello 
 
 <div w3-include-html="./Images/plots/map_manufacturing_all.html"></div>
 
