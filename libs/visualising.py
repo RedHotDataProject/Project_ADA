@@ -190,6 +190,8 @@ def plot_occurences_on_map(df, column_key, save, save_title, show_distances=Fals
     
 
 def plot_cluster_by_tags(df, 
+                         save, 
+                         save_title,
                          plot2D_features = ["carbon-footprint_100g", "energy_100g"], 
                          marker_text_column = "product_name",
                          cluster="labels"): 
@@ -385,7 +387,7 @@ def plot_column_composition(df, column_str, save, save_title, num_values=5):
                     margin=go.layout.Margin(
                         l=40,
                         r=40,
-                        b=50,
+                        b= 20,
                         t=15,
                         pad=4
                     )
