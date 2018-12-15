@@ -3,11 +3,6 @@
     alt = ""
     style = "float:left; margin-right: 10px;"/>
 
-hello 2
-<head>
-  <link rel="import" href="./Images/plots/map_manufacturing_all.html">
-</head>
-
 # RedHotDataProject
 
 This page hosts our final project for the <i><a href="https://dlab.epfl.ch/teaching/fall2018/cs401/">Applied Data Analysis</a></i> course of the <a href="https://www.epfl.ch/en/home/">EPFL</a>.
