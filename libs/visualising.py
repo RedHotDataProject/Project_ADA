@@ -68,7 +68,7 @@ def plot_occurences_of_distinct_values(df, column_key):
     plt.title("{0}: Count of top 20 distincive values".format(column_key.title()))
     plt.show()
     
-    return values_set, values_count
+    return values_count
 
 def plot_grouped_counts(df, groupby_column='created_yyyy', count_columns=['nutrition_score_fr']):
     
@@ -101,13 +101,13 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
 
     # Map country to cca3 code
     values_count_pd['cca3'] = values_count_pd.Country.apply(lambda l: search_cca3(l, countries_label))
-
+    
     # Colour all countries based on their count
     worldmap = [ dict(
             type = 'choropleth',
             locations = values_count_pd['cca3'],
             z = np.log10(values_count_pd['Count']),
-            name = values_count_pd['Country'],
+            # name = values_count_pd['Country'],
             autocolorscale = False,
             reversescale = True,
             colorbar = dict(
@@ -147,7 +147,7 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
                             width = (np.log10(row['Count'])+0.1)*1.2,
                             color = 'red'
                         ),
-                        opacity = float(np.log10(row['Count']))/maximum*1.2+0.1,
+                        opacity = float(np.log10(row['Count']))/maximum,
                     )
                 )
             except IndexError:
@@ -161,7 +161,7 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
     layout = dict(
         geo = dict(
             projection = dict(
-                type = 'Mercator'
+                type = 'mercator'
             ),
             showframe = False,
             showcoastlines = True,
