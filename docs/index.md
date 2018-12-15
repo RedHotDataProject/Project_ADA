@@ -3,9 +3,11 @@
     alt = ""
     style = "float:left; margin-right: 10px;"/>
 
-hello 
+hello 2
+<head>
+  <link rel="import" href="./Images/plots/map_manufacturing_all.html">
+</head>
 
-<div w3-include-html="./Images/plots/map_manufacturing_all.html"></div>
 
 # RedHotDataProject
 
