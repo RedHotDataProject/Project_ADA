@@ -17,7 +17,7 @@ from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 import plotly.graph_objs as go
 init_notebook_mode(connected=True)
 
-plots_folder = "./plots/"
+plots_folder = "./docs/Images/plots/"
 save_plots_offline = False
 
 def hist_all_features(df, column_keys):
@@ -560,7 +560,7 @@ def palm_oil_overtime(df,df_absolute, save, save_title):
         margin=go.layout.Margin(
             l=50,
             r=50,
-            b=15,
+            b=40,
             t=15,
             pad=4
             )
