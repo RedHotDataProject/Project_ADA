@@ -3,15 +3,12 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import matplotlib as mpl
 import seaborn as sns
-#import folium
 import pylab
+import copy 
 
 from libs import exploring as explore
 
 from sklearn import preprocessing
-
-from bokeh.layouts import gridplot
-from bokeh.plotting import figure, show, output_file
 
 from plotly.offline import download_plotlyjs, init_notebook_mode, plot, iplot
 import plotly.graph_objs as go
@@ -192,21 +189,32 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
         plot(figure, filename= plots_folder + "map_" + column_key + ".html", auto_open=False)
     
 
-def plot_cluster_by_tags(df, plot2D_features = ["carbon-footprint_100g", "energy_100g"], cluster="labels"): 
+def plot_cluster_by_tags(df, 
+                         plot2D_features = ["carbon-footprint_100g", "energy_100g"], 
+                         marker_text_column = "product_name",
+                         cluster="labels"): 
+    axis_title = copy.copy(plot2D_features)
+    for i, column_str in enumerate(plot2D_features):
+        if column_str == 'carbon-footprint_100g':
+            axis_title[i] = 'Carbon footprint per 100g [g]'
+        elif column_str == 'energy_100g':
+            axis_title[i] = 'Energy per 100g [kj]'
+        elif column_str == 'price_per_100g':
+            axis_title[i] = 'Price per 100g [€]'
     
     figure = {
         'data': [
             {
-                'x': df[df['main_category']==category]['carbon-footprint_100g'],
-                'y': df[df['main_category']==category]['price_per_100g'],
-                'text': df[df['main_category']==category]['product_name'],
-                'name': category,
+                'x': df[df[cluster]==label][plot2D_features[0]],
+                'y': df[df[cluster]==label][plot2D_features[1]],
+                'text': df[df[cluster]==label][marker_text_column],
+                'name': label,
                 'mode': 'markers',
-            } for category in df['main_category'].value_counts().index.tolist()
+            } for label in df[cluster].value_counts().index.tolist()
         ],
         'layout': {
-            'xaxis': {'title': 'Carbon footprint per 100g [g]'},
-            'yaxis': {'title': "Price per 100g [€]"},
+            'xaxis': {'title': axis_title[0]},
+            'yaxis': {'title': axis_title[1]},
         }
     }
     
@@ -339,7 +347,9 @@ def plot_column_composition(df, column_str, num_values=5):
                        x = [row.values[1]],
                        name=row.values[0],
                        orientation = 'h',
-                       marker=dict(color=colors[i],line=dict(color='rgb(248, 248,249)',width=1))
+                       marker=dict(color=colors[i],
+                                   # line=dict(color='rgb(248, 248,249)',width=1)
+                                  ),
                       )
         i+=1
         overall_count += row.values[1]

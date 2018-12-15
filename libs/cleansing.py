@@ -28,6 +28,7 @@ def to_lookup(dict):
 
 
 def filter_others(key, values_list):
+
     if key in values_list:
         return key
     else:
@@ -153,10 +154,10 @@ def translate_columns(column):
 def carbon_mean_eaternity(df):
     #computing carbon footprint mean for each parent category of Eaternity database
     df_mean_carbon_eaternity = pd.DataFrame()
-    list_parent_cat = list(df.category_en.value_counts().keys())
+    list_parent_cat = list(df.main_category.value_counts().keys())
     for cat in list_parent_cat:
-        carbon = df[df.category_en == cat]
-        df_mean_carbon_eaternity[cat]=[carbon['CO2-Value [gram CO2/serving]'].mean()]
+        carbon = df[df.main_category == cat]
+        df_mean_carbon_eaternity[cat]=[carbon['carbon-footprint_100g'].mean()]
     return df_mean_carbon_eaternity
 
 def carbon_mean_openff(dict_categories,df_mean_carbon_eaternity):
