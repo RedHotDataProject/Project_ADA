@@ -371,6 +371,9 @@ def plot_column_composition(df, column_str, save, save_title, num_values=5):
 
     # Format layout
     layout = go.Layout(
+                    #autosize=False,
+                    width=800,
+                    height=300,
                     showlegend=True, 
                     barmode="stack",
                     xaxis=dict(
@@ -382,13 +385,11 @@ def plot_column_composition(df, column_str, save, save_title, num_values=5):
                         showticklabels=False,
                         zeroline=False,
                     ),
-                    width=800,
-                    height=200,
                     margin=go.layout.Margin(
                         l=40,
                         r=40,
-                        b= 20,
-                        t=15,
+                        b=25,
+                        t=25,
                         pad=4
                     )
     )

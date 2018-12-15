@@ -13,9 +13,9 @@ Everything we do possess a certain carbon footprint, and our diet is of course n
 
 ## Before the Story, the Cleaning ...
 
-Our journey starts at the Open Food Facts dataset. This very rich source of information is unfortunately not a panacea: many entries are missing and overall every column lack uniformisation. The first step, after loading the interesting entries, was to harmonise these.
+Our journey starts at the Open Food Facts dataset. This very rich source of information is unfortunately not a panacea: many entries are missing and overall each column lacks uniformisation. The first step, after loading the interesting entries, was to harmonise these.
 
-For example, the country names in the origin, manufacturing and purchasing address did not match a single language (<i>United-Kingdom, Royaume-Unis, ...</i>) nor a single format (<i>United-Kingdom, United Kingdom, UK, ...</i>). we leviated this problem thanks to a dedicated <a href="https://mledoze.github.io/countries/">database</a> that we manually enriched to encapsulate most of the entries we observed. 
+For example, the country names in the origin, manufacturing and purchasing address did not match a single language (<i>United-Kingdom, Royaume-Unis, ...</i>) nor a single format (<i>United-Kingdom, United Kingdom, UK, ...</i>). We leviated this problem thanks to a dedicated <a href="https://mledoze.github.io/countries/">database</a> that we manually enriched to encapsulate most of the entries we observed. 
 
 This linguistic challenge was also met when we confronted the food categories both in the Open Food Facts and the Eaternity datasets. A sample of the last one was given to us by <b>Manuel Klarmann</b>, founder & CEO of the project. We deeply thank him for his help. Adding this source was a necessary step because the original dataset only contained a very limited number of carbon-footprint entries and these were biased towards certain categories of product (such as <i>dairy</i>). 
 
@@ -25,7 +25,7 @@ Thanks to these cleansing steps, we gathered a modified version of the Open Food
 
 ### Production / manufacture impact
 
-Our first query with our brand new database was to explore the distribution of the products information over the world. This is presented here in three steps: we first observe the place(s) of origin of the product, then the manufacturing place(s) and finally the purchasing place(s). Note the plural form since these can sometime have links to different countries.
+Our first query equipped with our brand new database is to explore the distribution of the products information over the world. This is presented here in three steps: we first observe the place(s) of origin of the product, then the manufacturing place(s) and finally the purchasing place(s). Note the plural form since these can sometime have links to different countries.
 
 #### Distribution of origin places? 
 
@@ -41,9 +41,9 @@ Our first query with our brand new database was to explore the distribution of t
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/39.embed" height="525" width="100%"></iframe>
 
-Note that we mainly have data for "western" countries, with a <b> huge bias toward France</b>. We mostly lack information for countries in Africa, the Middle East and the centre of Asia. Our dataset is thus clearly not a truthful representation of the world. We shall therefore restrict the analysis to the case of France, since it is the most prevalent among the different columns. This means products will be limited to those available for purchasing in France. Note that this requirement is not an exclusive one: we do <b>not only</b> require them to be sold in France but to be <b>at least</b> available in France.
+Note that we mainly have data for "western" countries, with a <b> huge bias toward France</b>. We mostly lack information for countries in Africa, the Middle East and the centre of Asia. Our dataset is thus clearly not a truthful representation of the world. We shall therefore restrict the analysis to the case of France, since it is the most prevalent among the different columns. This means products are to be limited to those available for purchasing in France. This requirement is not an exclusive one: we do <b>not only</b> require them to be sold in France but to be <b>at least</b> available in France.
 
-With these requirements, what can we say about the origins country? 
+With these changes brought about, what can we say about the origins country? 
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/43.embed" height="525" width="100%"></iframe>
 
@@ -51,7 +51,7 @@ And the manufacturing country?
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/41.embed" height="525" width="100%"></iframe>
 
-Interestingly, the distribution only seems to change for the developing country ! Indeed, these tend to rather be exportating products of origin instead of manufactured ones. On the contrary, developed countries contribute in the exports of both types of categories. This is of course not a surprising facts: developed countries have are industrial powerhouses. 
+Interestingly, the distribution only seems to change for the developing country! Indeed, these tend to rather be exportating products of origin instead of manufactured ones. On the contrary, developed countries contribute in the exports of both types of categories. This is of course not a surprising facts: developed countries are industrial powerhouses. 
 
 Now that this restriction in the representation power of our database is established, let us attack the first part of the problem: <b>palm oil</b> in the food industry. 
 
@@ -63,17 +63,19 @@ Considering this globally negative press, we would expect a clear trend in the e
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/45.embed" height="525" width="100%"></iframe>
 
-The data in the Open Food Facts started being gathered in 2012 which explains this start date of observation. Note how, after a flat behaviour, the palm oil usage in product noticeably decreased after 2015. For the palm-oil-history padawan, 2015 was a dramatic year of bad press for this type of oil with scandals in France surronding Nutella, dubbed the <i><a href="https://www.theguardian.com/environment/2015/jun/17/stop-eating-nutella-and-save-the-forests-urges-french-ecology-minister">#Nutellagate</a></i>, and palm oil production clearances linked to <a href="https://www.theguardian.com/sustainable-business/gallery/2015/dec/28/palm-oil-nutella-forest-fires-wildlife-deforestation-west-africa-india-2015-gallery">fires in Indonesia</a>. 
+The data in the Open Food Facts started being gathered in 2012 which explains this start date of observation. Note how, after a flat behaviour, the palm oil usage noticeably decreased after 2015. For the palm-oil-history padawan, 2015 was a dramatic year of bad press for this type of oil with scandals in France surronding Nutella, dubbed the <i><a href="https://www.theguardian.com/environment/2015/jun/17/stop-eating-nutella-and-save-the-forests-urges-french-ecology-minister">#Nutellagate</a></i>, and palm oil production clearances linked to <a href="https://www.theguardian.com/sustainable-business/gallery/2015/dec/28/palm-oil-nutella-forest-fires-wildlife-deforestation-west-africa-india-2015-gallery">fires in Indonesia</a>. 
 
 One could thus expect that products available in France and added during this year would have been more likely to have their palm oil content tagged! "One has to <i>observe</i> something in order to <i>see</i> it". The same explanation can be attributed to the previous years. The decrease following could have several explanation: 
 - The optimist would conclude in a reduction in the use of palm oil.
-- The pessimist (and sadly <a href="https://www.statista.com/statistics/263937/vegetable-oils-global-consumption/">realist</a>) would however conclude in  a decrease in the attention focused on palm oil, the subject going "out of fashion" but the palm trees still growing on freshly cleared exotic forest lands. 
+- The pessimist (and sadly <a href="https://www.statista.com/statistics/263937/vegetable-oils-global-consumption/">realist</a>) would however conclude in a decrease in attention focused on palm oil, the subject going "out of fashion" but the palm trees still growing on freshly cleared exotic forest lands. 
 
 But what can we say about the manufacturing countries behind these palm-oil-containing products? 
 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/47.embed" height="525" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/63.embed" height="525" width="100%"></iframe>
 
-Clearly, <b>France's neighbours</b> are its <b>biggest contributors</b>, after obviously France itself, with the UK heading, followed by Germany, Italy (and its Nutella) and Belgium. Interestingly, the <a href="https://en.wikipedia.org/wiki/Palm_oil">main palm oil producers</a> (Indonesia, Malaysia, Nigeria, ...) do not appear in this plot. They clearly do not generate the final product and naturally palm oil is not directly consumed but mostly part of a manufacturing process and we saw earlier that these manufacturing hubs are mostly in developed countries. 
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~maxencedraguet/63.embed"></iframe>
+
+Clearly, <b>France's neighbours</b> are its <b>biggest contributors</b>, after obviously France itself, with the UK heading, followed by Germany, Italy (and its Nutella) and Belgium. Interestingly, the <a href="https://en.wikipedia.org/wiki/Palm_oil">main palm oil producers</a> (Indonesia, Malaysia, Nigeria, ...) do not appear in this plot. They clearly do not generate the final product and naturally palm oil is not directly consumed but mostly part of a manufacturing process. As we saw earlier, these manufacturing hubs are mostly in developed countries explaining this distinction. 
 
 Palm oil is thus visibly a product imported and manufactured in the developed world. Clearly, developed nations are well equipped to regulate the ecological impact palm oil inflicts on the world.
 
