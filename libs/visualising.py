@@ -141,13 +141,13 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
                         lat = [ country_latlng[0], origin_latlng[0] ],
                         mode = 'lines+markers',
                         name= '', 
-                        text = row['Country'] + ' '+ str(row['Count']),
+                        text = row['Country'] + '<br>' + '# products: ' + str(row['Count']),
                         hoverinfo='text',
                         line = dict(
                             width = (np.log10(row['Count'])+0.1)*1.2,
                             color = 'red'
                         ),
-                        opacity = float(np.log10(row['Count']))/maximum,
+                        opacity = min(float(np.log10(row['Count']))/maximum*1.2 + 0.1, 1)
                     )
                 )
             except IndexError:
@@ -161,7 +161,7 @@ def plot_occurences_on_map(df, column_key, show_distances=False, title=''):
     layout = dict(
         geo = dict(
             projection = dict(
-                type = 'mercator'
+                type = 'equirectangular'
             ),
             showframe = False,
             showcoastlines = True,
