@@ -71,7 +71,7 @@ One could thus expect that products available in France and added during this ye
 
 But what can we say about the manufacturing countries behind these palm-oil-containing products? 
 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/63.embed" height="525" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/63.embed" height="350" width="100%"></iframe>
 
 <iframe width="900" height="800" frameborder="0" scrolling="no" src="//plot.ly/~maxencedraguet/63.embed"></iframe>
 
