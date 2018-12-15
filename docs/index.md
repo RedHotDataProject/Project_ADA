@@ -22,8 +22,7 @@ Our journey starts at the Open Food Facts dataset. This very rich source of info
 
 <br>
 <br>
-</br>
-</br>
+
 
 
 <div style="text-align: justify">
@@ -31,8 +30,6 @@ For example, the country names in the origin, manufacturing and purchasing addre
 </div>
 <br>
 <br>
-</br>
-</br>
 
 
 <div style="text-align: justify">
@@ -40,17 +37,12 @@ This linguistic challenge was also met when we confronted the food categories bo
 </div>
 <br>
 <br>
-</br>
-</br>
-
 
 <div style="text-align: justify">
 Another way to enrich our very sparse dataset consisted in scraping from the web. We harvested information about the product prices and, for Eaternity, categories thanks to dedicated web crawler spanning the sites of <i><a href="https://www.amazon.com">Amazon</a>, <a href="https://www.monoprix.fr">Monoprix</a>, <a href="https://search.migros.ch/de/q">Migros</a>, <a href="https://www.coradrive.fr/colmar/">Cora</a>, <a href="https://www.coop.ch/fr.html">Coop</a></i> and an <i> API</i> for  <i><a href="https://www.walmart.com">Walmart</a></i>.
 </div>
 <br>
 <br>
-</br>
-</br>
 
 <div style="text-align: justify">
 Thanks to these cleansing steps, we gathered a modified version of the Open Food Database that was suitable to the task we were setting to achieve.
@@ -92,8 +84,6 @@ Interestingly, the distribution only seems to change for the developing country!
 </div>
 <br>
 <br>
-</br>
-</br>
 
 
 <div style="text-align: justify">
@@ -107,8 +97,6 @@ The <a href="https://en.wikipedia.org/wiki/Social_and_environmental_impact_of_pa
 </div>
 <br>
 <br>
-</br>
-</br>
 
 
 <div style="text-align: justify">
@@ -122,8 +110,6 @@ The data in the Open Food Facts started being gathered in 2012, which explains t
 </div>
 <br>
 <br>
-</br>
-</br>
 
 
 <div style="text-align: justify">
@@ -133,8 +119,6 @@ One could thus expect that products available in France and added during this ye
 </div>
 <br>
 <br>
-</br>
-</br>
 
 
 But what can we say about the manufacturing countries behind these palm-oil-containing products? 
@@ -146,8 +130,6 @@ Clearly, <b>France's neighbours</b> are its <b>biggest contributors</b>, after o
 </div>
 <br>
 <br>
-</br>
-</br>
 
 
 <div style="text-align: justify">
@@ -160,72 +142,31 @@ Palm oil is thus visibly a product imported and manufactured in the developed wo
 The meaning of the nutrition score index we shall be using can be found on the following <a href="https://world.openfoodfacts.org/nutriscore">page</a>, thanks to <a href="https://solidarites-sante.gouv.fr/IMG/pdf/rapport_Hercberg_15_11_2013.pdf">the work of Pr. Serge Hercberg</a>. The main facts are the following: 
 - Products are marked according to the amount of nutrients they contain [per 100 g] and given a <b>grade between A and E </b>(A being obviously the best mark).
 </div>
+<br>
+<br>
 
 <center><img src ="./Images/nutriscore.png"
     alt = ""
     style = "width:400px;height:200px;"
     class="center"/></center>
 
+<br>
+<br>
 <div style="text-align: justify">
 - Whether the product is solid or a beverage, it is assigned a nutrition score accordingly to that displayed on the next table. This score itself is computed in two parts. The first one considers the energy, saturated fat, sugars and sodium. A high level in that category is considered unhealthy. The second part reflects the proportion of fruits, vegetables and nuts, fibres and proteins for which high levels are considered beneficial to the health. The difference of these two parts in the order presented here gives a <b><i>nutritional scores</i></b> that is <b>better for low values</b>. 
 </div>
 <br>
 <br>
-</br>
-</br>
 
 
-<div align="center">
-<TABLE align="center" width="100%">
-   <TR ALIGN="CENTER">
-      <TH COLSPAN="4">
-         <H3><BR><font color="#008010">Nut</font><font color="#9ACD32">rit</font><font                           color="#FFD700">ion</font> <font color="#FF8C00">Ma</font><font                                 color="#DB4832">rk</font>
-         </H3>
-      </TH>
-   </TR>
-   <TR ALIGN="CENTER">
-       <TH COLSPAN="2" width="50%">
-          Solid Food</TH>
-       <TH COLSPAN="2" width="50%">
-          Beverages</TH>
-   </TR>
-   <TR>
-      <TD><font color="#008010">A</font></TD>
-      <TD>Up to -1</TD>
-      <TD><font color="#008010">A</font></TD>
-      <TD>Mineral or Spring Water</TD>
-   </TR>
-   <TR>
-      <TD><font color="#9ACD32">B</font></TD>
-      <TD>[0, 2]</TD>
-      <TD><font color="#9ACD32">B</font></TD>
-      <TD>Up to 1</TD>
-   </TR>
-   <TR>
-      <TD><font color="#FFD700">C</font></TD>
-      <TD>[3, 10]</TD>
-      <TD><font color="#FFD700">C</font></TD>
-      <TD>[2, 5]</TD>
-   </TR>
-   <TR>
-      <TD><font color="#FF8C00">D</font></TD>
-      <TD>[11, 18]</TD>
-      <TD><font color="#FF8C00">D</font></TD>
-      <TD>[6, 9]</TD>
-   </TR>   
-   <TR>
-      <TD><font color="#DB4832">E</font></TD>
-      <TD>Above 19</TD>
-      <TD><font color="#DB4832">E</font></TD>
-      <TD>Above 10</TD>
-   </TR>
-</TABLE> 
-</div>
+
+<center><img src ="./Images/table.png"
+    alt = ""
+    style = "width:400px;height:250px;"
+    class="center"/></center>
 
 <br>
 <br>
-</br>
-</br>
 
 <div style="text-align: justify">
 After running a small routine transforming the nutrition score into a nutrition mark, we first query the following histogram, displaying the number of products added per year by mark.
@@ -244,8 +185,6 @@ Yes! Interestingly the levels are overall quite stable. Note however how the two
 </div>
 <br>
 <br>
-</br>
-</br>
 
 
 <div style="text-align: justify">
@@ -266,8 +205,6 @@ Naturally, <i>plant-based</i> products are overwhelmingly the most nutritionally
 </div>
 <br>
 <br>
-</br>
-</br>
 
 
 <div style="text-align: justify">
@@ -275,8 +212,6 @@ In the middle ground, <i>dairy</i>, <i>meat</i> and <i>seafood</i>. Surprisingly
 </div>
 <br>
 <br>
-</br>
-</br>
 
 
 <div style="text-align: justify">
@@ -290,8 +225,6 @@ Let us now investigate the carbon footprint of different products and categories
 </div>
 <br>
 <br>
-</br>
-</br>
 
 
 <div style="text-align: justify">
@@ -299,8 +232,6 @@ Common sense would suggest organic products are rarely manufactured and, due to 
 </div>
 <br>
 <br>
-</br>
-</br>
 
 
 ####### Could we have the .plot_column_composition for the categories in Eaternity+OpenFoodFacts here? 
@@ -311,8 +242,6 @@ Let us then observe the relation ship of carbon footprint and price per 100 g as
 </div>
 <br>
 <br>
-</br>
-</br>
 
 
 ####### scatter plot of both here 
@@ -323,8 +252,6 @@ The two variables seem to be loosely correlated. Note however how clustered the 
 </div>
 <br>
 <br>
-</br>
-</br>
 
 
 <div style="text-align: justify">
@@ -332,8 +259,6 @@ We therefore reach an interesting conclusion: plant-based and carbs-full product
 </div>
 <br>
 <br>
-</br>
-</br>
 
 And on this bombshell it is time to end this discussion ...
 
