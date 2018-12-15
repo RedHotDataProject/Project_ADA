@@ -121,8 +121,9 @@ def nutrition_grade(nutrition_over_time):
     return nutrition_over_time_reduced.drop(columns = ['TotalPerYear'])
 
 
-def proportion_palm_oil(food_facts_pd,palm_oil_pd):
+def proportion_palm_oil(food_facts_pd):
     #extracting products with palm oil 
+    palm_oil_pd = food_facts_pd[food_facts_pd.ingredients_text.str.contains("palm").fillna(value=False)]
     palm_oil_over_time = palm_oil_pd['created_yyyy'].value_counts()
     food_facts_over_time = food_facts_pd['created_yyyy'].value_counts()
     proportions = palm_oil_over_time / food_facts_over_time *100
