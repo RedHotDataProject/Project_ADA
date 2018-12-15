@@ -556,7 +556,7 @@ def palm_oil_overtime(df,df_absolute):
         margin=go.layout.Margin(
             l=50,
             r=50,
-            b=50,
+            b=15,
             t=15,
             pad=4
             )
