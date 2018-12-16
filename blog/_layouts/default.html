@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="{{ site.locale }}">
   
-  {% include head.html %}
+	{% include head.html %}
 
-  <body>
-    {% include page-header.html %}
+	<body data-spy="scroll" data-target="#toc">
 
-    <section class="main-content">
-      
-      {{ content }}
+		{% include page-header.html %}		
 
-      {% include page-footer.html %}
 
-    </section>
+		<div class="container">
+			<div class="row">
+				<!-- sidebar, which will move to the top on a small screen -->
+				<div class="col-sm-3">
+					<nav id="toc" data-toggle="toc" class="sticky-top"></nav>
+					Hihi
+				</div>
 
-  </body>
+				<!-- main content area -->
+				<div class="col-sm-9">
+
+					{{ content }}
+
+					{% include page-footer.html %}
+
+				</div>
+
+
+			</div>
+		</div>
+
+
+
+	</body>
 </html>
