@@ -248,6 +248,7 @@ def plot_column_composition(df,df_colors, column_str, num_values=5,
     """
     Plot vertical, stacked bar-plot of occurrences.
     :param df:
+    :df_colors: default colour to be assigned
     :param column_str:
     :param num_values: number of most common distinct values that should shown in bar plot
     :param save_offline:

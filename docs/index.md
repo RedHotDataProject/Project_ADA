@@ -10,30 +10,28 @@ This page hosts our final project for the <i><a href="https://dlab.epfl.ch/teach
 
 ## Abstract
 
-<div style="text-align: justify">
+<p><div style="text-align: justify">
 Everything we do possess a certain carbon footprint, and our diet is of course no exception. From growing, farming, processing and packaging our food, energy and organic resources are consumed and released, which reflects in the emission of greenhouse gases, such as CO<sub>2</sub>. In this story, we explore the arcane of the food industry, such as its manufacturing, product composition and sales, and delve into its carbon emission as well as its nutrition standards of quality. Using the <a href="https://world.openfoodfacts.org">Open Food Facts</a> dataset as well as <a href="http://www.eaternity.org">Eaternity</a>'s, we present the carbon footprint repartition, starting on an understanding of the products, followed by the breakdown of production countries as well as point of sales and evaluating trends in diet composition, with a special focus on nutritionally high marked products in France and the UK. With this study, we want to provide a better understanding of the agri-food industry, and eventually help reducing carbon emissions by promoting a healthier product base for our consumption.
 </div>
 
 ## Before the Story, the Cleaning ...
 
-<div style="text-align: justify">
-Our journey starts at the Open Food Facts dataset. This very rich source of information is unfortunately not a panacea: many entries are missing and overall each column lacks standardisation. The first step, after loading the interesting entries, was to harmonise these.
+<p><div style="text-align: justify">
+Our journey starts at the Open Food Facts dataset. This very rich source of information is unfortunately not a panacea: many entries are missing and overall each column lacks standardisation. The first step, after loading the interesting entries, was to harmonise them.
 </div>
 
-
-
-<div style="text-align: justify">
+<p><div style="text-align: justify">
 
 For example, the country names in the origin, manufacturing and purchasing address did not match a single language (<i>United-Kingdom, Royaume-Uni, ...</i>) nor a single format (<i>United-Kingdom, United Kingdom, UK, ...</i>). We clarified this problem thanks to a dedicated <a href="https://mledoze.github.io/countries/">database</a> that we manually enriched to encapsulate most of the entries we observed. 
 </div>
 
 
-<div style="text-align: justify">
+<p><div style="text-align: justify">
 This linguistic challenge was also met when we confronted the food categories both in the Open Food Facts and the Eaternity datasets. A sample of the last one was given to us by <b>Manuel Klarmann</b>, founder & CEO of the project. We deeply thank him for his help. Adding this source was a necessary step because the original dataset only contained a very limited number of carbon-footprint entries and these were biased towards certain categories of product (such as <i>dairy</i>). 
 </div>
 
 
-<div style="text-align: justify">
+<p><div style="text-align: justify">
 Another way to enrich our very sparse dataset consisted in scraping from the web. We harvested information about the product prices and, for Eaternity, categories thanks to dedicated web crawler spanning the sites of <i><a href="https://www.amazon.com">Amazon</a>, <a href="https://www.monoprix.fr">Monoprix</a>, <a href="https://search.migros.ch/de/q">Migros</a>, <a href="https://www.coradrive.fr/colmar/">Cora</a>, <a href="https://www.coop.ch/fr.html">Coop</a></i> and an <i> API</i> for  <i><a href="https://www.walmart.com">Walmart</a></i>.
 </div>
 
@@ -104,7 +102,7 @@ One could thus expect that products available in France and added during this ye
 
 But what can we say about the manufacturing countries behind these palm-oil-containing products? 
 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/63.embed" height="300" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/73.embed" height="300" width="100%"></iframe>
 
 <div style="text-align: justify">
 Clearly, <b>France's neighbours</b> are its <b>biggest contributors</b>, after obviously France itself, with the UK heading, followed by Germany, Italy (and its Nutella) and Belgium. Interestingly, the <a href="https://en.wikipedia.org/wiki/Palm_oil">main palm oil producers</a> (Indonesia, Malaysia, Nigeria, etc.) do not appear in this plot. They clearly do not generate the final product and naturally palm oil is not directly consumed but mostly part of a manufacturing process. As we saw earlier, these manufacturing hubs are mostly in developed countries explaining this distinction. 
@@ -121,27 +119,19 @@ The meaning of the nutrition score index we shall be using can be found on the f
 - Products are marked according to the amount of nutrients they contain [per 100 g] and given a <b>grade between A and E </b>(A being obviously the best mark).
 </div>
 
-
-
 <center><img src ="./Images/nutriscore.png"
     alt = ""
     style = "width:400px;height:200px;"
     class="center"/></center>
 
-
-
 <div style="text-align: justify">
 - Whether the product is solid or a beverage, it is assigned a nutrition score accordingly to that displayed on the next table. This score itself is computed in two parts. The first one considers the energy, saturated fat, sugars and sodium. A high level in that category is considered unhealthy. The second part reflects the proportion of fruits, vegetables and nuts, fibres and proteins for which high levels are considered beneficial to the health. The difference of these two parts in the order presented here gives a <b><i>nutritional scores</i></b> that is <b>better for low values</b>. 
 </div>
-
-
 
 <center><img src ="./Images/table.png"
     alt = ""
     style = "float:left; margin-right: 10px;"
     class="center"/></center>
-
-
 
 <div style="text-align: justify">
 After running a small routine transforming the nutrition score into a nutrition mark, we first query the following histogram, displaying the number of products added per year by mark.
@@ -163,7 +153,7 @@ Yes! Interestingly the levels are overall quite stable. Note however how the two
 One would therefore be tempted to state there has been a trend towards nutritionally poor products, with the average mark stable. However, it is important at this stage to remember that the dataset does not indicate anything about the popularity of a given product. It merely offers insights into information related to the product itself. Even though more products are added with a poor nutrition mark, it could be that the healthy and less diverse products are in fact more demanded in shops around France than the less ideal ones. The only <b>conclusion to be drawn? More products are added with a bad nutrition mark</b> than a good one. In this respect, food sellers, and of course the government, are the ones who could easily overturn the trend. But who are they? 
 </div>
 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/65.embed" height="250" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/75.embed" height="250" width="100%"></iframe>
 
 
 <div style="text-align: justify">
@@ -194,20 +184,26 @@ Let us now investigate the carbon footprint of different products and categories
 Common sense would suggest organic products are rarely manufactured and, due to their origin, inflicting a smaller footprint than the less nutritionally  favourable products such as sugary snacks and meat. Let's take a closer look at this. First, hat can we say about the categories of the products possessing carbon footprint information? 
 </div>
 
-####### Could we have the .plot_column_composition for the categories in Eaternity+OpenFoodFacts here? 
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/71.embed" height="350" width="100%"></iframe>
 
 <div style="text-align: justify">
-Let us then observe the relation ship of carbon footprint and price per 100 g as displayed next. 
-</div>
-
-####### scatter plot of both here 
-
-<div style="text-align: justify">
-The two variables seem to be loosely correlated. Note however how clustered the plot is! Products of the same categories tend to occupy a certain portion of this phase-space. Observe for example how <i>seafood</i> aligns, <i>sugary snacks</i> such as chocolate cluster, how <i>carbs</i>, <i>plant-based</i> products and <i>beverages</i> (with the notable exception of tea) concentrate around the low price low carbon footprint area. 
+They unfortunately exhibit a bias towards <i>plant-based</i> products. We shall nonetheless keep it in such proportion since the last section suggested that category to be the most promising one for its nutritional and ecological impact. The category <i>Others</i> gathers products with a category name that did not match our Open Food Fact ones and is discarded in the next part of the analysis. 
 </div>
 
 <div style="text-align: justify">
-We therefore reach an interesting conclusion: plant-based and carbs-full products are not only better in a nutritional sense, they are also superior in term of ecological and economical impact! 
+Let us then observe the relation ship of carbon footprint and price per 100 g. This next plot displays a zoom of our data to make it easier to distinguish between categories. 
+</div>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/67.embed" height="525" width="100%"></iframe>
+
+<div style="text-align: justify">
+The two variables do not seem to be closely correlated: there are many inexpensive products with a heavy footprint and vice versa. Note however how clustered the plot is! Products of the same category tend to occupy a certain portion of this phase-space. Observe for example how <i>seafood</i>, <i>meat</i> and <i>dairies</i> occupy the heavy footprint area, <i>sugary snacks</i> cluster (such as chocolate at (200, 2.6), how <i>carbs</i>, <i>plant-based</i> products and <i>beverages</i> (with tea as a notable outlier) concentrate around the low price low carbon footprint area. This last point is made evident when zooming even more on the origin.
+</div>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/69.embed" height="525" width="100%"></iframe>
+
+<div style="text-align: justify">
+We therefore reach an interesting conclusion: <b>plant-based and carbs-full products are not only better in a nutritional sense, they are also superior in term of ecological impact!</b> Even better: considering the first scatter plot, they seem to cost less on average than their meaty/fishy counterpart. 
 </div>
 
 And on this bombshell it is time to end this discussion ...
