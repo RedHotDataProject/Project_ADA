@@ -4,6 +4,14 @@
 
 Everything we do has a carbon footprint, and our diet is no exception. From growing, farming, processing and packaging our food, energy and organic resources are consumed and released, which reflects in the emission of greenhouse gases, like CO<sub>2</sub>. In our project, we analyse the processed foods industry - its manufacturing, product composition, and sales - for the main sources of carbon emissions, using the Open Food Facts dataset. We explain the carbon footprint repartition, starting on an understanding of the products, followed by the breakdown of production countries as well as point of sales and evaluating trends in diet composition, with a special focus on nutritionally high marked products in France and the UK. With this study, we want to provide a better understanding of the agri-food industry, and eventually help reducing carbon emissions.
 
+## Member Contribution
+
+- Christopher:
+
+- Nina:
+
+- Maxence: Problem formulation, Writing the website an Including plots, Standardisation of country names, Analysis of nutrition grade/mark/category and Distribution over countries of different variables. 
+
 ## Research questions
 Part 1 - Production/manufacture impact:
 > - [x] Which are the dominant global food producers and manufacturers? <b>Answered</b>
