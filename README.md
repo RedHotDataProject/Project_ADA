@@ -1,7 +1,7 @@
 # Open Food Facts: The Carbon “Food-print” We Do Not Eat
 <b> By Christopher Lang, Nina Tubau and Maxence Draguet </b> 
 
-<b> website: </b>https://redhotdataproject.github.io/Project_ADA/
+<b> Data Story Website: </b>https://redhotdataproject.github.io/Project_ADA/
 
 ## Abstract
 
