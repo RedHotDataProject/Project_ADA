@@ -211,7 +211,7 @@ Let us then observe the relation ship of carbon footprint and price per 100 g. T
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/67.embed" height="525" width="100%"></iframe>
 
 <p><div style="text-align: justify">
-The two variables do not seem to be closely correlated: there are many inexpensive products with a heavy footprint and vice versa. Note however how clustered the plot is! Products of the same category tend to occupy a certain portion of this phase-space. Observe for example how <i>seafood</i>, <i>meat</i> and <i>dairies</i> occupy the heavy footprint area, <i>sugary snacks</i> cluster (such as chocolate at (200, 2.6), how <i>carbs</i>, <i>plant-based</i> products and <i>beverages</i> (with tea as a notable outlier) concentrate around the low price low carbon footprint area. This last point is made evident when zooming even more on the origin.
+The two variables do not seem to be closely correlated: there are many inexpensive products with a heavy footprint and vice versa. Note however how clustered the plot is! Products of the same category tend to occupy a certain portion of this phase-space. Observe for example how <i>seafood</i>, <i>meat</i> and <i>dairies</i> occupy the heavy footprint area, <i>sugary snacks</i> cluster (such as chocolate at (200, 2.6)), how <i>carbs</i>, <i>plant-based</i> products and <i>beverages</i> (with tea as a notable outlier) concentrate around the low price low carbon footprint area. This last point is made evident when zooming even more on the origin.
 </div></p>
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/69.embed" height="525" width="100%"></iframe>
