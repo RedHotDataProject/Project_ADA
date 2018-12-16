@@ -582,3 +582,30 @@ def scatter_plot_price_grade(price_grade_pd):
     fig= go.Figure(data=data, layout=layout)
     # Plot and embed in ipython notebook!
     iplot(fig, filename='basic-scatter')
+
+def scatter_plot_price_grade_categories(price_grade_pd,df_colors):
+    data=[]
+
+    for category in list(price_grade_pd.main_category_y.value_counts().index):
+        df = price_grade_pd[price_grade_pd.main_category_y==category].sort_values('nutrition_grade')
+        color =df_colors[df_colors.category == category]['color'].values[0]
+        trace = go.Scatter(
+            x = df.price_per_100g,
+            y = df.nutrition_grade,
+            mode = 'markers',
+            hoverinfo = 'text',
+            text = df.product_name + '<br>'+ round(df.price_per_100g,4).astype(str) + '€',
+            marker = dict(color = color),
+            name =category)
+        data.append(trace)
+
+    layout= go.Layout(
+        xaxis= dict(title='Price[€]'),
+        yaxis =  dict(title='Nutritional Mark',
+                      categoryorder = "category descending", 
+                      type = "category")
+    )
+    fig= go.Figure(data=data, layout=layout)
+    # Plot and embed in ipython notebook!
+    iplot(fig, filename='basic-scatter')
+
