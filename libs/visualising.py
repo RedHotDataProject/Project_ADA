@@ -206,8 +206,10 @@ def plot_cluster_by_tags(df,
             } for label in df[cluster].value_counts().index.tolist()
         ],
         'layout': {
-            'xaxis': {'title': axis_title[0]},
-            'yaxis': {'title': axis_title[1]},
+            'xaxis': {'title': axis_title[0],
+                      'range':  [min(df[plot2D_features[0]].min(),0), df[plot2D_features[0]].quantile(.9)]},
+            'yaxis': {'title': axis_title[1],
+                      'range': [min(df[plot2D_features[1]].min(),0), df[plot2D_features[1]].quantile(.9)]},
         }
     }
 
