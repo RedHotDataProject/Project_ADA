@@ -1,4 +1,4 @@
-# Open Food Facts: The Carbon “Dood-print” We Do Not Eat
+# Open Food Facts: The Carbon “Food-print” We Do Not Eat
 
 ## Abstract
 
