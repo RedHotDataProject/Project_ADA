@@ -3,6 +3,8 @@
 
 @import "{{ site.theme }}";
 
-.page-header { 	color: #fff; text-align: center; 
-		background-color: #159957; 
-		background-image: url("background_image_3.jpg"); }
+.page-header { 	
+	color: #fff; 
+	text-align: center; 
+	background-color: #159957; 
+	background-image: "background_image_3.jpg"; }
