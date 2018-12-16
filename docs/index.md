@@ -111,7 +111,7 @@ One could thus expect that products available in France and added during this ye
 
 <p>But what can we say about the manufacturing countries behind these palm-oil-containing products? </p>
 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/73.embed" height="300" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/73.embed" height="250" width="100%"></iframe>
 
 <p><div style="text-align: justify">
 Clearly, <b>France's neighbours</b> are its <b>biggest contributors</b>, after obviously France itself, with the UK heading, followed by Germany, Italy (and its Nutella) and Belgium. Interestingly, the <a href="https://en.wikipedia.org/wiki/Palm_oil">main palm oil producers</a> (Indonesia, Malaysia, Nigeria, etc.) do not appear in this plot. They clearly do not generate the final product and naturally palm oil is not directly consumed but mostly part of a manufacturing process. As we saw earlier, these manufacturing hubs are mostly in developed countries explaining this distinction. 
@@ -143,7 +143,7 @@ The meaning of the nutrition score index we shall be using can be found on the f
 
 <center><img src ="./Images/table.png"
     alt = ""
-    style = "float:left; margin-right: 10px;"
+    style = "width:600px;height:500px;"
     class="center"/></center>
 
 <p><div style="text-align: justify">
@@ -198,7 +198,7 @@ Let us now investigate the carbon footprint of different products and categories
 Common sense would suggest organic products are rarely manufactured and, due to their origin, inflicting a smaller footprint than the less nutritionally  favourable products such as sugary snacks and meat. Let's take a closer look at this. First, hat can we say about the categories of the products possessing carbon footprint information? 
 </div></p>
 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/71.embed" height="350" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/71.embed" height="300" width="100%"></iframe>
 
 <p><div style="text-align: justify">
 They unfortunately exhibit a bias towards <i>plant-based</i> products. We shall nonetheless keep it in such proportion since the last section suggested that category to be the most promising one for its nutritional and ecological impact. The category <i>Others</i> gathers products with a category name that did not match our Open Food Fact ones and is discarded in the next part of the analysis. 
