@@ -25,7 +25,7 @@ Our journey starts with a dataset, the crowdsourced <a href="https://world.openf
 </p>
 
 <p><div style="text-align: justify">
-However, the database is still very sparse on carbon footprints and needs the further enrichment provided by a sample of 663 additional products from the <a href="http://www.eaternity.org">Eaternity</a> database that was provided to us by Manuel Klarmann, founder & CEO of the eponym project. We deeply thank him for this contribution to our project. 
+However, the database is still very sparse on carbon footprints and needs the further enrichment provided by a sample of 663 additional products from the <a href="http://www.eaternity.org">Eaternity</a> database that was offered to us by Manuel Klarmann, founder & CEO of the eponym project. We deeply thank him for this contribution to our project. 
     </div>
 </p>
 
