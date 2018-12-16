@@ -244,8 +244,3 @@ https://www.theguardian.com/environment/2015/jun/17/stop-eating-nutella-and-save
 https://www.statista.com/statistics/263937/vegetable-oils-global-consumption/
 
 https://www.statista.com/statistics/535415/grocery-market-share-france/
-
-
-```python
-
-```
