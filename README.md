@@ -52,3 +52,4 @@ conda install webdriver fuzzyset py-translate
 
 
 ## Questions for TAs
+Will you really enjoy your christmas knowing we have to study ? 
