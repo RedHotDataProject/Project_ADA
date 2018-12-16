@@ -410,6 +410,8 @@ def make_grade_stacked_bar(attempt, label_column, x_column, y_column, save_offli
                 )
             )
 
+            
+
             traces.append(trace);
 
      # Format layout
@@ -551,3 +553,29 @@ def create_colorbar_df(food_facts_pd):
     df_colors['color'] = main_cat_colors + manuf_colors + stores_colors
     
     return df_colors
+
+def scatter_plot_price_grade(price_grade_pd):
+    colors = {'A':'#517C53','B':'#99EB9D','C':'#E9F287','D':'#F2CE75','E':'#F68774'}
+    # Create a trace
+    data=[]
+    for grade in list(price_grade_pd.nutrition_grade.value_counts().index):
+        df = price_grade_pd[price_grade_pd.nutrition_grade==grade]
+        trace = go.Scatter(
+            x = df.price_per_100g,
+            y = df['nutrition-score-fr_100g_y'],
+            mode = 'markers',
+            hoverinfo = 'text',
+            text = round(df.price_per_100g,4).astype(str) + '€ <br>'+' grade:'+(df['nutrition-score-fr_100g_y']).astype(str),
+            marker = dict(color = colors[grade]),
+            name =grade
+        )
+        data.append(trace)
+
+    layout= go.Layout(
+    xaxis= dict(title='Price[€]'),
+            yaxis =  dict(title='Nutritional grade'),
+    )
+    #data = [trace]
+    fig= go.Figure(data=data, layout=layout)
+    # Plot and embed in ipython notebook!
+    iplot(fig, filename='basic-scatter')
