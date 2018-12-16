@@ -24,16 +24,16 @@ In order to enrich the dataset, we are going to crawl the online food shops for 
 
 Project roadmap until project milestone 2, November 25th:
 - [x] Set up environment - Access the clusters and datasets, describe the statistics and properties of the data; 
-- [ ] Data cleansing - brush up the data, complete missing carbon footprints, extract suitable categories;
+- [x] Data cleansing - brush up the data, complete missing carbon footprints, extract suitable categories;
 - [x] Enrich dataset with missing price information - implement and launch a web crawler for online food shops;
 - [x] Present the data - visualise geographical patterns of production and sales of processed foods. 
 
 ## List of internal milestones up until project milestone 3
-- [ ] Aggregate carbon-footprints and product prices in categories.
-- [ ] Perform part of the analysis requiring the footprint.
-- [ ] Perform precise study on the high-nutritional index food products (may require to derive a personal index based on the content)
-- [ ] Make plots more appealing - Standardize colormaps, make maps and clusters plots interactive.
-- [ ] Write report
+- [x] Aggregate carbon-footprints and product prices in categories.
+- [x] Perform part of the analysis requiring the footprint.
+- [x] Perform precise study on the high-nutritional index food products (may require to derive a personal index based on the content)
+- [x] Make plots more appealing - Standardize colormaps, make maps and clusters plots interactive.
+- [x] Write report
 
 
 ## Additional libraries used
