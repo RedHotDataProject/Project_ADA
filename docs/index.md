@@ -13,37 +13,33 @@ This page hosts our final project for the <i><a href="https://dlab.epfl.ch/teach
 ## Introduction
 
 <p><div style="text-align: justify">
-Everything we do possess a certain carbon footprint, and our diet is of course no exception. From growing, farming, processing and packaging our food, energy and organic resources are consumed and released, which reflects in the emission of greenhouse gases, such as CO<sub>2</sub>. In this story, we explore the arcane of the food industry, such as its manufacturing, product composition and sales, and delve into its carbon emission as well as its nutrition standards of quality. Using the <a href="https://world.openfoodfacts.org">Open Food Facts</a> dataset as well as <a href="http://www.eaternity.org">Eaternity</a>'s, we present the carbon footprint repartition, starting on an understanding of the products, followed by the breakdown of production countries as well as point of sales and evaluating trends in diet composition, with a special focus on nutritionally high marked products in France and the UK. With this study, we want to provide a better understanding of the agri-food industry, and eventually help reducing carbon emissions by promoting a healthier product base for our consumption.
+As we are writing this data story, the 24th UN Climate Change Conference in Katowice comes to an end. After two weeks of intense and heated discussions between member nations, a long overdue agreement was reached on how to implement cuts to global greenhouse gas emissions. The problem of global warming sometimes seems just overwhelming and out of our individual hands. But is it really the case? We strongly believe that each of us can play a part on this effort. With this journey, we want to explore what possibilities we, as a consumer, are presented with to limit our environmental impact. This story is centred on our eating habits, as we have all heard that a lot can be done by changing them. We want to leave out clues as to how optimise our food consumption to limit the damage our culture risk inflecting on the World.     
 </div>
 </p>
 
 ## Before the Story, the Cleaning ...
 
 <p><div style="text-align: justify">
-Our journey starts at the Open Food Facts dataset. This very rich source of information is unfortunately not a panacea: many entries are missing and overall each column lacks standardisation. The first step, after loading the interesting entries, was to harmonise them.
-</div></p>
-
-<p><div style="text-align: justify">
-
-For example, the country names in the origin, manufacturing and purchasing address did not match a single language (<i>United-Kingdom, Royaume-Uni, ...</i>) nor a single format (<i>United-Kingdom, United Kingdom, UK, ...</i>). We clarified this problem thanks to a dedicated <a href="https://mledoze.github.io/countries/">database</a> that we manually enriched to encapsulate most of the entries we observed. 
-</div></p>
-
-
-<p><div style="text-align: justify">
-This linguistic challenge was also met when we confronted the food categories both in the Open Food Facts and the Eaternity datasets. A sample of the last one was given to us by <b>Manuel Klarmann</b>, founder & CEO of the project. We deeply thank him for his help. Adding this source was a necessary step because the original dataset only contained a very limited number of carbon-footprint entries and these were biased towards certain categories of product (such as <i>dairy</i>). 
-</div>
+Our journey starts with a dataset, the crowdsourced <a href="https://world.openfoodfacts.org">Open Food Facts</a> dataset. This source of information is quite rich, with more than 710 000 food items sold in supermarkets all over the world, but, unfortunately, also suffers from heterogeneity, missing entries, a multitude of languages used and an absence or lack of standardisation for certain columns. After cleansing, translating and harmonising the data, we observe, for example, that about 40 000 products are sold in France.
+    </div>
 </p>
 
 <p><div style="text-align: justify">
-Another way to enrich our very sparse dataset consisted in scraping from the web. We harvested information about the product prices and, for Eaternity, categories thanks to dedicated web crawler spanning the sites of <i><a href="https://www.amazon.com">Amazon</a>, <a href="https://www.monoprix.fr">Monoprix</a>, <a href="https://search.migros.ch/de/q">Migros</a>, <a href="https://www.kaufland.de/">Kaufland</a>, <a href="https://www.codecheck.info/">Codecheck</a>, <a href="https://www.coradrive.fr/colmar/">Cora</a>, <a href="https://www.coop.ch/fr.html">Coop</a></i> and an <i> API</i> for  <i><a href="https://www.walmart.com">Walmart</a></i>.
-</div></p>
-
-<p><div style="text-align: justify">
-Thanks to these cleansing steps, we gathered a modified version of the Open Food Database that was suitable to the task we were setting to achieve.
-</div>
+However, the database is still very sparse on carbon footprints and needs the further enrichment provided by a sample of 663 additional products from the <a href="http://www.eaternity.org">Eaternity</a> database that was offered to us by Manuel Klarmann, founder & CEO of the eponym project. We deeply thank him for this contribution to our project. 
+    </div>
 </p>
 
-### Production / manufacture impact
+<p><div style="text-align: justify">
+Another way to complement our sparse dataset consists in scraping from the web. We indeed harvested information about the product prices thanks to dedicated web crawler spanning the sites of Amazon, Monoprix, Migros, Kaufland, Cora, Coop and Walmart, as well as product categories for the Eaternity database from Codecheck. 
+    </div>
+</p>
+
+<p><div style="text-align: justify">
+Thanks to these cleansing steps, we gathered a modified version of the Open Food Database that is suitable to the task we set out to achieve. 
+    </div>
+</p>
+
+### Producing and Manufacturing Our Food
 
 <p><div style="text-align: justify">
 Our first query, equipped with our brand new database, is to explore the distribution of the products information over the world. But do we have access to a truthful represention of the information over the entire world? Let's investigate by plotting the purchasing places of our dataset. 
@@ -248,8 +244,3 @@ https://www.theguardian.com/environment/2015/jun/17/stop-eating-nutella-and-save
 https://www.statista.com/statistics/263937/vegetable-oils-global-consumption/
 
 https://www.statista.com/statistics/535415/grocery-market-share-france/
-
-
-```python
-
-```

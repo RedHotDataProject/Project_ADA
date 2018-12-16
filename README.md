@@ -1,16 +1,19 @@
 # Open Food Facts: The Carbon “Food-print” We Do Not Eat
 <b> By Christopher Lang, Nina Tubau and Maxence Draguet </b> 
+
+<b> Data Story Website: </b>https://redhotdataproject.github.io/Project_ADA/
+
 ## Abstract
 
 Everything we do possess a certain carbon footprint, and our diet is of course no exception. From growing, farming, processing and packaging our food, energy and organic resources are consumed and released, which reflects in the emission of greenhouse gases, such as CO2. In this story, we explore the arcane of the food industry, such as its manufacturing, product composition and sales, and delve into its carbon emission as well as its nutrition standards of quality. Using the Open Food Facts dataset as well as Eaternity's, we present the carbon footprint repartition, starting on an understanding of the products, followed by the breakdown of production countries as well as point of sales and evaluating trends in diet composition, with a special focus on nutritionally high marked products in France and the UK. With this study, we want to provide a better understanding of the agri-food industry, and eventually help reducing carbon emissions by promoting a healthier product base for our consumption.
 
 ## Member Contributions
 
-- Christopher: Problem formulation, Loading the data, Cleansing the data tags, Web crawler for online shops, Categorization of food products, Data visualisation, Analysis and visualisation of manufacturer/ purchasing countries and carbon footprints, Code maintenance. 
+- Christopher: Problem formulation, cleansing the data tags, web crawler for online shops, categorization of food products, data visualisation, analysis and visualisation of manufacturer/ purchasing countries and carbon footprints, code maintenance. 
 
 - Nina: Getting, cleansing, exploring and scraping Eaternity database, study and vizualisation of palm oil case study.
 
-- Maxence: Problem formulation, Writing the website an Including plots, Standardisation of country names, Analysis of nutrition grade/mark/category and Distribution over countries of different variables. 
+- Maxence: Problem formulation, writing the website, standardisation of country names, analysis of nutrition grade/mark/category and distribution over countries. 
 
 ## Research questions [Updated]
 Part 1 - Production/manufacture impact:
