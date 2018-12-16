@@ -1,14 +1,16 @@
 
-<img src ="./Images/foot2.png"
-    alt = ""
-    style = "float:left; margin-right: 10px;"/>
-
-
 # RedHotDataProject
 
 This page hosts our final project for the <i><a href="https://dlab.epfl.ch/teaching/fall2018/cs401/">Applied Data Analysis</a></i> course of the <a href="https://www.epfl.ch/en/home/">EPFL</a>.
 
-## Abstract
+<center><img src ="./Images/foot2.png"
+    alt = ""
+    style = "width:600px;height:325px;"
+    class="center"/></center>
+
+
+
+## Introduction
 
 <p><div style="text-align: justify">
 Everything we do possess a certain carbon footprint, and our diet is of course no exception. From growing, farming, processing and packaging our food, energy and organic resources are consumed and released, which reflects in the emission of greenhouse gases, such as CO<sub>2</sub>. In this story, we explore the arcane of the food industry, such as its manufacturing, product composition and sales, and delve into its carbon emission as well as its nutrition standards of quality. Using the <a href="https://world.openfoodfacts.org">Open Food Facts</a> dataset as well as <a href="http://www.eaternity.org">Eaternity</a>'s, we present the carbon footprint repartition, starting on an understanding of the products, followed by the breakdown of production countries as well as point of sales and evaluating trends in diet composition, with a special focus on nutritionally high marked products in France and the UK. With this study, we want to provide a better understanding of the agri-food industry, and eventually help reducing carbon emissions by promoting a healthier product base for our consumption.
@@ -44,37 +46,27 @@ Thanks to these cleansing steps, we gathered a modified version of the Open Food
 ### Production / manufacture impact
 
 <p><div style="text-align: justify">
-Our first query, equipped with our brand new database, is to explore the distribution of the products information over the world. This is presented here in three steps: we first observe the place(s) of origin of the product, then the manufacturing place(s) and finally the purchasing place(s). Note the plural form since these can sometime have links to different countries.
+Our first query, equipped with our brand new database, is to explore the distribution of the products information over the world. But do we have access to a truthful represention of the information over the entire world? Let's investigate by plotting the purchasing places of our dataset. 
 </div>
 </p>
-
-#### Distribution of origin places? 
-
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/35.embed" height="500" width="100%"></iframe>
-
-#### Distribution of manufacturings places? 
-
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/37.embed" height="500" width="100%"></iframe>
-
-#### Distribution of pruchasing places? 
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/39.embed" height="500" width="100%"></iframe>
 
 <p><div style="text-align: justify">
-Note that we mainly have data for "western" countries, with a <b> huge bias toward France</b>. We mostly lack information for countries in Africa, the Middle East and the centre of Asia. Our dataset is thus clearly not a truthful representation of the world. We shall therefore restrict the analysis to the case of France, since it is the most prevalent among the different columns. This means products are to be limited to those available for purchasing in France. This requirement is not an exclusive one: we do <b>not only</b> require them to be sold in France but to be <b>at least</b> available in France.
+Note how we mainly have data for "western" countries, with a <b>huge bias toward France</b>. We mostly lack information for countries in Africa, the Middle East and the centre of Asia. Our dataset is thus clearly not a truthful representation of the world. We shall therefore restrict the analysis to the case of France, since it is the most prevalent among the different columns. This means products are to be limited to those available for purchasing in France. This requirement is not an exclusive one: we do <b>not only</b> require them to be sold in France but to be <b>at least</b> available in France.
 </div></p>
 
 <p>
-With these changes brought about, what can we say about the origin countries? </p>
+With these changes brought about, what can we say about the <b>origin countries</b>? </p>
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/43.embed" height="500" width="100%"></iframe>
 
-<p>And the manufacturing countries? </p>
+<p>And the <b>manufacturing countries</b>? </p>
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/41.embed" height="500" width="100%"></iframe>
 
 <p><div style="text-align: justify">
-Interestingly, the distribution only seems to change for the developing country! Indeed, these tend to rather be exporting products of <i>origin</i> instead of <i>manufactured</i> ones. On the contrary, developed countries contribute in the exports of both types of categories. This is of course not a surprising fact: developed countries are industrial powerhouses.
+Interestingly, the distribution only seems to change for the developing world! Indeed, these tend to rather be exporting products of <i>origin</i> instead of <i>manufactured</i> ones. On the contrary, developed countries contribute in the exports of both types of categories. This is of course not a surprising fact: developed countries are industrial powerhouses.
 </div></p>
 
 <p><div style="text-align: justify">
@@ -92,7 +84,7 @@ The <a href="https://en.wikipedia.org/wiki/Social_and_environmental_impact_of_pa
 Considering this globally negative press, we would expect a clear trend in the evolution of the number of products using this calamitous oil. What insights does our database offer on the subject? 
 </div></p>
 
-<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/45.embed" height="550" width="100%"></iframe>
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/45.embed" height="375" width="100%"></iframe>
 
 <p><div style="text-align: justify">
 The data in the Open Food Facts started being gathered in 2012, which explains this start date of observation. Note how, after a flat behaviour, the palm oil usage noticeably decreased after 2015. For the palm-oil-history padawan, 2015 was a dramatic year of bad press for this type of oil with scandals in France surrounding  Nutella, dubbed the <i><a href="https://www.theguardian.com/environment/2015/jun/17/stop-eating-nutella-and-save-the-forests-urges-french-ecology-minister">#Nutellagate</a></i>, and palm oil production clearances linked to <a href="https://www.theguardian.com/sustainable-business/gallery/2015/dec/28/palm-oil-nutella-forest-fires-wildlife-deforestation-west-africa-india-2015-gallery">fires in Indonesia</a>. 
@@ -131,11 +123,6 @@ The meaning of the nutrition score index we shall be using can be found on the f
 <p><div style="text-align: justify">
 - Products are marked according to the amount of nutrients they contain [per 100 g] and given a <b>grade between A and E </b>(A being obviously the best mark).
 </div></p>
-
-<center><img src ="./Images/nutriscore.png"
-    alt = ""
-    style = "width:400px;height:200px;"
-    class="center"/></center>
 
 <p><div style="text-align: justify">
 - Whether the product is solid or a beverage, it is assigned a nutrition score accordingly to that displayed on the next table. This score itself is computed in two parts. The first one considers the energy, saturated fat, sugars and sodium. A high level in that category is considered unhealthy. The second part reflects the proportion of fruits, vegetables and nuts, fibres and proteins for which high levels are considered beneficial to the health. The difference of these two parts in the order presented here gives a <b><i>nutritional scores</i></b> that is <b>better for low values</b>. 
@@ -184,7 +171,7 @@ In the middle ground, <i>dairy</i>, <i>meat</i> and <i>seafood</i>. Surprisingly
 </div></p>
 
 <p><div style="text-align: justify">
-This suggests a different approach to crafting <b>meals</b> and to <b>centre</b> them <b>around plant-based products and carbs</b> in order to embrace a <b>healthier lifestyle</b>. However, we should remember that human motivation is highly correlated to economical criteria. What can our database offer as insights into that restriction? 
+This suggests a different approach to crafting <b>meals</b> and to <b>centre</b> them <b>around plant-based products and carbs</b> in order to embrace a <b>healthier lifestyle</b>. However, we should remember that human motivation is highly correlated to economical criteria. Note however that discussion is harder than it seems: for the same weight, different product may have a different feeding power. Eating a 100g of grapes does not bring the same impact on satiety than a 100g of meat. We shall however not take this point into consideration due to the limit of the information accessible to our curiosity and restrict our investigation to the price per 100g. What can our database offer as insights into the subject? 
 </div>
 </p>
 
@@ -202,7 +189,7 @@ Let us now investigate the carbon footprint of different products and categories
 </div></p>
 
 <p><div style="text-align: justify">
-Common sense would suggest organic products are rarely manufactured and, due to their origin, inflicting a smaller footprint than the less nutritionally  favourable products such as sugary snacks and meat. Let's take a closer look at this. First, hat can we say about the categories of the products possessing carbon footprint information? 
+Common sense would suggest organic products are rarely manufactured and, due to their origin, inflicting a smaller footprint than the less nutritionally  favourable products such as sugary snacks and meat. Let's take a closer look at this. First, what can we say about the categories of the products possessing carbon footprint information? 
 </div></p>
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/71.embed" height="300" width="100%"></iframe>
@@ -234,6 +221,13 @@ And on this bombshell it is time to end this discussion ...
 
 # <b>Thank you for following our journey ! </b>
 
+<center><img src ="./Images/foot2_end.png"
+    alt = ""
+    style = "width:600px;height:325px;"
+    class="center"/></center>
+
+
+
 ### Sources:
 
 ##### The Open Food Facts non-profit:
@@ -254,3 +248,8 @@ https://www.theguardian.com/environment/2015/jun/17/stop-eating-nutella-and-save
 https://www.statista.com/statistics/263937/vegetable-oils-global-consumption/
 
 https://www.statista.com/statistics/535415/grocery-market-share-france/
+
+
+```python
+
+```
