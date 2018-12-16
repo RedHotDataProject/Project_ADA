@@ -114,7 +114,7 @@ One could thus expect that products available in France and added during this ye
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/73.embed" height="250" width="100%"></iframe>
 
 <p><div style="text-align: justify">
-Clearly, <b>France's neighbours</b> are its <b>biggest contributors</b>, after obviously France itself, with the UK heading, followed by Germany, Italy (and its Nutella) and Belgium. Interestingly, the <a href="https://en.wikipedia.org/wiki/Palm_oil">main palm oil producers</a> (Indonesia, Malaysia, Nigeria, etc.) do not appear in this plot. They clearly do not generate the final product and naturally palm oil is not directly consumed but mostly part of a manufacturing process. As we saw earlier, these manufacturing hubs are mostly in developed countries explaining this distinction. 
+Clearly, <b>France's neighbours</b> are its <b>biggest contributors</b> after, obviously, France itself, with the UK heading, followed by Germany, Italy (and its Nutella) and Belgium. Interestingly, the <a href="https://en.wikipedia.org/wiki/Palm_oil">main palm oil producers</a> (Indonesia, Malaysia, Nigeria, etc.) do not appear in this plot. They clearly do not generate the final product and naturally palm oil is not directly consumed but mostly part of a manufacturing process. As we saw earlier, these manufacturing hubs are mostly in developed countries explaining this distinction. 
 </div></p>
 
 <p><div style="text-align: justify">
@@ -122,7 +122,7 @@ Palm oil is thus visibly a product imported and manufactured in the developed wo
 </div>
 </p>
 
-## The Nutritional dilemna
+## A Nutritional Dilemna?
 
 <p><div style="text-align: justify">
 The meaning of the nutrition score index we shall be using can be found on the following <a href="https://world.openfoodfacts.org/nutriscore">page</a>, thanks to <a href="https://solidarites-sante.gouv.fr/IMG/pdf/rapport_Hercberg_15_11_2013.pdf">the work of Pr. Serge Hercberg</a>. The main facts are the following: 
@@ -184,14 +184,14 @@ In the middle ground, <i>dairy</i>, <i>meat</i> and <i>seafood</i>. Surprisingly
 </div></p>
 
 <p><div style="text-align: justify">
-This suggests a different approach to crafting <b>meals</b> and to <b>centre</b> them <b>around plant-based products and carbs</b> in order to embrace a <b>healthier lifestyle</b>. However, we should remember that human motivation is highly correlated to economical criterion. What can our database offer as insight into that restriction? 
+This suggests a different approach to crafting <b>meals</b> and to <b>centre</b> them <b>around plant-based products and carbs</b> in order to embrace a <b>healthier lifestyle</b>. However, we should remember that human motivation is highly correlated to economical criteria. What can our database offer as insights into that restriction? 
 </div>
 </p>
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/77.embed" height="525" width="100%"></iframe>
 
 <p><div style="text-align: justify">
-Amazingly, even though our sample in this respect is very limited, it seems that these efficient nutritional products that <i>plant-based</i> and <i>carbs</i> are also happen to be ... among the cheapest! Even more striking, when considering the distribution regardless of the categories, <b>good nutritional products tend on average to have a <i>lower</i> price</b>! So clearly the choice appears to be simple: what is best for your health seems to be best for your finance! But ... what about the environment?
+Amazingly, even though our sample in this respect is very limited, it seems that these efficient nutritional products that <i>plant-based</i> and <i>carbs</i> are also happen to be ... among the cheapest! Even more striking, when considering the distribution regardless of the categories, <b>good nutritional products tend on average to have a <i>lower</i> price</b> than their less performing counterparts! So clearly the choice appears to be simple: what is best for your health seems to be best for your finance! But ... what about the environment?
 </div>
 </p>
 
@@ -226,7 +226,7 @@ The two variables do not seem to be closely correlated: there are many inexpensi
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/69.embed" height="525" width="100%"></iframe>
 
 <p><div style="text-align: justify">
-We therefore reach an interesting conclusion: <b>plant-based and carbs-full products are not only better in a nutritional sense, they are also superior in term of ecological impact!</b> Even better: considering the first scatter plot, they seem to cost less on average than their meaty/fishy counterparts. 
+We therefore reach an interesting conclusion: <b>plant-based and carbs-full products are not only better in a nutritional sense, they are also superior in term of ecological impact!</b> Even better: considering our previous section and the first scatter plot, they seem to cost less on average than their meaty/fishy counterparts! 
 </div>
 </p>
 
@@ -236,16 +236,21 @@ And on this bombshell it is time to end this discussion ...
 
 ### Sources:
 
+##### The Open Food Facts non-profit:
 https://world.openfoodfacts.org/
 
+##### Wikipedia:
 https://en.wikipedia.org/wiki/Social_and_environmental_impact_of_palm_oil
     
+https://en.wikipedia.org/wiki/Palm_oil
+
+##### The Guardian:
 https://www.theguardian.com/sustainable-business/gallery/2015/dec/28/palm-oil-nutella-forest-fires-wildlife-deforestation-west-africa-india-2015-gallery
 
 https://www.theguardian.com/environment/2015/jun/17/stop-eating-nutella-and-save-the-forests-urges-french-ecology-minister
 
-https://www.statista.com/statistics/263937/vegetable-oils-global-consumption/
+##### Statista:
 
-https://en.wikipedia.org/wiki/Palm_oil
+https://www.statista.com/statistics/263937/vegetable-oils-global-consumption/
 
 https://www.statista.com/statistics/535415/grocery-market-share-france/
