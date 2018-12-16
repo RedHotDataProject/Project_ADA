@@ -177,6 +177,7 @@ def plot_occurrences_on_map(df, column_key,
     
 
 def plot_cluster_by_tags(df,
+                         df_colors,
                          plot2D_features=["carbon-footprint_100g", "energy_100g"],
                          marker_text_column="product_name",
                          cluster="labels",
@@ -201,6 +202,7 @@ def plot_cluster_by_tags(df,
                 'text': df[df[cluster] == label][marker_text_column],
                 'name': label,
                 'mode': 'markers',
+                'marker': {'color':df_colors[df_colors.category == label]['color'].values[0]}
             } for label in df[cluster].value_counts().index.tolist()
         ],
         'layout': {
@@ -240,7 +242,7 @@ def find_composition(df, column_str):
     return df2
 
     
-def plot_column_composition(df, column_str, num_values=5,
+def plot_column_composition(df,df_colors, column_str, num_values=5,
                             save_offline=False,
                             save_offline_title='column_composition_bar_plot'):
     """
@@ -279,21 +281,26 @@ def plot_column_composition(df, column_str, num_values=5,
     frames = []
 
     overall_count = 0
-    colors = ['#90CB70', '#F0F472', '#B69C63', '#D6D0C3', '#8CB5ED', '#F3AC6D', '#EC9BE2', '#7979CD', '#FCE2E4']
-
+    
     # Load bar data
     traces = []
-    i = 0
+
     for n, row in df2.iterrows():
+        
+        if(df_colors[df_colors.category == str(row[0])]['color'].empty):
+                color = '#7192C5'
+        else :
+            color = df_colors[df_colors.category == str(row[0])]['color'].values[0]
+            
         trace = go.Bar(y=[0],
                        x=[row.values[1]],
                        name=row.values[0],
                        orientation='h',
-                       marker=dict(color=colors[i],
-                                   # line=dict(color='rgb(248, 248,249)',width=1)
+                       marker=dict(color=color,
+                                  
                                    ),
                        )
-        i += 1
+
         overall_count += row.values[1]
         traces.append(trace);
 
@@ -457,21 +464,25 @@ def plot_grade_content(nutrition_over_time):
         table_content = table_content.append(add_content, ignore_index=True)
     return table_content
 
-def make_content_stacked_bar(table, label_column, x_column, y_column, save_offline=False, save_offline_title='content_stacked_bar'):
+def make_content_stacked_bar(table, df_colors,label_column, x_column, y_column, save_offline=False, save_offline_title='content_stacked_bar'):
 
     keys = table[label_column].drop_duplicates()
     data_stacked = []
-    colors = ['#90CB70', '#F0F472', '#B69C63','#D6D0C3', '#8CB5ED', '#F3AC6D', '#EC9BE2', '#7979CD', '#FCE2E4']
+  
     liste = ['A','B','C','D','E']
     for num, grade in enumerate(keys):
         values = list(table[table[label_column] == grade].loc[:, y_column])
         
+        if(grade=='Others'):
+            color = '#7979CD'
+        else:
+            color = df_colors[df_colors.category == grade]['color'].values[0]
+            
         trace = go.Bar(
                 x=liste,
                 y=values,
                 name=grade,
-                #marker=dict(color=colors[num])
-                marker = dict(color = colors[num]))
+                marker = dict(color =color))
 
         layout = go.Layout(
             barmode='stack',
@@ -521,4 +532,22 @@ def palm_oil_overtime(df,df_absolute, save, save_title):
     
     # also save offline
     if save:
-        plot(figure, filename= plots_folder + save_title  + ".html", auto_open=False) 
+        plot(figure, filename= plots_folder + save_title  + ".html", auto_open=False)
+        
+def create_colorbar_df(food_facts_pd):
+    #creation of a dataframe with the colors for coherence in the story telling
+    
+    df_colors=pd.DataFrame()
+    main_cat_colors = ['#90CB70','#7979CD','#D6D0C3','#B69C63','#EC9BE2','#F3AC6D','#8CB5ED','#F0F472','#FCE2E4']
+    
+    manuf_colors = ['#5f568b','#b6ddf0','#68a99e','#568967','#baba70','#e5daa3','#8d496b','#8d496b','#8d496b','#8d496b']
+    
+    stores_colors = ['#5f568b','#b6ddf0','#68a99e','#568967','#baba70','#e5daa3','#8d496b','#457B8E','#457B8E','#457B8E','#457B8E','#AE7CBB']
+
+
+    list_items = list(food_facts_pd.main_category.value_counts().index) + list(food_facts_pd.manufacturing_places.value_counts().index)[:10] +list(food_facts_pd.stores.value_counts().index)[:12]
+    
+    df_colors['category'] = list_items
+    df_colors['color'] = main_cat_colors + manuf_colors + stores_colors
+    
+    return df_colors
