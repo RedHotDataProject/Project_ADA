@@ -7,21 +7,23 @@ Everything we do has a carbon footprint, and our diet is no exception. From grow
 ## Research questions
 Part 1 - Production/manufacture impact:
 > - [x] Which are the dominant global food producers and manufacturers? <b>Answered</b>
-> - [x] How is this distribution impacted when we consider neutral and large carbon footprint products? For instance, considering the specific case of palm oil, can we observe any trend in the number of products including this oil (assuming a strong dependence between date the product was added to the database and data the product was invented)? 
-> - [x] Which countries use it the most for production?
+> - [] How is this distribution impacted when we consider neutral and large carbon footprint products? For instance, considering the specific case of palm oil, can we observe any trend in the number of products including this oil (assuming a strong dependence between date the product was added to the database and data the product was invented)?  <b>Not answered due to lack of information</b>
+> - [x] Which countries use it the most for production? <b>Answered</b>
 
 
 Part 2 - Good nutrition impact:
-> Next, consider the case of France/UK, for which a nutritional index is available (nutrition_grade_fr/nutrition_grade_uk). 
-> - [x] Has there been a surge in high graded products in the last years? 
-> - [x] Where do these product come from and where are they manufactured? 
-> - [x] What is the composition? Do they contain many additives?  
-> - [x] Where are these products sold? 
+> Next, consider the case of France, for which a nutritional index is available (nutrition_grade_fr). 
+> - [x] Has there been a surge in high graded products in the last years? <b>Answered</b>
+> - [x] Where do these product come from and where are they manufactured? <b>Answered</b>
+> - [x] What is the composition/category? <b>Answered</b>
+> - [x] Where are these products sold? <b>Answered</b>
+> - [x] Is there any link with price apparent? > <b>Answered</b>
 
-> Common sense would suggest most nutritionally-high graded products are organic (plant, fruit, vegetables, …) and are therefore not manufactured, thus having a small footprint. 
-> - [x] Can we establish a meaningful correlation between these product and the carbon footprint  or an estimated price (using another dataset or creating our own with web scraping)? 
-> - [x] Are expansive and polluting products performing more poorly in the nutrition mark? 
-> - [x] Is there a general correlation between high carbon footprint and price? 
+Common sense would suggest most nutritionally-high graded products are organic (plant, fruit, vegetables, …) and are therefore not manufactured, thus having a small footprint. 
+
+> - [x] Can we establish a meaningful correlation between these products and the carbon footprint or an estimated price (using another dataset or creating our own with web scraping)? <b>Answered</b>
+> - [x] Are expansive and polluting products performing more poorly in the nutrition mark? <b>Answered</b>
+> - [x] Is there a general correlation between high carbon footprint and price? <b>Answered</b>
 
 ## Dataset
 
