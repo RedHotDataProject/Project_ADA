@@ -36,7 +36,7 @@ def filter_others(key, values_list):
         return 'Other'
 
 
-def country_name_filter_apply(name, countries):
+def apply_country_name_filter(name, countries):
     """
     Harmonise country names.
     :param name:
@@ -76,7 +76,7 @@ def country_name_filter_apply(name, countries):
     return "Unknown"
 
 
-def country_name_filter(name, countries):
+def tag_filter(name, countries):
     """
     Clean country name str from special characters.
     :param name:
@@ -100,13 +100,27 @@ def country_name_filter(name, countries):
             name_part = name_part.replace(")", "")
             name_part = name_part.replace("?", "")
             if(name_part != ''):
-                name_found = country_name_filter_apply(name_part, countries)
+                name_found = apply_country_name_filter(name_part, countries)
                 if ((name_found != "Unknown") & (name_found != "Unspecified")):
                     res.append(name_found)
-                    empty = False
     
     return ",".join(res)
 
+def clean_tags_for_regex(string):
+    
+    string_clean = []
+    
+    for token in string.split(","):
+        token = token.replace("(", "")
+        token = token.replace("[", "")
+        token = token.replace("{", "")
+        token = token.replace("]", "")
+        token = token.replace("}", "")
+        token = token.replace(")", "")
+        token = token.replace("?", "")
+        string_clean.append(token)
+
+    return ",".join(string_clean)
 
 def read_list_from_str(string):
     """
@@ -123,14 +137,16 @@ def read_list_from_str(string):
     return ",".join(res)
 
 
-def remove_language_indicators(df, column_name):
+def remove_language_indicator(row_str):
     """
     Remove 'en_', 'fr_', etc. tags from column entries
-    :param df:
+    :param comma separated list of tags
     :param column_name:
-    :return: df
-    """
-    df[column_name] = df[column_name].map(lambda x: x.split(':', max_split=1))
+    :return: comma separated list of tags
+    """    
+    tags = [tag if len(tag.split(':'))==1 else tag.split(':')[1] for tag in row_str.split(',')]
+    
+    return ",".join(tags)
     
 
 def group_categories(categories_str, categories_lookup):

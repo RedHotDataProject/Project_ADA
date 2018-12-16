@@ -20,4 +20,7 @@ __all__ = [
     'plot_occurences_on_map'
     # Cleansing
     'to_lookup',
+    'remove_language_indicator',
+    'tag_filter',
+    'clean_tags_for_regex'
 ]
