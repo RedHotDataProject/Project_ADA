@@ -109,7 +109,7 @@ One could thus expect that products available in France and added during this ye
 - The pessimist (and sadly <a href="https://www.statista.com/statistics/263937/vegetable-oils-global-consumption/">realist</a>) would however conclude in a decrease in attention focused on palm oil, the subject going "out of fashion" but the palm trees still growing on freshly cleared exotic forestlands. 
 </div></p>
 
-<p>But what can we say about the manufacturing countries behind these palm-oil-containing products? </p>
+<p><div style="text-align: justify">But what can we say about the manufacturing countries behind these palm-oil-containing products? </div></p>
 
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/73.embed" height="250" width="100%"></iframe>
 
@@ -143,7 +143,7 @@ The meaning of the nutrition score index we shall be using can be found on the f
 
 <center><img src ="./Images/table.png"
     alt = ""
-    style = "width:600px;height:400px;"
+    style = "width:600px;height:380px;"
     class="center"/></center>
 
 <p><div style="text-align: justify">
@@ -184,7 +184,14 @@ In the middle ground, <i>dairy</i>, <i>meat</i> and <i>seafood</i>. Surprisingly
 </div></p>
 
 <p><div style="text-align: justify">
-This suggests a different approach to crafting <b>meals</b> and to <b>centre</b> them <b>around plant-based products and carbs</b> in order to embrace a <b>healthier lifestyle</b>. 
+This suggests a different approach to crafting <b>meals</b> and to <b>centre</b> them <b>around plant-based products and carbs</b> in order to embrace a <b>healthier lifestyle</b>. However, we should remember that human motivation is highly correlated to economical criterion. What can our database offer as insight into that restriction? 
+</div>
+</p>
+
+<iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/77.embed" height="525" width="100%"></iframe>
+
+<p><div style="text-align: justify">
+Amazingly, even though our sample in this respect is very limited, it seems that these efficient nutritional products that <i>plant-based</i> and <i>carbs</i> are also happen to be ... among the cheapest! Even more striking, when considering the distribution regardless of the categories, <b>good nutritional products tend on average to have a <i>lower</i> price</b>! So clearly the choice appears to be simple: what is best for your health seems to be best for your finance! But ... what about the environment?
 </div>
 </p>
 
@@ -219,7 +226,7 @@ The two variables do not seem to be closely correlated: there are many inexpensi
 <iframe id="igraph" scrolling="no" style="border:none;" seamless="seamless" src="https://plot.ly/~maxencedraguet/69.embed" height="525" width="100%"></iframe>
 
 <p><div style="text-align: justify">
-We therefore reach an interesting conclusion: <b>plant-based and carbs-full products are not only better in a nutritional sense, they are also superior in term of ecological impact!</b> Even better: considering the first scatter plot, they seem to cost less on average than their meaty/fishy counterpart. 
+We therefore reach an interesting conclusion: <b>plant-based and carbs-full products are not only better in a nutritional sense, they are also superior in term of ecological impact!</b> Even better: considering the first scatter plot, they seem to cost less on average than their meaty/fishy counterparts. 
 </div>
 </p>
 
