@@ -12,7 +12,7 @@ Everything we do has a carbon footprint, and our diet is no exception. From grow
 
 - Maxence: Problem formulation, Writing the website an Including plots, Standardisation of country names, Analysis of nutrition grade/mark/category and Distribution over countries of different variables. 
 
-## Research questions
+## Research questions [Updated]
 Part 1 - Production/manufacture impact:
 > - [x] Which are the dominant global food producers and manufacturers? <b>Answered</b>
 > - [ ] How is this distribution impacted when we consider neutral and large carbon footprint products? For instance, considering the specific case of palm oil, can we observe any trend in the number of products including this oil (assuming a strong dependence between date the product was added to the database and data the product was invented)?  <b>Not answered due to lack of information</b>
