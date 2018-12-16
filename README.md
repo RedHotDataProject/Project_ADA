@@ -6,9 +6,9 @@ Everything we do possess a certain carbon footprint, and our diet is of course n
 
 ## Member Contributions
 
-- Christopher:
+- Christopher: Problem formulation, Loading the data, Cleansing the data tags, Web crawler for online shops, Categorization of food products, Data visualisation, Analysis and visualisation of manufacturer/ purchasing countries and carbon footprints, Code maintenance. 
 
-- Nina: Getting, cleansing, exploring and scrapping Eaternity database, Study and vizualisation of palm oil case study.
+- Nina: Getting, cleansing, exploring and scraping Eaternity database, study and vizualisation of palm oil case study.
 
 - Maxence: Problem formulation, Writing the website an Including plots, Standardisation of country names, Analysis of nutrition grade/mark/category and Distribution over countries of different variables. 
 

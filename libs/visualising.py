@@ -7,11 +7,12 @@ from libs import exploring as explore
 
 from plotly.offline import init_notebook_mode, plot, iplot
 import plotly.graph_objs as go
+
 init_notebook_mode(connected=True)
 
 plots_folder = "./docs/Images/plots/"
 
-        
+
 def plot_occurrences_of_distinct_values_from_strings(df, column_key):
     """
     Count distinct tags in column and plot top 20 counts.
@@ -25,9 +26,9 @@ def plot_occurrences_of_distinct_values_from_strings(df, column_key):
     values_count_pdf = pd.DataFrame(list(values_count.items()), columns=['Value', 'Count'])
 
     # Plot stores counts
-    values_count_pdf.set_index('Value').\
-                     sort_values(by='Count', ascending=True)[-20:].\
-                     plot(kind='barh', figsize=(10, 10))
+    values_count_pdf.set_index('Value'). \
+        sort_values(by='Count', ascending=True)[-20:]. \
+        plot(kind='barh', figsize=(10, 10))
     plt.title("{0}: Counts of top 20 distinctive values".format(column_key.title()))
     plt.gca().xaxis.grid(True)
     plt.show()
@@ -58,7 +59,8 @@ def plot_occurrences_of_distinct_values(df, column_key):
     values_count_pdf = pd.DataFrame(list(values_count.items()), columns=['Value', 'Count'])
 
     # Plot stores counts
-    values_count_pdf.set_index('Value').sort_values(by='Count', ascending=True)[-20:].plot(kind='barh', figsize=(10, 10))
+    values_count_pdf.set_index('Value').sort_values(by='Count', ascending=True)[-20:].plot(kind='barh',
+                                                                                           figsize=(10, 10))
     plt.title("{0}: Count of top 20 distincive values".format(column_key.title()))
     plt.show()
 
@@ -135,7 +137,8 @@ def plot_occurrences_on_map(df, column_key,
                             width=(np.log10(row['Count']) + 0.1) * 1.2,
                             color='red'
                         ),
-                        opacity=min(float(np.log10(row['Count'])) / maximum * 1.2 + 0.1, 1) # make larger for visibility
+                        opacity=min(float(np.log10(row['Count'])) / maximum * 1.2 + 0.1, 1)
+                        # make larger for visibility
                     )
                 )
             except IndexError:
@@ -174,7 +177,7 @@ def plot_occurrences_on_map(df, column_key,
     # also save offline
     if save_offline:
         plot(figure, filename=plots_folder + "map_" + save_offline_title + ".html", auto_open=False)
-    
+
 
 def plot_cluster_by_tags(df,
                          df_colors,
@@ -183,7 +186,6 @@ def plot_cluster_by_tags(df,
                          cluster="labels",
                          save_offline=False,
                          save_offline_title='scatter_plot'):
-
     # Personalized axes titles
     axis_title = copy.copy(plot2D_features)
     for i, column_str in enumerate(plot2D_features):
@@ -202,14 +204,14 @@ def plot_cluster_by_tags(df,
                 'text': df[df[cluster] == label][marker_text_column],
                 'name': label,
                 'mode': 'markers',
-                'marker': {'color':df_colors[df_colors.category == label]['color'].values[0]}
+                'marker': {'color': df_colors[df_colors.category == label]['color'].values[0]}
             } for label in df[cluster].value_counts().index.tolist()
         ],
         'layout': {
             'xaxis': {'title': axis_title[0],
-                      'range':  [min(df[plot2D_features[0]].min(),0), df[plot2D_features[0]].quantile(.9)]},
+                      'range': [min(df[plot2D_features[0]].min(), 0), df[plot2D_features[0]].quantile(.9)]},
             'yaxis': {'title': axis_title[1],
-                      'range': [min(df[plot2D_features[1]].min(),0), df[plot2D_features[1]].quantile(.9)]},
+                      'range': [min(df[plot2D_features[1]].min(), 0), df[plot2D_features[1]].quantile(.9)]},
         }
     }
 
@@ -219,32 +221,46 @@ def plot_cluster_by_tags(df,
     # also save offline
     if save_offline:
         second_plot_url = plot(figure, filename=plots_folder + save_offline_title + ".html", auto_open=False)
-        
-        
+
+
+def plot_grouped_counts(df, groupby_column='created_yyyy', count_columns=['nutrition_score_fr']):
+    df_grouped = df[df['purchase_places'] == 'France'].groupby(groupby_column).count()
+
+    fig, ax = plt.subplots()
+    ax2 = ax.twinx()
+
+    df_grouped['code'].plot(label='products total', ax=ax2)
+    df_grouped[count_columns].plot(kind='bar', ax=ax)
+
+    ax.set_title('Values counts grouped by ' + groupby_column)
+    ax.set_ylabel('counts')
+    plt.show()
+
+
 def find_composition(df, column_str):
     if isinstance(df[column_str].iloc[0], str):
         occurence = explore.count_tag_occurences(df, column_str)
     else:
         occurence = explore.count_tag_occurences_list(df, column_str)
 
-    #the full dataframe
-    counts_df = pd.DataFrame( data = {'keys': list(occurence.keys()), 
-                                      'value' : list(occurence.values())
-                                     },
-                            ).sort_values('value', ascending = False)
+    # the full dataframe
+    counts_df = pd.DataFrame(data={'keys': list(occurence.keys()),
+                                   'value': list(occurence.values())
+                                   },
+                             ).sort_values('value', ascending=False)
 
     # others
-    new_row = pd.DataFrame(data = {
-        'keys' : ['Others'],
-        'value' : [counts_df['value'][5:].sum()]
+    new_row = pd.DataFrame(data={
+        'keys': ['Others'],
+        'value': [counts_df['value'][5:].sum()]
     })
 
-    #combining top 5 with others
+    # combining top 5 with others
     df2 = pd.concat([counts_df[:5].copy(), new_row])
     return df2
 
-    
-def plot_column_composition(df,df_colors, column_str, num_values=5,
+
+def plot_column_composition(df, df_colors, column_str, num_values=5,
                             save_offline=False,
                             save_offline_title='column_composition_bar_plot'):
     """
@@ -284,23 +300,23 @@ def plot_column_composition(df,df_colors, column_str, num_values=5,
     frames = []
 
     overall_count = 0
-    
+
     # Load bar data
     traces = []
 
     for n, row in df2.iterrows():
-        
-        if(df_colors[df_colors.category == str(row[0])]['color'].empty):
-                color = '#7192C5'
-        else :
+
+        if (df_colors[df_colors.category == str(row[0])]['color'].empty):
+            color = '#7192C5'
+        else:
             color = df_colors[df_colors.category == str(row[0])]['color'].values[0]
-            
+
         trace = go.Bar(y=[0],
                        x=[row.values[1]],
                        name=row.values[0],
                        orientation='h',
                        marker=dict(color=color,
-                                  
+
                                    ),
                        )
 
@@ -352,7 +368,7 @@ def plot_column_composition(df,df_colors, column_str, num_values=5,
     if save_offline:
         plot(figure, filename=plots_folder + save_offline_title + ".html", auto_open=False)
 
-    
+
 def search_cca3(name, countries):
     """
     Map country name to CCA3 code.
@@ -366,32 +382,13 @@ def search_cca3(name, countries):
     return " "
 
 
-def make_plot(title, hist, edges):
-    p = figure(title=title, tools='', background_fill_color="#fafafa")
-    p.quad(top=hist, bottom=0, left=edges[:-1], right=edges[1:],
-           fill_color="navy", line_color="white", alpha=0.5)
-    p.y_range.start = 0
-    p.legend.location = "center_right"
-    p.legend.background_fill_color = "#fefefe"
-    p.xaxis.axis_label = 't (year)'
-    p.yaxis.axis_label = '% of palm oil products '
-    p.grid.grid_line_color="white"
-    return p
-
-def hist(column):
-    bins = column.max() - column.min()
-    hist, edges = np.histogram(column, density=True, bins=bins)
-    p1 = make_plot("Distribution of palm oil products", hist, edges)
-    show(p1)
-
-    
-def make_grade_stacked_bar(attempt, label_column, x_column, y_column, save_offline=False, save_offline_title='make_grade_stacked_bar'):
-
-    #colors = ["#008010", "#9ACD32","#FFD700", "#FF8C00", "#DB4832"]
-    colors = ["#517C53", "#99EB9D","#E9F287", "#F2CE75", "#F68774"]
+def make_grade_stacked_bar(attempt, label_column, x_column, y_column, save_offline=False,
+                           save_offline_title='make_grade_stacked_bar'):
+    # colors = ["#008010", "#9ACD32","#FFD700", "#FF8C00", "#DB4832"]
+    colors = ["#517C53", "#99EB9D", "#E9F287", "#F2CE75", "#F68774"]
     # Load bar data
     traces = []
-    i=0
+    i = 0
     for num, grade in enumerate(attempt):
 
         years = [int(year) for year in attempt.year.unique()]
@@ -399,7 +396,6 @@ def make_grade_stacked_bar(attempt, label_column, x_column, y_column, save_offli
 
         traces = []
         for num, grade in enumerate(grades):
-
             trace = go.Bar(
                 x=years,
                 y=attempt[attempt.nutrition_grade == grade][y_column].values,
@@ -413,81 +409,93 @@ def make_grade_stacked_bar(attempt, label_column, x_column, y_column, save_offli
                 )
             )
 
-            
-
             traces.append(trace);
 
-     # Format layout
+    # Format layout
     if y_column == 'Count':
         axis_y = 'Count'
-    
+
     if y_column == 'Percentage':
         axis_y = 'Percentage of products [%]'
     layout = go.Layout(
-                    showlegend=True, 
-                    barmode="stack",
-                    yaxis=dict(
-                        title=axis_y
-                        ),
-                    margin=go.layout.Margin(
-                        l=50,
-                        r=50,
-                        b=50,
-                        t=15,
-                        pad=4
-                    )
+        showlegend=True,
+        barmode="stack",
+        yaxis=dict(
+            title=axis_y
+        ),
+        margin=go.layout.Margin(
+            l=50,
+            r=50,
+            b=50,
+            t=15,
+            pad=4
+        )
     )
-    
+
     figure = go.Figure(data=traces, layout=layout)
 
     # Plot interactive figure
     iplot(figure)
-    
+
     # also save offline
     if save_offline:
-        plot(figure, filename= plots_folder + save_offline_title + ".html", auto_open=False) 
+        plot(figure, filename=plots_folder + save_offline_title + ".html", auto_open=False)
 
-        
+
 def plot_grade_content(nutrition_over_time):
     index_list = ['B', 'C', 'D', 'E']
-    cat_list = ['Plant-based', 'Carbs', 'Meats', 'Dairies', 'Seafood', 'Beverages', 'Sugary snacks','Others']
+    cat_list = ['Plant-based', 'Carbs', 'Meats', 'Dairies', 'Seafood', 'Beverages', 'Sugary snacks', 'Others']
     categories = {"keys": cat_list}
     check = pd.DataFrame.from_dict(categories)
-    
-    nutrional_products = nutrition_over_time[nutrition_over_time["nutrition_grade"] == 'A']              
-    table_content = explore.find_composition_list(df=nutrional_products, column_str='main_category', cat_lis= cat_list)
-    table_content['Percentage'] = table_content.value/table_content.value.sum()*100
-    table_content = check.merge(table_content, how='outer', on= "keys").fillna(0)
+
+    nutrional_products = nutrition_over_time[nutrition_over_time["nutrition_grade"] == 'A']
+    table_content = explore.find_composition_list(df=nutrional_products, column_str='main_category', cat_lis=cat_list)
+    table_content['Percentage'] = table_content.value / table_content.value.sum() * 100
+    table_content = check.merge(table_content, how='outer', on="keys").fillna(0)
     table_content['grade'] = 'A'
-    
+
     for elem in index_list:
         nutrional_products = nutrition_over_time[nutrition_over_time["nutrition_grade"] == elem]
-        add_content = explore.find_composition_list(df=nutrional_products, column_str='main_category', cat_lis= cat_list)
-        add_content['Percentage'] = add_content.value/add_content.value.sum()*100
-        add_content = check.merge(add_content, how='outer', on= "keys").fillna(0)
+        add_content = explore.find_composition_list(df=nutrional_products, column_str='main_category', cat_lis=cat_list)
+        add_content['Percentage'] = add_content.value / add_content.value.sum() * 100
+        add_content = check.merge(add_content, how='outer', on="keys").fillna(0)
         add_content['grade'] = elem
         table_content = table_content.append(add_content, ignore_index=True)
     return table_content
 
-def make_content_stacked_bar(table, df_colors,label_column, x_column, y_column, save_offline=False, save_offline_title='content_stacked_bar'):
 
+def make_content_stacked_bar(table, df_colors, 
+                             label_column, 
+                             y_column, 
+                             save_offline=False,
+                             save_offline_title='content_stacked_bar'):
+    """
+    Specific method to plot nutrition grad over any categorical column.
+    :param table: 
+    :param df_colors: 
+    :param label_column: 
+    :param y_column: 
+    :param save_offline: 
+    :param save_offline_title: 
+    :return: 
+    """
     keys = table[label_column].drop_duplicates()
     data_stacked = []
-  
-    liste = ['A','B','C','D','E']
+
+    liste = ['A', 'B', 'C', 'D', 'E']
     for num, grade in enumerate(keys):
         values = list(table[table[label_column] == grade].loc[:, y_column])
-        
-        if(grade=='Others'):
+
+        if (grade == 'Others'):
             color = '#7979CD'
         else:
             color = df_colors[df_colors.category == grade]['color'].values[0]
-            
+
         trace = go.Bar(
-                x=liste,
-                y=values,
-                name=grade,
-                marker = dict(color =color))
+            x=liste,
+            y=values,
+            name=grade,
+            marker=dict(color=color))
 
         layout = go.Layout(
             barmode='stack',
@@ -501,111 +509,143 @@ def make_content_stacked_bar(table, df_colors,label_column, x_column, y_column, 
         )
         data_stacked.append(trace)
 
-    fig = go.Figure(data=data_stacked,layout=layout)
+    fig = go.Figure(data=data_stacked, layout=layout)
     iplot(fig, filename='stacked-bar')
-    
+
     # also save offline
     if save_offline:
-        plot(fig, filename= plots_folder + save_offline_title  + ".html", auto_open=False) 
+        plot(fig, filename=plots_folder + save_offline_title + ".html", auto_open=False)
 
-def palm_oil_overtime(df,df_absolute, save, save_title):   
+
+def palm_oil_overtime(df, df_absolute, save, save_title):
+    """
+    Specific method to plot newly added products containing palmoil over the years.
+    :param df: 
+    :param df_absolute: 
+    :param save: 
+    :param save_title: 
+    :return: 
+    """
     data = [go.Bar(x=df.index,
-               y=df.values,
-               #text=palm_oil_over_time,
-               text = round(df, 2).astype(str) + '% <br>'+ df_absolute.astype(str),
-               hoverinfo = 'text',
-               marker=dict(color='#097B4E'))]
-
+                   y=df.values,
+                   # text=palm_oil_over_time,
+                   text=round(df, 2).astype(str) + '% <br>' + df_absolute.astype(str),
+                   hoverinfo='text',
+                   marker=dict(color='#097B4E'))]
 
     layout = go.Layout(
         yaxis=dict(
             title='Percentage of products with palm oil [%]'
-            ),
+        ),
         margin=go.layout.Margin(
             l=50,
             r=50,
             b=40,
             t=15,
             pad=4
-            )
         )
+    )
 
     figure = go.Figure(data=data, layout=layout)
 
     # Plot interactive figure
     iplot(figure)
-    
+
     # also save offline
     if save:
-        plot(figure, filename= plots_folder + save_title  + ".html", auto_open=False)
-        
+        plot(figure, filename=plots_folder + save_title + ".html", auto_open=False)
+
+
 def create_colorbar_df(food_facts_pd):
-    #creation of a dataframe with the colors for coherence in the story telling
-    
-    df_colors=pd.DataFrame()
-    main_cat_colors = ['#90CB70','#7979CD','#D6D0C3','#B69C63','#EC9BE2','#F3AC6D','#8CB5ED','#F0F472','#FCE2E4']
-    
-    manuf_colors = ['#5f568b','#b6ddf0','#68a99e','#568967','#baba70','#e5daa3','#8d496b','#8d496b','#8d496b','#8d496b']
-    
-    stores_colors = ['#5f568b','#b6ddf0','#68a99e','#568967','#baba70','#e5daa3','#8d496b','#457B8E','#457B8E','#457B8E','#457B8E','#AE7CBB']
+    """
+    Creation of a dataframe with the colors for coherence throughout the notebook.
+    :param food_facts_pd: 
+    :return: 
+    """
 
+    df_colors = pd.DataFrame()
+    main_cat_colors = ['#90CB70', '#7979CD', '#D6D0C3', '#B69C63', '#EC9BE2', '#F3AC6D', '#8CB5ED', '#F0F472',
+                       '#FCE2E4']
 
-    list_items = list(food_facts_pd.main_category.value_counts().index) + list(food_facts_pd.manufacturing_places.value_counts().index)[:10] +list(food_facts_pd.stores.value_counts().index)[:12]
-    
+    manuf_colors = ['#5f568b', '#b6ddf0', '#68a99e', '#568967', '#baba70', '#e5daa3', '#8d496b', '#8d496b', '#8d496b',
+                    '#8d496b']
+
+    stores_colors = ['#5f568b', '#b6ddf0', '#68a99e', '#568967', '#baba70', '#e5daa3', '#8d496b', '#457B8E', '#457B8E',
+                     '#457B8E', '#457B8E', '#AE7CBB']
+
+    list_items = list(food_facts_pd.main_category.value_counts().index) + list(
+        food_facts_pd.manufacturing_places.value_counts().index)[:10] + list(food_facts_pd.stores.value_counts().index)[
+                                                                        :12]
+
     df_colors['category'] = list_items
     df_colors['color'] = main_cat_colors + manuf_colors + stores_colors
-    
+
     return df_colors
 
+
 def scatter_plot_price_grade(price_grade_pd):
-    colors = {'A':'#517C53','B':'#99EB9D','C':'#E9F287','D':'#F2CE75','E':'#F68774'}
+    """
+    Specific method to plot prices over nutrition grades and cluster by grades.
+    :param price_grade_pd:
+    :return:
+    """
+    colors = {'A': '#517C53', 'B': '#99EB9D', 'C': '#E9F287', 'D': '#F2CE75', 'E': '#F68774'}
     # Create a trace
-    data=[]
+    data = []
     for grade in list(price_grade_pd.nutrition_grade.value_counts().index):
-        df = price_grade_pd[price_grade_pd.nutrition_grade==grade]
+        df = price_grade_pd[price_grade_pd.nutrition_grade == grade]
         trace = go.Scatter(
-            x = df.price_per_100g,
-            y = df['nutrition-score-fr_100g_y'],
-            mode = 'markers',
-            hoverinfo = 'text',
-            text = round(df.price_per_100g,4).astype(str) + '€ <br>'+' grade:'+(df['nutrition-score-fr_100g_y']).astype(str),
-            marker = dict(color = colors[grade]),
-            name =grade
+            x=df.price_per_100g,
+            y=df['nutrition-score-fr_100g_y'],
+            mode='markers',
+            hoverinfo='text',
+            text=round(df.price_per_100g, 4).astype(str) + '€ <br>' + ' grade:' + (
+            df['nutrition-score-fr_100g_y']).astype(str),
+            marker=dict(color=colors[grade]),
+            name=grade
         )
         data.append(trace)
 
-    layout= go.Layout(
-    xaxis= dict(title='Price[€]'),
-            yaxis =  dict(title='Nutritional grade'),
+    layout = go.Layout(
+        xaxis=dict(title='Price[€]'),
+        yaxis=dict(title='Nutritional grade'),
     )
-    #data = [trace]
-    fig= go.Figure(data=data, layout=layout)
+    # data = [trace]
+    fig = go.Figure(data=data, layout=layout)
+    
     # Plot and embed in ipython notebook!
     iplot(fig, filename='basic-scatter')
 
-def scatter_plot_price_grade_categories(price_grade_pd,df_colors):
-    data=[]
+
+def scatter_plot_price_grade_categories(price_grade_pd, df_colors):
+    """
+    Specific method to plot prices over nutrition grades.
+    :param price_grade_pd:
+    :param df_colors:
+    """
+    data = []
 
     for category in list(price_grade_pd.main_category_y.value_counts().index):
-        df = price_grade_pd[price_grade_pd.main_category_y==category].sort_values('nutrition_grade')
-        color =df_colors[df_colors.category == category]['color'].values[0]
+        df = price_grade_pd[price_grade_pd.main_category_y == category].sort_values('nutrition_grade')
+        color = df_colors[df_colors.category == category]['color'].values[0]
         trace = go.Scatter(
-            x = df.price_per_100g,
-            y = df.nutrition_grade,
-            mode = 'markers',
-            hoverinfo = 'text',
-            text = df.product_name + '<br>'+ round(df.price_per_100g,4).astype(str) + '€',
-            marker = dict(color = color),
-            name =category)
+            x=df.price_per_100g,
+            y=df.nutrition_grade,
+            mode='markers',
+            hoverinfo='text',
+            text=df.product_name + '<br>' + round(df.price_per_100g, 4).astype(str) + '€',
+            marker=dict(color=color),
+            name=category)
         data.append(trace)
 
-    layout= go.Layout(
-        xaxis= dict(title='Price[€]'),
-        yaxis =  dict(title='Nutritional Mark',
-                      categoryorder = "category descending", 
-                      type = "category")
+    # Format plot
+    layout = go.Layout(
+        xaxis=dict(title='Price[€]'),
+        yaxis=dict(title='Nutritional Mark',
+                   categoryorder="category descending",
+                   type="category")
     )
-    fig= go.Figure(data=data, layout=layout)
+    fig = go.Figure(data=data, layout=layout)
+
     # Plot and embed in ipython notebook!
     iplot(fig, filename='basic-scatter')
-
