@@ -13,7 +13,7 @@ Everything we do possess a certain carbon footprint, and our diet is of course n
 
 - Nina: Getting, cleansing, exploring and scrapping Eaternity database, Performed the palm oil case study.
 
-- Maxence: Problem formulation, Writing the website, Standardisation of country names, Analysis of nutrition grade/mark/category and Distribution over countries of different variables. 
+- Maxence: Problem formulation, Writing the website, Standardisation of country names, Analysis of nutrition grade/mark/category and Distribution over countries. 
 
 ## Research questions [Updated]
 Part 1 - Production/manufacture impact:
