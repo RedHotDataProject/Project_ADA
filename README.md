@@ -8,7 +8,7 @@ Everything we do possess a certain carbon footprint, and our diet is of course n
 
 - Christopher:
 
-- Nina: Getting, cleansing, exploring and scrapping Eaternity database (with Christopher), Study and vizualisation of palm oil case study
+- Nina: Getting, cleansing, exploring and scrapping Eaternity database, Study and vizualisation of palm oil case study.
 
 - Maxence: Problem formulation, Writing the website an Including plots, Standardisation of country names, Analysis of nutrition grade/mark/category and Distribution over countries of different variables. 
 
