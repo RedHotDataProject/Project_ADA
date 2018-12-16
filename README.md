@@ -9,11 +9,11 @@ Everything we do possess a certain carbon footprint, and our diet is of course n
 
 ## Member Contributions
 
-- Christopher: Problem formulation, cleansing the data tags, web crawler for online shops, categorization of food products, data visualisation, analysis and visualisation of manufacturer/ purchasing countries and carbon footprints, code maintenance. 
+- Christopher: Problem formulation, cleansing the data tags, web crawler for online shops, categorisation of food products,  analysis and visualisation of manufacturer/ purchasing countries and carbon footprints, code maintenance. 
 
 - Nina: Getting, cleansing, exploring and scraping Eaternity database, study and vizualisation of palm oil case study.
 
-- Maxence: Problem formulation, writing the website, standardisation of country names, analysis of nutrition grade/mark/category and distribution over countries. 
+- Maxence: Problem formulation, writing the website, standardisation of country names, analysis and visualisation of nutrition grade/mark/category and distribution over countries. 
 
 ## Research questions [Updated]
 Part 1 - Production/manufacture impact:
